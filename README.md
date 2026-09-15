@@ -10,6 +10,19 @@ Work evidence → Requirement hypothesis → Context update → Paired evaluatio
 
 **Early development — `0.1.0.dev1`.** The library implements data models, evidence and scope checks, and a selector for supplied evaluation records. An optional model backend supports a first experiment; repeated autonomous adaptation remains research work.
 
+## A recorded example
+
+The model pilot produced hypothesis `H1` and candidate update `C1` from fictional HR work records:
+
+| Step | Example |
+| --- | --- |
+| Work evidence | Two specialist reviews ask for a concrete work-problem opening. An apprenticeship review instead asks for learning opportunities and support. |
+| Provisional hypothesis | Experienced specialists may prefer a problem-and-contribution opening in Atlas LinkedIn recruiting posts. |
+| Scoped update | Use that opening for this audience and campaign; current approved facts and explicit task instructions take precedence. |
+| Boundary | The apprenticeship review challenges applying the same opening to every audience. Recruiting effectiveness remains unmeasured. |
+
+This summarises actual model-generated hypotheses and updates from synthetic records. The [recorded preparation](pilots/hr_v01/observed_outputs.json) preserves exact source quotes, alternative explanations and untested predictions.
+
 **Pilot finding:** all three conditions received 10/10 model ratings on all six synthetic tasks. This complete rating ceiling provides no observed advantage for structured reflection. There has been no human evaluation. See the [results and limitations](pilots/hr_v01/REPORT_en.md).
 
 ## Quick start
