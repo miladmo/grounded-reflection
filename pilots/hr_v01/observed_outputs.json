@@ -1,0 +1,1162 @@
+{
+  "preparations": {
+    "direct_adaptation": {
+      "guidance": "Apply these conditional lessons from fictional LinkedIn recruiting episodes. Each future task’s explicit instructions and current approved sources take precedence; historical wording and employment details are not defaults.\n\nAudience and opening:\n• Experienced specialists: lead with the concrete technical problem and the applicant’s contribution. Reviews in hr-specialist-01/02 explicitly favored investigating inconsistent annotations or detecting changed inputs before downstream failures over generic mission statements. Retain meaningful specialist terms when they accurately describe the work, such as reproducible analysis, schema validation and data lineage. Connect responsibilities to collaborators and practical uses.\n• Apprentices: hr-apprentice-03 supports opening with approved learning opportunities and support, then explaining supervised work plainly. Avoid implying applicants must already solve specialist problems. Preserve an approved statement that prior professional programming experience is unnecessary; refer readers to the full entry requirements when details are unavailable. Mention mentoring and protected study time only when supplied. This is an audience-sensitive approach, not a mandatory structure for every apprenticeship campaign.\n\nFactual discipline:\nBuild from the current role’s title, organisation/team, responsibilities, experience or eligibility requirements, location, working arrangement and application route. Keep required and relevant experience distinct. Check every detail against that role’s sources: shared project names do not justify transferring another vacancy’s location, on-site schedule, benefits or requirements. Preserve concrete employment details and an accurate application call to action. Keep claims within approved evidence; do not invent salary, remote options, technologies, training benefits, publication or clinical impact, promotion prospects, or employment guarantees.\n\nRevision and delivery:\nUse clear, concise language while retaining information needed to assess the opportunity. The unexplained shortening in hr-ambiguous-04 establishes no general length preference and no permission to omit location or working arrangements. Follow the requested review workflow without implying approval or publication.\n\nEvidence limits:\nThese records support local editorial preferences, not proven recruiting effectiveness. No hiring, application or comprehension outcomes are recorded; repeated reviewer comments are not established independent validation."
+    },
+    "grounded_reflection": {
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "claim": "For Atlas LinkedIn posts targeting experienced specialists, the reviews favor opening with the concrete work problem and applicant contribution while retaining meaningful technical terminology. This is a provisional editorial preference; recruiting effectiveness is unmeasured.",
+          "scope": [
+            {
+              "attribute": "role",
+              "values": [
+                "hr"
+              ]
+            },
+            {
+              "attribute": "audience",
+              "values": [
+                "experienced_specialists"
+              ]
+            },
+            {
+              "attribute": "channel",
+              "values": [
+                "linkedin"
+              ]
+            },
+            {
+              "attribute": "project",
+              "values": [
+                "atlas"
+              ]
+            }
+          ],
+          "support": [
+            {
+              "episode_id": "hr-specialist-01",
+              "evidence_id": "review",
+              "quote": "For experienced computational biologists, please lead with the concrete analysis problem and the contribution they would make. The future-of-research opening could describe almost any role. Keep the reproducible-analysis language: this audience understands it."
+            },
+            {
+              "episode_id": "hr-specialist-02",
+              "evidence_id": "review",
+              "quote": "Please start with the engineering challenge: detecting a changed input before it breaks a downstream analysis. For this experienced audience, that is more informative than make a difference through data. Keep schema validation and data lineage rather than simplifying them away."
+            }
+          ],
+          "counterevidence": [
+            {
+              "episode_id": "hr-apprentice-03",
+              "evidence_id": "review",
+              "quote": "Do not reuse the specialist opening here. For apprentices, begin with what they can learn and the support available; the current opening sounds as if they should already know how to solve the technical problem."
+            }
+          ],
+          "alternatives": [
+            "The repeated feedback may reflect a shared reviewer preference or similar technical briefs; reviewer independence is unknown.",
+            "The apprentice feedback establishes an audience boundary rather than contradicting the preference within specialist posts."
+          ],
+          "unresolved_questions": [
+            "Would independent reviewers share this preference?",
+            "Would this opening improve applicant comprehension or response?"
+          ]
+        },
+        {
+          "hypothesis_id": "H2",
+          "claim": "The Atlas apprenticeship episode supports a provisional preference for introducing approved learning opportunities and support before explaining work plainly and clarifying experience requirements.",
+          "scope": [
+            {
+              "attribute": "role",
+              "values": [
+                "hr"
+              ]
+            },
+            {
+              "attribute": "audience",
+              "values": [
+                "apprentices"
+              ]
+            },
+            {
+              "attribute": "channel",
+              "values": [
+                "linkedin"
+              ]
+            },
+            {
+              "attribute": "project",
+              "values": [
+                "atlas"
+              ]
+            }
+          ],
+          "support": [
+            {
+              "episode_id": "hr-apprentice-03",
+              "evidence_id": "review",
+              "quote": "For apprentices, begin with what they can learn and the support available; the current opening sounds as if they should already know how to solve the technical problem. Explain the work plainly after that. Keep the explicit statement that professional programming experience is not required, and avoid a promise of employment after completion."
+            },
+            {
+              "episode_id": "hr-apprentice-03",
+              "evidence_id": "revision",
+              "quote": "Start learning how research data works, with a mentor and time set aside to study."
+            }
+          ],
+          "counterevidence": [
+            {
+              "episode_id": "hr-specialist-02",
+              "evidence_id": "review",
+              "quote": "Please start with the engineering challenge: detecting a changed input before it breaks a downstream analysis."
+            }
+          ],
+          "alternatives": [
+            "The review may principally correct this draft's implication of prerequisite expertise, rather than prescribe a fixed structure for every apprenticeship campaign.",
+            "The specialist feedback shows a different audience preference; it supplies no direct contradiction within the apprentice scope."
+          ],
+          "unresolved_questions": [
+            "Does this preference recur across other apprenticeship briefs?",
+            "Does this framing improve applicants' understanding of entry requirements and support?"
+          ]
+        },
+        {
+          "hypothesis_id": "H3",
+          "claim": "For Atlas LinkedIn recruiting, current vacancy facts should govern employment details and application routes. The unexplained shortened post provides insufficient evidence for a standing word limit or permission to omit logistics.",
+          "scope": [
+            {
+              "attribute": "role",
+              "values": [
+                "hr"
+              ]
+            },
+            {
+              "attribute": "audience",
+              "values": [
+                "experienced_specialists",
+                "apprentices"
+              ]
+            },
+            {
+              "attribute": "channel",
+              "values": [
+                "linkedin"
+              ]
+            },
+            {
+              "attribute": "project",
+              "values": [
+                "atlas"
+              ]
+            }
+          ],
+          "support": [
+            {
+              "episode_id": "hr-specialist-02",
+              "evidence_id": "role-facts",
+              "quote": "Location: Manchester; three on-site team days per week. This is not the Bristol computational-biology role."
+            },
+            {
+              "episode_id": "hr-apprentice-03",
+              "evidence_id": "revision",
+              "quote": "The programme includes four on-site days each week, and the full description explains the entry requirements. If you are curious about the data behind research and want to develop practical skills, explore the programme: https://careers.northstar.example/atlas-apprenticeship."
+            },
+            {
+              "episode_id": "hr-ambiguous-04",
+              "evidence_id": "role-facts",
+              "quote": "The brief provides no word limit, paid-placement constraint or instruction to omit location information."
+            }
+          ],
+          "counterevidence": [
+            {
+              "episode_id": "hr-ambiguous-04",
+              "evidence_id": "revision",
+              "quote": "Turn fragile research scripts into tested, maintainable tools. Join Northstar Research's Atlas team as an experienced Research Software Engineer, developing shared Python packages and automated checks with computational biologists. Bring experience in Python packaging, testing and collaborative development. Explore the role: https://careers.northstar.example/atlas-research-software-engineer."
+            }
+          ],
+          "alternatives": [
+            "The shortened revision could reflect an undocumented placement constraint, logistics supplied elsewhere, or an editing oversight. Its omission of location challenges universal inclusion, but the record does not establish the reason or acceptability."
+          ],
+          "unresolved_questions": [
+            "Was the shortened version approved, and was omission of location intentional?",
+            "Did its placement provide logistics elsewhere or impose a length constraint?"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C1",
+          "hypothesis_id": "H1",
+          "scope": [
+            {
+              "attribute": "role",
+              "values": [
+                "hr"
+              ]
+            },
+            {
+              "attribute": "audience",
+              "values": [
+                "experienced_specialists"
+              ]
+            },
+            {
+              "attribute": "channel",
+              "values": [
+                "linkedin"
+              ]
+            },
+            {
+              "attribute": "project",
+              "values": [
+                "atlas"
+              ]
+            }
+          ],
+          "patch": "For Atlas LinkedIn recruiting posts addressing experienced specialists, default to opening with a concrete work problem and the recruit's contribution, using current approved sources. Retain accurate technical terms that describe the work and suit the audience. If problem detail is missing, use supported responsibilities without inventing a challenge. Current facts and explicit instructions take precedence.",
+          "prediction": "Untested: fewer reviewer requests to replace generic openings or restore useful technical terminology.",
+          "blocking_questions": []
+        },
+        {
+          "candidate_id": "C2",
+          "hypothesis_id": "H2",
+          "scope": [
+            {
+              "attribute": "role",
+              "values": [
+                "hr"
+              ]
+            },
+            {
+              "attribute": "audience",
+              "values": [
+                "apprentices"
+              ]
+            },
+            {
+              "attribute": "channel",
+              "values": [
+                "linkedin"
+              ]
+            },
+            {
+              "attribute": "project",
+              "values": [
+                "atlas"
+              ]
+            }
+          ],
+          "patch": "For Atlas LinkedIn apprenticeship posts, default to opening with learning opportunities and support documented in the current approved brief. Explain tasks plainly afterward and state current experience and entry requirements accurately. Say professional programming experience is unnecessary only when currently supported. Avoid wording that implies applicants must already solve specialist problems, and do not invent support or employment guarantees. Current facts and explicit instructions take precedence.",
+          "prediction": "Untested: fewer reviewer corrections concerning implied prior expertise and clearer presentation of approved learning support.",
+          "blocking_questions": []
+        },
+        {
+          "candidate_id": "C3",
+          "hypothesis_id": "H3",
+          "scope": [
+            {
+              "attribute": "role",
+              "values": [
+                "hr"
+              ]
+            },
+            {
+              "attribute": "audience",
+              "values": [
+                "experienced_specialists",
+                "apprentices"
+              ]
+            },
+            {
+              "attribute": "channel",
+              "values": [
+                "linkedin"
+              ]
+            },
+            {
+              "attribute": "project",
+              "values": [
+                "atlas"
+              ]
+            }
+          ],
+          "patch": "Use the current vacancy's approved sources to verify location, on-site schedule, eligibility and application route. By default, preserve supplied logistics and the application route. Do not carry over another vacancy's details or infer a standing word limit or permission to omit logistics from an unexplained historical shortening. Treat undocumented approval as unknown. Current facts and explicit instructions take precedence.",
+          "prediction": "Untested: fewer incorrect details transferred between vacancies and fewer unsupported omissions prompted by historical revisions.",
+          "blocking_questions": []
+        }
+      ]
+    }
+  },
+  "outputs": [
+    {
+      "case_id": "eval-01",
+      "condition": "direct_evidence",
+      "response": {
+        "case_id": "eval-01",
+        "post": "A simulator dependency update can change the event schedule when replaying the same stored sensor packets.\n\nNorthstar Research's Atlas team is hiring a Research Simulation Engineer to address this in its synthetic robotics testbed.\n\nYou'll own the deterministic replay service and regression suite, developing explicit event-ordering rules and versioned run manifests to distinguish research changes from replay drift. Work with two research engineers and a methods scientist to define what experiments must capture for repeatable results.\n\nBring experience maintaining research software, debugging concurrent systems and explaining technical tradeoffs to research colleagues. Python handles orchestration; Rust powers the replay engine. Strong experience in one and willingness to work in the other is sufficient. A doctorate is not required.\n\nHybrid working includes two on-site days per week at the Brookmere lab.\n\nRead more and apply: https://northstar.example/careers/atlas-simulation",
+        "editorial_notes": [
+          "Used the approved April hiring brief and methods note, which supersede the unapproved March draft on working arrangements and role scope."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-01",
+      "condition": "direct_adaptation",
+      "response": {
+        "case_id": "eval-01",
+        "post": "Replaying the same stored sensor packets can produce a different event schedule after a simulator dependency changes. Northstar Research is hiring a Research Simulation Engineer on Atlas to tackle this reproducibility problem.\n\nYou’ll own the deterministic replay service and regression suite for an internal synthetic robotics testbed, checking whether saved runs remain reproducible after simulator updates. With two research engineers and a methods scientist, you’ll define event-ordering rules, versioned run manifests and what experiments must capture for repeatable results.\n\nRelevant experience includes maintaining research software, debugging concurrent systems and explaining technical tradeoffs. Python handles orchestration; Rust powers replay. Strong experience in one and willingness to work in the other is sufficient. A doctorate is not required.\n\nHybrid: two on-site days per week at the Brookmere lab.\n\nApply: https://northstar.example/careers/atlas-simulation",
+        "editorial_notes": [
+          "The approved 6 April brief and 5 April methods note supersede the archive’s fully remote arrangement and autonomous-navigation scope."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-01",
+      "condition": "grounded_reflection",
+      "response": {
+        "case_id": "eval-01",
+        "post": "Replaying the same stored sensor packets can produce a different event schedule after a simulator dependency changes. Help make Atlas experiments repeatable.\n\nNorthstar Research is hiring a Research Simulation Engineer for Atlas, our synthetic robotics testbed for studying how asynchronous sensor arrival order affects evaluation results.\n\nYou’ll own the deterministic replay service and regression suite that checks reproducibility after simulator updates. Working with two research engineers and a methods scientist, you’ll define event-ordering rules, versioned run manifests and tests that distinguish research changes from replay drift.\n\nBring experience maintaining research software and debugging concurrent systems. We use Python for orchestration and Rust for replay; strength in one and willingness to work in the other is sufficient. No doctorate required.\n\nHybrid: two on-site days per week at our Brookmere lab.\n\nApply: https://northstar.example/careers/atlas-simulation",
+        "editorial_notes": [
+          "The approved April sources establish replay/reproducibility ownership and the hybrid arrangement, superseding the unapproved launch draft’s remote working and navigation-model scope."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-02",
+      "condition": "direct_evidence",
+      "response": {
+        "case_id": "eval-02",
+        "post": "Do confidence estimates remain meaningful when experimental conditions shift and only a small subset of outcomes receives expert labels?\n\nNorthstar Research is hiring a Measurement Research Scientist for Atlas to investigate this question, starting with synthetic instrument traces. The challenge is to distinguish changes in measurement quality from changes in which outcomes receive labels.\n\nYou will design validation protocols, run stress tests across shifts, compare recalibration approaches and define criteria for withholding estimates when uncertainty is too high. Working with experimental researchers and a research software engineer, you will turn protocols into repeatable analyses.\n\nWe welcome expertise in measurement science, applied statistics or rigorous experimental methods. The early goal is a defensible, reproducible validation protocol; no universal correction has been validated.\n\nBased at the fictional Cedar Quay lab, with a hybrid pattern agreed with the team.\n\nExplore the role and apply: https://northstar.example/careers/atlas-measurement",
+        "editorial_notes": [
+          "Used the approved Measurement Research Scientist title and scope; the March scoping note was superseded before vacancy approval."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-02",
+      "condition": "direct_adaptation",
+      "response": {
+        "case_id": "eval-02",
+        "post": "Help investigate whether confidence estimates remain meaningful when experimental conditions shift and only a small subset of outcomes receives expert labels.\n\nNorthstar Research is hiring a Measurement Research Scientist for Atlas. Initial studies use synthetic instrument traces to explore a central difficulty: distinguishing genuine changes in measurement quality from changes in which outcomes receive labels.\n\nYou’ll design validation protocols, compare recalibration approaches and define when to withhold estimates because uncertainty is too high. With experimental researchers and a research software engineer, you’ll turn protocols into repeatable analyses. The early goal is a defensible protocol others can reproduce; no universal correction has been validated.\n\nRelevant expertise may come from measurement science, applied statistics or rigorous experimental-methods work.\n\nLocation: Cedar Quay lab, with a hybrid pattern agreed with the team.\n\nApply: https://northstar.example/careers/atlas-measurement",
+        "editorial_notes": [
+          "Used the approved Measurement Research Scientist title; the archived Senior AI Accuracy Lead working title was superseded.",
+          "Presented reproducibility as an early goal and retained the research note’s limits on method maturity."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-02",
+      "condition": "grounded_reflection",
+      "response": {
+        "case_id": "eval-02",
+        "post": "When experimental conditions shift and only a small subset of outcomes receives expert labels, how can researchers tell whether measurement quality changed—or just which outcomes were labelled?\n\nNorthstar Research is hiring a Measurement Research Scientist for Atlas to investigate whether confidence estimates remain meaningful under these conditions.\n\nStarting with synthetic instrument traces, you’ll design validation protocols, compare recalibration approaches and examine sensitivity to label selection. You’ll define documented criteria for reporting estimates or withholding them when uncertainty is too high, working with experimental researchers and a research software engineer to make analyses reproducible.\n\nThe early goal is a defensible, repeatable validation protocol; no universal correction has been validated.\n\nBring expertise in measurement science, applied statistics or rigorous experimental methods.\n\nBased at our Cedar Quay lab, with a hybrid pattern agreed with the team.\n\nApply: https://northstar.example/careers/atlas-measurement",
+        "editorial_notes": [
+          "Used the approved Measurement Research Scientist title; the archived Senior AI Accuracy Lead working title was superseded.",
+          "Kept the research framing provisional, with reproducible validation as the early goal."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-03",
+      "condition": "direct_evidence",
+      "response": {
+        "case_id": "eval-03",
+        "post": "Keep research results traceable as dataset schemas evolve. Northstar Research is hiring a Research Data Platform Engineer for Atlas, working with synthetic experimental datasets.\n\nYou’ll own the contract validation workflow and migration tooling, helping preserve old analyses and trace published internal results to the exact data version, transformation code and access policy used.\n\nYour first milestone: a small internal service that validates dataset manifests, checks schema compatibility and records lineage for each analysis run, including access-policy changes. You’ll collaborate with researchers maintaining analysis notebooks and an information governance specialist.\n\nBring experience in versioned data pipelines, schema evolution and practical access-control design. Python and SQL are in the environment; you’ll help evaluate whether a graph store is useful.\n\nBased at the Brookmere lab, with three on-site days per week.\n\nExplore the role and apply: https://northstar.example/careers/atlas-data-platform.",
+        "editorial_notes": [
+          "The approved April sources supersede the archived draft: the role requires three on-site days, the platform is internal, and graph storage remains under evaluation."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-03",
+      "condition": "direct_adaptation",
+      "response": {
+        "case_id": "eval-03",
+        "post": "Help Atlas researchers trace results as synthetic experimental dataset schemas evolve. Northstar Research is hiring a Research Data Platform Engineer to build dataset contracts and lineage checks.\n\nYou’ll own contract validation and migration tooling, collaborating with researchers maintaining analysis notebooks and the internal information-governance specialist. Your first milestone is a small internal service that validates manifests, checks schema compatibility and records lineage for each analysis run. Link published internal results to exact data versions, transformation code and access policies, preserving older analyses and making policy changes visible.\n\nRelevant experience: versioned data pipelines, schema evolution and practical access-control design. Python and SQL are in use. You’ll help evaluate whether a graph store is useful; no graph database or cloud vendor has been selected.\n\nBased at the Brookmere lab, with three on-site days per week.\n\nApply: https://northstar.example/careers/atlas-data-platform",
+        "editorial_notes": [
+          "The approved April sources supersede the draft’s remote-first, mandatory graph-database and customer-platform claims."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-03",
+      "condition": "grounded_reflection",
+      "response": {
+        "case_id": "eval-03",
+        "post": "Atlas researchers repeatedly revise schemas for synthetic experimental datasets. Help preserve old analyses and keep published internal results traceable.\n\nNorthstar Research is hiring a Research Data Platform Engineer to build dataset contracts and lineage checks, owning the contract-validation workflow and migration tooling. You’ll collaborate with researchers maintaining analysis notebooks and the internal information-governance specialist.\n\nYour first milestone: a small internal service that validates manifests, checks schema compatibility and records each analysis run’s exact data version, transformation code and access policy.\n\nBring experience in versioned pipelines, schema evolution and practical access-control design. Python and SQL are in use; you’ll help evaluate whether a graph store is useful. No graph database or cloud vendor has been selected.\n\nBased at the Brookmere lab, with three on-site days per week.\n\nApply: https://northstar.example/careers/atlas-data-platform",
+        "editorial_notes": [
+          "Used the approved brief and architecture summary; excluded the archive’s remote-first, mandatory graph-database and customer-platform claims."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-04",
+      "condition": "direct_evidence",
+      "response": {
+        "case_id": "eval-04",
+        "post": "Start learning how research software works with a named mentor, weekly supported practice sessions and protected learning time.\n\nNorthstar Research’s Atlas Research Software Apprenticeship is a paid, 18-month programme based on-site at the Brookmere lab.\n\nYou’ll begin by running documented tests on synthetic experiment data, recording unexpected results and improving short setup guides. Working alongside an engineer, you’ll compare expected and actual results and practise explaining a problem clearly. Later, you’ll build small tools in Python with review and support.\n\nNo professional coding experience or degree is required, and you don’t need a portfolio. Bring an interest in how software behaves and a willingness to ask questions. You can describe a school, personal or community project in your application.\n\nExplore the programme and apply: https://northstar.example/careers/atlas-apprenticeship.",
+        "editorial_notes": [
+          "Used the approved apprenticeship brief over the inherited specialist template, reflecting supported beginner responsibilities and the absence of professional coding or degree prerequisites."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-04",
+      "condition": "direct_adaptation",
+      "response": {
+        "case_id": "eval-04",
+        "post": "Looking for your first structured route into research software work? Northstar Research’s Atlas Research Software Apprenticeship is a paid, 18-month programme based on-site at Brookmere lab.\n\nYou’ll have a named mentor, weekly supported practice sessions and protected learning time. Working alongside an engineer, you’ll start by running documented tests on artificial experiment data, comparing expected and actual results, recording unexpected findings and improving short setup guides. You’ll learn to reproduce a result before changing code, then later build small Python tools with review and support.\n\nNo professional coding experience or degree is required, and you don’t need a portfolio. Bring an interest in how software behaves and a willingness to ask questions. You may describe a school, personal or community project in your application.\n\nApply: https://northstar.example/careers/atlas-apprenticeship",
+        "editorial_notes": [
+          "The approved apprenticeship and learning-team briefs take precedence over the inherited specialist template."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-04",
+      "condition": "grounded_reflection",
+      "response": {
+        "case_id": "eval-04",
+        "post": "Take your first steps into research software with a named mentor, weekly supported practice sessions and protected learning time.\n\nNorthstar Research’s Atlas Research Software Apprenticeship is a paid, 18-month programme based on-site at the Brookmere lab.\n\nYou’ll begin by running documented tests on synthetic experiment data, comparing expected and observed results, recording anything unexpected and improving short setup guides. Paired with an engineer, you’ll learn to reproduce results and write useful problem reports. Later, you’ll build small Python utilities with review and support.\n\nNo professional coding experience or degree is required, and you don’t need a portfolio. Bring an interest in how software behaves and a willingness to ask questions. You can describe a school, personal or community project in your application.\n\nApply: https://northstar.example/careers/atlas-apprenticeship",
+        "editorial_notes": [
+          "Used the approved apprenticeship and learning-team sources, excluding the inherited template’s specialist prerequisites and immediate independent ownership claim."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-05",
+      "condition": "direct_evidence",
+      "response": {
+        "case_id": "eval-05",
+        "post": "Exchange approaches with fellow systems-verification and research-infrastructure specialists and see how Northstar Research’s Orion team works together.\n\nJoin our online methods roundtable on 7 May 2031 at 14:00 UTC for a 45-minute conversation. Two Orion researchers will demonstrate how they review evidence and disagreements before accepting a verification claim, followed by discussion.\n\nOrion studies verification of modular experimental software as component assumptions change between versions. Using a fictional scheduling simulator, we’ll examine how a changed timing assumption invalidates an earlier claim even when a test suite passes. Explore the evidence ledger Orion is developing to link claims to assumptions, supporting tests and unresolved counterexamples, and how researchers and engineers record a defensible decision.\n\nThis is an opportunity for experienced specialists to explore Orion’s methods ahead of possible future recruitment. No vacancy is being advertised.\n\nRegister with your name and email only; no CV or application required: https://northstar.example/orion/methods-roundtable",
+        "editorial_notes": [
+          "The approved 14 April campaign brief supersedes the unapproved CRM vacancy copy; registration is the sole call to action.",
+          "The opening prioritises professional exchange and collaborative working, as explicitly required by the campaign brief."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-05",
+      "condition": "direct_adaptation",
+      "response": {
+        "case_id": "eval-05",
+        "post": "Exchange approaches with Northstar Research’s Orion team at an online methods roundtable for experienced systems-verification and research-infrastructure specialists.\n\nOn 7 May 2031 at 14:00 UTC, join a 45-minute session where two Orion researchers show how they jointly review evidence and disagreements before accepting a verification claim, followed by discussion.\n\nOrion studies verification of modular experimental software as component assumptions change between versions. The team is developing an evidence ledger linking claims to assumptions, supporting tests and unresolved counterexamples. A fictional scheduling simulator illustrates the challenge: a test suite passes, but a changed timing assumption invalidates an earlier claim. See how researchers and engineers discuss the conflict and record a defensible decision.\n\nThis conversation precedes possible future recruitment; no vacancy is advertised. Register with your name and email only. No CV or application required: https://northstar.example/orion/methods-roundtable",
+        "editorial_notes": [
+          "The approved 14 April campaign brief supersedes the unapproved CRM placeholder: the call to action is roundtable registration."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-05",
+      "condition": "grounded_reflection",
+      "response": {
+        "case_id": "eval-05",
+        "post": "Exchange verification approaches with Northstar Research’s Orion team and see how researchers and engineers work through disagreements.\n\nExperienced systems-verification and research-infrastructure specialists: join our online methods roundtable on 7 May 2031 at 14:00 UTC for 45 minutes.\n\nOrion studies verification of modular experimental software as component assumptions change between versions. Two Orion researchers will show how they jointly review evidence before accepting a verification claim, followed by discussion. In a fictional scheduling simulator, a test suite passes, but a changed timing assumption invalidates an earlier claim. The team is developing an evidence ledger linking claims to assumptions, supporting tests and unresolved counterexamples.\n\nExplore Orion’s collaborative working model in a low-commitment professional conversation ahead of possible future recruitment. This event does not advertise a vacancy.\n\nRegister with your name and email only; no CV or application is required: https://northstar.example/orion/methods-roundtable",
+        "editorial_notes": [
+          "Used the approved 14 April brief’s roundtable registration CTA, replacing the superseded, unapproved vacancy application language."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-06",
+      "condition": "direct_evidence",
+      "response": {
+        "case_id": "eval-06",
+        "post": "Learn alongside researchers and share your expertise across disciplines as a Research Automation Engineer on Northstar Research’s Atlas team.\n\nIn this experienced individual-contributor role, you’ll build a workflow runner that recovers interrupted synthetic instrument experiments without silently duplicating completed steps. When a network interruption leaves an action’s status uncertain, your work will make recovery decisions explicit and auditable.\n\nYou’ll define checkpoint semantics, use durable checkpoints and readable recovery records, and develop fault-injection tests with a methods researcher and an instrument-simulation engineer. Paired design sessions and a weekly methods exchange support mutual learning.\n\nBring experience in stateful workflows, failure recovery and collaborative design reviews.\n\nBased at the fictional Cedar Quay lab, this hybrid role includes two on-site days per week.\n\nExplore the role and apply: https://northstar.example/careers/atlas-automation.",
+        "editorial_notes": [
+          "The learning-led opening follows the approved 16 April post-specific brief, which explicitly overrides the general Atlas campaign guidance."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-06",
+      "condition": "direct_adaptation",
+      "response": {
+        "case_id": "eval-06",
+        "post": "Learn alongside researchers and share expertise across disciplines as Northstar Research’s Research Automation Engineer on Atlas, an experienced individual-contributor role.\n\nYou’ll build a workflow runner that recovers interrupted synthetic instrument experiments without silently duplicating completed steps. When a network interruption leaves an action’s status uncertain, your work will make recovery decisions explicit and auditable.\n\nWorking with a methods researcher and an instrument-simulation engineer, you’ll define checkpoint semantics and develop fault-injection tests. Paired design sessions and a weekly methods exchange support mutual learning.\n\nRelevant experience includes stateful workflows, failure recovery and collaborative design reviews. Python is currently used; no particular framework is mandatory. Atlas is a research testbed using synthetic instrument services.\n\nBased at Cedar Quay lab, with hybrid working and two on-site days per week.\n\nApply: https://northstar.example/careers/atlas-automation",
+        "editorial_notes": [
+          "The 16 April post-specific brief overrides the general Atlas opening guidance."
+        ]
+      }
+    },
+    {
+      "case_id": "eval-06",
+      "condition": "grounded_reflection",
+      "response": {
+        "case_id": "eval-06",
+        "post": "Learn alongside researchers and share your expertise across disciplines as a Research Automation Engineer on Atlas at Northstar Research.\n\nIn this experienced individual-contributor role, you’ll build a workflow runner that recovers interrupted synthetic instrument experiments without silently duplicating completed steps. Network interruptions can leave the runner uncertain whether a simulated action completed.\n\nYou’ll define checkpoint semantics, make restart decisions auditable, and develop fault-injection tests with a methods researcher and an instrument-simulation engineer. The runner needs explicit operation identifiers, durable checkpoints and readable recovery records.\n\nPaired design sessions and a weekly methods exchange support mutual learning. Experience in stateful workflows, failure recovery and collaborative design reviews is relevant to this research testbed.\n\nThe role is based at Cedar Quay lab, hybrid with two on-site days per week.\n\nApply: https://northstar.example/careers/atlas-automation",
+        "editorial_notes": [
+          "The learning-focused opening follows the approved 16 April post-specific brief, which supersedes the general Atlas opening guidance."
+        ]
+      }
+    }
+  ],
+  "judgments": {
+    "eval-01": {
+      "case_id": "eval-01",
+      "ratings": [
+        {
+          "output_id": "output-1",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Substantive claims match the approved sources; the note correctly identifies the archived arrangement and scope as superseded."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "128 words, all five required fact groups, the correct application URL and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Replay, concurrency and technical tradeoffs give experienced specialists clear information about the contribution and relevant experience."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects changed event schedules to ownership of replay and regression testing that preserves reproducibility after simulator updates."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Provides an appropriate LinkedIn vacancy post and resolves the archive discrepancy using explicit source precedence."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-2",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "The work, collaborators, language expectations and hybrid arrangement are supported by the current approved sources."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "134 words, all five required fact groups, the correct application URL and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Uses suitable specialist terminology and clearly describes ownership, collaboration and relevant engineering experience."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Links event-ordering rules, run manifests and regression work to distinguishing research changes from replay drift."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Explains the vacancy and application route clearly, follows source precedence and requires no unnecessary clarification."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-3",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Substantive claims about the research problem, ownership, qualifications and working arrangement reflect the approved materials."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "131 words, all five required fact groups, the correct application URL and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Explains asynchronous sensor ordering and reproducibility at a suitable level for experienced research software specialists."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects sensor arrival order to evaluation results and identifies replay-service ownership and tests separating research changes from drift."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Meets the recruiting objective with concrete work and a clear CTA; the note correctly resolves the archived draft."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        }
+      ]
+    },
+    "eval-02": {
+      "case_id": "eval-02",
+      "ratings": [
+        {
+          "output_id": "output-1",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Claims follow the approved sources, including the current title, synthetic studies, collaboration and hybrid arrangement. Method maturity is accurately bounded."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "130 words; all five required fact groups appear in the post, including the correct application URL. Two concise editorial notes."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Validation, recalibration and label-selection distinctions give experienced specialists clear information about their contribution."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects the measurement-quality versus label-selection problem to validation protocols, withholding decisions and reproducible analyses."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Provides an appropriate LinkedIn recruiting post with bounded research claims and explicitly resolves the superseded title without clarification."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-2",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "The approved title, research scope, stress tests, responsibilities and working arrangement are supported. No unsupported outcomes or requirements appear."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "142 words; includes all five required fact groups and the correct application URL, followed by one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Uses clear specialist terminology and explains the research question and professional contribution without oversimplification or hype."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Links shifts and selective labelling to stress tests, validation design and withholding criteria, with reproducibility as the early goal."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Meets the recruiting objective, explains the challenge and limits of current methods, and resolves source precedence in its note."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-3",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "All substantive claims are supported, including sensitivity to label selection, documented reporting criteria and the absence of a validated universal correction."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "135 words; all five required fact groups appear in the post with the correct application URL. Two concise editorial notes."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "The concrete measurement question and relevant methodological language let experienced specialists assess the work and their contribution."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects uncertainty under shifting conditions and sparse labels to validation, sensitivity analysis and defensible reporting or withholding decisions."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Follows the current recruiting brief, preserves provisional research framing and explains why the approved title supersedes the archived title."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        }
+      ]
+    },
+    "eval-03": {
+      "case_id": "eval-03",
+      "ratings": [
+        {
+          "output_id": "output-1",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Claims match the approved sources; Python/SQL are current, while graph storage and cloud selection remain undecided."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "128 words; includes all required fact groups, the correct application URL and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Clear specialist terminology and explicit engineering ownership help experienced infrastructure candidates assess their contribution."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects changing schemas, contract validation, migration tooling and precise lineage to preserving analyses and traceable research results."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Follows the recruiting objective and approved-source precedence without unnecessary clarification. Total: 10/10."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-2",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Work, collaboration and employment claims are supported; provisional graph and cloud choices are explicitly unselected."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "135 words; includes all required fact groups, the correct application URL and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Uses appropriate infrastructure terminology and describes ownership, relevant experience and research collaboration respectfully."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Links manifest validation, schema compatibility and lineage to preserving older analyses and exposing access-policy changes."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Makes ownership and research value concrete, follows source precedence and needs no clarification. Total: 10/10."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-3",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Substantive claims follow the approved sources, with graph storage correctly presented as an option to evaluate."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "134 words; includes all required fact groups, the correct application URL and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Explicit workflow ownership and suitable technical detail let experienced specialists assess the role's professional contribution."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Explains how validation, migration tooling and per-run lineage preserve analyses and connect results to data, code and policy."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Fulfils the specialist recruiting objective and handles superseded and provisional details appropriately. Total: 10/10."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        }
+      ]
+    },
+    "eval-04": {
+      "case_id": "eval-04",
+      "ratings": [
+        {
+          "output_id": "output-1",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "All substantive claims match approved sources. 'Artificial experiment data' accurately paraphrases synthetic data; superseded specialist requirements are excluded."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "126 words; includes all required fact groups, the correct application destination and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Explicitly welcomes people seeking their first structured route, explains supported beginner activities and clearly removes experience, degree and portfolio barriers."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects documented tests and result comparisons to learning to reproduce results before changing code, followed by supported Python work."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Follows the current apprenticeship brief, foregrounds support and realistic responsibilities, and correctly resolves template precedence. Total score: 10/10."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-2",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Programme details, learning support, activities and entry requirements are grounded in approved sources, with no unsupported benefits or hiring promises."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "125 words; includes every required fact group, the correct application destination and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "The learning-focused opening, clear explanations and explicit absence of prerequisites respectfully address beginners."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Links testing and comparing results with practising clear problem explanations alongside an engineer, then progressing to reviewed Python tools."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Prioritises supported learning and actual beginner responsibilities, follows approved source precedence and provides a direct recruiting CTA. Total score: 10/10."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-3",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "All substantive claims reflect the approved apprenticeship and learning-team sources, including paired learning and supported progression."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "124 words; includes all required programme, support, activity, eligibility, location and application facts, plus one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Welcomes first steps into research software with clear, respectful descriptions of support and accessible beginner responsibilities."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects test comparisons and unexpected results to learning reproducibility and useful problem reporting while paired with an engineer."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Meets the current recruiting objective, makes supported learning visible and excludes the inherited template's expert expectations. Total score: 10/10."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        }
+      ]
+    },
+    "eval-05": {
+      "case_id": "eval-05",
+      "ratings": [
+        {
+          "output_id": "output-1",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Event details, verification example and developing evidence ledger match approved sources; superseded vacancy claims are excluded."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "147 words; includes all required fact groups, the correct registration URL and two concise notes."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Directly addresses experienced specialists with clear, relevant language about verification claims, assumptions and counterexamples."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects the passing-test disagreement and evidence ledger to collaborative review and recording a defensible decision."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Opens with professional exchange and observing collaboration; uses registration alone and preserves tentative future recruitment."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-2",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "All substantive claims follow approved event and methods sources, including tentative recruitment and no application requirement."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "138 words; includes all required fact groups, the correct registration URL and one concise note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Names the specialist audience and retains meaningful technical detail without hype or excessive simplification."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Shows why passing tests may not sustain a claim and describes joint evidence review and the supporting ledger."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Exchange-led opening and low-commitment conversation follow the current objective; registration correctly replaces vacancy application."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-3",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Event logistics, collaborative methods and fictional simulator example are supported; no unsupported hiring commitment appears."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "134 words; includes all required fact groups, the correct registration URL and one concise note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Respectfully addresses experienced specialists using concrete verification terminology appropriate to their professional interests."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Links changed assumptions and conflicting test evidence to discussing disagreements and recording a defensible decision."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Begins with exchanging approaches, explains collaborative working and invites registration without implying an open vacancy."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        }
+      ]
+    },
+    "eval-06": {
+      "case_id": "eval-06",
+      "ratings": [
+        {
+          "output_id": "output-1",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Role, technical responsibilities, collaborators and employment details match current approved sources."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "128 words; includes all six required fact groups, the correct application URL and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Explicitly identifies an experienced individual-contributor role and uses relevant specialist terminology while presenting learning as mutual."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Connects interrupted experiments and duplicate-step risk to checkpoint semantics, auditable restart decisions and fault-injection tests."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Opens with learning alongside researchers and sharing expertise across disciplines, correctly following the post-specific override."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-2",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Claims are supported, including current Python use, no mandatory framework and the synthetic research-testbed scope."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "127 words; includes all six required fact groups, the correct application URL and one concise editorial note."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Preserves experienced individual-contributor seniority and gives specialists relevant responsibilities and experience signals."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Explains uncertain action completion after interruptions and connects recovery accountability to checkpoint semantics and collaborative fault-injection testing."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "Makes cross-disciplinary learning and expertise sharing the opening invitation, then develops the technical contribution."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        },
+        {
+          "output_id": "output-3",
+          "scores": [
+            {
+              "criterion_id": "factual_fidelity",
+              "score": 2,
+              "reason": "Responsibilities, testbed scope, collaborators, seniority and Cedar Quay working arrangement are grounded in the current sources."
+            },
+            {
+              "criterion_id": "task_completeness",
+              "score": 2,
+              "reason": "125 words; includes all six required fact groups and one concise note. The correct CTA URL carries ordinary terminal punctuation."
+            },
+            {
+              "criterion_id": "audience_fit",
+              "score": 2,
+              "reason": "Addresses experienced specialists through substantive workflow-recovery responsibilities and mutual learning, without implying beginner training."
+            },
+            {
+              "criterion_id": "work_specificity",
+              "score": 2,
+              "reason": "Links interrupted experiments and uncertain completion to durable checkpoints, readable recovery records and fault-injection tests."
+            },
+            {
+              "criterion_id": "instruction_context_fit",
+              "score": 2,
+              "reason": "The first sentence foregrounds learning and cross-disciplinary expertise sharing, satisfying the explicit override before introducing technical detail."
+            }
+          ],
+          "critical_errors": [],
+          "uncertainties": []
+        }
+      ]
+    }
+  },
+  "blind_mapping": {
+    "eval-01": {
+      "output-1": "direct_adaptation",
+      "output-2": "direct_evidence",
+      "output-3": "grounded_reflection"
+    },
+    "eval-02": {
+      "output-1": "direct_adaptation",
+      "output-2": "direct_evidence",
+      "output-3": "grounded_reflection"
+    },
+    "eval-03": {
+      "output-1": "grounded_reflection",
+      "output-2": "direct_adaptation",
+      "output-3": "direct_evidence"
+    },
+    "eval-04": {
+      "output-1": "direct_adaptation",
+      "output-2": "direct_evidence",
+      "output-3": "grounded_reflection"
+    },
+    "eval-05": {
+      "output-1": "direct_evidence",
+      "output-2": "grounded_reflection",
+      "output-3": "direct_adaptation"
+    },
+    "eval-06": {
+      "output-1": "grounded_reflection",
+      "output-2": "direct_adaptation",
+      "output-3": "direct_evidence"
+    }
+  },
+  "inference_audit": {
+    "assessments": [
+      {
+        "hypothesis_id": "H1",
+        "support_relevance": 2,
+        "scope_justification": 2,
+        "uncertainty_handling": 2,
+        "explanation": "Both specialist reviews explicitly favor concrete work problems, applicant contributions and meaningful technical terms. Apprentice feedback supports the audience boundary. The hypothesis appropriately acknowledges uncertain reviewer independence and unmeasured recruiting effectiveness."
+      },
+      {
+        "hypothesis_id": "H2",
+        "support_relevance": 2,
+        "scope_justification": 2,
+        "uncertainty_handling": 2,
+        "explanation": "The apprentice review and revision support leading with approved learning and support, followed by plain task descriptions and accurate experience requirements. Provisional wording and the alternative explanation appropriately limit inference from this single episode."
+      },
+      {
+        "hypothesis_id": "H3",
+        "support_relevance": 2,
+        "scope_justification": 2,
+        "uncertainty_handling": 2,
+        "explanation": "Approved briefs and task instructions support using current vacancy details and application routes across both audiences. The hypothesis appropriately treats the shortened revision as ambiguous: its omissions do not establish a standing word limit or permission to omit logistics."
+      }
+    ],
+    "limitations": [
+      "This assessment uses only fictional development episodes and is not domain-expert validation.",
+      "Reviewer independence is unknown; recruiting effectiveness, applicant comprehension and candidate-patch benefits remain untested.",
+      "The shortened post's approval, placement constraints and reasons for omitting logistics are undocumented."
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grounded-reflection"
+version = "0.1.0.dev1"
+description = "Evidence contracts and evaluation workflow for research on grounded agent adaptation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.8,<3"]
+
+[project.scripts]
+grounded-reflection = "grounded_reflection.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+grounded_reflection = ["examples/*.json"]

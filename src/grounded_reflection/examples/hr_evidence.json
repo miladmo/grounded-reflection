@@ -1,0 +1,386 @@
+{
+  "episodes": [
+    {
+      "episode_id": "hr-specialist-01",
+      "split": "development",
+      "context": {
+        "role": "hr",
+        "audience": "experienced_specialists",
+        "channel": "linkedin",
+        "project": "atlas"
+      },
+      "task": "Prepare a LinkedIn recruiting post for an experienced computational biologist joining Northstar Research's fictional Atlas research-data team. Use the approved role facts and team interview. Make the work and the applicant's contribution concrete, preserve accurate employment details and provide the application route. The output goes to the recruiting lead for review.",
+      "evidence": [
+        {
+          "evidence_id": "role-facts",
+          "kind": "source",
+          "text": "Approved role facts, version 2: Northstar Research is a wholly fictional research organisation. Role: Computational Biologist, Atlas team. The team builds reproducible analyses that combine experimental metadata with research datasets. The new colleague will design analysis workflows, investigate inconsistent annotations and collaborate with laboratory scientists and data engineers. Required experience: applied statistical analysis, Python or R, and reproducible research workflows. Location: Bristol; hybrid working with two planned on-site collaboration days per week. No fully remote arrangement or salary range has been approved for this example. Fictional application address: https://careers.northstar.example/atlas-computational-biologist. Public brand guidance supplied to every agent condition: use clear language, connect statements to approved facts and avoid unsupported promises.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-01/role-v2",
+            "recorded_at": "2026-09-01T09:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "team-interview",
+          "kind": "source",
+          "text": "Team lead interview: Our difficulty is not a lack of data. Different experiments describe samples differently, so apparently comparable analyses can use incompatible groups. We need someone who enjoys tracing those inconsistencies and making the analysis reproducible. The computational biologist will work with the people who generated the data and help agree analysis assumptions. We can describe that collaboration, but we cannot promise a particular publication, promotion timetable or clinical impact.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-01/interview",
+            "recorded_at": "2026-09-01T09:15:00Z"
+          }
+        },
+        {
+          "evidence_id": "draft",
+          "kind": "agent_output",
+          "text": "Help shape the future of research at Northstar Research. We are looking for an experienced Computational Biologist to join Atlas, a collaborative team turning research data into insight. You will build reproducible analyses, work with laboratory scientists and data engineers, and help improve the way experimental information is used. Bring experience in applied statistics, Python or R, and reproducible workflows. The role is based in Bristol, with two planned on-site collaboration days each week. If you want to contribute to meaningful research alongside colleagues with different expertise, read the role description and apply: https://careers.northstar.example/atlas-computational-biologist.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-01/draft",
+            "recorded_at": "2026-09-01T10:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "review",
+          "kind": "human_feedback",
+          "text": "The facts and working arrangement are right. For experienced computational biologists, please lead with the concrete analysis problem and the contribution they would make. The future-of-research opening could describe almost any role. Keep the reproducible-analysis language: this audience understands it. The team interview gives us enough detail without inventing outcomes.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-01/recruiting-review",
+            "recorded_at": "2026-09-01T11:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "revision",
+          "kind": "human_revision",
+          "text": "Can you turn inconsistent experimental annotations into reproducible analysis workflows? Northstar Research's Atlas team is hiring an experienced Computational Biologist to connect research datasets with the metadata needed to interpret them. You will investigate mismatches, develop analyses in Python or R, and agree assumptions with laboratory scientists and data engineers. We are looking for applied statistical experience and an interest in making research workflows easier to reproduce. Based in Bristol, the role includes two planned on-site collaboration days each week. Explore the work and apply: https://careers.northstar.example/atlas-computational-biologist.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-01/revised-post",
+            "recorded_at": "2026-09-01T11:30:00Z"
+          }
+        }
+      ],
+      "missingness": [
+        "No publication or hiring outcome is recorded.",
+        "No independent practitioner assessment or measured revision time is available."
+      ]
+    },
+    {
+      "episode_id": "hr-specialist-02",
+      "split": "development",
+      "context": {
+        "role": "hr",
+        "audience": "experienced_specialists",
+        "channel": "linkedin",
+        "project": "atlas"
+      },
+      "task": "Draft a LinkedIn recruiting post for an experienced Research Data Engineer in Northstar Research's Atlas team. Explain the actual engineering problem and responsibilities using the current approved material. Preserve the supplied location and application route. Submit the post to the recruiting lead for review.",
+      "evidence": [
+        {
+          "evidence_id": "role-facts",
+          "kind": "source",
+          "text": "Approved role facts, version 1: Role: Research Data Engineer, Northstar Research, Atlas. The engineer will build and maintain ingestion pipelines for experimental datasets, implement schema checks and data lineage, and make failed transfers diagnosable. Relevant experience: production Python, SQL, workflow orchestration and maintaining data systems with scientific users. Location: Manchester; three on-site team days per week. This is not the Bristol computational-biology role. The team has no approved claim about a cloud provider, guaranteed training budget or salary. Fictional application address: https://careers.northstar.example/atlas-data-engineer. Shared brand guidance: use clear language, approved facts and no unsupported promises.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-02/role-v1",
+            "recorded_at": "2026-09-02T09:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "team-note",
+          "kind": "source",
+          "text": "Engineering lead note: Small changes to incoming file structures can currently break a research workflow far downstream. The new engineer will add checks where data enters the platform and preserve lineage so colleagues can locate failures. Some days involve pipeline code; others involve agreeing a usable schema with researchers. Please retain the terms schema validation and data lineage because they describe the actual work.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-02/team-note",
+            "recorded_at": "2026-09-02T09:20:00Z"
+          }
+        },
+        {
+          "evidence_id": "draft",
+          "kind": "agent_output",
+          "text": "Make a difference through data at Northstar Research. Atlas is looking for an experienced Research Data Engineer to support scientific teams with dependable data systems. You will build ingestion pipelines, add schema validation and data lineage, and work with researchers to diagnose failed transfers. We welcome experience in production Python, SQL and workflow orchestration. The role is based in Manchester, with three on-site team days each week. Help colleagues use experimental datasets with greater confidence. Read the full description and apply: https://careers.northstar.example/atlas-data-engineer.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-02/draft",
+            "recorded_at": "2026-09-02T10:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "review",
+          "kind": "human_feedback",
+          "text": "Please start with the engineering challenge: detecting a changed input before it breaks a downstream analysis. For this experienced audience, that is more informative than make a difference through data. Keep schema validation and data lineage rather than simplifying them away. The Manchester arrangement is correctly taken from this role's current description.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-02/recruiting-review",
+            "recorded_at": "2026-09-02T11:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "revision",
+          "kind": "human_revision",
+          "text": "Catch a changed data input before it breaks a downstream research analysis. Northstar Research's Atlas team is hiring an experienced Research Data Engineer to build ingestion pipelines with schema validation, data lineage and useful failure diagnostics. You will work in Python and SQL, maintain orchestrated workflows, and agree data structures with the researchers who use them. We are looking for experience running dependable data systems and explaining engineering choices to scientific colleagues. This Manchester-based role includes three on-site team days per week. Read more and apply: https://careers.northstar.example/atlas-data-engineer.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-specialist-02/revised-post",
+            "recorded_at": "2026-09-02T11:30:00Z"
+          }
+        }
+      ],
+      "missingness": [
+        "No candidate response or recruiting effectiveness metric is recorded.",
+        "The recruiting reviewers' independence is unknown; repeated comments are not independent validation."
+      ]
+    },
+    {
+      "episode_id": "hr-apprentice-03",
+      "split": "development",
+      "context": {
+        "role": "hr",
+        "audience": "apprentices",
+        "channel": "linkedin",
+        "project": "atlas"
+      },
+      "task": "Prepare a LinkedIn post for a Research Data Apprenticeship at Northstar Research. Address people at the beginning of their careers. Use the approved apprenticeship description and make entry requirements, learning support and location clear.",
+      "evidence": [
+        {
+          "evidence_id": "programme-facts",
+          "kind": "source",
+          "text": "Approved programme facts: Northstar Research offers a fictional Research Data Apprenticeship attached to Atlas in Bristol. The apprentice will learn to check research records, document straightforward data issues and write introductory Python with supervision. Prior professional programming experience is not required. Applicants need to meet the entry requirements listed in the full fictional description; do not invent grades, age restrictions or eligibility rules. The programme includes a named team mentor, protected study time and four on-site days each week. No guaranteed job at completion is approved. Fictional application address: https://careers.northstar.example/atlas-apprenticeship. Shared brand guidance: use clear language, approved facts and no unsupported promises.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-apprentice-03/programme-v1",
+            "recorded_at": "2026-09-03T09:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "draft",
+          "kind": "agent_output",
+          "text": "Ready to diagnose inconsistent experimental annotations and improve research data workflows? Northstar Research's Atlas Research Data Apprenticeship in Bristol introduces you to record checks, data-issue documentation and Python. You will work with a team mentor and receive protected study time. Prior professional programming experience is not required. The programme includes four on-site days each week. Review the full entry requirements and apply: https://careers.northstar.example/atlas-apprenticeship.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-apprentice-03/draft",
+            "recorded_at": "2026-09-03T10:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "review",
+          "kind": "human_feedback",
+          "text": "Do not reuse the specialist opening here. For apprentices, begin with what they can learn and the support available; the current opening sounds as if they should already know how to solve the technical problem. Explain the work plainly after that. Keep the explicit statement that professional programming experience is not required, and avoid a promise of employment after completion.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-apprentice-03/recruiting-review",
+            "recorded_at": "2026-09-03T11:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "revision",
+          "kind": "human_revision",
+          "text": "Start learning how research data works, with a mentor and time set aside to study. Northstar Research's Atlas Research Data Apprenticeship in Bristol introduces you to checking research records, documenting data issues and writing introductory Python with supervision. You do not need prior professional programming experience. The programme includes four on-site days each week, and the full description explains the entry requirements. If you are curious about the data behind research and want to develop practical skills, explore the programme: https://careers.northstar.example/atlas-apprenticeship.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-apprentice-03/revised-post",
+            "recorded_at": "2026-09-03T11:30:00Z"
+          }
+        }
+      ],
+      "missingness": [
+        "No evidence establishes that every apprentice campaign should use the same structure.",
+        "No applicant comprehension or application outcome is recorded."
+      ]
+    },
+    {
+      "episode_id": "hr-ambiguous-04",
+      "split": "development",
+      "context": {
+        "role": "hr",
+        "audience": "experienced_specialists",
+        "channel": "linkedin",
+        "project": "atlas"
+      },
+      "task": "Create a LinkedIn recruiting post for an experienced Research Software Engineer in the Atlas team. Use the approved role information. A shorter version appears later in the work history, but the reason for that change is not documented.",
+      "evidence": [
+        {
+          "evidence_id": "role-facts",
+          "kind": "source",
+          "text": "Approved role facts: Northstar Research, Research Software Engineer, Atlas. The engineer will maintain shared analysis tools, add automated tests and help researchers migrate fragile scripts into maintainable packages. Experience with Python packaging, testing and collaborative software development is relevant. Location: Bristol; two planned on-site days each week. The role includes collaboration with computational biologists; no specific publication opportunity or management responsibility is approved. Fictional application address: https://careers.northstar.example/atlas-research-software-engineer. The brief provides no word limit, paid-placement constraint or instruction to omit location information.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-ambiguous-04/role-v1",
+            "recorded_at": "2026-09-04T09:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "draft",
+          "kind": "agent_output",
+          "text": "Help research software stay useful beyond its first analysis. Northstar Research's Atlas team is hiring an experienced Research Software Engineer to turn fragile scripts into tested, maintainable tools. You will develop shared Python packages, improve automated checks and work with computational biologists on changes that fit their analyses. Bring experience in collaborative software development, Python packaging and testing, together with an interest in explaining technical decisions to research colleagues. The role is based in Bristol, with two planned on-site days each week. Read the current role description and apply: https://careers.northstar.example/atlas-research-software-engineer.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-ambiguous-04/draft",
+            "recorded_at": "2026-09-04T10:00:00Z"
+          }
+        },
+        {
+          "evidence_id": "revision",
+          "kind": "human_revision",
+          "text": "Turn fragile research scripts into tested, maintainable tools. Join Northstar Research's Atlas team as an experienced Research Software Engineer, developing shared Python packages and automated checks with computational biologists. Bring experience in Python packaging, testing and collaborative development. Explore the role: https://careers.northstar.example/atlas-research-software-engineer.",
+          "provenance": {
+            "origin": "synthetic",
+            "source_id": "authored/hr-ambiguous-04/shortened-version",
+            "recorded_at": "2026-09-04T11:30:00Z"
+          }
+        }
+      ],
+      "missingness": [
+        "No reviewer comment explains why the text was shortened.",
+        "No final approval or publication status is recorded.",
+        "The intended placement, surrounding creative and character constraints are unknown.",
+        "No evidence establishes that omitting location and working arrangements was intentional or acceptable."
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_id": "h-specific",
+      "claim": "For Atlas LinkedIn recruiting posts addressed to experienced specialists, reviewers prefer an opening that describes the role's concrete work problem and contribution, using supported domain terms, over a generic mission opening. This is a context-bound interpretation of the recorded reviews, not a universal employer-brand rule.",
+      "scope": {
+        "match": {
+          "role": ["hr"],
+          "audience": ["experienced_specialists"],
+          "channel": ["linkedin"],
+          "project": ["atlas"]
+        }
+      },
+      "support": [
+        {
+          "episode_id": "hr-specialist-01",
+          "evidence_id": "review",
+          "quote": "For experienced computational biologists, please lead with the concrete analysis problem and the contribution they would make."
+        },
+        {
+          "episode_id": "hr-specialist-02",
+          "evidence_id": "review",
+          "quote": "Please start with the engineering challenge: detecting a changed input before it breaks a downstream analysis."
+        }
+      ],
+      "counterevidence": [
+        {
+          "episode_id": "hr-apprentice-03",
+          "evidence_id": "review",
+          "quote": "For apprentices, begin with what they can learn and the support available; the current opening sounds as if they should already know how to solve the technical problem."
+        }
+      ],
+      "alternatives": [
+        "The revisions may express one recruiting lead's stylistic preference rather than a stable audience requirement.",
+        "The preference may be specific to Atlas roles whose supplied team interviews contain a clear work problem.",
+        "A different specialist campaign objective or placement may call for a different opening."
+      ],
+      "unresolved_questions": [
+        "Does the preference transfer to a new experienced-specialist role with different source material?",
+        "Would independent practitioners agree that the revised opening improves professional usefulness?",
+        "All specialist examples belong to Atlas; applicability outside that project has not been established."
+      ],
+      "origin": "curated_fixture"
+    },
+    {
+      "hypothesis_id": "h-ambiguous",
+      "claim": "The shortened Research Software Engineer post may indicate a preference for concise LinkedIn recruiting copy, but the available revision alone does not justify a general length rule or omission of employment details.",
+      "scope": {
+        "match": {
+          "role": ["hr"],
+          "audience": ["experienced_specialists"],
+          "channel": ["linkedin"],
+          "project": ["atlas"]
+        }
+      },
+      "support": [
+        {
+          "episode_id": "hr-ambiguous-04",
+          "evidence_id": "revision",
+          "quote": "Turn fragile research scripts into tested, maintainable tools."
+        }
+      ],
+      "counterevidence": [
+        {
+          "episode_id": "hr-specialist-01",
+          "evidence_id": "review",
+          "quote": "The facts and working arrangement are right."
+        },
+        {
+          "episode_id": "hr-ambiguous-04",
+          "evidence_id": "role-facts",
+          "quote": "The brief provides no word limit, paid-placement constraint or instruction to omit location information."
+        }
+      ],
+      "alternatives": [
+        "The shortened version may have been intended for a placement with additional context outside the text.",
+        "The revision may be an intermediate draft or an accidental omission rather than an approved preference.",
+        "An unrecorded character limit or one-off editorial decision could explain the change."
+      ],
+      "unresolved_questions": [
+        "Why was the copy shortened, and was the shorter version approved?",
+        "Was location information provided elsewhere in the intended placement?",
+        "Is there any recurring evidence or explicit instruction supporting a length requirement?"
+      ],
+      "origin": "curated_fixture"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "scoped-update",
+      "hypothesis_id": "h-specific",
+      "scope": {
+        "match": {
+          "role": ["hr"],
+          "audience": ["experienced_specialists"],
+          "channel": ["linkedin"],
+          "project": ["atlas"]
+        }
+      },
+      "target": "context",
+      "patch": "For an Atlas LinkedIn recruiting post addressed to experienced specialists, consider opening with the concrete work problem and the contribution of this specific role when the current brief supports that framing. Retain accurate domain terms useful to this audience. Derive all responsibilities, location, working arrangements and application details from the current approved role material; do not copy them from earlier campaigns. Apply current explicit instructions first. Do not extend this lesson to apprentice audiences or other placements without additional evidence.",
+      "expected_effect": {
+        "metric": "professional_quality",
+        "prediction": "On new Atlas specialist LinkedIn tasks, practitioners may find the opening more specific to the role, reducing substantive rewrites of the opening while preserving factual accuracy. This prediction remains untested."
+      }
+    },
+    {
+      "candidate_id": "overbroad-update",
+      "hypothesis_id": "h-specific",
+      "scope": {
+        "match": {
+          "role": ["hr"]
+        }
+      },
+      "target": "context",
+      "patch": "For every HR recruiting message, begin with the technical problem the hire will solve and retain specialist terminology. Use this structure across audiences and channels.",
+      "expected_effect": {
+        "metric": "professional_quality",
+        "prediction": "This deliberately overbroad demonstration candidate claims more informative openings across HR tasks; its scope exceeds the supporting hypothesis and conflicts with the apprentice review. It should not be exported for use."
+      }
+    },
+    {
+      "candidate_id": "ambiguous-update",
+      "hypothesis_id": "h-ambiguous",
+      "scope": {
+        "match": {
+          "role": ["hr"],
+          "audience": ["experienced_specialists"],
+          "channel": ["linkedin"],
+          "project": ["atlas"]
+        }
+      },
+      "target": "context",
+      "blocking_questions": [
+        "Why were location and working arrangements deleted, and was that deletion approved for the intended placement?"
+      ],
+      "patch": "Shorten specialist LinkedIn recruiting posts to their core technical duties and application link, omitting location and working arrangements from the post.",
+      "expected_effect": {
+        "metric": "professional_quality",
+        "prediction": "A shorter post might fit an unknown placement constraint, but the evidence does not establish that constraint or justify omitted employment details. Defer this candidate pending clarification."
+      }
+    }
+  ]
+}

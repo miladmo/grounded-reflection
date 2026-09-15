@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the software version you use."
+type: software
+title: "Grounded Reflection: Evidence Contracts for Agent Adaptation Research"
+authors:
+  - family-names: Morad
+    given-names: Milad
+version: 0.1.0.dev1
+license: MIT
+abstract: "A Python research library for traceable work evidence, scoped requirement hypotheses and evaluation of candidate context updates, with a synthetic model pilot."

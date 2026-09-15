@@ -1,0 +1,219 @@
+{
+  "version": "0.1",
+  "provenance": "This rubric and its six cases are wholly synthetic and were authored from the task briefs without access to training fixtures, hypotheses or model outputs. The rubric assesses these supplied briefs; it does not encode a hidden preferred post or exact phrase.",
+  "scoring": {
+    "criterion_range": [0, 2],
+    "total_range": [0, 10],
+    "method": "Score each of the five criteria once, using its anchors and the relevant case. Sum the scores. Record critical errors separately as flags and explain the supporting output text; critical flags do not automatically subtract points beyond the criterion ratings. Missing information is normally assessed under task completeness; contradictions and invented claims under factual fidelity. Use the other criteria for distinct audience, work-description and instruction-fit issues rather than automatically penalising one defect under every criterion.",
+    "word_count": "Count space-separated tokens in the LinkedIn post, including CTA, URL and hashtags; exclude a standalone label identifying the post and exclude editorial notes. A URL is one token. The allowed interval is inclusive, 110–150 words.",
+    "pilot_thresholds": {
+      "status": "Provisional pilot interpretation only; these thresholds are not validated.",
+      "ready_for_editorial_review": "8–10 points, no criterion scored 0, and no critical flags.",
+      "needs_revision": "5–7 points, or 8–10 with any criterion scored 0, provided there is no critical flag.",
+      "substantial_revision": "0–4 points or any critical flag, irrespective of the total."
+    }
+  },
+  "criteria": [
+    {
+      "id": "factual_fidelity",
+      "description": "Claims remain grounded in current approved sources, with superseded or provisional material treated according to its documented status.",
+      "anchors": {
+        "0": "Includes a material contradiction or invented claim about the role, event, requirements, work, employment arrangement or outcome, or treats a clearly superseded claim as current.",
+        "1": "Generally grounded, but contains a minor unsupported embellishment or imprecise factual wording that could be corrected locally without changing the offer or core work.",
+        "2": "All substantive claims are supported; source precedence and provisional details are handled correctly. Accurate paraphrases and selective omission of optional facts are acceptable."
+      }
+    },
+    {
+      "id": "task_completeness",
+      "description": "Delivers the requested post format, length, required information and usable call to action, with no more than three concise editorial notes.",
+      "anchors": {
+        "0": "Does not produce a usable LinkedIn post, misses the role/programme/event identity or correct actionable destination, omits three or more required fact groups, or exceeds the word range by more than 20 words.",
+        "1": "Produces a usable post but omits one or two required fact groups, falls outside 110–150 words by no more than 20 words, includes more than three notes, or makes the notes substantially longer than concise editorial observations.",
+        "2": "Produces a 110–150-word post with all case-required fact groups and the correct CTA destination, followed by zero to three concise notes. Required facts appear in the post rather than only in notes."
+      }
+    },
+    {
+      "id": "audience_fit",
+      "description": "Addresses the experience level and professional interests of the audience specified in the current brief, with suitable terminology and respectful tone.",
+      "anchors": {
+        "0": "Fundamentally misaddresses the audience, such as presenting an apprenticeship as requiring established expert ownership or treating an experienced specialist role as entry-level training.",
+        "1": "Audience is recognisable, but generic hype, unexplained terminology for apprentices, excessive simplification for specialists or patronising language weakens the fit.",
+        "2": "Uses clear, respectful language suited to the audience; specialists can assess the professional contribution, while apprentices can understand supported beginner activities and the route into the work."
+      }
+    },
+    {
+      "id": "work_specificity",
+      "description": "Explains meaningful work or event content using the supplied problem, activities, ownership and purpose, adapted to the case rather than a generic recruiting template.",
+      "anchors": {
+        "0": "Gives essentially generic recruiting claims with no concrete case-specific activity or problem, or describes a substantially different kind of work.",
+        "1": "Names a relevant task or technical topic but gives little connection between the actual activity and its research or learning purpose; detail reads mainly as a keyword list.",
+        "2": "Connects at least one concrete activity to why it matters, at the appropriate level: specialist problem and contribution, supported apprentice activity and learning, or roundtable example and collaborative method. Does not need to include every optional technical detail."
+      }
+    },
+    {
+      "id": "instruction_context_fit",
+      "description": "Follows the current case's communication objective and explicit writing instructions. No unprovided brand preference, opening formula or exact wording is required.",
+      "anchors": {
+        "0": "Directly conflicts with a central explicit communication instruction, such as making Orion an immediate vacancy application campaign or beginning eval-06 with a technical-challenge hook instead of learning and collaboration.",
+        "1": "Broadly follows the brief but only weakly expresses an explicit communication priority, introduces a distracting competing CTA, or makes an unnecessary request for clarification despite sufficient source guidance.",
+        "2": "Follows the current brief's objective, precedence and explicit opening requirements where present; uses an appropriate LinkedIn recruiting format and resolves supplied ambiguities without an avoidable follow-up. Any opening consistent with the brief is acceptable when no opening is specified."
+      }
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "eval-01",
+      "required_facts": [
+        "Northstar Research is recruiting a Research Simulation Engineer for Atlas.",
+        "The work concerns repeatable replay of asynchronous sensor experiments when event ordering or simulator versions change.",
+        "The engineer owns the deterministic replay service and its reproducibility regression tests.",
+        "The working arrangement is hybrid with two on-site days per week at Brookmere.",
+        "The application CTA uses https://northstar.example/careers/atlas-simulation."
+      ],
+      "critical_errors": [
+        "Advertises the role as fully remote or states a working arrangement materially inconsistent with the approved brief.",
+        "Presents autonomous navigation model development or production robot control as the role's core responsibility.",
+        "Invents a guaranteed performance improvement, an application deadline or a mandatory doctorate.",
+        "Uses a different application destination."
+      ],
+      "contextual_expectation": "Give experienced research software specialists enough concrete problem and ownership information to assess the vacancy. The brief does not require a particular opening style; a technical, research-purpose or collaboration opening can all fit if the required substance is present.",
+      "acceptable_alternatives": [
+        "Describe deterministic replay as making saved experiments reproduce the same event sequence; the exact technical label is optional.",
+        "Mention versioned run manifests or explicit ordering rules as supporting detail, without needing both.",
+        "Omit optional language, collaborator or doctorate details to preserve readability, or include them accurately.",
+        "Resolve the archived draft silently or briefly explain the correction in an editorial note."
+      ]
+    },
+    {
+      "case_id": "eval-02",
+      "required_facts": [
+        "Northstar Research is recruiting a Measurement Research Scientist for Atlas.",
+        "The research concerns meaningful confidence or uncertainty estimates under changing experimental conditions with sparse expert labels.",
+        "The scientist designs validation protocols.",
+        "The role includes defensible interpretation of uncertainty, including deciding when evidence is insufficient to report an estimate.",
+        "The application CTA uses https://northstar.example/careers/atlas-measurement."
+      ],
+      "critical_errors": [
+        "Promises to eliminate uncertainty, universally correct shifted conditions or guarantee an accuracy gain.",
+        "Advertises the superseded Senior AI Accuracy Lead title or a people-management remit.",
+        "Claims clinical, safety-critical or customer deployment of the methods.",
+        "Invents a mandatory degree, fixed experience threshold or different application destination."
+      ],
+      "contextual_expectation": "Address experienced measurement, statistics or experimental-methods specialists with a concrete research question and appropriately bounded claims. There is no mandated opening formula and no requirement to use AI terminology.",
+      "acceptable_alternatives": [
+        "Use accessible language such as deciding when a result is trustworthy enough to share for responsible uncertainty interpretation.",
+        "Explain sparse labels through limited expert-reviewed outcomes, or retain the term sparse labels for a specialist audience.",
+        "Use stress testing, sensitivity analysis or recalibration as supporting detail; none is independently mandatory if the required contribution is clear.",
+        "Omit the optional location, tool or discipline examples without penalty for completeness."
+      ]
+    },
+    {
+      "case_id": "eval-03",
+      "required_facts": [
+        "Northstar Research is recruiting a Research Data Platform Engineer for Atlas.",
+        "The engineering problem links changing dataset schemas to preserving traceable, reproducible research results.",
+        "The hire owns dataset-contract validation and migration tooling, with lineage connecting results to data versions and transformations.",
+        "The working arrangement includes three on-site days per week at Brookmere.",
+        "The application CTA uses https://northstar.example/careers/atlas-data-platform."
+      ],
+      "critical_errors": [
+        "Advertises remote-first or fully remote work, or a materially different on-site requirement.",
+        "States that a graph database or cloud vendor has been selected, or makes one mandatory expertise.",
+        "Describes this as a global customer platform or claims the vacancy accesses patient or employee records.",
+        "Uses a different application destination."
+      ],
+      "contextual_expectation": "Help experienced infrastructure specialists see ownership, the schema-evolution problem and its value for research traceability. Preserve the distinction between current Python/SQL tooling and an architecture choice still open to evaluation. No specific opening wording is required.",
+      "acceptable_alternatives": [
+        "Explain dataset contracts as checks that make data changes explicit and compatible with existing analyses.",
+        "Express migration tooling as helping older analyses keep working as schemas change.",
+        "Omit the graph-store option entirely, or describe it explicitly as an unselected option the hire may evaluate.",
+        "Mention access-policy provenance as optional supporting detail without implying access to real personal records."
+      ]
+    },
+    {
+      "case_id": "eval-04",
+      "required_facts": [
+        "Northstar Research offers the Atlas Research Software Apprenticeship.",
+        "It is a paid, 18-month programme.",
+        "Apprentices receive a named mentor and supported learning time or practice sessions.",
+        "At least two concrete beginner activities are described, such as running documented tests, recording unexpected results, improving setup guides or building small Python utilities with support.",
+        "No professional coding experience or degree is required.",
+        "The programme is on-site at Brookmere.",
+        "The application CTA uses https://northstar.example/careers/atlas-apprenticeship."
+      ],
+      "critical_errors": [
+        "Requires professional coding experience, a degree or a portfolio.",
+        "Says apprentices must independently own architecture or resolve advanced faults on arrival.",
+        "Guarantees a permanent position after the programme or invents a salary amount.",
+        "Materially misstates the paid status, duration or on-site arrangement, or uses a different application destination."
+      ],
+      "contextual_expectation": "Make supported learning and realistic early responsibilities visible to people entering research software work. Use plain, respectful language. A learning, curiosity, practical-activity or programme-introduction opening is acceptable; a technical opening is also acceptable if it remains accessible and does not imply expert prerequisites.",
+      "acceptable_alternatives": [
+        "Describe recording unexpected results as writing a clear problem report.",
+        "Mention pairing with an engineer or reviewed work as concrete evidence of support.",
+        "Encourage examples from school, personal or community projects without turning them into a required portfolio.",
+        "Use Python by name or describe small coding utilities in plain language."
+      ]
+    },
+    {
+      "case_id": "eval-05",
+      "required_facts": [
+        "Northstar Research invites experienced verification or research-infrastructure specialists to Orion's methods roundtable.",
+        "The invitation supports professional exchange and understanding the team's collaborative working model ahead of possible future recruitment; it does not advertise an open vacancy.",
+        "The roundtable is online, lasts 45 minutes and takes place on 7 May 2031 at 14:00 UTC.",
+        "The content makes specialist relevance concrete through verification assumptions, conflicting test evidence or how the team reviews a claim together.",
+        "No CV or job application is required to participate.",
+        "The registration CTA uses https://northstar.example/orion/methods-roundtable."
+      ],
+      "critical_errors": [
+        "Advertises an approved open Orion vacancy, a hiring deadline or an immediate job-application CTA.",
+        "Requires a CV, application or assessment for participation.",
+        "Materially changes the date, time, duration or online format.",
+        "Claims accreditation, a product launch or a different registration destination."
+      ],
+      "contextual_expectation": "The current campaign explicitly asks for an opening about exchanging approaches or seeing the team's collaborative working model. Technical detail should support that invitation. The primary CTA is roundtable registration, and the copy must not imply a present hiring commitment. A separate sentence announcing that no vacancy exists is optional if the invitation is otherwise unambiguous.",
+      "acceptable_alternatives": [
+        "Open with an invitation to compare verification approaches, meet the team through a methods discussion or observe how research disagreements are resolved.",
+        "Describe the worked disagreement in plain language without naming an evidence ledger.",
+        "Mention possible future opportunities only with the same tentative status as the source.",
+        "Use an equivalent unambiguous rendering of 7 May 2031 and 14:00 UTC; adding a correctly equivalent timezone is optional."
+      ]
+    },
+    {
+      "case_id": "eval-06",
+      "required_facts": [
+        "Northstar Research is recruiting a Research Automation Engineer for Atlas.",
+        "The opening foregrounds learning alongside researchers and sharing expertise or collaboration across disciplines.",
+        "The engineering work concerns recovering interrupted experiments without silently duplicating completed steps.",
+        "A concrete responsibility is described, such as checkpoint semantics, auditable restart decisions or fault-injection tests.",
+        "The role is hybrid with two on-site days per week at Cedar Quay.",
+        "The application CTA uses https://northstar.example/careers/atlas-automation."
+      ],
+      "critical_errors": [
+        "Presents the role as an apprenticeship or entry-level training post, or invents mandatory credentials or a framework requirement.",
+        "Claims the vacancy controls physical laboratory equipment or guarantees error-free recovery.",
+        "Materially misstates the working arrangement or uses a different application destination.",
+        "Begins with a technical-challenge hook that conflicts with the explicit learning/collaboration opening instruction; record this as an instruction flag rather than a factual claim."
+      ],
+      "contextual_expectation": "Follow the approved post-specific override: the first substantive sentence should make mutual learning and cross-disciplinary collaboration the entry point. Later technical detail should still address experienced specialists. Merely adding 'learn more' to a technical-problem opening does not satisfy the request. No exact phrase or sentence structure is required.",
+      "acceptable_alternatives": [
+        "Open with mutual learning, shared design work or exchanging expertise across research and engineering, provided both learning and collaboration are recognisable.",
+        "Mention paired design sessions or the weekly methods exchange as concrete support for the opening.",
+        "Explain checkpoint semantics as defining what is saved and how a workflow resumes safely after interruption.",
+        "A technical term may appear in the opening if the sentence's main invitation is learning and collaboration rather than solving a technical challenge."
+      ]
+    }
+  ],
+  "limitations": [
+    "These are six deliberately constructed synthetic cases, not a representative sample of hiring organisations, audiences or campaigns.",
+    "All source ambiguity is resolvable from explicit approval status and precedence; the pilot does not test genuinely missing or irreconcilable source information.",
+    "The cases evaluate the supplied briefs and outputs only. They do not establish hiring effectiveness, candidate response, legal suitability or real-world recruitment outcomes.",
+    "The five criteria, anchors and interpretation thresholds are pilot design choices and have not been validated. Small score differences should not be treated as established performance differences.",
+    "Several criteria can be affected by the same sentence. Raters should distinguish the factual, completeness and communication consequences and record their reasons rather than mechanically duplicating penalties.",
+    "Critical flags are reported alongside scores and may include explicit-instruction violations as well as material factual errors. They are not independent validated severity measures.",
+    "Accept equivalent accurate paraphrases and multiple viable editorial approaches. Required facts are semantic groups, not gold phrases; the rubric contains no model answer.",
+    "Word counts use the pilot's stated space-separated-token convention and may differ from publishing tools or linguistic word counters.",
+    "Editorial notes are optional and are not an opportunity to repair omissions from the public post. All stated required post facts must be present in the post itself.",
+    "The future dates, organisation, projects, roles, laboratories, systems and .example links are fictional and should not be published as real vacancies or events."
+  ]
+}

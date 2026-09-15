@@ -1,0 +1,36 @@
+{
+  "frozen_at_utc": "2026-09-15T08:51:02.177941+00:00",
+  "protocol": "hr-pilot-v0.1",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "conditions": [
+    "direct_evidence",
+    "direct_adaptation",
+    "grounded_reflection"
+  ],
+  "case_ids": [
+    "eval-01",
+    "eval-02",
+    "eval-03",
+    "eval-04",
+    "eval-05",
+    "eval-06"
+  ],
+  "repetitions": 1,
+  "preparation_calls": 2,
+  "generation_calls": 18,
+  "paired_judge_calls": 6,
+  "inference_audit_calls": 1,
+  "blind_order_seed": 20260915,
+  "files": {
+    "pilots/hr_v01/tasks.json": "797990a40d7452bb5e28dc7dfb8c788164914f08a4703efb6064e2f3e93194fd",
+    "pilots/hr_v01/rubric.json": "b2a3cfbf0037d5db019cf588a60395342f158095b4cd4cf50639ce41612484f9",
+    "pilots/hr_v01/protocol.md": "35ab7ad8fb9f1ebea4717aa789229ebfb3af50eaa81d83859067926a0ca15a20",
+    "pilots/hr_v01/run_pilot.py": "5112986cb167434a11e9587f00cd5370511d1fd7e03d651847b87322c3721faf",
+    "src/grounded_reflection/examples/hr_evidence.json": "c8995f3c6f1a8c675e2775615e5ba1cd20f106160d923c23387fc11c6806e139",
+    "src/grounded_reflection/codex_backend.py": "5629534a6af79f67dcee39bbc2a8c413d008512d7a175412cd2ee74333cfbff6",
+    "src/grounded_reflection/models.py": "04ca17f0ae0cc30958c683d53f4d865241fa09b8b3ecae877d2742800055ed24",
+    "src/grounded_reflection/workflow.py": "d5f6f72cbce5233cc3c471e6b0d45ce1c0d1cebac45b9c28eb081864a7e0a152"
+  },
+  "restriction": "No experimental output available at freeze; no prompt or task tuning within this run."
+}

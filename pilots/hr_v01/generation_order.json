@@ -1,0 +1,74 @@
+[
+  {
+    "arm": "direct_adaptation",
+    "case_id": "eval-04"
+  },
+  {
+    "arm": "grounded_reflection",
+    "case_id": "eval-03"
+  },
+  {
+    "arm": "direct_evidence",
+    "case_id": "eval-06"
+  },
+  {
+    "arm": "direct_evidence",
+    "case_id": "eval-04"
+  },
+  {
+    "arm": "direct_evidence",
+    "case_id": "eval-05"
+  },
+  {
+    "arm": "direct_adaptation",
+    "case_id": "eval-01"
+  },
+  {
+    "arm": "direct_adaptation",
+    "case_id": "eval-05"
+  },
+  {
+    "arm": "direct_adaptation",
+    "case_id": "eval-03"
+  },
+  {
+    "arm": "grounded_reflection",
+    "case_id": "eval-01"
+  },
+  {
+    "arm": "direct_adaptation",
+    "case_id": "eval-02"
+  },
+  {
+    "arm": "direct_adaptation",
+    "case_id": "eval-06"
+  },
+  {
+    "arm": "direct_evidence",
+    "case_id": "eval-01"
+  },
+  {
+    "arm": "grounded_reflection",
+    "case_id": "eval-04"
+  },
+  {
+    "arm": "grounded_reflection",
+    "case_id": "eval-02"
+  },
+  {
+    "arm": "grounded_reflection",
+    "case_id": "eval-05"
+  },
+  {
+    "arm": "grounded_reflection",
+    "case_id": "eval-06"
+  },
+  {
+    "arm": "direct_evidence",
+    "case_id": "eval-03"
+  },
+  {
+    "arm": "direct_evidence",
+    "case_id": "eval-02"
+  }
+]

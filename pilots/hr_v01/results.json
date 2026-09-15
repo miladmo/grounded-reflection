@@ -1,0 +1,1672 @@
+{
+  "model_ratings_only": true,
+  "n_cases": 6,
+  "repetitions": 1,
+  "rows": [
+    {
+      "case_id": "eval-01",
+      "case_type": "transfer",
+      "arm": "direct_adaptation",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Substantive claims match the approved sources; the note correctly identifies the archived arrangement and scope as superseded."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "128 words, all five required fact groups, the correct application URL and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Replay, concurrency and technical tradeoffs give experienced specialists clear information about the contribution and relevant experience."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects changed event schedules to ownership of replay and regression testing that preserves reproducibility after simulator updates."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Provides an appropriate LinkedIn vacancy post and resolves the archive discrepancy using explicit source precedence."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 128,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-01",
+      "case_type": "transfer",
+      "arm": "direct_evidence",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "The work, collaborators, language expectations and hybrid arrangement are supported by the current approved sources."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "134 words, all five required fact groups, the correct application URL and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Uses suitable specialist terminology and clearly describes ownership, collaboration and relevant engineering experience."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Links event-ordering rules, run manifests and regression work to distinguishing research changes from replay drift."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Explains the vacancy and application route clearly, follows source precedence and requires no unnecessary clarification."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 134,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-01",
+      "case_type": "transfer",
+      "arm": "grounded_reflection",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Substantive claims about the research problem, ownership, qualifications and working arrangement reflect the approved materials."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "131 words, all five required fact groups, the correct application URL and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Explains asynchronous sensor ordering and reproducibility at a suitable level for experienced research software specialists."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects sensor arrival order to evaluation results and identifies replay-service ownership and tests separating research changes from drift."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Meets the recruiting objective with concrete work and a clear CTA; the note correctly resolves the archived draft."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 131,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-02",
+      "case_type": "transfer",
+      "arm": "direct_adaptation",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Claims follow the approved sources, including the current title, synthetic studies, collaboration and hybrid arrangement. Method maturity is accurately bounded."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "130 words; all five required fact groups appear in the post, including the correct application URL. Two concise editorial notes."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Validation, recalibration and label-selection distinctions give experienced specialists clear information about their contribution."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects the measurement-quality versus label-selection problem to validation protocols, withholding decisions and reproducible analyses."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Provides an appropriate LinkedIn recruiting post with bounded research claims and explicitly resolves the superseded title without clarification."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 130,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-02",
+      "case_type": "transfer",
+      "arm": "direct_evidence",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "The approved title, research scope, stress tests, responsibilities and working arrangement are supported. No unsupported outcomes or requirements appear."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "142 words; includes all five required fact groups and the correct application URL, followed by one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Uses clear specialist terminology and explains the research question and professional contribution without oversimplification or hype."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Links shifts and selective labelling to stress tests, validation design and withholding criteria, with reproducibility as the early goal."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Meets the recruiting objective, explains the challenge and limits of current methods, and resolves source precedence in its note."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 142,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-02",
+      "case_type": "transfer",
+      "arm": "grounded_reflection",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "All substantive claims are supported, including sensitivity to label selection, documented reporting criteria and the absence of a validated universal correction."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "135 words; all five required fact groups appear in the post with the correct application URL. Two concise editorial notes."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "The concrete measurement question and relevant methodological language let experienced specialists assess the work and their contribution."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects uncertainty under shifting conditions and sparse labels to validation, sensitivity analysis and defensible reporting or withholding decisions."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Follows the current recruiting brief, preserves provisional research framing and explains why the approved title supersedes the archived title."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 135,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-03",
+      "case_type": "transfer",
+      "arm": "grounded_reflection",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Claims match the approved sources; Python/SQL are current, while graph storage and cloud selection remain undecided."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "128 words; includes all required fact groups, the correct application URL and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Clear specialist terminology and explicit engineering ownership help experienced infrastructure candidates assess their contribution."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects changing schemas, contract validation, migration tooling and precise lineage to preserving analyses and traceable research results."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Follows the recruiting objective and approved-source precedence without unnecessary clarification. Total: 10/10."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 128,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-03",
+      "case_type": "transfer",
+      "arm": "direct_adaptation",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Work, collaboration and employment claims are supported; provisional graph and cloud choices are explicitly unselected."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "135 words; includes all required fact groups, the correct application URL and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Uses appropriate infrastructure terminology and describes ownership, relevant experience and research collaboration respectfully."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Links manifest validation, schema compatibility and lineage to preserving older analyses and exposing access-policy changes."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Makes ownership and research value concrete, follows source precedence and needs no clarification. Total: 10/10."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 135,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-03",
+      "case_type": "transfer",
+      "arm": "direct_evidence",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Substantive claims follow the approved sources, with graph storage correctly presented as an option to evaluate."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "134 words; includes all required fact groups, the correct application URL and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Explicit workflow ownership and suitable technical detail let experienced specialists assess the role's professional contribution."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Explains how validation, migration tooling and per-run lineage preserve analyses and connect results to data, code and policy."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Fulfils the specialist recruiting objective and handles superseded and provisional details appropriately. Total: 10/10."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 134,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-04",
+      "case_type": "boundary",
+      "arm": "direct_adaptation",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "All substantive claims match approved sources. 'Artificial experiment data' accurately paraphrases synthetic data; superseded specialist requirements are excluded."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "126 words; includes all required fact groups, the correct application destination and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Explicitly welcomes people seeking their first structured route, explains supported beginner activities and clearly removes experience, degree and portfolio barriers."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects documented tests and result comparisons to learning to reproduce results before changing code, followed by supported Python work."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Follows the current apprenticeship brief, foregrounds support and realistic responsibilities, and correctly resolves template precedence. Total score: 10/10."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 126,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-04",
+      "case_type": "boundary",
+      "arm": "direct_evidence",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Programme details, learning support, activities and entry requirements are grounded in approved sources, with no unsupported benefits or hiring promises."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "125 words; includes every required fact group, the correct application destination and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "The learning-focused opening, clear explanations and explicit absence of prerequisites respectfully address beginners."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Links testing and comparing results with practising clear problem explanations alongside an engineer, then progressing to reviewed Python tools."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Prioritises supported learning and actual beginner responsibilities, follows approved source precedence and provides a direct recruiting CTA. Total score: 10/10."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 125,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-04",
+      "case_type": "boundary",
+      "arm": "grounded_reflection",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "All substantive claims reflect the approved apprenticeship and learning-team sources, including paired learning and supported progression."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "124 words; includes all required programme, support, activity, eligibility, location and application facts, plus one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Welcomes first steps into research software with clear, respectful descriptions of support and accessible beginner responsibilities."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects test comparisons and unexpected results to learning reproducibility and useful problem reporting while paired with an engineer."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Meets the current recruiting objective, makes supported learning visible and excludes the inherited template's expert expectations. Total score: 10/10."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 124,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-05",
+      "case_type": "boundary",
+      "arm": "direct_evidence",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Event details, verification example and developing evidence ledger match approved sources; superseded vacancy claims are excluded."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "147 words; includes all required fact groups, the correct registration URL and two concise notes."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Directly addresses experienced specialists with clear, relevant language about verification claims, assumptions and counterexamples."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects the passing-test disagreement and evidence ledger to collaborative review and recording a defensible decision."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Opens with professional exchange and observing collaboration; uses registration alone and preserves tentative future recruitment."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 147,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-05",
+      "case_type": "boundary",
+      "arm": "grounded_reflection",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "All substantive claims follow approved event and methods sources, including tentative recruitment and no application requirement."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "138 words; includes all required fact groups, the correct registration URL and one concise note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Names the specialist audience and retains meaningful technical detail without hype or excessive simplification."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Shows why passing tests may not sustain a claim and describes joint evidence review and the supporting ledger."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Exchange-led opening and low-commitment conversation follow the current objective; registration correctly replaces vacancy application."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 138,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-05",
+      "case_type": "boundary",
+      "arm": "direct_adaptation",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Event logistics, collaborative methods and fictional simulator example are supported; no unsupported hiring commitment appears."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "134 words; includes all required fact groups, the correct registration URL and one concise note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Respectfully addresses experienced specialists using concrete verification terminology appropriate to their professional interests."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Links changed assumptions and conflicting test evidence to discussing disagreements and recording a defensible decision."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Begins with exchanging approaches, explains collaborative working and invites registration without implying an open vacancy."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 134,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-06",
+      "case_type": "explicit_override",
+      "arm": "grounded_reflection",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Role, technical responsibilities, collaborators and employment details match current approved sources."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "128 words; includes all six required fact groups, the correct application URL and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Explicitly identifies an experienced individual-contributor role and uses relevant specialist terminology while presenting learning as mutual."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Connects interrupted experiments and duplicate-step risk to checkpoint semantics, auditable restart decisions and fault-injection tests."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Opens with learning alongside researchers and sharing expertise across disciplines, correctly following the post-specific override."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 128,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-06",
+      "case_type": "explicit_override",
+      "arm": "direct_adaptation",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Claims are supported, including current Python use, no mandatory framework and the synthetic research-testbed scope."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "127 words; includes all six required fact groups, the correct application URL and one concise editorial note."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Preserves experienced individual-contributor seniority and gives specialists relevant responsibilities and experience signals."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Explains uncertain action completion after interruptions and connects recovery accountability to checkpoint semantics and collaborative fault-injection testing."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "Makes cross-disciplinary learning and expertise sharing the opening invitation, then develops the technical contribution."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 127,
+      "word_range_met": true,
+      "uncertainties": []
+    },
+    {
+      "case_id": "eval-06",
+      "case_type": "explicit_override",
+      "arm": "direct_evidence",
+      "total": 10,
+      "scores": [
+        {
+          "criterion_id": "factual_fidelity",
+          "score": 2,
+          "reason": "Responsibilities, testbed scope, collaborators, seniority and Cedar Quay working arrangement are grounded in the current sources."
+        },
+        {
+          "criterion_id": "task_completeness",
+          "score": 2,
+          "reason": "125 words; includes all six required fact groups and one concise note. The correct CTA URL carries ordinary terminal punctuation."
+        },
+        {
+          "criterion_id": "audience_fit",
+          "score": 2,
+          "reason": "Addresses experienced specialists through substantive workflow-recovery responsibilities and mutual learning, without implying beginner training."
+        },
+        {
+          "criterion_id": "work_specificity",
+          "score": 2,
+          "reason": "Links interrupted experiments and uncertain completion to durable checkpoints, readable recovery records and fault-injection tests."
+        },
+        {
+          "criterion_id": "instruction_context_fit",
+          "score": 2,
+          "reason": "The first sentence foregrounds learning and cross-disciplinary expertise sharing, satisfying the explicit override before introducing technical detail."
+        }
+      ],
+      "critical_errors": [],
+      "word_count": 125,
+      "word_range_met": true,
+      "uncertainties": []
+    }
+  ],
+  "summary": {
+    "direct_evidence": {
+      "mean_score": 10.0,
+      "cases_with_critical_errors": 0,
+      "word_range_passes": 6
+    },
+    "direct_adaptation": {
+      "mean_score": 10.0,
+      "cases_with_critical_errors": 0,
+      "word_range_passes": 6
+    },
+    "grounded_reflection": {
+      "mean_score": 10.0,
+      "cases_with_critical_errors": 0,
+      "word_range_passes": 6
+    }
+  },
+  "paired_differences": [
+    {
+      "case_id": "eval-01",
+      "reflection_minus_direct_evidence": 0,
+      "reflection_minus_direct_adaptation": 0
+    },
+    {
+      "case_id": "eval-02",
+      "reflection_minus_direct_evidence": 0,
+      "reflection_minus_direct_adaptation": 0
+    },
+    {
+      "case_id": "eval-03",
+      "reflection_minus_direct_evidence": 0,
+      "reflection_minus_direct_adaptation": 0
+    },
+    {
+      "case_id": "eval-04",
+      "reflection_minus_direct_evidence": 0,
+      "reflection_minus_direct_adaptation": 0
+    },
+    {
+      "case_id": "eval-05",
+      "reflection_minus_direct_evidence": 0,
+      "reflection_minus_direct_adaptation": 0
+    },
+    {
+      "case_id": "eval-06",
+      "reflection_minus_direct_evidence": 0,
+      "reflection_minus_direct_adaptation": 0
+    }
+  ],
+  "guidance_word_counts": {
+    "direct_adaptation": {
+      "words": 311,
+      "requested_limit_met": true
+    },
+    "grounded_reflection": {
+      "words": 180,
+      "requested_limit_met": true
+    }
+  },
+  "runs": {
+    "generate_eval-01_direct_adaptation": {
+      "status": "completed",
+      "wall_seconds": 58.282753,
+      "usage": {
+        "input_tokens": 10379,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1796,
+        "reasoning_output_tokens": 1552
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-01_direct_evidence": {
+      "status": "completed",
+      "wall_seconds": 50.014698,
+      "usage": {
+        "input_tokens": 13455,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1487,
+        "reasoning_output_tokens": 1253
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-01_grounded_reflection": {
+      "status": "completed",
+      "wall_seconds": 48.085442,
+      "usage": {
+        "input_tokens": 10114,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1239,
+        "reasoning_output_tokens": 987
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-02_direct_adaptation": {
+      "status": "completed",
+      "wall_seconds": 44.519164,
+      "usage": {
+        "input_tokens": 10360,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1293,
+        "reasoning_output_tokens": 1034
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-02_direct_evidence": {
+      "status": "completed",
+      "wall_seconds": 57.914767,
+      "usage": {
+        "input_tokens": 13436,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1548,
+        "reasoning_output_tokens": 1298
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-02_grounded_reflection": {
+      "status": "completed",
+      "wall_seconds": 40.739654,
+      "usage": {
+        "input_tokens": 10095,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1189,
+        "reasoning_output_tokens": 926
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-03_direct_adaptation": {
+      "status": "completed",
+      "wall_seconds": 57.953621,
+      "usage": {
+        "input_tokens": 10347,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1784,
+        "reasoning_output_tokens": 1552
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-03_direct_evidence": {
+      "status": "completed",
+      "wall_seconds": 45.448289,
+      "usage": {
+        "input_tokens": 13423,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1275,
+        "reasoning_output_tokens": 1021
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-03_grounded_reflection": {
+      "status": "completed",
+      "wall_seconds": 57.593891,
+      "usage": {
+        "input_tokens": 10082,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1604,
+        "reasoning_output_tokens": 1360
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-04_direct_adaptation": {
+      "status": "completed",
+      "wall_seconds": 43.039829,
+      "usage": {
+        "input_tokens": 10340,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1264,
+        "reasoning_output_tokens": 1034
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-04_direct_evidence": {
+      "status": "completed",
+      "wall_seconds": 35.250029,
+      "usage": {
+        "input_tokens": 13416,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1032,
+        "reasoning_output_tokens": 792
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-04_grounded_reflection": {
+      "status": "completed",
+      "wall_seconds": 35.920175,
+      "usage": {
+        "input_tokens": 10083,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1058,
+        "reasoning_output_tokens": 820
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-05_direct_adaptation": {
+      "status": "completed",
+      "wall_seconds": 43.079426,
+      "usage": {
+        "input_tokens": 10380,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1285,
+        "reasoning_output_tokens": 1034
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-05_direct_evidence": {
+      "status": "completed",
+      "wall_seconds": 55.411164,
+      "usage": {
+        "input_tokens": 13456,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1698,
+        "reasoning_output_tokens": 1412
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-05_grounded_reflection": {
+      "status": "completed",
+      "wall_seconds": 51.345117,
+      "usage": {
+        "input_tokens": 9976,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1554,
+        "reasoning_output_tokens": 1296
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-06_direct_adaptation": {
+      "status": "completed",
+      "wall_seconds": 42.509769,
+      "usage": {
+        "input_tokens": 10380,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1164,
+        "reasoning_output_tokens": 926
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-06_direct_evidence": {
+      "status": "completed",
+      "wall_seconds": 32.245294,
+      "usage": {
+        "input_tokens": 13456,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 930,
+        "reasoning_output_tokens": 688
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "generate_eval-06_grounded_reflection": {
+      "status": "completed",
+      "wall_seconds": 40.456758,
+      "usage": {
+        "input_tokens": 10115,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1190,
+        "reasoning_output_tokens": 945
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "judge_eval-01": {
+      "status": "completed",
+      "wall_seconds": 98.193897,
+      "usage": {
+        "input_tokens": 15605,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3125,
+        "reasoning_output_tokens": 2311
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "judge_eval-02": {
+      "status": "completed",
+      "wall_seconds": 78.206782,
+      "usage": {
+        "input_tokens": 15608,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2410,
+        "reasoning_output_tokens": 1552
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "judge_eval-03": {
+      "status": "completed",
+      "wall_seconds": 83.812484,
+      "usage": {
+        "input_tokens": 15577,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2619,
+        "reasoning_output_tokens": 1797
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "judge_eval-04": {
+      "status": "completed",
+      "wall_seconds": 82.114548,
+      "usage": {
+        "input_tokens": 15561,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2589,
+        "reasoning_output_tokens": 1721
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "judge_eval-05": {
+      "status": "completed",
+      "wall_seconds": 89.827433,
+      "usage": {
+        "input_tokens": 15729,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2352,
+        "reasoning_output_tokens": 1552
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "judge_eval-06": {
+      "status": "completed",
+      "wall_seconds": 75.638763,
+      "usage": {
+        "input_tokens": 15662,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2375,
+        "reasoning_output_tokens": 1552
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "judge_inference": {
+      "status": "completed",
+      "wall_seconds": 31.562004,
+      "usage": {
+        "input_tokens": 14503,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 909,
+        "reasoning_output_tokens": 555
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "prepare_direct": {
+      "status": "completed",
+      "wall_seconds": 34.152202,
+      "usage": {
+        "input_tokens": 12676,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 939,
+        "reasoning_output_tokens": 516
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    },
+    "prepare_reflection": {
+      "status": "completed",
+      "wall_seconds": 140.831324,
+      "usage": {
+        "input_tokens": 13049,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4555,
+        "reasoning_output_tokens": 2588
+      },
+      "requested_model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "tool_use_detected": false
+    }
+  },
+  "reflection_check": {
+    "status": "parsed",
+    "bundle": {
+      "schema_version": "0.1",
+      "episodes": [
+        {
+          "episode_id": "hr-specialist-01",
+          "split": "development",
+          "context": {
+            "role": "hr",
+            "audience": "experienced_specialists",
+            "channel": "linkedin",
+            "project": "atlas"
+          },
+          "task": "Prepare a LinkedIn recruiting post for an experienced computational biologist joining Northstar Research's fictional Atlas research-data team. Use the approved role facts and team interview. Make the work and the applicant's contribution concrete, preserve accurate employment details and provide the application route. The output goes to the recruiting lead for review.",
+          "evidence": [
+            {
+              "evidence_id": "role-facts",
+              "kind": "source",
+              "text": "Approved role facts, version 2: Northstar Research is a wholly fictional research organisation. Role: Computational Biologist, Atlas team. The team builds reproducible analyses that combine experimental metadata with research datasets. The new colleague will design analysis workflows, investigate inconsistent annotations and collaborate with laboratory scientists and data engineers. Required experience: applied statistical analysis, Python or R, and reproducible research workflows. Location: Bristol; hybrid working with two planned on-site collaboration days per week. No fully remote arrangement or salary range has been approved for this example. Fictional application address: https://careers.northstar.example/atlas-computational-biologist. Public brand guidance supplied to every agent condition: use clear language, connect statements to approved facts and avoid unsupported promises.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-01/role-v2",
+                "recorded_at": "2026-09-01T09:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "team-interview",
+              "kind": "source",
+              "text": "Team lead interview: Our difficulty is not a lack of data. Different experiments describe samples differently, so apparently comparable analyses can use incompatible groups. We need someone who enjoys tracing those inconsistencies and making the analysis reproducible. The computational biologist will work with the people who generated the data and help agree analysis assumptions. We can describe that collaboration, but we cannot promise a particular publication, promotion timetable or clinical impact.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-01/interview",
+                "recorded_at": "2026-09-01T09:15:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "draft",
+              "kind": "agent_output",
+              "text": "Help shape the future of research at Northstar Research. We are looking for an experienced Computational Biologist to join Atlas, a collaborative team turning research data into insight. You will build reproducible analyses, work with laboratory scientists and data engineers, and help improve the way experimental information is used. Bring experience in applied statistics, Python or R, and reproducible workflows. The role is based in Bristol, with two planned on-site collaboration days each week. If you want to contribute to meaningful research alongside colleagues with different expertise, read the role description and apply: https://careers.northstar.example/atlas-computational-biologist.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-01/draft",
+                "recorded_at": "2026-09-01T10:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "review",
+              "kind": "human_feedback",
+              "text": "The facts and working arrangement are right. For experienced computational biologists, please lead with the concrete analysis problem and the contribution they would make. The future-of-research opening could describe almost any role. Keep the reproducible-analysis language: this audience understands it. The team interview gives us enough detail without inventing outcomes.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-01/recruiting-review",
+                "recorded_at": "2026-09-01T11:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "revision",
+              "kind": "human_revision",
+              "text": "Can you turn inconsistent experimental annotations into reproducible analysis workflows? Northstar Research's Atlas team is hiring an experienced Computational Biologist to connect research datasets with the metadata needed to interpret them. You will investigate mismatches, develop analyses in Python or R, and agree assumptions with laboratory scientists and data engineers. We are looking for applied statistical experience and an interest in making research workflows easier to reproduce. Based in Bristol, the role includes two planned on-site collaboration days each week. Explore the work and apply: https://careers.northstar.example/atlas-computational-biologist.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-01/revised-post",
+                "recorded_at": "2026-09-01T11:30:00Z",
+                "model": null
+              }
+            }
+          ],
+          "missingness": [
+            "No publication or hiring outcome is recorded.",
+            "No independent practitioner assessment or measured revision time is available."
+          ]
+        },
+        {
+          "episode_id": "hr-specialist-02",
+          "split": "development",
+          "context": {
+            "role": "hr",
+            "audience": "experienced_specialists",
+            "channel": "linkedin",
+            "project": "atlas"
+          },
+          "task": "Draft a LinkedIn recruiting post for an experienced Research Data Engineer in Northstar Research's Atlas team. Explain the actual engineering problem and responsibilities using the current approved material. Preserve the supplied location and application route. Submit the post to the recruiting lead for review.",
+          "evidence": [
+            {
+              "evidence_id": "role-facts",
+              "kind": "source",
+              "text": "Approved role facts, version 1: Role: Research Data Engineer, Northstar Research, Atlas. The engineer will build and maintain ingestion pipelines for experimental datasets, implement schema checks and data lineage, and make failed transfers diagnosable. Relevant experience: production Python, SQL, workflow orchestration and maintaining data systems with scientific users. Location: Manchester; three on-site team days per week. This is not the Bristol computational-biology role. The team has no approved claim about a cloud provider, guaranteed training budget or salary. Fictional application address: https://careers.northstar.example/atlas-data-engineer. Shared brand guidance: use clear language, approved facts and no unsupported promises.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-02/role-v1",
+                "recorded_at": "2026-09-02T09:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "team-note",
+              "kind": "source",
+              "text": "Engineering lead note: Small changes to incoming file structures can currently break a research workflow far downstream. The new engineer will add checks where data enters the platform and preserve lineage so colleagues can locate failures. Some days involve pipeline code; others involve agreeing a usable schema with researchers. Please retain the terms schema validation and data lineage because they describe the actual work.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-02/team-note",
+                "recorded_at": "2026-09-02T09:20:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "draft",
+              "kind": "agent_output",
+              "text": "Make a difference through data at Northstar Research. Atlas is looking for an experienced Research Data Engineer to support scientific teams with dependable data systems. You will build ingestion pipelines, add schema validation and data lineage, and work with researchers to diagnose failed transfers. We welcome experience in production Python, SQL and workflow orchestration. The role is based in Manchester, with three on-site team days each week. Help colleagues use experimental datasets with greater confidence. Read the full description and apply: https://careers.northstar.example/atlas-data-engineer.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-02/draft",
+                "recorded_at": "2026-09-02T10:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "review",
+              "kind": "human_feedback",
+              "text": "Please start with the engineering challenge: detecting a changed input before it breaks a downstream analysis. For this experienced audience, that is more informative than make a difference through data. Keep schema validation and data lineage rather than simplifying them away. The Manchester arrangement is correctly taken from this role's current description.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-02/recruiting-review",
+                "recorded_at": "2026-09-02T11:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "revision",
+              "kind": "human_revision",
+              "text": "Catch a changed data input before it breaks a downstream research analysis. Northstar Research's Atlas team is hiring an experienced Research Data Engineer to build ingestion pipelines with schema validation, data lineage and useful failure diagnostics. You will work in Python and SQL, maintain orchestrated workflows, and agree data structures with the researchers who use them. We are looking for experience running dependable data systems and explaining engineering choices to scientific colleagues. This Manchester-based role includes three on-site team days per week. Read more and apply: https://careers.northstar.example/atlas-data-engineer.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-specialist-02/revised-post",
+                "recorded_at": "2026-09-02T11:30:00Z",
+                "model": null
+              }
+            }
+          ],
+          "missingness": [
+            "No candidate response or recruiting effectiveness metric is recorded.",
+            "The recruiting reviewers' independence is unknown; repeated comments are not independent validation."
+          ]
+        },
+        {
+          "episode_id": "hr-apprentice-03",
+          "split": "development",
+          "context": {
+            "role": "hr",
+            "audience": "apprentices",
+            "channel": "linkedin",
+            "project": "atlas"
+          },
+          "task": "Prepare a LinkedIn post for a Research Data Apprenticeship at Northstar Research. Address people at the beginning of their careers. Use the approved apprenticeship description and make entry requirements, learning support and location clear.",
+          "evidence": [
+            {
+              "evidence_id": "programme-facts",
+              "kind": "source",
+              "text": "Approved programme facts: Northstar Research offers a fictional Research Data Apprenticeship attached to Atlas in Bristol. The apprentice will learn to check research records, document straightforward data issues and write introductory Python with supervision. Prior professional programming experience is not required. Applicants need to meet the entry requirements listed in the full fictional description; do not invent grades, age restrictions or eligibility rules. The programme includes a named team mentor, protected study time and four on-site days each week. No guaranteed job at completion is approved. Fictional application address: https://careers.northstar.example/atlas-apprenticeship. Shared brand guidance: use clear language, approved facts and no unsupported promises.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-apprentice-03/programme-v1",
+                "recorded_at": "2026-09-03T09:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "draft",
+              "kind": "agent_output",
+              "text": "Ready to diagnose inconsistent experimental annotations and improve research data workflows? Northstar Research's Atlas Research Data Apprenticeship in Bristol introduces you to record checks, data-issue documentation and Python. You will work with a team mentor and receive protected study time. Prior professional programming experience is not required. The programme includes four on-site days each week. Review the full entry requirements and apply: https://careers.northstar.example/atlas-apprenticeship.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-apprentice-03/draft",
+                "recorded_at": "2026-09-03T10:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "review",
+              "kind": "human_feedback",
+              "text": "Do not reuse the specialist opening here. For apprentices, begin with what they can learn and the support available; the current opening sounds as if they should already know how to solve the technical problem. Explain the work plainly after that. Keep the explicit statement that professional programming experience is not required, and avoid a promise of employment after completion.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-apprentice-03/recruiting-review",
+                "recorded_at": "2026-09-03T11:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "revision",
+              "kind": "human_revision",
+              "text": "Start learning how research data works, with a mentor and time set aside to study. Northstar Research's Atlas Research Data Apprenticeship in Bristol introduces you to checking research records, documenting data issues and writing introductory Python with supervision. You do not need prior professional programming experience. The programme includes four on-site days each week, and the full description explains the entry requirements. If you are curious about the data behind research and want to develop practical skills, explore the programme: https://careers.northstar.example/atlas-apprenticeship.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-apprentice-03/revised-post",
+                "recorded_at": "2026-09-03T11:30:00Z",
+                "model": null
+              }
+            }
+          ],
+          "missingness": [
+            "No evidence establishes that every apprentice campaign should use the same structure.",
+            "No applicant comprehension or application outcome is recorded."
+          ]
+        },
+        {
+          "episode_id": "hr-ambiguous-04",
+          "split": "development",
+          "context": {
+            "role": "hr",
+            "audience": "experienced_specialists",
+            "channel": "linkedin",
+            "project": "atlas"
+          },
+          "task": "Create a LinkedIn recruiting post for an experienced Research Software Engineer in the Atlas team. Use the approved role information. A shorter version appears later in the work history, but the reason for that change is not documented.",
+          "evidence": [
+            {
+              "evidence_id": "role-facts",
+              "kind": "source",
+              "text": "Approved role facts: Northstar Research, Research Software Engineer, Atlas. The engineer will maintain shared analysis tools, add automated tests and help researchers migrate fragile scripts into maintainable packages. Experience with Python packaging, testing and collaborative software development is relevant. Location: Bristol; two planned on-site days each week. The role includes collaboration with computational biologists; no specific publication opportunity or management responsibility is approved. Fictional application address: https://careers.northstar.example/atlas-research-software-engineer. The brief provides no word limit, paid-placement constraint or instruction to omit location information.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-ambiguous-04/role-v1",
+                "recorded_at": "2026-09-04T09:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "draft",
+              "kind": "agent_output",
+              "text": "Help research software stay useful beyond its first analysis. Northstar Research's Atlas team is hiring an experienced Research Software Engineer to turn fragile scripts into tested, maintainable tools. You will develop shared Python packages, improve automated checks and work with computational biologists on changes that fit their analyses. Bring experience in collaborative software development, Python packaging and testing, together with an interest in explaining technical decisions to research colleagues. The role is based in Bristol, with two planned on-site days each week. Read the current role description and apply: https://careers.northstar.example/atlas-research-software-engineer.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-ambiguous-04/draft",
+                "recorded_at": "2026-09-04T10:00:00Z",
+                "model": null
+              }
+            },
+            {
+              "evidence_id": "revision",
+              "kind": "human_revision",
+              "text": "Turn fragile research scripts into tested, maintainable tools. Join Northstar Research's Atlas team as an experienced Research Software Engineer, developing shared Python packages and automated checks with computational biologists. Bring experience in Python packaging, testing and collaborative development. Explore the role: https://careers.northstar.example/atlas-research-software-engineer.",
+              "provenance": {
+                "origin": "synthetic",
+                "source_id": "authored/hr-ambiguous-04/shortened-version",
+                "recorded_at": "2026-09-04T11:30:00Z",
+                "model": null
+              }
+            }
+          ],
+          "missingness": [
+            "No reviewer comment explains why the text was shortened.",
+            "No final approval or publication status is recorded.",
+            "The intended placement, surrounding creative and character constraints are unknown.",
+            "No evidence establishes that omitting location and working arrangements was intentional or acceptable."
+          ]
+        }
+      ],
+      "hypotheses": [
+        {
+          "hypothesis_id": "H1",
+          "claim": "For Atlas LinkedIn posts targeting experienced specialists, the reviews favor opening with the concrete work problem and applicant contribution while retaining meaningful technical terminology. This is a provisional editorial preference; recruiting effectiveness is unmeasured.",
+          "scope": {
+            "match": {
+              "role": [
+                "hr"
+              ],
+              "audience": [
+                "experienced_specialists"
+              ],
+              "channel": [
+                "linkedin"
+              ],
+              "project": [
+                "atlas"
+              ]
+            }
+          },
+          "support": [
+            {
+              "episode_id": "hr-specialist-01",
+              "evidence_id": "review",
+              "quote": "For experienced computational biologists, please lead with the concrete analysis problem and the contribution they would make. The future-of-research opening could describe almost any role. Keep the reproducible-analysis language: this audience understands it."
+            },
+            {
+              "episode_id": "hr-specialist-02",
+              "evidence_id": "review",
+              "quote": "Please start with the engineering challenge: detecting a changed input before it breaks a downstream analysis. For this experienced audience, that is more informative than make a difference through data. Keep schema validation and data lineage rather than simplifying them away."
+            }
+          ],
+          "counterevidence": [
+            {
+              "episode_id": "hr-apprentice-03",
+              "evidence_id": "review",
+              "quote": "Do not reuse the specialist opening here. For apprentices, begin with what they can learn and the support available; the current opening sounds as if they should already know how to solve the technical problem."
+            }
+          ],
+          "alternatives": [
+            "The repeated feedback may reflect a shared reviewer preference or similar technical briefs; reviewer independence is unknown.",
+            "The apprentice feedback establishes an audience boundary rather than contradicting the preference within specialist posts."
+          ],
+          "unresolved_questions": [
+            "Would independent reviewers share this preference?",
+            "Would this opening improve applicant comprehension or response?"
+          ],
+          "origin": "model_generated"
+        },
+        {
+          "hypothesis_id": "H2",
+          "claim": "The Atlas apprenticeship episode supports a provisional preference for introducing approved learning opportunities and support before explaining work plainly and clarifying experience requirements.",
+          "scope": {
+            "match": {
+              "role": [
+                "hr"
+              ],
+              "audience": [
+                "apprentices"
+              ],
+              "channel": [
+                "linkedin"
+              ],
+              "project": [
+                "atlas"
+              ]
+            }
+          },
+          "support": [
+            {
+              "episode_id": "hr-apprentice-03",
+              "evidence_id": "review",
+              "quote": "For apprentices, begin with what they can learn and the support available; the current opening sounds as if they should already know how to solve the technical problem. Explain the work plainly after that. Keep the explicit statement that professional programming experience is not required, and avoid a promise of employment after completion."
+            },
+            {
+              "episode_id": "hr-apprentice-03",
+              "evidence_id": "revision",
+              "quote": "Start learning how research data works, with a mentor and time set aside to study."
+            }
+          ],
+          "counterevidence": [
+            {
+              "episode_id": "hr-specialist-02",
+              "evidence_id": "review",
+              "quote": "Please start with the engineering challenge: detecting a changed input before it breaks a downstream analysis."
+            }
+          ],
+          "alternatives": [
+            "The review may principally correct this draft's implication of prerequisite expertise, rather than prescribe a fixed structure for every apprenticeship campaign.",
+            "The specialist feedback shows a different audience preference; it supplies no direct contradiction within the apprentice scope."
+          ],
+          "unresolved_questions": [
+            "Does this preference recur across other apprenticeship briefs?",
+            "Does this framing improve applicants' understanding of entry requirements and support?"
+          ],
+          "origin": "model_generated"
+        },
+        {
+          "hypothesis_id": "H3",
+          "claim": "For Atlas LinkedIn recruiting, current vacancy facts should govern employment details and application routes. The unexplained shortened post provides insufficient evidence for a standing word limit or permission to omit logistics.",
+          "scope": {
+            "match": {
+              "role": [
+                "hr"
+              ],
+              "audience": [
+                "experienced_specialists",
+                "apprentices"
+              ],
+              "channel": [
+                "linkedin"
+              ],
+              "project": [
+                "atlas"
+              ]
+            }
+          },
+          "support": [
+            {
+              "episode_id": "hr-specialist-02",
+              "evidence_id": "role-facts",
+              "quote": "Location: Manchester; three on-site team days per week. This is not the Bristol computational-biology role."
+            },
+            {
+              "episode_id": "hr-apprentice-03",
+              "evidence_id": "revision",
+              "quote": "The programme includes four on-site days each week, and the full description explains the entry requirements. If you are curious about the data behind research and want to develop practical skills, explore the programme: https://careers.northstar.example/atlas-apprenticeship."
+            },
+            {
+              "episode_id": "hr-ambiguous-04",
+              "evidence_id": "role-facts",
+              "quote": "The brief provides no word limit, paid-placement constraint or instruction to omit location information."
+            }
+          ],
+          "counterevidence": [
+            {
+              "episode_id": "hr-ambiguous-04",
+              "evidence_id": "revision",
+              "quote": "Turn fragile research scripts into tested, maintainable tools. Join Northstar Research's Atlas team as an experienced Research Software Engineer, developing shared Python packages and automated checks with computational biologists. Bring experience in Python packaging, testing and collaborative development. Explore the role: https://careers.northstar.example/atlas-research-software-engineer."
+            }
+          ],
+          "alternatives": [
+            "The shortened revision could reflect an undocumented placement constraint, logistics supplied elsewhere, or an editing oversight. Its omission of location challenges universal inclusion, but the record does not establish the reason or acceptability."
+          ],
+          "unresolved_questions": [
+            "Was the shortened version approved, and was omission of location intentional?",
+            "Did its placement provide logistics elsewhere or impose a length constraint?"
+          ],
+          "origin": "model_generated"
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_id": "C1",
+          "hypothesis_id": "H1",
+          "scope": {
+            "match": {
+              "role": [
+                "hr"
+              ],
+              "audience": [
+                "experienced_specialists"
+              ],
+              "channel": [
+                "linkedin"
+              ],
+              "project": [
+                "atlas"
+              ]
+            }
+          },
+          "target": "context",
+          "patch": "For Atlas LinkedIn recruiting posts addressing experienced specialists, default to opening with a concrete work problem and the recruit's contribution, using current approved sources. Retain accurate technical terms that describe the work and suit the audience. If problem detail is missing, use supported responsibilities without inventing a challenge. Current facts and explicit instructions take precedence.",
+          "expected_effect": {
+            "metric": "professional_quality",
+            "prediction": "Untested: fewer reviewer requests to replace generic openings or restore useful technical terminology."
+          },
+          "blocking_questions": []
+        },
+        {
+          "candidate_id": "C2",
+          "hypothesis_id": "H2",
+          "scope": {
+            "match": {
+              "role": [
+                "hr"
+              ],
+              "audience": [
+                "apprentices"
+              ],
+              "channel": [
+                "linkedin"
+              ],
+              "project": [
+                "atlas"
+              ]
+            }
+          },
+          "target": "context",
+          "patch": "For Atlas LinkedIn apprenticeship posts, default to opening with learning opportunities and support documented in the current approved brief. Explain tasks plainly afterward and state current experience and entry requirements accurately. Say professional programming experience is unnecessary only when currently supported. Avoid wording that implies applicants must already solve specialist problems, and do not invent support or employment guarantees. Current facts and explicit instructions take precedence.",
+          "expected_effect": {
+            "metric": "professional_quality",
+            "prediction": "Untested: fewer reviewer corrections concerning implied prior expertise and clearer presentation of approved learning support."
+          },
+          "blocking_questions": []
+        },
+        {
+          "candidate_id": "C3",
+          "hypothesis_id": "H3",
+          "scope": {
+            "match": {
+              "role": [
+                "hr"
+              ],
+              "audience": [
+                "experienced_specialists",
+                "apprentices"
+              ],
+              "channel": [
+                "linkedin"
+              ],
+              "project": [
+                "atlas"
+              ]
+            }
+          },
+          "target": "context",
+          "patch": "Use the current vacancy's approved sources to verify location, on-site schedule, eligibility and application route. By default, preserve supplied logistics and the application route. Do not carry over another vacancy's details or infer a standing word limit or permission to omit logistics from an unexplained historical shortening. Treat undocumented approval as unknown. Current facts and explicit instructions take precedence.",
+          "expected_effect": {
+            "metric": "professional_quality",
+            "prediction": "Untested: fewer incorrect details transferred between vacancies and fewer unsupported omissions prompted by historical revisions."
+          },
+          "blocking_questions": []
+        }
+      ]
+    },
+    "assessments": [
+      {
+        "candidate_id": "C1",
+        "status": "eligible_for_validation",
+        "reasons": [
+          "References resolve and candidate scope is bounded; evidential validity still requires evaluation"
+        ],
+        "verified_reference_count": 3
+      },
+      {
+        "candidate_id": "C2",
+        "status": "eligible_for_validation",
+        "reasons": [
+          "References resolve and candidate scope is bounded; evidential validity still requires evaluation"
+        ],
+        "verified_reference_count": 3
+      },
+      {
+        "candidate_id": "C3",
+        "status": "eligible_for_validation",
+        "reasons": [
+          "References resolve and candidate scope is bounded; evidential validity still requires evaluation"
+        ],
+        "verified_reference_count": 4
+      }
+    ],
+    "error": null
+  },
+  "inference_audit": {
+    "assessments": [
+      {
+        "hypothesis_id": "H1",
+        "support_relevance": 2,
+        "scope_justification": 2,
+        "uncertainty_handling": 2,
+        "explanation": "Both specialist reviews explicitly favor concrete work problems, applicant contributions and meaningful technical terms. Apprentice feedback supports the audience boundary. The hypothesis appropriately acknowledges uncertain reviewer independence and unmeasured recruiting effectiveness."
+      },
+      {
+        "hypothesis_id": "H2",
+        "support_relevance": 2,
+        "scope_justification": 2,
+        "uncertainty_handling": 2,
+        "explanation": "The apprentice review and revision support leading with approved learning and support, followed by plain task descriptions and accurate experience requirements. Provisional wording and the alternative explanation appropriately limit inference from this single episode."
+      },
+      {
+        "hypothesis_id": "H3",
+        "support_relevance": 2,
+        "scope_justification": 2,
+        "uncertainty_handling": 2,
+        "explanation": "Approved briefs and task instructions support using current vacancy details and application routes across both audiences. The hypothesis appropriately treats the shortened revision as ambiguous: its omissions do not establish a standing word limit or permission to omit logistics."
+      }
+    ],
+    "limitations": [
+      "This assessment uses only fictional development episodes and is not domain-expert validation.",
+      "Reviewer independence is unknown; recruiting effectiveness, applicant comprehension and candidate-patch benefits remain untested.",
+      "The shortened post's approval, placement constraints and reasons for omitting logistics are undocumented."
+    ]
+  },
+  "human_revision_time": null,
+  "exported_or_deployed_update": false,
+  "conclusion_boundary": "Exploratory synthetic model pilot. No significance, human validity, real-world effect or recursive improvement claim."
+}

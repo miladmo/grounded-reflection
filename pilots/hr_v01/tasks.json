@@ -1,0 +1,133 @@
+{
+  "version": "0.1",
+  "provenance": "All organisations, roles, projects, people, dates, technical systems, campaign details and source documents in this file are wholly synthetic. Reserved .example URLs are fictional and are not intended to resolve. No external material was used.",
+  "shared_instructions": "For each case, write one LinkedIn recruiting post of 110–150 words, followed by zero to three concise editorial notes. The word limit applies only to the post, including its call to action, URL and any hashtags; notes are excluded. Treat space-separated tokens as words for this pilot. Use only the supplied sources for factual claims. Resolve source ambiguity using the dates, approval status and explicit precedence supplied in the case. Do not request clarification when the materials provide a workable resolution. Editorial notes may briefly explain a material editorial choice or a resolved source discrepancy; notes must not substitute for required post content. Do not invent benefits, credentials, deadlines, compensation, performance claims or hiring commitments.",
+  "tasks": [
+    {
+      "case_id": "eval-01",
+      "context": {"role": "hr", "audience": "experienced_specialists", "channel": "linkedin", "project": "atlas"},
+      "case_type": "transfer",
+      "task": "Write a LinkedIn recruiting post for Northstar Research's open Research Simulation Engineer role on Atlas. Help experienced research software specialists understand the engineering problem, what they would own, and how to apply. Use the current approved hiring brief and methods note. The archived launch draft is included to show an ambiguity you can resolve from the supplied materials. Deliver a 110–150-word post and up to three concise editorial notes.",
+      "sources": [
+        {
+          "source_id": "E01-HR-APPROVED",
+          "text": "Approved hiring brief, 6 April 2031. Organisation: Northstar Research. Project: Atlas. Open role: Research Simulation Engineer. Atlas uses a synthetic robotics testbed to study how evaluation results change when asynchronous sensor streams arrive in different orders. The new engineer will own a deterministic replay service and the regression suite that checks whether a saved run can be reproduced after simulator updates. Close collaborators are two research engineers and a methods scientist. Relevant experience: maintaining research software, debugging concurrent systems, and explaining technical tradeoffs to research colleagues. Python is used for orchestration and Rust for the replay engine; strong experience in one and willingness to work in the other is sufficient. A doctorate is not required. Location: hybrid, two on-site days per week at the fictional Brookmere lab. Applications are open at https://northstar.example/careers/atlas-simulation. No closing date has been approved. This brief supersedes earlier launch drafts on working arrangements and role scope. The post should include the role and project, the replay/reproducibility problem, meaningful ownership, hybrid arrangement, and application link; select other details for a readable post."
+        },
+        {
+          "source_id": "E01-METHODS-CURRENT",
+          "text": "Methods note approved for recruitment, 5 April 2031. Current failure mode: replaying the same stored sensor packets can produce a different event schedule after a simulator dependency changes. The team needs explicit event-ordering rules, versioned run manifests and tests that separate genuine research changes from replay drift. The service supports internal synthetic experiments; it is not a production robot-control system. The engineer will help define which parts of an experiment must be captured for repeatable results. No speedup or reliability percentage has been measured for the planned service."
+        },
+        {
+          "source_id": "E01-LAUNCH-ARCHIVE",
+          "text": "Archived, unapproved launch draft, 19 March 2031. Placeholder copy described a fully remote robotics platform role and said the successful hire would develop autonomous navigation models. Those points were not approved. The 6 April hiring brief and 5 April methods note define the current role."
+        }
+      ],
+      "output_constraints": {"min_words": 110, "max_words": 150}
+    },
+    {
+      "case_id": "eval-02",
+      "context": {"role": "hr", "audience": "experienced_specialists", "channel": "linkedin", "project": "atlas"},
+      "case_type": "transfer",
+      "task": "Write a LinkedIn recruiting post for Northstar Research's open Measurement Research Scientist role on Atlas. Make the research challenge understandable to experienced measurement, statistics or experimental-methods specialists and describe the work without overstating the maturity of the methods. Use the approved brief and research note; resolve the older working-title discrepancy from their approval status. Deliver a 110–150-word post and up to three concise editorial notes.",
+      "sources": [
+        {
+          "source_id": "E02-HR-APPROVED",
+          "text": "Approved hiring brief, 8 April 2031. Organisation: Northstar Research. Project: Atlas. Open role title: Measurement Research Scientist. The project studies whether confidence estimates remain meaningful when experimental conditions shift and only a small subset of outcomes receives expert labels. The scientist will design validation protocols, compare recalibration approaches and define when a result should be withheld because uncertainty is too high. They will work with experimental researchers and a research software engineer to turn the protocols into repeatable analyses. Relevant expertise may come from measurement science, applied statistics or rigorous experimental-methods work; the brief does not require a particular degree or number of years. Location: fictional Cedar Quay lab, with a hybrid pattern agreed with the team. Apply at https://northstar.example/careers/atlas-measurement. The post must identify the role and Atlas, explain the shift/sparse-label problem, mention both protocol design and responsible interpretation of uncertainty, and give the application link. It may select other facts to fit the word limit."
+        },
+        {
+          "source_id": "E02-RESEARCH-CURRENT",
+          "text": "Research note cleared for public recruitment, 7 April 2031. Initial studies use synthetic instrument traces. The central difficulty is distinguishing genuine changes in measurement quality from changes in which outcomes receive labels. Planned work includes stress tests across shifts, sensitivity analyses for the label-selection process and documented criteria for reporting or withholding estimates. There is no validated universal correction and no approved claim of clinical, safety-critical or customer deployment. A successful early contribution would be a defensible validation protocol that other researchers can reproduce, not a promised accuracy gain."
+        },
+        {
+          "source_id": "E02-SCOPING-ARCHIVE",
+          "text": "Internal scoping note, 20 March 2031, superseded before vacancy approval. Working title: Senior AI Accuracy Lead. A proposed phrase, 'eliminate uncertainty across all conditions', was rejected as unsupported. The approved role is an individual-contributor scientist position, not a people-management post. Use the current title and research scope."
+        }
+      ],
+      "output_constraints": {"min_words": 110, "max_words": 150}
+    },
+    {
+      "case_id": "eval-03",
+      "context": {"role": "hr", "audience": "experienced_specialists", "channel": "linkedin", "project": "atlas"},
+      "case_type": "transfer",
+      "task": "Write a LinkedIn recruiting post for Northstar Research's open Research Data Platform Engineer role on Atlas. Give experienced data infrastructure specialists a concrete view of the ownership and research value of this work. Use the current approved sources to handle the provisional architecture and working-arrangement details. Deliver a 110–150-word post and up to three concise editorial notes.",
+      "sources": [
+        {
+          "source_id": "E03-HR-APPROVED",
+          "text": "Approved hiring brief, 10 April 2031. Organisation: Northstar Research. Project: Atlas. Open role: Research Data Platform Engineer. Atlas research teams repeatedly revise the schemas used for synthetic experimental datasets. The hire will build dataset contracts and lineage checks so a published internal result can be traced to the exact data version, transformation code and access policy used to produce it. They will own the contract-validation workflow and migration tooling, collaborating with researchers who maintain analysis notebooks and with the internal information-governance specialist. Relevant experience: versioned data pipelines, schema evolution and practical access-control design. The role is based in the fictional Brookmere lab with three on-site days per week; the company is not advertising it as remote. Applications: https://northstar.example/careers/atlas-data-platform. The post must identify the role and Atlas, connect schema evolution to traceable research, describe ownership, state the three-day on-site pattern and include the application link."
+        },
+        {
+          "source_id": "E03-ARCHITECTURE-CURRENT",
+          "text": "Approved architecture summary, 9 April 2031. The first milestone is a small internal service that validates dataset manifests, checks compatible schema changes and produces a lineage record for each analysis run. The technical challenge includes preserving old analyses when schemas change and making access-policy changes visible in the provenance record. Python and SQL are in the current environment. The team will evaluate whether a graph store is useful; no graph database or cloud vendor has been selected. The new engineer will contribute to that choice. The datasets in this brief are synthetic, and the vacancy does not involve access to patient or employee records."
+        },
+        {
+          "source_id": "E03-DRAFT-ARCHIVE",
+          "text": "Unapproved recruiter draft, 28 March 2031. It used 'remote-first', named a graph database as mandatory expertise and described a global customer data platform. All three claims came from a generic template. The approved hiring brief and architecture summary replace them; no customer-facing platform is part of this vacancy."
+        }
+      ],
+      "output_constraints": {"min_words": 110, "max_words": 150}
+    },
+    {
+      "case_id": "eval-04",
+      "context": {"role": "hr", "audience": "apprentices", "channel": "linkedin", "project": "atlas"},
+      "case_type": "boundary",
+      "task": "Write a LinkedIn recruiting post for Northstar Research's Atlas Research Software Apprenticeship. Address people seeking their first structured route into research software work. Make the learning support and actual beginner responsibilities clear, with an encouraging, respectful tone. The current apprenticeship brief controls over the inherited specialist template. Deliver a 110–150-word post and up to three concise editorial notes.",
+      "sources": [
+        {
+          "source_id": "E04-APPRENTICESHIP-APPROVED",
+          "text": "Approved apprenticeship brief, 12 April 2031. Organisation: Northstar Research. Project: Atlas. Programme title: Research Software Apprenticeship. This is a paid, 18-month programme based on-site at the fictional Brookmere lab. Apprentices receive a named mentor, weekly supported practice sessions and protected learning time. They start by running documented tests on synthetic experiment data, recording unexpected results and improving short setup guides; later they build small Python utilities with review and support. No professional coding experience or degree is required. Interest in understanding how software behaves and willingness to ask questions are relevant. Applicants may describe a school, personal or community project, but a portfolio is not required. Apply at https://northstar.example/careers/atlas-apprenticeship. The post must include the programme and Atlas, paid 18-month duration, support, at least two concrete beginner activities, the lack of an experience/degree prerequisite, on-site location and application link."
+        },
+        {
+          "source_id": "E04-LEARNING-CURRENT",
+          "text": "Learning-team note approved for public use, 11 April 2031. The opening rotation focuses on learning to reproduce a result before trying to change the underlying code. Apprentices pair with an engineer, compare expected and observed test results and practise writing a useful problem report. They will not be expected to design Atlas architecture or independently diagnose concurrency faults on arrival. Progression is reviewed regularly with the mentor. There is no approved guarantee of a permanent role after the programme and no salary figure cleared for publication. Explain unfamiliar work in plain language without talking down to applicants."
+        },
+        {
+          "source_id": "E04-INHERITED-TEMPLATE",
+          "text": "Inherited specialist advertisement template, not approved for this programme: 'Own our distributed architecture from day one. Bring five years of Python experience and a postgraduate qualification.' The apprenticeship team has explicitly removed these requirements and the immediate independent-ownership claim. Use the approved apprenticeship and learning-team sources."
+        }
+      ],
+      "output_constraints": {"min_words": 110, "max_words": 150}
+    },
+    {
+      "case_id": "eval-05",
+      "context": {"role": "hr", "audience": "experienced_specialists", "channel": "linkedin", "project": "orion"},
+      "case_type": "boundary",
+      "task": "Write a LinkedIn recruiting-campaign post for Northstar Research's Orion methods roundtable, aimed at experienced systems-verification specialists. Follow the explicitly documented campaign objective: introduce Orion's way of working and invite a low-commitment professional conversation before vacancies are advertised. The post should still make the specialist work concrete. Resolve the conflicting call to action using the approved campaign brief. Deliver a 110–150-word post and up to three concise editorial notes.",
+      "sources": [
+        {
+          "source_id": "E05-CAMPAIGN-APPROVED",
+          "text": "Approved Orion campaign brief, 14 April 2031. Organisation: Northstar Research. Audience: experienced systems-verification and research-infrastructure specialists. Campaign objective: invite specialists to understand Orion's collaborative working model through a methods roundtable and build interest ahead of possible future recruitment. This campaign is not advertising an open vacancy. Lead the post with the opportunity to exchange approaches or see how the team works together; do not lead with a demand to solve a technical problem. The roundtable is an online 45-minute session on 7 May 2031 at 14:00 UTC. Two Orion researchers will show how they jointly review evidence and disagreements before accepting a verification claim, followed by discussion. Register at https://northstar.example/orion/methods-roundtable. Registration asks for a name and email only; no CV or application is required. Include the event format, date/time, duration, specialist relevance, no-CV participation and registration link. No role title, hiring date or job application page has been approved."
+        },
+        {
+          "source_id": "E05-METHODS-CURRENT",
+          "text": "Approved event content note, 13 April 2031. Orion studies verification of modular experimental software when component assumptions change between versions. The team is developing an evidence ledger that links each verification claim to its assumptions, supporting tests and unresolved counterexamples. Roundtable examples use a fictional scheduling simulator. Attendees will see a worked disagreement: one test suite passes, but a changed timing assumption invalidates the earlier claim. The event demonstrates how researchers and engineers discuss that conflict and record a defensible decision. It is a methods discussion, not a product launch, accredited course or assessment of attendees."
+        },
+        {
+          "source_id": "E05-CRM-ARCHIVE",
+          "text": "Unapproved CRM placeholder, 1 April 2031. It said 'Apply now to join Orion as a Verification Lead' and linked to a draft vacancy. Recruitment has not approved a vacancy. The 14 April campaign brief replaces this copy; the only approved call to action for this post is roundtable registration."
+        }
+      ],
+      "output_constraints": {"min_words": 110, "max_words": 150}
+    },
+    {
+      "case_id": "eval-06",
+      "context": {"role": "hr", "audience": "experienced_specialists", "channel": "linkedin", "project": "atlas"},
+      "case_type": "explicit_override",
+      "task": "Write a LinkedIn recruiting post for Northstar Research's open Research Automation Engineer role on Atlas. Follow the current brief's explicit request to open with learning and collaboration, then make the technical contribution concrete. The current post-specific instruction overrides the usual Atlas campaign opening guidance. Deliver a 110–150-word post and up to three concise editorial notes.",
+      "sources": [
+        {
+          "source_id": "E06-HR-APPROVED",
+          "text": "Approved hiring brief, 16 April 2031. Organisation: Northstar Research. Project: Atlas. Open role: Research Automation Engineer. Audience: experienced laboratory-automation or research-software specialists. This particular post must open with the opportunity to learn alongside researchers and share expertise across disciplines; do not begin with a technical-challenge hook. After that opening, explain the actual engineering work. The hire will build a workflow runner that recovers interrupted synthetic instrument experiments without silently duplicating completed steps. They will define checkpoint semantics, make restart decisions auditable and develop fault-injection tests with a methods researcher and an instrument-simulation engineer. The team uses paired design sessions and a weekly methods exchange; learning is mutual, and this is an experienced individual-contributor role. Location: fictional Cedar Quay lab, hybrid with two on-site days per week. Apply at https://northstar.example/careers/atlas-automation. Include role and project, the requested opening, recovery/duplicate-step problem, a concrete responsibility, working arrangement and application link."
+        },
+        {
+          "source_id": "E06-ENGINEERING-CURRENT",
+          "text": "Engineering note cleared for recruiting, 15 April 2031. Atlas runs multi-step studies against synthetic instrument services. A network interruption can leave the runner uncertain whether a simulated action completed. Blind retries can duplicate a step, while skipping a step can invalidate the study. The planned runner needs explicit operation identifiers, durable checkpoints and readable recovery records. Relevant experience includes stateful workflows, failure recovery and collaborative design reviews. Python is currently used, but a particular framework is not mandatory. This is software for a research testbed, not a promise of control over physical laboratory equipment."
+        },
+        {
+          "source_id": "E06-ATLAS-GUIDANCE",
+          "text": "General Atlas campaign guidance, approved 2 April 2031. For specialist vacancies, the usual starting point is a concrete technical challenge followed by its research significance. This is a default, not a fixed requirement. The communications lead's signed 16 April post-specific brief explicitly replaces that opening for the Research Automation Engineer post to make cross-disciplinary learning visible. It does not change the role's seniority, technical responsibilities or application route."
+        }
+      ],
+      "output_constraints": {"min_words": 110, "max_words": 150}
+    }
+  ]
+}
