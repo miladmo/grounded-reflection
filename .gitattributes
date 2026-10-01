@@ -5,6 +5,7 @@
 pilots/v02/** -text
 pilots/v03/** -text
 pilots/v04/** -text
+pilots/v05/** -text
 src/grounded_reflection/pilot_v02/** -text
 docs/pilot-v0*.md -text
 docs/pilot-replacement-run-rule.md -text
