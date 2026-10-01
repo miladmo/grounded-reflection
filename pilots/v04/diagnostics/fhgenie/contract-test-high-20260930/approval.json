@@ -1,0 +1,9 @@
+{
+  "approved": true,
+  "reviewer": "Milad Morad",
+  "date": "2026-09-30",
+  "response": "Vertragstest auf Stufe high freigegeben, ausführen",
+  "reasoning_effort": "high",
+  "planned_calls": 16,
+  "plan_sha256": "3ee95edd8d63481ed32eaebb5a16c186b377bd306429537515606866eea920b6"
+}

@@ -1,0 +1,27 @@
+{
+  "protected_files_unchanged": 1723,
+  "material_revision": "v04-amendment-03-r2",
+  "source_sha256": "3519cda4ca3018d1c332b576d40fa3a6ddb836e6f69bdabb3ba014b128e11ae6",
+  "seals": {
+    "runs/offline-amendment3-r2-20260929": "178d7c6e55825a3dc602d073d364dd1c8e294a36228de76bd8dd1476117864d6",
+    "runs/offline-amendment3-r2-20260929/preparation": "133e718b0e0be01c06b0321e02a4afdc1291afe7f39259e6d787e346c181b3d6",
+    "runs/offline-amendment3-r2-20260929/evaluator": "a0bde04ce910dc91ca856da342bee07ebbfc343744f0210845eab595f97d7521",
+    "review/materials-amendment3-r2-20260929": "f6e3325338bfe3ea565c52a196fe8ab082d0b57e4ec8f97d9b2ced7fd2efe3df"
+  },
+  "mock_calls": 192,
+  "task_rows": 144,
+  "preparation_rows": 48,
+  "all_counterfactual_gates_passed": true,
+  "same_review_case_selection": [
+    "S0-sales",
+    "S1-sales",
+    "S2-reporting",
+    "S3-hr",
+    "S4-retrieval",
+    "S5-retrieval"
+  ],
+  "surface_investigation_required": false,
+  "material_and_live_approval": "pending",
+  "offline_unit_tests_passed": 137,
+  "offline_unit_test_duration_seconds": 52.827
+}

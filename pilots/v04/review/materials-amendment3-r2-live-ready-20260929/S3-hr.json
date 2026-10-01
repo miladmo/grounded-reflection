@@ -1,0 +1,2144 @@
+{
+  "material_revision": "v04-amendment-03-r2",
+  "synthetic_placeholder": true,
+  "development_only": true,
+  "case": {
+    "case_id": "case-79caaa705ac8",
+    "setting": "S3",
+    "family": "hr",
+    "regime": "unidentifiable",
+    "seed": 5076900783492750034,
+    "split": "review",
+    "history": {
+      "history_id": "history-b25c68bba955",
+      "initial_configuration": "{\"task_family\":\"personnel_document\",\"workflow\":\"workflow-7e0284a9f5cd\",\"as_of\":\"2026-06-15T12:00:00Z\",\"dimensions\":{\"recipient\":[\"internal\",\"external\"],\"contract\":[\"permanent\",\"temporary\"]},\"field_option\":{\"field\":\"booking_reference\",\"operation\":\"set_fact\",\"value\":\"booking_reference\",\"separator\":\"\"},\"baseline_template\":{\"message\":\"{message}\",\"work_email\":\"{work_email}\"},\"fact_descriptions\":{\"message\":\"Current personnel document text.\",\"work_email\":\"Current contact email.\",\"booking_reference\":\"Current booking reference.\"},\"hypothesis_class\":\"h14\",\"hypothesis_definition\":\"Each of the two declared binary context dimensions defines a predicate testing its second listed value. Call these predicates x and y. In each registered version the target field configuration is one Boolean function from the following class: constant 0 or 1; x, not x, y, or not y; a conjunction of one literal from each dimension; or a disjunction of one literal from each dimension. Zero selects the configured baseline and one the available alternative. The fourteen distinct truth tables exclude only XOR and XNOR. Each version has its own class member, with no cross-version coupling. This restriction is a supplied synthetic assumption, not an established property of enterprise work.\"}",
+      "assumptions": "This is a bounded synthetic workflow model. initial_configuration declares the field options, two context dimensions and the complete H14 hypothesis class. Each registered version has one class member. A field observation constrains the member indexed by its recorded version. Broader consequences follow from the declared class. Facts provide current artifact values. Other fields retain their configured baseline. Outside the declared task_family and workflow, or without a complete declared context, no update is authorised by this model. A register_version event supplies trusted workflow metadata with the authority roster and half-open validity interval. Binding field approval is an event of type review with decision accept, performed by a listed reviewer within that interval, with the field included in reviewed_fields. Its accepted artifact establishes the field configuration at the recorded context. This explicit approval convention is a supplied synthetic assumption. A forward has an origin_ref identifying the record whose content it reproduces. Raw artifacts expose named revisions and a selected artifact reference; interpreted records expose the selected fields directly. A rejection records a whole-artifact decision and its stated grounds. An artifact field whose review is not recorded has no approved assignment. The configured baseline is retained when the available evidence does not establish an update. Dates and version labels in new work identify the applicable registration.",
+      "field_dictionary": {
+        "message": "Configured output field message; preserve unless an applicable update is established.",
+        "work_email": "Configured output field work_email; preserve unless an applicable update is established.",
+        "booking_reference": "Canonical field booking_reference. Available alternative operation set_fact, value='booking_reference', separator=''. Its requirement depends on the evidence.",
+        "fact.message": "Current personnel document text.",
+        "fact.work_email": "Current contact email.",
+        "fact.booking_reference": "Current booking reference."
+      },
+      "records": [
+        {
+          "record_id": "record-ed88d1449d9f",
+          "timestamp": "2026-05-19T16:37:12Z",
+          "kind": "review",
+          "actor": "Jonas",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-55604\",\"message\":\"Please prepare the appointment documents for case 55604.\",\"work_email\":\"contact55604@example.test\"},\"authority_ref\":\"record-15ef3cc618a1\",\"change_summary\":{\"after\":\"BK-55604\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-55604\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-55604\",\"date\":\"2026-05-19\",\"document_id\":\"DOC-55604\",\"message\":\"Please prepare the appointment documents for case 55604.\",\"work_email\":\"contact55604@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-1be8539b89c8",
+          "timestamp": "2026-06-13T15:17:39Z",
+          "kind": "review",
+          "actor": "Robin",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 36881.\",\"work_email\":\"contact36881@example.test\"},\"authority_ref\":\"record-15ef3cc618a1\",\"change_summary\":{\"after\":null,\"before\":\"BK-36881\",\"field\":\"booking_reference\"},\"comment\":\"Approved.\",\"decision\":\"accept\",\"document_id\":\"DOC-36881\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-36881\",\"date\":\"2026-06-13\",\"document_id\":\"DOC-36881\",\"message\":\"Please prepare the appointment documents for case 36881.\",\"work_email\":\"contact36881@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-5e5bc7a546c1",
+          "timestamp": "2026-06-02T08:22:40Z",
+          "kind": "revision",
+          "actor": "forwarding-service",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "observation": "{\"event\":\"forward\",\"message\":\"Sharing the linked artifact with the working group.\",\"origin_ref\":\"record-ed88d1449d9f\"}"
+        },
+        {
+          "record_id": "record-15ef3cc618a1",
+          "timestamp": "2026-01-01T00:00:00Z",
+          "kind": "template",
+          "actor": "workflow-registry",
+          "context": {},
+          "observation": "{\"authorised_reviewers\":[\"Robin\",\"Jonas\"],\"event\":\"register_version\",\"supersedes\":null,\"task_family\":\"personnel_document\",\"valid_from\":\"2026-01-01T00:00:00Z\",\"valid_until\":\"2027-01-01T00:00:00Z\",\"version\":\"edition-00e5eb7c0872\",\"workflow\":\"workflow-7e0284a9f5cd\"}"
+        },
+        {
+          "record_id": "record-b6d7c2702512",
+          "timestamp": "2026-06-02T12:44:09Z",
+          "kind": "review",
+          "actor": "Robin",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 35164.\",\"work_email\":\"contact35164@example.test\"},\"authority_ref\":\"record-15ef3cc618a1\",\"change_summary\":{\"after\":null,\"before\":\"BK-35164\",\"field\":\"booking_reference\"},\"comment\":\"Recorded.\",\"decision\":\"accept\",\"document_id\":\"DOC-35164\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-35164\",\"date\":\"2026-06-02\",\"document_id\":\"DOC-35164\",\"message\":\"Please prepare the appointment documents for case 35164.\",\"work_email\":\"contact35164@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-8e79f0d57861",
+          "timestamp": "2026-06-13T09:09:01Z",
+          "kind": "revision",
+          "actor": "forwarding-service",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "observation": "{\"event\":\"forward\",\"message\":\"Sharing the linked artifact with the working group.\",\"origin_ref\":\"record-ed88d1449d9f\"}"
+        }
+      ]
+    },
+    "truth": {
+      "history_id": "history-b25c68bba955",
+      "scenario_id": "S3-hr",
+      "pair_id": "case-79caaa705ac8",
+      "world_policy": {
+        "policy_id": "actual-world",
+        "rules": [
+          {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "personnel_document"
+                ],
+                "workflow": [
+                  "workflow-7e0284a9f5cd"
+                ],
+                "version": [
+                  "edition-00e5eb7c0872"
+                ],
+                "recipient": [
+                  "internal"
+                ],
+                "contract": [
+                  "permanent"
+                ]
+              }
+            }
+          },
+          {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "personnel_document"
+                ],
+                "workflow": [
+                  "workflow-7e0284a9f5cd"
+                ],
+                "version": [
+                  "edition-00e5eb7c0872"
+                ],
+                "recipient": [
+                  "external"
+                ],
+                "contract": [
+                  "permanent"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "policy-000",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "personnel_document"
+                  ],
+                  "workflow": [
+                    "workflow-7e0284a9f5cd"
+                  ],
+                  "version": [
+                    "edition-00e5eb7c0872"
+                  ],
+                  "recipient": [
+                    "external"
+                  ],
+                  "contract": [
+                    "permanent"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-001",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "personnel_document"
+                  ],
+                  "workflow": [
+                    "workflow-7e0284a9f5cd"
+                  ],
+                  "version": [
+                    "edition-00e5eb7c0872"
+                  ],
+                  "recipient": [
+                    "internal"
+                  ],
+                  "contract": [
+                    "permanent"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "personnel_document"
+                  ],
+                  "workflow": [
+                    "workflow-7e0284a9f5cd"
+                  ],
+                  "version": [
+                    "edition-00e5eb7c0872"
+                  ],
+                  "recipient": [
+                    "external"
+                  ],
+                  "contract": [
+                    "permanent"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-002",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "personnel_document"
+                  ],
+                  "workflow": [
+                    "workflow-7e0284a9f5cd"
+                  ],
+                  "version": [
+                    "edition-00e5eb7c0872"
+                  ],
+                  "recipient": [
+                    "external"
+                  ],
+                  "contract": [
+                    "permanent"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "personnel_document"
+                  ],
+                  "workflow": [
+                    "workflow-7e0284a9f5cd"
+                  ],
+                  "version": [
+                    "edition-00e5eb7c0872"
+                  ],
+                  "recipient": [
+                    "external"
+                  ],
+                  "contract": [
+                    "temporary"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-003",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "personnel_document"
+                  ],
+                  "workflow": [
+                    "workflow-7e0284a9f5cd"
+                  ],
+                  "version": [
+                    "edition-00e5eb7c0872"
+                  ],
+                  "recipient": [
+                    "internal"
+                  ],
+                  "contract": [
+                    "permanent"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "personnel_document"
+                  ],
+                  "workflow": [
+                    "workflow-7e0284a9f5cd"
+                  ],
+                  "version": [
+                    "edition-00e5eb7c0872"
+                  ],
+                  "recipient": [
+                    "external"
+                  ],
+                  "contract": [
+                    "permanent"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "personnel_document"
+                  ],
+                  "workflow": [
+                    "workflow-7e0284a9f5cd"
+                  ],
+                  "version": [
+                    "edition-00e5eb7c0872"
+                  ],
+                  "recipient": [
+                    "external"
+                  ],
+                  "contract": [
+                    "temporary"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "target-0",
+          "status": "unresolved",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "personnel_document"
+                ],
+                "workflow": [
+                  "workflow-7e0284a9f5cd"
+                ],
+                "version": [
+                  "edition-00e5eb7c0872"
+                ],
+                "recipient": [
+                  "internal"
+                ],
+                "contract": [
+                  "permanent"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-1",
+          "status": "reject",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "personnel_document"
+                ],
+                "workflow": [
+                  "workflow-7e0284a9f5cd"
+                ],
+                "version": [
+                  "edition-00e5eb7c0872"
+                ],
+                "recipient": [
+                  "internal"
+                ],
+                "contract": [
+                  "temporary"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-2",
+          "status": "adopt",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "personnel_document"
+                ],
+                "workflow": [
+                  "workflow-7e0284a9f5cd"
+                ],
+                "version": [
+                  "edition-00e5eb7c0872"
+                ],
+                "recipient": [
+                  "external"
+                ],
+                "contract": [
+                  "permanent"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-3",
+          "status": "unresolved",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "personnel_document"
+                ],
+                "workflow": [
+                  "workflow-7e0284a9f5cd"
+                ],
+                "version": [
+                  "edition-00e5eb7c0872"
+                ],
+                "recipient": [
+                  "external"
+                ],
+                "contract": [
+                  "temporary"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "witness-9e0c07074a86",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-70454",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 70454.",
+            "work_email": "contact70454@example.test",
+            "booking_reference": "BK-70454"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 70454."
+            },
+            {
+              "name": "work_email",
+              "value": "contact70454@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-069ac2e265ab",
+          "context": {
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-19941",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 19941.",
+            "work_email": "contact19941@example.test",
+            "booking_reference": "BK-19941"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 19941."
+            },
+            {
+              "name": "work_email",
+              "value": "contact19941@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-9454851b100d",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-31744",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 31744.",
+            "work_email": "contact31744@example.test",
+            "booking_reference": "BK-31744"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 31744."
+            },
+            {
+              "name": "work_email",
+              "value": "contact31744@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-cb0b239d5b57",
+          "context": {
+            "task_family": "personnel_document",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-64335",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 64335.",
+            "work_email": "contact64335@example.test",
+            "booking_reference": "BK-64335"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 64335."
+            },
+            {
+              "name": "work_email",
+              "value": "contact64335@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-69dc6375821a",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "outside-registered-domain",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-47391",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 47391.",
+            "work_email": "contact47391@example.test",
+            "booking_reference": "BK-47391"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 47391."
+            },
+            {
+              "name": "work_email",
+              "value": "contact47391@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-7af6d036db72",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-77965",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 77965.",
+            "work_email": "contact77965@example.test",
+            "booking_reference": "BK-77965"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 77965."
+            },
+            {
+              "name": "work_email",
+              "value": "contact77965@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-9c95ea8bc94f",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "outside-registered-domain",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-94921",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 94921.",
+            "work_email": "contact94921@example.test",
+            "booking_reference": "BK-94921"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 94921."
+            },
+            {
+              "name": "work_email",
+              "value": "contact94921@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-01081b1915a0",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-19199",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 19199.",
+            "work_email": "contact19199@example.test",
+            "booking_reference": "BK-19199"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 19199."
+            },
+            {
+              "name": "work_email",
+              "value": "contact19199@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-d02c37b69840",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "outside-registered-domain",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-39056",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 39056.",
+            "work_email": "contact39056@example.test",
+            "booking_reference": "BK-39056"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 39056."
+            },
+            {
+              "name": "work_email",
+              "value": "contact39056@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-67eff6c9d983",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal"
+          },
+          "facts": {
+            "document_id": "DOC-37444",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 37444.",
+            "work_email": "contact37444@example.test",
+            "booking_reference": "BK-37444"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 37444."
+            },
+            {
+              "name": "work_email",
+              "value": "contact37444@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-621a634e1049",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "outside-registered-domain"
+          },
+          "facts": {
+            "document_id": "DOC-37528",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 37528.",
+            "work_email": "contact37528@example.test",
+            "booking_reference": "BK-37528"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 37528."
+            },
+            {
+              "name": "work_email",
+              "value": "contact37528@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-a7e1db092ff7",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-69071",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 69071.",
+            "work_email": "contact69071@example.test",
+            "booking_reference": "BK-69071"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 69071."
+            },
+            {
+              "name": "work_email",
+              "value": "contact69071@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-1f1ea04211af",
+          "context": {
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-55348",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 55348.",
+            "work_email": "contact55348@example.test",
+            "booking_reference": "BK-55348"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 55348."
+            },
+            {
+              "name": "work_email",
+              "value": "contact55348@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-2d2c953b0ae9",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-90036",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 90036.",
+            "work_email": "contact90036@example.test",
+            "booking_reference": "BK-90036"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 90036."
+            },
+            {
+              "name": "work_email",
+              "value": "contact90036@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-a32db57c1675",
+          "context": {
+            "task_family": "personnel_document",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-84939",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 84939.",
+            "work_email": "contact84939@example.test",
+            "booking_reference": "BK-84939"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 84939."
+            },
+            {
+              "name": "work_email",
+              "value": "contact84939@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-77662d385265",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "outside-registered-domain",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-30943",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 30943.",
+            "work_email": "contact30943@example.test",
+            "booking_reference": "BK-30943"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 30943."
+            },
+            {
+              "name": "work_email",
+              "value": "contact30943@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-487a99462474",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-64941",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 64941.",
+            "work_email": "contact64941@example.test",
+            "booking_reference": "BK-64941"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 64941."
+            },
+            {
+              "name": "work_email",
+              "value": "contact64941@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-a844b8aa375e",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "outside-registered-domain",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-73255",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 73255.",
+            "work_email": "contact73255@example.test",
+            "booking_reference": "BK-73255"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 73255."
+            },
+            {
+              "name": "work_email",
+              "value": "contact73255@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-8c7012db5765",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-27909",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 27909.",
+            "work_email": "contact27909@example.test",
+            "booking_reference": "BK-27909"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 27909."
+            },
+            {
+              "name": "work_email",
+              "value": "contact27909@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-5bcddb9fa3d6",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "outside-registered-domain",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-25810",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 25810.",
+            "work_email": "contact25810@example.test",
+            "booking_reference": "BK-25810"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 25810."
+            },
+            {
+              "name": "work_email",
+              "value": "contact25810@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-bc3d7a43b1bf",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-21025",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 21025.",
+            "work_email": "contact21025@example.test",
+            "booking_reference": "BK-21025"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 21025."
+            },
+            {
+              "name": "work_email",
+              "value": "contact21025@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3cc7fccd5fcf",
+          "context": {
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-82156",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 82156.",
+            "work_email": "contact82156@example.test",
+            "booking_reference": "BK-82156"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 82156."
+            },
+            {
+              "name": "work_email",
+              "value": "contact82156@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3d5c05945a12",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-57402",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 57402.",
+            "work_email": "contact57402@example.test",
+            "booking_reference": "BK-57402"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 57402."
+            },
+            {
+              "name": "work_email",
+              "value": "contact57402@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-110ad26f7383",
+          "context": {
+            "task_family": "personnel_document",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-70654",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 70654.",
+            "work_email": "contact70654@example.test",
+            "booking_reference": "BK-70654"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 70654."
+            },
+            {
+              "name": "work_email",
+              "value": "contact70654@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-69f7f853919d",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "outside-registered-domain",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-93600",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 93600.",
+            "work_email": "contact93600@example.test",
+            "booking_reference": "BK-93600"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 93600."
+            },
+            {
+              "name": "work_email",
+              "value": "contact93600@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-e27f12366632",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-53932",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 53932.",
+            "work_email": "contact53932@example.test",
+            "booking_reference": "BK-53932"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 53932."
+            },
+            {
+              "name": "work_email",
+              "value": "contact53932@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3b1fbbc5475c",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "outside-registered-domain",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "document_id": "DOC-38158",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 38158.",
+            "work_email": "contact38158@example.test",
+            "booking_reference": "BK-38158"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 38158."
+            },
+            {
+              "name": "work_email",
+              "value": "contact38158@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-e82646521a14",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external"
+          },
+          "facts": {
+            "document_id": "DOC-84952",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 84952.",
+            "work_email": "contact84952@example.test",
+            "booking_reference": "BK-84952"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 84952."
+            },
+            {
+              "name": "work_email",
+              "value": "contact84952@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-1e818082a0d1",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "outside-registered-domain"
+          },
+          "facts": {
+            "document_id": "DOC-21076",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 21076.",
+            "work_email": "contact21076@example.test",
+            "booking_reference": "BK-21076"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 21076."
+            },
+            {
+              "name": "work_email",
+              "value": "contact21076@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-58519d020ef6",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-30214",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 30214.",
+            "work_email": "contact30214@example.test",
+            "booking_reference": "BK-30214"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 30214."
+            },
+            {
+              "name": "work_email",
+              "value": "contact30214@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-97c00d61e556",
+          "context": {
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-81972",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 81972.",
+            "work_email": "contact81972@example.test",
+            "booking_reference": "BK-81972"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 81972."
+            },
+            {
+              "name": "work_email",
+              "value": "contact81972@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-92ebde34351e",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-48835",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 48835.",
+            "work_email": "contact48835@example.test",
+            "booking_reference": "BK-48835"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 48835."
+            },
+            {
+              "name": "work_email",
+              "value": "contact48835@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-480c0aaa16f2",
+          "context": {
+            "task_family": "personnel_document",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-48573",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 48573.",
+            "work_email": "contact48573@example.test",
+            "booking_reference": "BK-48573"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 48573."
+            },
+            {
+              "name": "work_email",
+              "value": "contact48573@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-d57a74afd634",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "outside-registered-domain",
+            "version": "edition-00e5eb7c0872",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-85225",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 85225.",
+            "work_email": "contact85225@example.test",
+            "booking_reference": "BK-85225"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 85225."
+            },
+            {
+              "name": "work_email",
+              "value": "contact85225@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-598a1759fd0f",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-19647",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 19647.",
+            "work_email": "contact19647@example.test",
+            "booking_reference": "BK-19647"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 19647."
+            },
+            {
+              "name": "work_email",
+              "value": "contact19647@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-26059af734bd",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-7e0284a9f5cd",
+            "version": "outside-registered-domain",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "document_id": "DOC-63525",
+            "date": "2026-06-15",
+            "message": "Please prepare the appointment documents for case 63525.",
+            "work_email": "contact63525@example.test",
+            "booking_reference": "BK-63525"
+          },
+          "baseline_fields": [
+            {
+              "name": "message",
+              "value": "Please prepare the appointment documents for case 63525."
+            },
+            {
+              "name": "work_email",
+              "value": "contact63525@example.test"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        }
+      ]
+    },
+    "diagnostic_context": {
+      "task_family": "personnel_document",
+      "workflow": "workflow-7e0284a9f5cd",
+      "version": "edition-00e5eb7c0872",
+      "recipient": "internal",
+      "contract": "permanent"
+    },
+    "control_context": {
+      "task_family": "personnel_document",
+      "workflow": "workflow-7e0284a9f5cd",
+      "version": "edition-00e5eb7c0872",
+      "recipient": "external",
+      "contract": "temporary"
+    },
+    "oracle_audit": {
+      "record-ed88d1449d9f": {
+        "root_id": "record-ed88d1449d9f",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-1be8539b89c8": {
+        "root_id": "record-1be8539b89c8",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-5e5bc7a546c1": {
+        "root_id": "record-ed88d1449d9f",
+        "validity": "active",
+        "kind": "copy",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        "constraint_applied": false,
+        "usable_current_support": true
+      },
+      "record-15ef3cc618a1": {
+        "root_id": "record-15ef3cc618a1",
+        "validity": "active",
+        "kind": "version_event",
+        "scope_context": {},
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-b6d7c2702512": {
+        "root_id": "record-b6d7c2702512",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-8e79f0d57861": {
+        "root_id": "record-ed88d1449d9f",
+        "validity": "active",
+        "kind": "copy",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        "constraint_applied": false,
+        "usable_current_support": true
+      }
+    },
+    "material_audit": {
+      "material_revision": "v04-amendment-03-r2",
+      "task_type": "unidentifiable",
+      "record_count": 6,
+      "rendering": "interpreted",
+      "additional_noise_counts": {
+        "forward_current": 2
+      },
+      "reversed_option": false,
+      "current_witness_contexts": [
+        {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "temporary"
+        }
+      ],
+      "diagnostic_observed": false,
+      "control_basis": "unidentifiable_baseline_world",
+      "registered_versions": [
+        "edition-00e5eb7c0872"
+      ],
+      "admissible_count": 4,
+      "current_admissible_count": 4,
+      "counterfactual": {
+        "baseline": {
+          "diagnostic": "keep",
+          "control": "keep"
+        },
+        "records": [
+          {
+            "record_id": "record-5e5bc7a546c1",
+            "record_type": "forward",
+            "origin_record_id": "record-ed88d1449d9f",
+            "context": {
+              "task_family": "personnel_document",
+              "workflow": "workflow-7e0284a9f5cd",
+              "version": "edition-00e5eb7c0872",
+              "recipient": "external",
+              "contract": "temporary"
+            },
+            "option_index": 1,
+            "selected_field": "booking_reference",
+            "selected_field_present": true,
+            "selected_field_value": "BK-55604",
+            "promotion": "Add this publicly recovered field configuration as one binding current-version observation; preserve all genuine observations.",
+            "remaining_policy_count": 2,
+            "outcome": "action_flip",
+            "diagnostic_action": "keep",
+            "control_action": "apply",
+            "diagnostic_basis": "unresolved",
+            "control_basis": "resolved_change"
+          },
+          {
+            "record_id": "record-8e79f0d57861",
+            "record_type": "forward",
+            "origin_record_id": "record-ed88d1449d9f",
+            "context": {
+              "task_family": "personnel_document",
+              "workflow": "workflow-7e0284a9f5cd",
+              "version": "edition-00e5eb7c0872",
+              "recipient": "internal",
+              "contract": "permanent"
+            },
+            "option_index": 1,
+            "selected_field": "booking_reference",
+            "selected_field_present": true,
+            "selected_field_value": "BK-55604",
+            "promotion": "Add this publicly recovered field configuration as one binding current-version observation; preserve all genuine observations.",
+            "remaining_policy_count": 2,
+            "outcome": "action_flip",
+            "diagnostic_action": "apply",
+            "control_action": "keep",
+            "diagnostic_basis": "resolved_change",
+            "control_basis": "unresolved"
+          }
+        ],
+        "by_type": {
+          "forward": {
+            "record_count": 2,
+            "action_flip": 2,
+            "contradiction": 0,
+            "unchanged_constraints": 0,
+            "narrower_same_actions": 0,
+            "retention_resolved": 0,
+            "unassessable": 0,
+            "qualifying_record_ids": [
+              "record-5e5bc7a546c1",
+              "record-8e79f0d57861"
+            ]
+          }
+        },
+        "required_outcome": "action_flip",
+        "passed": true
+      }
+    }
+  },
+  "oracle_proof": {
+    "source": "Recomputed solely from the public History by the independent oracle.",
+    "hypothesis_class": "h14",
+    "class_limit": "H14 excludes XOR and XNOR; transfer identification depends on this supplied restriction.",
+    "current_version": "edition-00e5eb7c0872",
+    "versions": {
+      "edition-00e5eb7c0872": {
+        "authorised_reviewers": [
+          "Robin",
+          "Jonas"
+        ],
+        "event": "register_version",
+        "supersedes": null,
+        "task_family": "personnel_document",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z",
+        "version": "edition-00e5eb7c0872",
+        "workflow": "workflow-7e0284a9f5cd",
+        "registry_id": "record-15ef3cc618a1"
+      }
+    },
+    "current_compatible_function_count": 4,
+    "constraints": [
+      {
+        "record_id": "record-ed88d1449d9f",
+        "root_id": "record-ed88d1449d9f",
+        "version": "edition-00e5eb7c0872",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        "option_index": 1
+      },
+      {
+        "record_id": "record-1be8539b89c8",
+        "root_id": "record-1be8539b89c8",
+        "version": "edition-00e5eb7c0872",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        "option_index": 0
+      },
+      {
+        "record_id": "record-b6d7c2702512",
+        "root_id": "record-b6d7c2702512",
+        "version": "edition-00e5eb7c0872",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        "option_index": 0
+      }
+    ],
+    "admissible_policy_count": 4,
+    "compatible_functions_by_version": [
+      {
+        "version": "edition-00e5eb7c0872",
+        "cells": [
+          {
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          {
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          {
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          {
+            "recipient": "external",
+            "contract": "temporary"
+          }
+        ],
+        "compatible_function_count": 4,
+        "functions": [
+          {
+            "values": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "complexity": 2
+          },
+          {
+            "values": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "complexity": 1
+          },
+          {
+            "values": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "complexity": 1
+          },
+          {
+            "values": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "complexity": 2
+          }
+        ]
+      }
+    ],
+    "task_obligations": [
+      {
+        "probe": "diagnostic",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "permanent"
+        },
+        "observed_context": false,
+        "direct_witnesses": [],
+        "unanimous_fields": false,
+        "warranted_fields": {
+          "message": "Please prepare the appointment documents for case 38525.",
+          "work_email": "contact38525@example.test"
+        },
+        "expected_decision": "keep",
+        "retention_basis": "unresolved"
+      },
+      {
+        "probe": "control",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "observed_context": false,
+        "direct_witnesses": [],
+        "unanimous_fields": false,
+        "warranted_fields": {
+          "message": "Please prepare the appointment documents for case 87928.",
+          "work_email": "contact87928@example.test"
+        },
+        "expected_decision": "keep",
+        "retention_basis": "unresolved"
+      }
+    ],
+    "evidence_audit": {
+      "record-ed88d1449d9f": {
+        "root_id": "record-ed88d1449d9f",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-1be8539b89c8": {
+        "root_id": "record-1be8539b89c8",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-5e5bc7a546c1": {
+        "root_id": "record-ed88d1449d9f",
+        "validity": "active",
+        "kind": "copy",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        "constraint_applied": false,
+        "usable_current_support": true
+      },
+      "record-15ef3cc618a1": {
+        "root_id": "record-15ef3cc618a1",
+        "validity": "active",
+        "kind": "version_event",
+        "scope_context": {},
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-b6d7c2702512": {
+        "root_id": "record-b6d7c2702512",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-8e79f0d57861": {
+        "root_id": "record-ed88d1449d9f",
+        "validity": "active",
+        "kind": "copy",
+        "scope_context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        "constraint_applied": false,
+        "usable_current_support": true
+      }
+    }
+  },
+  "counterfactual": {
+    "baseline": {
+      "diagnostic": "keep",
+      "control": "keep"
+    },
+    "records": [
+      {
+        "record_id": "record-5e5bc7a546c1",
+        "record_type": "forward",
+        "origin_record_id": "record-ed88d1449d9f",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "option_index": 1,
+        "selected_field": "booking_reference",
+        "selected_field_present": true,
+        "selected_field_value": "BK-55604",
+        "promotion": "Add this publicly recovered field configuration as one binding current-version observation; preserve all genuine observations.",
+        "remaining_policy_count": 2,
+        "outcome": "action_flip",
+        "diagnostic_action": "keep",
+        "control_action": "apply",
+        "diagnostic_basis": "unresolved",
+        "control_basis": "resolved_change"
+      },
+      {
+        "record_id": "record-8e79f0d57861",
+        "record_type": "forward",
+        "origin_record_id": "record-ed88d1449d9f",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "permanent"
+        },
+        "option_index": 1,
+        "selected_field": "booking_reference",
+        "selected_field_present": true,
+        "selected_field_value": "BK-55604",
+        "promotion": "Add this publicly recovered field configuration as one binding current-version observation; preserve all genuine observations.",
+        "remaining_policy_count": 2,
+        "outcome": "action_flip",
+        "diagnostic_action": "apply",
+        "control_action": "keep",
+        "diagnostic_basis": "resolved_change",
+        "control_basis": "unresolved"
+      }
+    ],
+    "by_type": {
+      "forward": {
+        "record_count": 2,
+        "action_flip": 2,
+        "contradiction": 0,
+        "unchanged_constraints": 0,
+        "narrower_same_actions": 0,
+        "retention_resolved": 0,
+        "unassessable": 0,
+        "qualifying_record_ids": [
+          "record-5e5bc7a546c1",
+          "record-8e79f0d57861"
+        ]
+      }
+    },
+    "required_outcome": "action_flip",
+    "passed": true
+  },
+  "surface_audit": {
+    "report": "surface-audit.json",
+    "markdown": "surface-audit.md",
+    "history_id": "history-b25c68bba955",
+    "construction_checks": {
+      "history_id": "history-b25c68bba955",
+      "positive_records": 3,
+      "negative_records": 0,
+      "negative_categories": [],
+      "label_transitions_in_delivered_order": 0,
+      "mixed_delivered_order": null,
+      "applicable": false,
+      "passed": null,
+      "order_check_is_descriptive": true
+    }
+  },
+  "future": [
+    {
+      "task": {
+        "task_id": "task-cb0f54d54662",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "internal",
+          "contract": "permanent"
+        },
+        "facts": {
+          "document_id": "DOC-38525",
+          "date": "2026-06-15",
+          "message": "Please prepare the appointment documents for case 38525.",
+          "work_email": "contact38525@example.test",
+          "booking_reference": "BK-38525"
+        },
+        "baseline_fields": [
+          {
+            "name": "message",
+            "value": "Please prepare the appointment documents for case 38525."
+          },
+          {
+            "name": "work_email",
+            "value": "contact38525@example.test"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-cb0f54d54662",
+        "history_id": "history-b25c68bba955",
+        "probe": "diagnostic",
+        "expected_decision": "keep",
+        "recoverable": false,
+        "world_fields": [
+          {
+            "name": "message",
+            "value": "Please prepare the appointment documents for case 38525."
+          },
+          {
+            "name": "work_email",
+            "value": "contact38525@example.test"
+          },
+          {
+            "name": "booking_reference",
+            "value": "BK-38525"
+          }
+        ]
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-71682033d71f",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-7e0284a9f5cd",
+          "version": "edition-00e5eb7c0872",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "facts": {
+          "document_id": "DOC-87928",
+          "date": "2026-06-15",
+          "message": "Please prepare the appointment documents for case 87928.",
+          "work_email": "contact87928@example.test",
+          "booking_reference": "BK-87928"
+        },
+        "baseline_fields": [
+          {
+            "name": "message",
+            "value": "Please prepare the appointment documents for case 87928."
+          },
+          {
+            "name": "work_email",
+            "value": "contact87928@example.test"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-71682033d71f",
+        "history_id": "history-b25c68bba955",
+        "probe": "control",
+        "expected_decision": "keep",
+        "recoverable": true,
+        "world_fields": [
+          {
+            "name": "message",
+            "value": "Please prepare the appointment documents for case 87928."
+          },
+          {
+            "name": "work_email",
+            "value": "contact87928@example.test"
+          }
+        ]
+      }
+    }
+  ],
+  "human_review": {
+    "status": "pending",
+    "reviewer": null,
+    "response": null
+  }
+}

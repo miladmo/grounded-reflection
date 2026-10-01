@@ -1,0 +1,34 @@
+{
+  "unit_tests_passed": 15,
+  "local_cli_fixture": {
+    "purpose": "Local request capture without a model or external inference endpoint.",
+    "http_observations": {
+      "request": {
+        "authorization_present": false,
+        "chatgpt_account_id_present": false,
+        "accept_present": true
+      },
+      "response": {
+        "status": 200,
+        "mime": "text/event-stream",
+        "content_encoding": "missing",
+        "http_version": 10,
+        "cf_mitigated_challenge": false,
+        "via_present": false
+      }
+    },
+    "model_calls": 0,
+    "local_requests": 1,
+    "expected_transport_error": null,
+    "workspace_was_empty": true,
+    "private_evaluator_visible": false,
+    "private_future_visible": false,
+    "ancestor_document_visible": false,
+    "public_prompt_visible": true,
+    "tools": [
+      []
+    ]
+  },
+  "real_model_calls": 0,
+  "live_test": "pending"
+}

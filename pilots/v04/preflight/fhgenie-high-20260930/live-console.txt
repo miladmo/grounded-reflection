@@ -1,0 +1,17 @@
+﻿{
+  "output": "pilots\\v04\\runs\\live-fhgenie-high-20260930",
+  "offline": false,
+  "status": "complete",
+  "planned_calls": 192,
+  "budget": {
+    "attempted_calls": 192,
+    "reported_tokens": 2072310,
+    "calls_with_unknown_usage": 0,
+    "total_tokens": 2072310,
+    "failed_calls": 0,
+    "response_failures": 0,
+    "max_response_failures": 19,
+    "halt_reason": null,
+    "strict_token_cap": false
+  }
+}

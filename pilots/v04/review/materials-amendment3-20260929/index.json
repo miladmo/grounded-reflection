@@ -1,0 +1,55 @@
+{
+  "material_revision": "v04-amendment-03",
+  "source_sha256": "da43c259c268d944f51ee6a2bed80f9f8392cf4e8a3988e3d55cdbecf9fa2c20",
+  "history_seed": 44311,
+  "future_seed": 44312,
+  "history_ids": [
+    "history-8fc9b7979fc2",
+    "history-df3e3de1a862",
+    "history-2f61d9ac5236",
+    "history-9ff6c57e650c",
+    "history-2cd307383a79",
+    "history-70c8ae5e7fe9"
+  ],
+  "settings": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "selection": [
+    {
+      "setting": "S0",
+      "family": "sales",
+      "task_type": "observed_change"
+    },
+    {
+      "setting": "S1",
+      "family": "sales",
+      "task_type": "unidentifiable"
+    },
+    {
+      "setting": "S2",
+      "family": "reporting",
+      "task_type": "transfer_change"
+    },
+    {
+      "setting": "S3",
+      "family": "hr",
+      "task_type": "unidentifiable"
+    },
+    {
+      "setting": "S4",
+      "family": "retrieval",
+      "task_type": "resolved_retention_transfer"
+    },
+    {
+      "setting": "S5",
+      "family": "retrieval",
+      "task_type": "transfer_change"
+    }
+  ],
+  "human_review": "pending"
+}

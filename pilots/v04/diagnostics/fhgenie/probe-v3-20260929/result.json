@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "key_exists": true,
+  "network_requests": 1,
+  "http_status": 200,
+  "observed_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "model_matches_requested": true,
+  "plan_hashes_valid": true,
+  "request_valid": true,
+  "prompt_tokens": 24,
+  "completion_tokens": 33,
+  "elapsed_ms": 1223,
+  "system_fingerprint": "vllm-0.25.1-dp4-ep-3e90b15f",
+  "reasoning_content_present": true,
+  "provider_error_type": null,
+  "provider_error_code": null,
+  "provider_error_param": null,
+  "final_content_kind": "string",
+  "final_content_utf8_bytes": 15,
+  "final_json_status": "valid",
+  "final_capture_status": "saved"
+}

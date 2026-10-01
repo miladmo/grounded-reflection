@@ -1,0 +1,13 @@
+{
+  "protocol": "pilot-v0.4",
+  "material_revision": "v04-amendment-03-r2",
+  "backend": "codex",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "medium",
+  "history_seed": 44341,
+  "future_seed": 44342,
+  "order_seed": 44343,
+  "max_calls": 200,
+  "max_reported_tokens": 6000000,
+  "timeout_seconds": 420
+}

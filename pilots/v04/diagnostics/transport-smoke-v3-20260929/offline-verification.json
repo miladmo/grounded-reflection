@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-29",
+  "unit_tests_passed": 23,
+  "unit_tests_failed": 0,
+  "model_calls": 0,
+  "local_cli_fixture": {
+    "purpose": "Local request capture without a model or external inference endpoint.",
+    "http_observations": {
+      "request": {
+        "authorization_present": false,
+        "chatgpt_account_id_present": false,
+        "accept_present": true
+      },
+      "response": {
+        "status": 200,
+        "content_type_present": false,
+        "mime": "missing",
+        "content_encoding": "missing",
+        "http_version": 10,
+        "cf_mitigated_challenge": false,
+        "via_present": false
+      },
+      "sse_compatibility": {
+        "mode": "validated_missing_content_type",
+        "bytes_prefetched": 272,
+        "first_event": "response.created"
+      }
+    },
+    "model_calls": 0,
+    "local_requests": 1,
+    "expected_transport_error": null,
+    "workspace_was_empty": true,
+    "private_evaluator_visible": false,
+    "private_future_visible": false,
+    "ancestor_document_visible": false,
+    "public_prompt_visible": true,
+    "tools": [
+      []
+    ]
+  },
+  "research_source_binding_unchanged": "8dab3506c3c26b0c5eaeb3318104e2eec15efe8b5de1755ea42bcc9e75b47fd4",
+  "limitations": [
+    "Local fixture proves compatibility with a simulated stream only.",
+    "It does not establish the content of the v2 remote response or remote success.",
+    "The earlier v2 observer grouped missing and empty Content-Type together."
+  ]
+}

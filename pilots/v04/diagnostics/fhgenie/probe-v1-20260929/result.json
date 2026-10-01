@@ -1,0 +1,18 @@
+{
+  "status": "response_content_invalid",
+  "key_exists": true,
+  "network_requests": 1,
+  "http_status": 200,
+  "observed_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "model_matches_requested": true,
+  "plan_hashes_valid": true,
+  "request_valid": true,
+  "prompt_tokens": 24,
+  "completion_tokens": 34,
+  "elapsed_ms": 484,
+  "system_fingerprint": "vllm-0.25.1-dp4-ep-3e90b15f",
+  "reasoning_content_present": true,
+  "provider_error_type": null,
+  "provider_error_code": null,
+  "provider_error_param": null
+}

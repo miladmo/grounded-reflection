@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-29",
+  "check": "Historical H16 oracle, frozen six review histories, removal of two instructional fragments only",
+  "oracle_source": "pilots/v04/runs/offline-20260929/sources/pilots/v04/reflectai_v04/oracle.py",
+  "oracle_sha256": "30fad2eddef9c52050055ed3f8408a2d4993d1e75efd5b3d8cc45fbbc2e04d6c",
+  "removed_fragments": [
+    "its destination context is not a new review. ",
+    "Do not assume an old configuration carries into a new version. "
+  ],
+  "cases": [
+    {
+      "file": "pilots/v04/review/materials-20260929/S0-hr.json",
+      "sha256": "f2c361367186a4e3c8c24fd8eea54e813efa397d3fb4b4baacbd92d4e16b8a0f",
+      "admissible_count": 4,
+      "entire_oracle_result_unchanged": true,
+      "actions_before": [
+        "apply",
+        "keep"
+      ],
+      "actions_after": [
+        "apply",
+        "keep"
+      ]
+    },
+    {
+      "file": "pilots/v04/review/materials-20260929/S1-sales.json",
+      "sha256": "2a99b6b73015f51a2e1f1899b2db82911d11a8fcbcfd0cc0c7eeb46501dcc63c",
+      "admissible_count": 4,
+      "entire_oracle_result_unchanged": true,
+      "actions_before": [
+        "keep",
+        "keep"
+      ],
+      "actions_after": [
+        "keep",
+        "keep"
+      ]
+    },
+    {
+      "file": "pilots/v04/review/materials-20260929/S2-sales.json",
+      "sha256": "f71e6d371a0920f43c968f93c37ec13fb00c8d757b18c639869320220ce001e3",
+      "admissible_count": 4,
+      "entire_oracle_result_unchanged": true,
+      "actions_before": [
+        "keep",
+        "keep"
+      ],
+      "actions_after": [
+        "keep",
+        "keep"
+      ]
+    },
+    {
+      "file": "pilots/v04/review/materials-20260929/S3-hr.json",
+      "sha256": "2a951ef00782ce8d4157c84a9a39500cbf87678f67e58db3b2446a4500daeb2f",
+      "admissible_count": 4,
+      "entire_oracle_result_unchanged": true,
+      "actions_before": [
+        "keep",
+        "keep"
+      ],
+      "actions_after": [
+        "keep",
+        "keep"
+      ]
+    },
+    {
+      "file": "pilots/v04/review/materials-20260929/S4-retrieval.json",
+      "sha256": "459039aed51778815f60f872b6db6662a76504cbf8026437eb67a9e1498396cf",
+      "admissible_count": 32,
+      "entire_oracle_result_unchanged": true,
+      "actions_before": [
+        "keep",
+        "keep"
+      ],
+      "actions_after": [
+        "keep",
+        "keep"
+      ]
+    },
+    {
+      "file": "pilots/v04/review/materials-20260929/S5-reporting.json",
+      "sha256": "76b00d2f7f3bd192f47713e1af0a77421c1767e80a6f65244bd3b6a94ac34e2d",
+      "admissible_count": 32,
+      "entire_oracle_result_unchanged": true,
+      "actions_before": [
+        "apply",
+        "keep"
+      ],
+      "actions_after": [
+        "apply",
+        "keep"
+      ]
+    }
+  ],
+  "passed": true,
+  "limitation": "Operational invariance only. The oracle does not parse assumptions prose; this does not establish completeness of revised public semantics.",
+  "model_calls": 0
+}

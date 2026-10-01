@@ -1,0 +1,20 @@
+{
+  "network_route": {
+    "https_proxy_configured": false,
+    "destination_bypassed": false,
+    "route": "direct_by_environment"
+  },
+  "request": {
+    "authorization_present": true,
+    "chatgpt_account_id_present": true,
+    "accept_present": true
+  },
+  "response": {
+    "status": 200,
+    "mime": "missing",
+    "content_encoding": "missing",
+    "http_version": 11,
+    "cf_mitigated_challenge": false,
+    "via_present": false
+  }
+}

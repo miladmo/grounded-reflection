@@ -1,0 +1,14 @@
+{
+  "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Return exactly this JSON object and nothing else: {\"status\":\"ok\"}. Do not use tools."
+    }
+  ],
+  "stream": false,
+  "max_tokens": 2048,
+  "reasoning_effort": "low",
+  "temperature": 1,
+  "top_p": 1
+}

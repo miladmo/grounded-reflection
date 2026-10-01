@@ -1,0 +1,136 @@
+{
+  "date": "2026-09-29",
+  "real_model_calls": 0,
+  "source_sha256": "8dab3506c3c26b0c5eaeb3318104e2eec15efe8b5de1755ea42bcc9e75b47fd4",
+  "material_sha256": "fad6299fffe016c28c954ba0f34f6989f95c64c3953282071017fe2cccd1d31a",
+  "config_sha256": "e265476641d895eaea855b70844ee5d8228eb9e3383ea298207e11c76250d0cb",
+  "offline_tests_passed": 157,
+  "old_review_seal_verified": "f6e3325338bfe3ea565c52a196fe8ab082d0b57e4ec8f97d9b2ced7fd2efe3df",
+  "old_offline_run_seal_verified": "178d7c6e55825a3dc602d073d364dd1c8e294a36228de76bd8dd1476117864d6",
+  "identical_material_files": {
+    "S0-sales.json": "14f36c2321e636e1ed7d03195d4e871977d8303e33ecce1bda463b5adb7a43b6",
+    "S0-sales.md": "eb495240dd05f397d8931dc8999e183e17719644400512ee36828b4d47ac0bbe",
+    "S1-sales.json": "874ee5e563c4ffa3e6a0f7aec2bb62873085498d14e7900f0fbe824e9195c0b3",
+    "S1-sales.md": "2eeab8e7c091709e74e99643d9374711c08955e76670db3418e51e54cb2c0ebe",
+    "S2-reporting.json": "a68326257ba5ee73c02ebacedf05f8e4c3c2dcb40e95624ff50ab52279cbbf47",
+    "S2-reporting.md": "d40d1b7fa4b0e3a1a326e70d322a2637b04e259338e16d5ac81281bb27ea7ba2",
+    "S3-hr.json": "677891bf1f2054e7528b0f4aad555a5e83f41060b1d948cc88b3c751d1f94bd1",
+    "S3-hr.md": "3cd6d3613f4febb93795251591b729d5447d2403b7e849721f66a5b3edc0526c",
+    "S4-retrieval.json": "8eeb87568a881f7de5dd3680c65da240b45b0c27f5df40bbbf59aa3bd762f36b",
+    "S4-retrieval.md": "a28550a457df632a1c6f0f49e0bc0bf11955d75054367389764815a21deacc1e",
+    "S5-retrieval.json": "b7221e20bdfa84a5c38c0f17f55f5aad901d1e49831cf2725c08702cbf4ce59c",
+    "S5-retrieval.md": "b95ac026eeb65ee7aefbb96f9fde2b0748fa895e33b78cb51b35693f0d6ddcc7",
+    "surface-audit.json": "ca6fa940b5c881f455dff9b7e5d1880a9272462fe90f1a8f4e9b3b6e3f248cca",
+    "surface-audit.md": "633b77918467260b9582b56e37c8587a6a53f5091c85c1d33e06b938e535f738"
+  },
+  "changed_existing_sources": [
+    "pilots/v04/reflectai_v04/backend.py",
+    "pilots/v04/reflectai_v04/storage.py",
+    "tests/test_pilot_v04_runner.py"
+  ],
+  "new_bound_files": [
+    "docs/pilot-v04-transport-preflight.md",
+    "pilots/v04/reflectai_v04/gateway.py",
+    "pilots/v04/reflectai_v04/transport.py",
+    "pilots/v04/transport/model-catalog.json",
+    "pilots/v04/transport/runtime-attestation.json",
+    "tests/test_pilot_v04_gateway.py",
+    "tests/test_pilot_v04_transport.py"
+  ],
+  "attested_local_probes": {
+    "success": {
+      "summary": {
+        "purpose": "Local request capture without a model or external inference endpoint.",
+        "model_calls": 0,
+        "local_requests": 1,
+        "expected_transport_error": null,
+        "workspace_was_empty": true,
+        "private_evaluator_visible": false,
+        "private_future_visible": false,
+        "ancestor_document_visible": false,
+        "public_prompt_visible": true,
+        "tools": [
+          []
+        ]
+      },
+      "gateway": {
+        "received_model_posts": 1,
+        "upstream_requests": 1,
+        "blocked_requests": 0,
+        "response_events_blocked": 0,
+        "upstream_status": 200,
+        "completed": true,
+        "failure": null
+      },
+      "status": "completed",
+      "local_evidence_directory": "%USERPROFILE%\\Downloads\\RWTH\\RWTH\\Research\\EJIS 2026\\.reflectai-v04-live-preflight\\final-success-attested",
+      "request_capture_sha256": "61ac55b2fc37b539ffa6878d9701cf0c1715dc229db834a3f473818167c34d5f"
+    },
+    "retryable": {
+      "summary": {
+        "purpose": "Local request capture without a model or external inference endpoint.",
+        "model_calls": 0,
+        "local_requests": 1,
+        "expected_transport_error": "InferenceRunError: Codex CLI exited with code 1. Preserved run artifacts: %USERPROFILE%\\Downloads\\RWTH\\RWTH\\Research\\EJIS 2026\\.reflectai-v04-live-preflight\\final-retryable-attested\\transport",
+        "workspace_was_empty": true,
+        "private_evaluator_visible": false,
+        "private_future_visible": false,
+        "ancestor_document_visible": false,
+        "public_prompt_visible": true,
+        "tools": [
+          []
+        ]
+      },
+      "gateway": {
+        "received_model_posts": 1,
+        "upstream_requests": 1,
+        "blocked_requests": 0,
+        "response_events_blocked": 0,
+        "upstream_status": 503,
+        "completed": false,
+        "failure": "upstream_http_error"
+      },
+      "status": "process_failed",
+      "local_evidence_directory": "%USERPROFILE%\\Downloads\\RWTH\\RWTH\\Research\\EJIS 2026\\.reflectai-v04-live-preflight\\final-retryable-attested",
+      "request_capture_sha256": "fa01bf96fc09e11c660225fe83c588e8a41540e5016384d12b9c107a4aa0e751"
+    },
+    "question": {
+      "summary": {
+        "purpose": "Local request capture without a model or external inference endpoint.",
+        "model_calls": 0,
+        "local_requests": 1,
+        "expected_transport_error": "InferenceRunError: Codex CLI exited with code 1. Preserved run artifacts: %USERPROFILE%\\Downloads\\RWTH\\RWTH\\Research\\EJIS 2026\\.reflectai-v04-live-preflight\\final-question-attested\\transport",
+        "workspace_was_empty": true,
+        "private_evaluator_visible": false,
+        "private_future_visible": false,
+        "ancestor_document_visible": false,
+        "public_prompt_visible": true,
+        "tools": [
+          []
+        ]
+      },
+      "gateway": {
+        "received_model_posts": 1,
+        "upstream_requests": 1,
+        "blocked_requests": 0,
+        "response_events_blocked": 1,
+        "upstream_status": 200,
+        "completed": false,
+        "failure": "response_event_rejected"
+      },
+      "status": "process_failed",
+      "local_evidence_directory": "%USERPROFILE%\\Downloads\\RWTH\\RWTH\\Research\\EJIS 2026\\.reflectai-v04-live-preflight\\final-question-attested",
+      "request_capture_sha256": "0302178d87f2fc067dfdd9135111726d81b8e70b1eddcb4b57772a5dbe993179"
+    }
+  },
+  "authentication_check": "Installed CLI login status reported Logged in using ChatGPT. No secrets read.",
+  "final_tasks_generated": false,
+  "live_approval": null,
+  "limitations": [
+    "Local fixture tests do not test acceptance by the remote service.",
+    "Isolation relies on pinned request capabilities and gateway checks, not OS-level read denial.",
+    "Token stop is checked between calls; the final response can cross 6,000,000.",
+    "Synthetic fixture token counts are not model consumption or research results.",
+    "The runtime attestation records the bootstrap. The three full-attestation repetitions recorded here are the completed final verification."
+  ]
+}

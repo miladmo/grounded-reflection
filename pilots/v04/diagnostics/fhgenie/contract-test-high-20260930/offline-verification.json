@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-09-30",
+  "status": "passed",
+  "real_model_calls": 0,
+  "real_credential_reads": 0,
+  "plan_sha256": "3ee95edd8d63481ed32eaebb5a16c186b377bd306429537515606866eea920b6",
+  "v04_source_binding_sha256": "bbaedd769f4af076be1273a1c0ca5d92e9ad5ed27369bb8f60b8a8f8eb968d30",
+  "harness_tests_passed": 18,
+  "repository_unittests_passed": 456,
+  "offline_http_driver_cases_passed": 39,
+  "fixed_prompts_equal_offline_run": "All 8 model-independent prompts (4 C1, 2 B, 2 A) are byte-identical to runs/offline-fhgenie-integration-20260929; all 16 base input lengths match.",
+  "projection_base_input_chars": 4526103,
+  "bound_source_changes": [
+    "pilots/v04/reflectai_v04/fhgenie_transport.py: accepts reasoning low, high, max",
+    "pilots/v04/transport/fhgenie-request.ps1: accepts reasoning low, high, max",
+    "pilots/v04/transport/test_fhgenie_request.ps1: 8 reasoning-level cases added",
+    "tests/test_pilot_v04_fhgenie_transport.py: forwarding and rejection of reasoning levels",
+    "pilots/v04/reflectai_v04/storage.py: binds amendment 4 and the contract-test plan",
+    "tests/test_pilot_v04_fhgenie_backend.py and tests/test_pilot_v04_runner.py: binding fixtures",
+    "docs/pilot-v04-protocol.md: amendment 4 status and approval record"
+  ],
+  "unchanged": "config.py (FHGenie still low-only until the contract test fixes a level), prompts, material, oracle, evaluator, runner, backend, previous runs, reviews and approvals",
+  "limitation": "Offline tests cannot establish provider behaviour, reasoning-parameter enforcement or response validity."
+}

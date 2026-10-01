@@ -1,0 +1,16 @@
+﻿{
+  "level": "high",
+  "planned": 16,
+  "valid": 16,
+  "invalid_including_blocked": 0,
+  "invalid_rate": 0.0,
+  "format_failures": 0,
+  "limit_failures": 0,
+  "other_failures": 0,
+  "blocked": 0,
+  "not_attempted": 0,
+  "calls_over_wall_limit": [],
+  "projection_passes": true,
+  "verdict": "passed",
+  "next_level": null
+}

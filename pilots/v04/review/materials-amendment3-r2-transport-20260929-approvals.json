@@ -1,0 +1,18 @@
+{
+  "live": {
+    "approved": null,
+    "config_sha256": null,
+    "date": null,
+    "response": null,
+    "reviewer": null
+  },
+  "material_revision": "v04-amendment-03-r2",
+  "material_sha256": "fc488757f261f5efaef5da71d936684daddbd942771440ac4811e98c62df6ba0",
+  "materials": {
+    "approved": null,
+    "date": null,
+    "response": null,
+    "reviewer": null
+  },
+  "source_sha256": "71cd305280d2e3d81f14a269e1740614be4c15cb3539469af04c63235bbe6813"
+}

@@ -1,0 +1,53 @@
+{
+  "live": {
+    "approved": true,
+    "reviewer": "Milad Morad",
+    "date": "2026-09-29",
+    "response": "ja freigegeben",
+    "config_sha256": "e265476641d895eaea855b70844ee5d8228eb9e3383ea298207e11c76250d0cb",
+    "recorded_at": "2026-09-29T19:05:06.541875+00:00",
+    "scope": "One run requested in LIVE_FREIGABE.md, 192 planned calls, 200 maximum, 6,000,000 reported-token between-call stop, no retries, replacements, purchases or credit resets.",
+    "request": "pilots/v04/preflight/live-20260929/LIVE_FREIGABE.md"
+  },
+  "material_revision": "v04-amendment-03-r2",
+  "material_sha256": "fad6299fffe016c28c954ba0f34f6989f95c64c3953282071017fe2cccd1d31a",
+  "materials": {
+    "approved": true,
+    "reviewer": "Milad Morad",
+    "date": "2026-09-29",
+    "response": "Materialprüfung Amendment 3, Revision r2, durch Milad Morad, 29. September 2026: freigegeben. Die erwarteten Entscheidungen folgen aus den öffentlichen Belegen und Konventionen; S1 und S5 habe ich selbst durchgesehen. Ergänzend bestätigt ein unabhängiger, KI-gestützter Nachbau des Orakels alle zwölf erwarteten Entscheidungen der sechs Beispiele (als KI-gestützte Prüfung dokumentieren). Der Oberflächentest zeigt für die geprüften Einzelmerkmale keine Trennung über Zufallsniveau; weitere Abkürzungen sind damit nicht ausgeschlossen, das bleibt im Bericht sichtbar."
+  },
+  "source_sha256": "8dab3506c3c26b0c5eaeb3318104e2eec15efe8b5de1755ea42bcc9e75b47fd4",
+  "review_annotations": {
+    "type": "AI-assisted implementation review; not additional human or field validation",
+    "date": "2026-09-29",
+    "own_public_evidence_check": "S1 and S5 independently checked against public conventions; four compatible rules and retention at both probes in S1, one compatible current rule with diagnostic change and control retention in S5.",
+    "factual_clarifications": [
+      "Daria, rather than Elena, is removed from the current S5 reviewer roster.",
+      "There are six distinct nonempty shared review comments. Null supplies the additional broad-audit category."
+    ],
+    "statistical_clarification": "Review-history macro balanced accuracy for the selected simple features ranges from 0.463 to 0.544 in the current accepted-review population. This is no equivalence test or proof of chance-level discrimination, and does not rule out combined or untested shortcuts."
+  },
+  "material_approval_carry_forward": {
+    "original_approval": "pilots\\v04\\review\\materials-amendment3-r2-20260929-approvals.json",
+    "original_source_sha256": "3519cda4ca3018d1c332b576d40fa3a6ddb836e6f69bdabb3ba014b128e11ae6",
+    "original_material_sha256": "f6e3325338bfe3ea565c52a196fe8ab082d0b57e4ec8f97d9b2ced7fd2efe3df",
+    "basis": "All 12 case files and both surface-audit files are byte-identical. Only transport, its tests and source-binding support changed. No additional human validation is claimed. Live permission for the new binding remains pending.",
+    "identical_material_files": {
+      "S0-sales.json": "14f36c2321e636e1ed7d03195d4e871977d8303e33ecce1bda463b5adb7a43b6",
+      "S0-sales.md": "eb495240dd05f397d8931dc8999e183e17719644400512ee36828b4d47ac0bbe",
+      "S1-sales.json": "874ee5e563c4ffa3e6a0f7aec2bb62873085498d14e7900f0fbe824e9195c0b3",
+      "S1-sales.md": "2eeab8e7c091709e74e99643d9374711c08955e76670db3418e51e54cb2c0ebe",
+      "S2-reporting.json": "a68326257ba5ee73c02ebacedf05f8e4c3c2dcb40e95624ff50ab52279cbbf47",
+      "S2-reporting.md": "d40d1b7fa4b0e3a1a326e70d322a2637b04e259338e16d5ac81281bb27ea7ba2",
+      "S3-hr.json": "677891bf1f2054e7528b0f4aad555a5e83f41060b1d948cc88b3c751d1f94bd1",
+      "S3-hr.md": "3cd6d3613f4febb93795251591b729d5447d2403b7e849721f66a5b3edc0526c",
+      "S4-retrieval.json": "8eeb87568a881f7de5dd3680c65da240b45b0c27f5df40bbbf59aa3bd762f36b",
+      "S4-retrieval.md": "a28550a457df632a1c6f0f49e0bc0bf11955d75054367389764815a21deacc1e",
+      "S5-retrieval.json": "b7221e20bdfa84a5c38c0f17f55f5aad901d1e49831cf2725c08702cbf4ce59c",
+      "S5-retrieval.md": "b95ac026eeb65ee7aefbb96f9fde2b0748fa895e33b78cb51b35693f0d6ddcc7",
+      "surface-audit.json": "ca6fa940b5c881f455dff9b7e5d1880a9272462fe90f1a8f4e9b3b6e3f248cca",
+      "surface-audit.md": "633b77918467260b9582b56e37c8587a6a53f5091c85c1d33e06b938e535f738"
+    }
+  }
+}

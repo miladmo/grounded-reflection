@@ -1,0 +1,38 @@
+{
+  "purpose": "Connection diagnostic only; no research data or result",
+  "attempts": 1,
+  "retries": 0,
+  "expected_json_received": false,
+  "transport_status": "process_failed",
+  "gateway": {
+    "received_model_posts": 1,
+    "upstream_requests": 1,
+    "blocked_requests": 0,
+    "response_events_blocked": 0,
+    "upstream_status": 200,
+    "completed": false,
+    "failure": "streaming_response_required"
+  },
+  "usage": null,
+  "error": "InferenceRunError: Codex CLI exited with code 1. Preserved run artifacts: %USERPROFILE%\\Downloads\\RWTH\\RWTH\\Research\\PostDoc\\05_Software\\grounded-reflection\\pilots\\v04\\diagnostics\\transport-smoke-v2-20260929\\attempt\\transport",
+  "http_observations": {
+    "network_route": {
+      "https_proxy_configured": false,
+      "destination_bypassed": false,
+      "route": "direct_by_environment"
+    },
+    "request": {
+      "authorization_present": true,
+      "chatgpt_account_id_present": true,
+      "accept_present": true
+    },
+    "response": {
+      "status": 200,
+      "mime": "missing",
+      "content_encoding": "missing",
+      "http_version": 11,
+      "cf_mitigated_challenge": false,
+      "via_present": false
+    }
+  }
+}

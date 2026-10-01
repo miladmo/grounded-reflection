@@ -1,0 +1,33 @@
+Ich habe alle sechs Beispiele durchgesehen, die Protokolle der Datensätze für S2, S4 und S5 zusätzlich maschinell ausgewertet.
+
+**Kurzurteil.** Die Logik stimmt. In allen sechs Fällen folgen die erwarteten Entscheidungen aus den öffentlichen Belegen und den genannten Konventionen, und ich habe keine verdeckte Autorenannahme gefunden. Trotzdem würde ich die Materialien so noch nicht freigeben. Es gibt zwei Materialfehler. Außerdem nehmen die Materialien die Schwierigkeit teilweise wieder vorweg, die v0.4 eigentlich messen soll. In der jetzigen Form erwarte ich, dass C erneut nahe an der Decke landet und die Karte eher Lesefestigkeit als Inferenz abbildet.
+
+**Muss behoben werden**
+
+1. **Namenskollision im Sales-Fall.** Die Kontextdimension heißt „reviewer“ mit den Werten Sada, Nora und Emil. Die tatsächlichen Freigaben stammen aber von Theo, Jonas und Anika. Ein Modell kann „reviewer=Nora“ als die freigebende Person lesen und Theos Freigabe dann für unzuständig halten. Solche Fehler kämen aus dem Material, nicht aus der Inferenz. Die Dimension sollte anders heißen, etwa „account_owner“.
+2. **Irreführender Kommentar.** Jede Freigabe trägt den Satz „This replacement is approved for the recorded work item“. Das klingt nach einer Freigabe nur für diesen einen Vorgang. Laut öffentlicher Konvention legt eine Freigabe die Konfiguration aber für den ganzen Kontext fest. Der Kommentar sollte neutral sein, etwa „Approved.“. Falls er bewusst als Störfaktor gedacht ist, muss das dokumentiert sein.
+
+**Sollte behoben werden, damit die Faktoren wirklich wirken**
+
+3. **Hinweise in der Modellbeschreibung.** Die öffentliche Beschreibung sagt ausdrücklich, dass eine Weiterleitung keine neue Freigabe ist. Sie sagt auch, dass eine alte Konfiguration nicht in eine neue Version übergeht. Damit sind die Faktoren Abhängigkeit (S3) und zeitlicher Bruch (S4) vorab gelöst, also dasselbe Problem wie bei v0.3. Beide Sätze sind für das Orakel verzichtbar. Eine Weiterleitung hat keine Entscheidung und keine geprüften Felder, zählt also schon nach der allgemeinen Freigabekonvention nicht. Und ohne den Versionssatz bliebe ein neuer Kontext ohne Beleg ohnehin ungelöst, und die Aktion wäre ebenfalls Beibehaltung. Streicht man die beiden Sätze, ändert sich keine erwartete Entscheidung, aber das Modell muss selbst schließen.
+4. **Zu leicht erkennbare Störfaktoren.** In S2 und S5 bestehen die 50 zusätzlichen Einträge aus immer gleichen Textbausteinen. Hinzu kommen Freigaben aus fremden Workflows ohne jeden Inhalt. Das macht die Historie länger, aber nicht verwirrender. Wirksamer wären Störfaktoren, die inhaltlich konkurrieren und sich nach der allgemeinen Konvention trotzdem auflösen lassen. Beispiele sind eine Änderung desselben Feldes im selben Kontext durch eine nicht berechtigte Person, eine abgelehnte Fassung mit der Gegenrichtung, eine Vorliebe, die das Feld ausdrücklich nennt, oder eine Freigabe, in der das Feld nicht zu den geprüften Feldern gehört.
+
+**Eine Grundsatzentscheidung, die bei dir liegt**
+
+5. **Die Menge möglicher Regeln.** Das Modell lässt für jede der vier Kontextkombinationen eine unabhängige Festlegung zu. Die „Welten“ sind entsprechend zufällig verteilt. Das hat zwei Folgen. Eine Verallgemeinerung über den beobachteten Kontext hinaus ist nie begründet. Und „unidentifizierbar“ heißt in S1 und S3 schlicht, dass es für den Kontext keinen Beleg gibt. Die Frage nach dem Geltungsbereich, also wann Evidenz eine breitere Regel trägt, fällt damit weg. Genau sie ist aber der Kern deiner Forschungsfrage. Die Alternative wäre eine strukturierte, öffentlich benannte Regelmenge: Eine Anforderung hängt von keiner, einer oder beiden Dimensionen ab. Dann kann Evidenz aus mehreren Kontexten eine breitere Regel rechtfertigen. Unidentifizierbarkeit entstünde dann aus verwechselbaren Erklärungen statt aus fehlenden Daten, und Fehler im Geltungsbereich würden in beide Richtungen messbar. Das ist eine Protokolländerung. Wenn du v0.4 schlank halten willst, geht es auch ohne. Dann sollte der Bericht v0.4 aber ausdrücklich als Karte der Lesefestigkeit bezeichnen und die strukturierte Regelmenge für v0.5 vorsehen. Ich würde sie jetzt einbauen, weil sonst ein zweiter Lauf an der Decke droht.
+
+**Zu deiner eigenen Prüfung.** Das Protokoll verlangt deine tatsächliche Antwort, und meine Durchsicht ersetzt sie nicht. Ich würde dir raten, dir selbst S0 und S5 anzusehen, das dauert etwa eine Viertelstunde. S0 ist der einfachste Fall. S5 kombiniert Rohartefakte, Weiterleitungen alter Freigaben und den Versionsbruch. Wenn du meinen Punkten zustimmst, kannst du Folgendes übernehmen:
+
+```
+Materialprüfung durch Milad Morad, 29. September 2026: nicht freigegeben. Die erwarteten Entscheidungen folgen in allen sechs Beispielen aus den öffentlichen Belegen, aber folgende Überarbeitungen sind vor einer erneuten Prüfung nötig. Halte meine Antwort wörtlich im Review-Record fest.
+
+1. Sales: Die Kontextdimension "reviewer" kollidiert mit den tatsächlich freigebenden Personen. Umbenennen, z. B. in "account_owner".
+2. Den Standardkommentar "This replacement is approved for the recorded work item" durch einen neutralen Kommentar ersetzen, weil er eine vorgangsbezogene Freigabe nahelegt, die der öffentlichen Konvention widerspricht.
+3. Aus der öffentlichen Modellbeschreibung die beiden faktorspezifischen Hinweise streichen ("its destination context is not a new review" und "Do not assume an old configuration carries into a new version"), sofern das Orakel ohne sie zu denselben erwarteten Aktionen kommt. Prüfe das mit Tests und dokumentiere es.
+4. Störfaktoren in S2 und S5 inhaltlich konkurrierend gestalten, aber nach der allgemeinen Freigabekonvention auflösbar: Änderungen desselben Feldes im selben Kontext durch nicht berechtigte Personen, abgelehnte Fassungen mit Gegenrichtung, Vorlieben, die das Feld nennen, Freigaben ohne das Feld in reviewed_fields. Keine inhaltsleeren Freigaben aus fremden Workflows als Hauptstörfaktor.
+5. Protokolländerung: Ersetze die vollständig faktorisierte Regelmenge durch eine öffentlich benannte strukturierte Regelmenge (Anforderung hängt von keiner, einer oder beiden Kontextdimensionen ab) und ziehe die Weltpolitiken aus dieser Menge. Unidentifizierbare Fälle sollen aus verwechselbaren Erklärungen entstehen, nicht nur aus fehlenden Belegen, und begründete Verallgemeinerungen müssen möglich sein. Passe Orakel, Allokation und Tests an und lege mir die Änderung vor der Implementierung vor.
+
+Danach neue Beispiele pro Einstellung exportieren. Die Live-Freigabe bleibt separat offen.
+```
+
+Wenn du Punkt 5 lieber auf v0.5 verschiebst, streich ihn aus dem Text. Ergänze dann, dass der Bericht die Grenze der vollständig faktorisierten Regelmenge ausdrücklich benennt.

@@ -1,0 +1,2175 @@
+{
+  "material_revision": "v04-amendment-03-r2",
+  "synthetic_placeholder": true,
+  "development_only": true,
+  "case": {
+    "case_id": "case-a5d141c84c25",
+    "setting": "S1",
+    "family": "sales",
+    "regime": "unidentifiable",
+    "seed": 16902100547175138357,
+    "split": "review",
+    "history": {
+      "history_id": "history-b9e284e0f723",
+      "initial_configuration": "{\"task_family\":\"sales_offer\",\"workflow\":\"workflow-09625e499abc\",\"as_of\":\"2026-06-15T12:00:00Z\",\"dimensions\":{\"account_owner\":[\"Leon\",\"Sada\"],\"customer_segment\":[\"standard\",\"strategic\"]},\"field_option\":{\"field\":\"annual_total\",\"operation\":\"set_fact\",\"value\":\"annual_total\",\"separator\":\"\"},\"baseline_template\":{\"offer_text\":\"{offer_text}\",\"contract_reference\":\"{contract_reference}\"},\"fact_descriptions\":{\"offer_text\":\"Current offer text.\",\"contract_reference\":\"Current offer reference.\",\"monthly_unit_price\":\"EUR per seat and month.\",\"seats\":\"Number of seats.\",\"annual_total\":\"EUR, monthly_unit_price times seats times twelve.\"},\"hypothesis_class\":\"h14\",\"hypothesis_definition\":\"Each of the two declared binary context dimensions defines a predicate testing its second listed value. Call these predicates x and y. In each registered version the target field configuration is one Boolean function from the following class: constant 0 or 1; x, not x, y, or not y; a conjunction of one literal from each dimension; or a disjunction of one literal from each dimension. Zero selects the configured baseline and one the available alternative. The fourteen distinct truth tables exclude only XOR and XNOR. Each version has its own class member, with no cross-version coupling. This restriction is a supplied synthetic assumption, not an established property of enterprise work.\"}",
+      "assumptions": "This is a bounded synthetic workflow model. initial_configuration declares the field options, two context dimensions and the complete H14 hypothesis class. Each registered version has one class member. A field observation constrains the member indexed by its recorded version. Broader consequences follow from the declared class. Facts provide current artifact values. Other fields retain their configured baseline. Outside the declared task_family and workflow, or without a complete declared context, no update is authorised by this model. A register_version event supplies trusted workflow metadata with the authority roster and half-open validity interval. Binding field approval is an event of type review with decision accept, performed by a listed reviewer within that interval, with the field included in reviewed_fields. Its accepted artifact establishes the field configuration at the recorded context. This explicit approval convention is a supplied synthetic assumption. A forward has an origin_ref identifying the record whose content it reproduces. Raw artifacts expose named revisions and a selected artifact reference; interpreted records expose the selected fields directly. A rejection records a whole-artifact decision and its stated grounds. An artifact field whose review is not recorded has no approved assignment. The configured baseline is retained when the available evidence does not establish an update. Dates and version labels in new work identify the applicable registration.",
+      "field_dictionary": {
+        "offer_text": "Configured output field offer_text; preserve unless an applicable update is established.",
+        "contract_reference": "Configured output field contract_reference; preserve unless an applicable update is established.",
+        "annual_total": "Canonical field annual_total. Available alternative operation set_fact, value='annual_total', separator=''. Its requirement depends on the evidence.",
+        "fact.offer_text": "Current offer text.",
+        "fact.contract_reference": "Current offer reference.",
+        "fact.monthly_unit_price": "EUR per seat and month.",
+        "fact.seats": "Number of seats.",
+        "fact.annual_total": "EUR, monthly_unit_price times seats times twelve."
+      },
+      "records": [
+        {
+          "record_id": "record-9010b1034fc7",
+          "timestamp": "2026-05-31T15:39:48Z",
+          "kind": "review",
+          "actor": "Anika",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "observation": "{\"accepted_artifact\":\"replacement\",\"artifacts\":{\"draft\":{\"fields\":{\"annual_total\":\"9000\",\"contract_reference\":\"OFF-86636\",\"offer_text\":\"15 seats at EUR 50 per seat per month, billed annually.\"},\"revision\":\"draft\"},\"replacement\":{\"fields\":{\"contract_reference\":\"OFF-86636\",\"offer_text\":\"15 seats at EUR 50 per seat per month, billed annually.\"},\"revision\":\"reviewed\"}},\"authority_ref\":\"record-dab7efffdfcd\",\"comment\":\"Approved.\",\"decision\":\"accept\",\"document_id\":\"DOC-86636\",\"event\":\"review\",\"facts\":{\"annual_total\":\"9000\",\"contract_reference\":\"OFF-86636\",\"date\":\"2026-05-31\",\"document_id\":\"DOC-86636\",\"monthly_unit_price\":\"50\",\"offer_text\":\"15 seats at EUR 50 per seat per month, billed annually.\",\"seats\":\"15\"},\"format\":\"raw\",\"reviewed_fields\":[\"annual_total\"]}"
+        },
+        {
+          "record_id": "record-c0c3ff0dfe8a",
+          "timestamp": "2026-06-07T17:20:44Z",
+          "kind": "tool",
+          "actor": "runtime",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "observation": "{\"attempts\":[{\"attempt\":1,\"http_status\":503},{\"attempt\":2,\"http_status\":200}],\"event\":\"execution\",\"log\":\"The request completed on retry.\",\"request_id\":\"request-8b7f8298f09b\"}"
+        },
+        {
+          "record_id": "record-240500dffd85",
+          "timestamp": "2026-05-29T10:27:47Z",
+          "kind": "review",
+          "actor": "Theo",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "observation": "{\"accepted_artifact\":\"replacement\",\"artifacts\":{\"draft\":{\"fields\":{\"contract_reference\":\"OFF-35309\",\"offer_text\":\"5 seats at EUR 40 per seat per month, billed annually.\"},\"revision\":\"draft\"},\"replacement\":{\"fields\":{\"annual_total\":\"2400\",\"contract_reference\":\"OFF-35309\",\"offer_text\":\"5 seats at EUR 40 per seat per month, billed annually.\"},\"revision\":\"reviewed\"}},\"authority_ref\":\"record-dab7efffdfcd\",\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-35309\",\"event\":\"review\",\"facts\":{\"annual_total\":\"2400\",\"contract_reference\":\"OFF-35309\",\"date\":\"2026-05-29\",\"document_id\":\"DOC-35309\",\"monthly_unit_price\":\"40\",\"offer_text\":\"5 seats at EUR 40 per seat per month, billed annually.\",\"seats\":\"5\"},\"format\":\"raw\",\"reviewed_fields\":[\"annual_total\"]}"
+        },
+        {
+          "record_id": "record-dab7efffdfcd",
+          "timestamp": "2026-01-01T00:00:00Z",
+          "kind": "template",
+          "actor": "workflow-registry",
+          "context": {},
+          "observation": "{\"authorised_reviewers\":[\"Anika\",\"Theo\"],\"event\":\"register_version\",\"supersedes\":null,\"task_family\":\"sales_offer\",\"valid_from\":\"2026-01-01T00:00:00Z\",\"valid_until\":\"2027-01-01T00:00:00Z\",\"version\":\"edition-7815519526e8\",\"workflow\":\"workflow-09625e499abc\"}"
+        },
+        {
+          "record_id": "record-6f418baccd85",
+          "timestamp": "2026-06-07T15:24:04Z",
+          "kind": "revision",
+          "actor": "Anika",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          "observation": "{\"event\":\"preference\",\"facts\":{\"annual_total\":\"6000\",\"contract_reference\":\"OFF-90013\",\"date\":\"2026-06-07\",\"document_id\":\"DOC-90013\",\"monthly_unit_price\":\"50\",\"offer_text\":\"10 seats at EUR 50 per seat per month, billed annually.\",\"seats\":\"10\"},\"message\":\"I would prefer annual_total set to '6000' for this item.\",\"proposed_fields\":{\"annual_total\":\"6000\",\"contract_reference\":\"OFF-90013\",\"offer_text\":\"10 seats at EUR 50 per seat per month, billed annually.\"}}"
+        },
+        {
+          "record_id": "record-bc88934a58ae",
+          "timestamp": "2026-06-07T17:38:47Z",
+          "kind": "review",
+          "actor": "Anika",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "observation": "{\"accepted_artifact\":\"replacement\",\"artifacts\":{\"draft\":{\"fields\":{\"annual_total\":\"9600\",\"contract_reference\":\"OFF-38222\",\"offer_text\":\"20 seats at EUR 40 per seat per month, billed annually.\"},\"revision\":\"draft\"},\"replacement\":{\"fields\":{\"contract_reference\":\"OFF-38222\",\"offer_text\":\"20 seats at EUR 40 per seat per month, billed annually.\"},\"revision\":\"reviewed\"}},\"authority_ref\":\"record-dab7efffdfcd\",\"comment\":\"Completed.\",\"decision\":\"accept\",\"document_id\":\"DOC-38222\",\"event\":\"review\",\"facts\":{\"annual_total\":\"9600\",\"contract_reference\":\"OFF-38222\",\"date\":\"2026-06-07\",\"document_id\":\"DOC-38222\",\"monthly_unit_price\":\"40\",\"offer_text\":\"20 seats at EUR 40 per seat per month, billed annually.\",\"seats\":\"20\"},\"format\":\"raw\",\"reviewed_fields\":[\"annual_total\"]}"
+        }
+      ]
+    },
+    "truth": {
+      "history_id": "history-b9e284e0f723",
+      "scenario_id": "S1-sales",
+      "pair_id": "case-a5d141c84c25",
+      "world_policy": {
+        "policy_id": "actual-world",
+        "rules": [
+          {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "sales_offer"
+                ],
+                "workflow": [
+                  "workflow-09625e499abc"
+                ],
+                "version": [
+                  "edition-7815519526e8"
+                ],
+                "account_owner": [
+                  "Leon"
+                ],
+                "customer_segment": [
+                  "standard"
+                ]
+              }
+            }
+          },
+          {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "sales_offer"
+                ],
+                "workflow": [
+                  "workflow-09625e499abc"
+                ],
+                "version": [
+                  "edition-7815519526e8"
+                ],
+                "account_owner": [
+                  "Leon"
+                ],
+                "customer_segment": [
+                  "strategic"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "policy-000",
+          "rules": [
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "sales_offer"
+                  ],
+                  "workflow": [
+                    "workflow-09625e499abc"
+                  ],
+                  "version": [
+                    "edition-7815519526e8"
+                  ],
+                  "account_owner": [
+                    "Leon"
+                  ],
+                  "customer_segment": [
+                    "standard"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-001",
+          "rules": [
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "sales_offer"
+                  ],
+                  "workflow": [
+                    "workflow-09625e499abc"
+                  ],
+                  "version": [
+                    "edition-7815519526e8"
+                  ],
+                  "account_owner": [
+                    "Leon"
+                  ],
+                  "customer_segment": [
+                    "standard"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "sales_offer"
+                  ],
+                  "workflow": [
+                    "workflow-09625e499abc"
+                  ],
+                  "version": [
+                    "edition-7815519526e8"
+                  ],
+                  "account_owner": [
+                    "Leon"
+                  ],
+                  "customer_segment": [
+                    "strategic"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-002",
+          "rules": [
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "sales_offer"
+                  ],
+                  "workflow": [
+                    "workflow-09625e499abc"
+                  ],
+                  "version": [
+                    "edition-7815519526e8"
+                  ],
+                  "account_owner": [
+                    "Leon"
+                  ],
+                  "customer_segment": [
+                    "standard"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "sales_offer"
+                  ],
+                  "workflow": [
+                    "workflow-09625e499abc"
+                  ],
+                  "version": [
+                    "edition-7815519526e8"
+                  ],
+                  "account_owner": [
+                    "Sada"
+                  ],
+                  "customer_segment": [
+                    "standard"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-003",
+          "rules": [
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "sales_offer"
+                  ],
+                  "workflow": [
+                    "workflow-09625e499abc"
+                  ],
+                  "version": [
+                    "edition-7815519526e8"
+                  ],
+                  "account_owner": [
+                    "Leon"
+                  ],
+                  "customer_segment": [
+                    "standard"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "sales_offer"
+                  ],
+                  "workflow": [
+                    "workflow-09625e499abc"
+                  ],
+                  "version": [
+                    "edition-7815519526e8"
+                  ],
+                  "account_owner": [
+                    "Leon"
+                  ],
+                  "customer_segment": [
+                    "strategic"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "sales_offer"
+                  ],
+                  "workflow": [
+                    "workflow-09625e499abc"
+                  ],
+                  "version": [
+                    "edition-7815519526e8"
+                  ],
+                  "account_owner": [
+                    "Sada"
+                  ],
+                  "customer_segment": [
+                    "standard"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "target-0",
+          "status": "adopt",
+          "rule": {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "sales_offer"
+                ],
+                "workflow": [
+                  "workflow-09625e499abc"
+                ],
+                "version": [
+                  "edition-7815519526e8"
+                ],
+                "account_owner": [
+                  "Leon"
+                ],
+                "customer_segment": [
+                  "standard"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-1",
+          "status": "unresolved",
+          "rule": {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "sales_offer"
+                ],
+                "workflow": [
+                  "workflow-09625e499abc"
+                ],
+                "version": [
+                  "edition-7815519526e8"
+                ],
+                "account_owner": [
+                  "Leon"
+                ],
+                "customer_segment": [
+                  "strategic"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-2",
+          "status": "unresolved",
+          "rule": {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "sales_offer"
+                ],
+                "workflow": [
+                  "workflow-09625e499abc"
+                ],
+                "version": [
+                  "edition-7815519526e8"
+                ],
+                "account_owner": [
+                  "Sada"
+                ],
+                "customer_segment": [
+                  "standard"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-3",
+          "status": "reject",
+          "rule": {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "sales_offer"
+                ],
+                "workflow": [
+                  "workflow-09625e499abc"
+                ],
+                "version": [
+                  "edition-7815519526e8"
+                ],
+                "account_owner": [
+                  "Sada"
+                ],
+                "customer_segment": [
+                  "strategic"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "witness-729a7b3b8b9c",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-84393",
+            "date": "2026-06-15",
+            "monthly_unit_price": "40",
+            "seats": "5",
+            "annual_total": "2400",
+            "contract_reference": "OFF-84393",
+            "offer_text": "5 seats at EUR 40 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "5 seats at EUR 40 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-84393"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-ae62ad4248fc",
+          "context": {
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-47616",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "10",
+            "annual_total": "3000",
+            "contract_reference": "OFF-47616",
+            "offer_text": "10 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "10 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-47616"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-c4bf33c2b2ca",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-86170",
+            "date": "2026-06-15",
+            "monthly_unit_price": "50",
+            "seats": "20",
+            "annual_total": "12000",
+            "contract_reference": "OFF-86170",
+            "offer_text": "20 seats at EUR 50 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 50 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-86170"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-c38e6cdd4bcb",
+          "context": {
+            "task_family": "sales_offer",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-91662",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "5",
+            "annual_total": "3900",
+            "contract_reference": "OFF-91662",
+            "offer_text": "5 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "5 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-91662"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-6fc238acc62d",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "outside-registered-domain",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-49929",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "20",
+            "annual_total": "15600",
+            "contract_reference": "OFF-49929",
+            "offer_text": "20 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-49929"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-52a7363c8ee8",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-97848",
+            "date": "2026-06-15",
+            "monthly_unit_price": "50",
+            "seats": "20",
+            "annual_total": "12000",
+            "contract_reference": "OFF-97848",
+            "offer_text": "20 seats at EUR 50 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 50 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-97848"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-02e165898923",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "outside-registered-domain",
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-12800",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "5",
+            "annual_total": "3900",
+            "contract_reference": "OFF-12800",
+            "offer_text": "5 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "5 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-12800"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3852d6a80550",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-24373",
+            "date": "2026-06-15",
+            "monthly_unit_price": "40",
+            "seats": "15",
+            "annual_total": "7200",
+            "contract_reference": "OFF-24373",
+            "offer_text": "15 seats at EUR 40 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "15 seats at EUR 40 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-24373"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-7763e2323a5f",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "outside-registered-domain",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-84982",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "15",
+            "annual_total": "4500",
+            "contract_reference": "OFF-84982",
+            "offer_text": "15 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "15 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-84982"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-b7e4af3caad7",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon"
+          },
+          "facts": {
+            "document_id": "DOC-74862",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "15",
+            "annual_total": "11700",
+            "contract_reference": "OFF-74862",
+            "offer_text": "15 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "15 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-74862"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-04a07eceba03",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "outside-registered-domain"
+          },
+          "facts": {
+            "document_id": "DOC-36245",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "15",
+            "annual_total": "11700",
+            "contract_reference": "OFF-36245",
+            "offer_text": "15 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "15 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-36245"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-75ff0cd9ae19",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-23297",
+            "date": "2026-06-15",
+            "monthly_unit_price": "50",
+            "seats": "20",
+            "annual_total": "12000",
+            "contract_reference": "OFF-23297",
+            "offer_text": "20 seats at EUR 50 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 50 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-23297"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-b1ef3013a69b",
+          "context": {
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-13953",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "15",
+            "annual_total": "11700",
+            "contract_reference": "OFF-13953",
+            "offer_text": "15 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "15 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-13953"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-a829abf8b1e6",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-53944",
+            "date": "2026-06-15",
+            "monthly_unit_price": "50",
+            "seats": "20",
+            "annual_total": "12000",
+            "contract_reference": "OFF-53944",
+            "offer_text": "20 seats at EUR 50 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 50 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-53944"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-b81915fe0006",
+          "context": {
+            "task_family": "sales_offer",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-36774",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "5",
+            "annual_total": "3900",
+            "contract_reference": "OFF-36774",
+            "offer_text": "5 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "5 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-36774"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-23b8ec1eec7f",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "outside-registered-domain",
+            "version": "edition-7815519526e8",
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-47208",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "10",
+            "annual_total": "3000",
+            "contract_reference": "OFF-47208",
+            "offer_text": "10 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "10 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-47208"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-faeec3368507",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-71710",
+            "date": "2026-06-15",
+            "monthly_unit_price": "50",
+            "seats": "5",
+            "annual_total": "3000",
+            "contract_reference": "OFF-71710",
+            "offer_text": "5 seats at EUR 50 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "5 seats at EUR 50 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-71710"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-a425124fc723",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "outside-registered-domain",
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-21148",
+            "date": "2026-06-15",
+            "monthly_unit_price": "40",
+            "seats": "20",
+            "annual_total": "9600",
+            "contract_reference": "OFF-21148",
+            "offer_text": "20 seats at EUR 40 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 40 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-21148"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-bf68d54de487",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-96602",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "20",
+            "annual_total": "6000",
+            "contract_reference": "OFF-96602",
+            "offer_text": "20 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-96602"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-d804c2b50e2d",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "outside-registered-domain",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-76374",
+            "date": "2026-06-15",
+            "monthly_unit_price": "40",
+            "seats": "20",
+            "annual_total": "9600",
+            "contract_reference": "OFF-76374",
+            "offer_text": "20 seats at EUR 40 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 40 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-76374"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-2a42e3e3a07a",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-79299",
+            "date": "2026-06-15",
+            "monthly_unit_price": "50",
+            "seats": "10",
+            "annual_total": "6000",
+            "contract_reference": "OFF-79299",
+            "offer_text": "10 seats at EUR 50 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "10 seats at EUR 50 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-79299"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-b66587ebc2cc",
+          "context": {
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-50874",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "20",
+            "annual_total": "6000",
+            "contract_reference": "OFF-50874",
+            "offer_text": "20 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-50874"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-062355e9be3b",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-73507",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "15",
+            "annual_total": "4500",
+            "contract_reference": "OFF-73507",
+            "offer_text": "15 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "15 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-73507"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-9d1cd5b2dad9",
+          "context": {
+            "task_family": "sales_offer",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-69282",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "10",
+            "annual_total": "3000",
+            "contract_reference": "OFF-69282",
+            "offer_text": "10 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "10 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-69282"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-38d01673d3ab",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "outside-registered-domain",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-81996",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "10",
+            "annual_total": "7800",
+            "contract_reference": "OFF-81996",
+            "offer_text": "10 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "10 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-81996"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-e03d06f7bd7a",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "account_owner": "Sada",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-18932",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "20",
+            "annual_total": "15600",
+            "contract_reference": "OFF-18932",
+            "offer_text": "20 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-18932"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-f987f8de3178",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "outside-registered-domain",
+            "account_owner": "Sada",
+            "customer_segment": "standard"
+          },
+          "facts": {
+            "document_id": "DOC-91252",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "5",
+            "annual_total": "3900",
+            "contract_reference": "OFF-91252",
+            "offer_text": "5 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "5 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-91252"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-c12965446be9",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada"
+          },
+          "facts": {
+            "document_id": "DOC-32655",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "10",
+            "annual_total": "3000",
+            "contract_reference": "OFF-32655",
+            "offer_text": "10 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "10 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-32655"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-30a3f308df0a",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "outside-registered-domain"
+          },
+          "facts": {
+            "document_id": "DOC-40410",
+            "date": "2026-06-15",
+            "monthly_unit_price": "65",
+            "seats": "10",
+            "annual_total": "7800",
+            "contract_reference": "OFF-40410",
+            "offer_text": "10 seats at EUR 65 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "10 seats at EUR 65 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-40410"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-ec53418daa8a",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-54131",
+            "date": "2026-06-15",
+            "monthly_unit_price": "50",
+            "seats": "20",
+            "annual_total": "12000",
+            "contract_reference": "OFF-54131",
+            "offer_text": "20 seats at EUR 50 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 50 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-54131"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-1f4f720de3f6",
+          "context": {
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-37478",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "10",
+            "annual_total": "3000",
+            "contract_reference": "OFF-37478",
+            "offer_text": "10 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "10 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-37478"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-aecae4ba3278",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-09625e499abc",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-68618",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "20",
+            "annual_total": "6000",
+            "contract_reference": "OFF-68618",
+            "offer_text": "20 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-68618"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-2b84a968d541",
+          "context": {
+            "task_family": "sales_offer",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-25504",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "5",
+            "annual_total": "1500",
+            "contract_reference": "OFF-25504",
+            "offer_text": "5 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "5 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-25504"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3479dc9cb50d",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "outside-registered-domain",
+            "version": "edition-7815519526e8",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-15256",
+            "date": "2026-06-15",
+            "monthly_unit_price": "50",
+            "seats": "15",
+            "annual_total": "9000",
+            "contract_reference": "OFF-15256",
+            "offer_text": "15 seats at EUR 50 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "15 seats at EUR 50 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-15256"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-de7e2376e5e7",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-59325",
+            "date": "2026-06-15",
+            "monthly_unit_price": "25",
+            "seats": "20",
+            "annual_total": "6000",
+            "contract_reference": "OFF-59325",
+            "offer_text": "20 seats at EUR 25 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "20 seats at EUR 25 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-59325"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-ef1f8e43dc2b",
+          "context": {
+            "task_family": "sales_offer",
+            "workflow": "workflow-09625e499abc",
+            "version": "outside-registered-domain",
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          },
+          "facts": {
+            "document_id": "DOC-72337",
+            "date": "2026-06-15",
+            "monthly_unit_price": "40",
+            "seats": "5",
+            "annual_total": "2400",
+            "contract_reference": "OFF-72337",
+            "offer_text": "5 seats at EUR 40 per seat per month, billed annually."
+          },
+          "baseline_fields": [
+            {
+              "name": "offer_text",
+              "value": "5 seats at EUR 40 per seat per month, billed annually."
+            },
+            {
+              "name": "contract_reference",
+              "value": "OFF-72337"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        }
+      ]
+    },
+    "diagnostic_context": {
+      "task_family": "sales_offer",
+      "workflow": "workflow-09625e499abc",
+      "version": "edition-7815519526e8",
+      "account_owner": "Leon",
+      "customer_segment": "strategic"
+    },
+    "control_context": {
+      "task_family": "sales_offer",
+      "workflow": "workflow-09625e499abc",
+      "version": "edition-7815519526e8",
+      "account_owner": "Sada",
+      "customer_segment": "standard"
+    },
+    "oracle_audit": {
+      "record-9010b1034fc7": {
+        "root_id": "record-9010b1034fc7",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "strategic"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-c0c3ff0dfe8a": {
+        "root_id": "record-c0c3ff0dfe8a",
+        "validity": "unknown",
+        "kind": "technical",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "standard"
+        },
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-240500dffd85": {
+        "root_id": "record-240500dffd85",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "standard"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-dab7efffdfcd": {
+        "root_id": "record-dab7efffdfcd",
+        "validity": "active",
+        "kind": "version_event",
+        "scope_context": {},
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-6f418baccd85": {
+        "root_id": "record-6f418baccd85",
+        "validity": "unknown",
+        "kind": "comment",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "strategic"
+        },
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-bc88934a58ae": {
+        "root_id": "record-bc88934a58ae",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "strategic"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      }
+    },
+    "material_audit": {
+      "material_revision": "v04-amendment-03-r2",
+      "task_type": "unidentifiable",
+      "record_count": 6,
+      "rendering": "raw",
+      "additional_noise_counts": {
+        "target_field_preference": 1,
+        "technical": 1
+      },
+      "reversed_option": false,
+      "current_witness_contexts": [
+        {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "strategic"
+        },
+        {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "standard"
+        },
+        {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "strategic"
+        }
+      ],
+      "diagnostic_observed": false,
+      "control_basis": "unidentifiable_baseline_world",
+      "registered_versions": [
+        "edition-7815519526e8"
+      ],
+      "admissible_count": 4,
+      "current_admissible_count": 4,
+      "counterfactual": {
+        "baseline": {
+          "diagnostic": "keep",
+          "control": "keep"
+        },
+        "records": [
+          {
+            "record_id": "record-6f418baccd85",
+            "record_type": "target_field_preference",
+            "origin_record_id": "record-6f418baccd85",
+            "context": {
+              "task_family": "sales_offer",
+              "workflow": "workflow-09625e499abc",
+              "version": "edition-7815519526e8",
+              "account_owner": "Leon",
+              "customer_segment": "strategic"
+            },
+            "option_index": 1,
+            "selected_field": "annual_total",
+            "selected_field_present": true,
+            "selected_field_value": "6000",
+            "promotion": "Add this publicly recovered field configuration as one binding current-version observation; preserve all genuine observations.",
+            "remaining_policy_count": 2,
+            "outcome": "action_flip",
+            "diagnostic_action": "apply",
+            "control_action": "keep",
+            "diagnostic_basis": "resolved_change",
+            "control_basis": "unresolved"
+          }
+        ],
+        "by_type": {
+          "target_field_preference": {
+            "record_count": 1,
+            "action_flip": 1,
+            "contradiction": 0,
+            "unchanged_constraints": 0,
+            "narrower_same_actions": 0,
+            "retention_resolved": 0,
+            "unassessable": 0,
+            "qualifying_record_ids": [
+              "record-6f418baccd85"
+            ]
+          }
+        },
+        "required_outcome": "action_flip",
+        "passed": true
+      }
+    }
+  },
+  "oracle_proof": {
+    "source": "Recomputed solely from the public History by the independent oracle.",
+    "hypothesis_class": "h14",
+    "class_limit": "H14 excludes XOR and XNOR; transfer identification depends on this supplied restriction.",
+    "current_version": "edition-7815519526e8",
+    "versions": {
+      "edition-7815519526e8": {
+        "authorised_reviewers": [
+          "Anika",
+          "Theo"
+        ],
+        "event": "register_version",
+        "supersedes": null,
+        "task_family": "sales_offer",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z",
+        "version": "edition-7815519526e8",
+        "workflow": "workflow-09625e499abc",
+        "registry_id": "record-dab7efffdfcd"
+      }
+    },
+    "current_compatible_function_count": 4,
+    "constraints": [
+      {
+        "record_id": "record-9010b1034fc7",
+        "root_id": "record-9010b1034fc7",
+        "version": "edition-7815519526e8",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "strategic"
+        },
+        "option_index": 0
+      },
+      {
+        "record_id": "record-240500dffd85",
+        "root_id": "record-240500dffd85",
+        "version": "edition-7815519526e8",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "standard"
+        },
+        "option_index": 1
+      },
+      {
+        "record_id": "record-bc88934a58ae",
+        "root_id": "record-bc88934a58ae",
+        "version": "edition-7815519526e8",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "strategic"
+        },
+        "option_index": 0
+      }
+    ],
+    "admissible_policy_count": 4,
+    "compatible_functions_by_version": [
+      {
+        "version": "edition-7815519526e8",
+        "cells": [
+          {
+            "account_owner": "Leon",
+            "customer_segment": "standard"
+          },
+          {
+            "account_owner": "Leon",
+            "customer_segment": "strategic"
+          },
+          {
+            "account_owner": "Sada",
+            "customer_segment": "standard"
+          },
+          {
+            "account_owner": "Sada",
+            "customer_segment": "strategic"
+          }
+        ],
+        "compatible_function_count": 4,
+        "functions": [
+          {
+            "values": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "complexity": 2
+          },
+          {
+            "values": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "complexity": 1
+          },
+          {
+            "values": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "complexity": 1
+          },
+          {
+            "values": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "complexity": 2
+          }
+        ]
+      }
+    ],
+    "task_obligations": [
+      {
+        "probe": "diagnostic",
+        "context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "strategic"
+        },
+        "observed_context": false,
+        "direct_witnesses": [],
+        "unanimous_fields": false,
+        "warranted_fields": {
+          "offer_text": "5 seats at EUR 65 per seat per month, billed annually.",
+          "contract_reference": "OFF-38125"
+        },
+        "expected_decision": "keep",
+        "retention_basis": "unresolved"
+      },
+      {
+        "probe": "control",
+        "context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "standard"
+        },
+        "observed_context": false,
+        "direct_witnesses": [],
+        "unanimous_fields": false,
+        "warranted_fields": {
+          "offer_text": "10 seats at EUR 65 per seat per month, billed annually.",
+          "contract_reference": "OFF-29190"
+        },
+        "expected_decision": "keep",
+        "retention_basis": "unresolved"
+      }
+    ],
+    "evidence_audit": {
+      "record-9010b1034fc7": {
+        "root_id": "record-9010b1034fc7",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "strategic"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-c0c3ff0dfe8a": {
+        "root_id": "record-c0c3ff0dfe8a",
+        "validity": "unknown",
+        "kind": "technical",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "standard"
+        },
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-240500dffd85": {
+        "root_id": "record-240500dffd85",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "standard"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-dab7efffdfcd": {
+        "root_id": "record-dab7efffdfcd",
+        "validity": "active",
+        "kind": "version_event",
+        "scope_context": {},
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-6f418baccd85": {
+        "root_id": "record-6f418baccd85",
+        "validity": "unknown",
+        "kind": "comment",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "strategic"
+        },
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-bc88934a58ae": {
+        "root_id": "record-bc88934a58ae",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "strategic"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      }
+    }
+  },
+  "counterfactual": {
+    "baseline": {
+      "diagnostic": "keep",
+      "control": "keep"
+    },
+    "records": [
+      {
+        "record_id": "record-6f418baccd85",
+        "record_type": "target_field_preference",
+        "origin_record_id": "record-6f418baccd85",
+        "context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "strategic"
+        },
+        "option_index": 1,
+        "selected_field": "annual_total",
+        "selected_field_present": true,
+        "selected_field_value": "6000",
+        "promotion": "Add this publicly recovered field configuration as one binding current-version observation; preserve all genuine observations.",
+        "remaining_policy_count": 2,
+        "outcome": "action_flip",
+        "diagnostic_action": "apply",
+        "control_action": "keep",
+        "diagnostic_basis": "resolved_change",
+        "control_basis": "unresolved"
+      }
+    ],
+    "by_type": {
+      "target_field_preference": {
+        "record_count": 1,
+        "action_flip": 1,
+        "contradiction": 0,
+        "unchanged_constraints": 0,
+        "narrower_same_actions": 0,
+        "retention_resolved": 0,
+        "unassessable": 0,
+        "qualifying_record_ids": [
+          "record-6f418baccd85"
+        ]
+      }
+    },
+    "required_outcome": "action_flip",
+    "passed": true
+  },
+  "surface_audit": {
+    "report": "surface-audit.json",
+    "markdown": "surface-audit.md",
+    "history_id": "history-b9e284e0f723",
+    "construction_checks": {
+      "history_id": "history-b9e284e0f723",
+      "positive_records": 3,
+      "negative_records": 0,
+      "negative_categories": [],
+      "label_transitions_in_delivered_order": 0,
+      "mixed_delivered_order": null,
+      "applicable": false,
+      "passed": null,
+      "order_check_is_descriptive": true
+    }
+  },
+  "future": [
+    {
+      "task": {
+        "task_id": "task-792932c6a78e",
+        "context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Leon",
+          "customer_segment": "strategic"
+        },
+        "facts": {
+          "document_id": "DOC-38125",
+          "date": "2026-06-15",
+          "monthly_unit_price": "65",
+          "seats": "5",
+          "annual_total": "3900",
+          "contract_reference": "OFF-38125",
+          "offer_text": "5 seats at EUR 65 per seat per month, billed annually."
+        },
+        "baseline_fields": [
+          {
+            "name": "offer_text",
+            "value": "5 seats at EUR 65 per seat per month, billed annually."
+          },
+          {
+            "name": "contract_reference",
+            "value": "OFF-38125"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-792932c6a78e",
+        "history_id": "history-b9e284e0f723",
+        "probe": "diagnostic",
+        "expected_decision": "keep",
+        "recoverable": false,
+        "world_fields": [
+          {
+            "name": "offer_text",
+            "value": "5 seats at EUR 65 per seat per month, billed annually."
+          },
+          {
+            "name": "contract_reference",
+            "value": "OFF-38125"
+          },
+          {
+            "name": "annual_total",
+            "value": "3900"
+          }
+        ]
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-230a06fb0bcb",
+        "context": {
+          "task_family": "sales_offer",
+          "workflow": "workflow-09625e499abc",
+          "version": "edition-7815519526e8",
+          "account_owner": "Sada",
+          "customer_segment": "standard"
+        },
+        "facts": {
+          "document_id": "DOC-29190",
+          "date": "2026-06-15",
+          "monthly_unit_price": "65",
+          "seats": "10",
+          "annual_total": "7800",
+          "contract_reference": "OFF-29190",
+          "offer_text": "10 seats at EUR 65 per seat per month, billed annually."
+        },
+        "baseline_fields": [
+          {
+            "name": "offer_text",
+            "value": "10 seats at EUR 65 per seat per month, billed annually."
+          },
+          {
+            "name": "contract_reference",
+            "value": "OFF-29190"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-230a06fb0bcb",
+        "history_id": "history-b9e284e0f723",
+        "probe": "control",
+        "expected_decision": "keep",
+        "recoverable": true,
+        "world_fields": [
+          {
+            "name": "offer_text",
+            "value": "10 seats at EUR 65 per seat per month, billed annually."
+          },
+          {
+            "name": "contract_reference",
+            "value": "OFF-29190"
+          }
+        ]
+      }
+    }
+  ],
+  "human_review": {
+    "status": "pending",
+    "reviewer": null,
+    "response": null
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "material_revision": "v04-amendment-03-r2",
+  "source_sha256": "63ae72855ac96e955ddff3f59f33e14afaa6c84922f30672a2cf24c7001047b7",
+  "history_seed": 44331,
+  "future_seed": 44332,
+  "surface_audit": {
+    "json": "surface-audit.json",
+    "markdown": "surface-audit.md",
+    "development_history_seed": 44321,
+    "development_histories": 24,
+    "heldout_histories": 24,
+    "requires_investigation": false
+  },
+  "history_ids": [
+    "history-dd60612b6ea2",
+    "history-b9e284e0f723",
+    "history-d74e248c70fc",
+    "history-b25c68bba955",
+    "history-7b76660c7faa",
+    "history-8b93ced45577"
+  ],
+  "settings": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "selection": [
+    {
+      "setting": "S0",
+      "family": "sales",
+      "task_type": "observed_change"
+    },
+    {
+      "setting": "S1",
+      "family": "sales",
+      "task_type": "unidentifiable"
+    },
+    {
+      "setting": "S2",
+      "family": "reporting",
+      "task_type": "transfer_change"
+    },
+    {
+      "setting": "S3",
+      "family": "hr",
+      "task_type": "unidentifiable"
+    },
+    {
+      "setting": "S4",
+      "family": "retrieval",
+      "task_type": "resolved_retention_transfer"
+    },
+    {
+      "setting": "S5",
+      "family": "retrieval",
+      "task_type": "transfer_change"
+    }
+  ],
+  "human_review": "pending"
+}
