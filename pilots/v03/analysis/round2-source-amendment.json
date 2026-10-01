@@ -1,0 +1,123 @@
+{
+  "design_revision": "v03-calibration-r2",
+  "date": "2026-09-29",
+  "prior_run": "calibration-r1-sol-medium-20260929",
+  "changes": [
+    {
+      "path": "docs/pilot-v03-protocol.md",
+      "before_sha256": "26dd940570ff7f013f1a587e4002f710aea2bd72596109e498eaf29e0b850754",
+      "after_sha256": "913debd6f7d00d5557b85de4052746790f6c555b5056bc531ec17b07025a6e81"
+    },
+    {
+      "path": "pilots/v03/SCENARIOS.md",
+      "before_sha256": "64f1472f0cbd090dd5e87c6df9550900e8517199ce962e37a2c6fc474d3a495c",
+      "after_sha256": "0496732267559d56dc34de37ca4c00ac2fc3b44e2986bb98ebb795fbf19f3b4d"
+    },
+    {
+      "path": "pilots/v03/reflectai_v03/data.py",
+      "before_sha256": "1d4fe3c4f39cf9f1cd2424a2ee04e184d26be2833c23c8dc688cbf13287ff973",
+      "after_sha256": "c79049ce416cac2393a58442771e6d0c0229917fc897b9f7cb05f92950c6cb61"
+    },
+    {
+      "path": "pilots/v03/reflectai_v03/evaluation.py",
+      "before_sha256": "7e088755082e5a93127b3d1b3b7ca8ecccba22face07d76ba632a166a4d5b8ef",
+      "after_sha256": "67dc4cf3081de9cb4e444503d826de8f2ea84f9879384988c00b1a4d3d2a28cd"
+    },
+    {
+      "path": "pilots/v03/reflectai_v03/runner.py",
+      "before_sha256": "f540c1de356646a499c882b75afb3c69d14c6af74a29666a461d76ebaff28301",
+      "after_sha256": "a12219e0e33f897c369b3159e660d78f9f2fddd3bf6a6beae67d34822b31c51f"
+    },
+    {
+      "path": "pilots/v03/reflectai_v03/report.py",
+      "before_sha256": "68f8882d3c64060b4b4b2e573d9d1b5c8a621820a98ff33fc1fed88af3faccb2",
+      "after_sha256": "139dd7f0ba9ce4300c6fe942cfce5ea1d8c873dd3c2fd65d4ee889e8576d34ae"
+    },
+    {
+      "path": "pilots/v03/prompts/shared_contract_v2.txt",
+      "before_sha256": null,
+      "after_sha256": "3668471e492c78cd2b51ef253cd2af1c9c9ba25988314ec939e75b61c884ed11"
+    },
+    {
+      "path": "pilots/v03/prompts/prepare_C_v2.txt",
+      "before_sha256": null,
+      "after_sha256": "33be323abde404ec8bc6c11584f1c00d4e2eabde3fd8074468f0808d20177ea7"
+    },
+    {
+      "path": "pilots/v03/prompts/review_C_v2.txt",
+      "before_sha256": null,
+      "after_sha256": "67963d0457abbb1fb42ddb8eb4edd0bd46666720b6021fe08a5de3c6667f32c2"
+    },
+    {
+      "path": "pilots/v03/prompts/prepare_D_v3.txt",
+      "before_sha256": null,
+      "after_sha256": "2226def7848ab594eee23e91fadc5ece267428845be34f800a47708ff0ebc3f6"
+    },
+    {
+      "path": "pilots/v03/prompts/review_D_v3.txt",
+      "before_sha256": null,
+      "after_sha256": "71736a78683f7dc3ab2aa379e0f424a3fc49bf4b768c3c1178197795290a2c39"
+    },
+    {
+      "path": "pilots/v03/prompts/generate_v2.txt",
+      "before_sha256": null,
+      "after_sha256": "71d534ec42df93fb255661851569b11626740ff1415816f3ccccc444bcef24bd"
+    },
+    {
+      "path": "pilots/v03/configs/calibration-r2.json",
+      "before_sha256": null,
+      "after_sha256": "22f82998c31ba66c38d3d29b94c76d8cd4949e92de5ff6eb032778af305cc5ca"
+    },
+    {
+      "path": "tests/test_pilot_v03_evaluation.py",
+      "before_sha256": "edb35b30e530979eecaae366d4d7965d9dd738db9b2cae553a66fee2e9614d1d",
+      "after_sha256": "e614d8b7e31453d7d66ec58d0d5062aeb94e2325c34f37f33c774b581758ea0e"
+    },
+    {
+      "path": "tests/test_pilot_v03_round2_data.py",
+      "before_sha256": null,
+      "after_sha256": "b87ef5f93670d0c2f4959d75579100429d8ffc65587934fb2d62fcca66e646e5"
+    },
+    {
+      "path": "tests/test_pilot_v03_round2_measurement.py",
+      "before_sha256": null,
+      "after_sha256": "ce6dad23ef62cec9f952a9c92719856c7c26a962c1ca18a27a2a55f101a158eb"
+    },
+    {
+      "path": "tests/test_pilot_v03_round2_prompts.py",
+      "before_sha256": null,
+      "after_sha256": "f8500cf90addf7c5471445a3da63a707c0932042237959ae12c94fa5175fa9ee"
+    }
+  ],
+  "new_source_manifest_digest": "e527d8b8b2b98540eee05105f01418dc4e96e97713d098a913b4a0e36ad44e45",
+  "stage_verification": "All 111 v0.3 tests passed in a 264-test staging run. 18 legacy tests lacked their historical pilot fixtures in staging. The full canonical suite must pass before live execution.",
+  "pre_live_verification": {
+    "unit_tests_passed": 264,
+    "unit_test_command": "python -B -m unittest discover -s tests -q",
+    "offline_run": "pilots/v03/runs/offline-review-r2-20260929",
+    "offline_mock_completions": 288,
+    "round1_sealed_files_verified": 907,
+    "source_manifest_digest": "e527d8b8b2b98540eee05105f01418dc4e96e97713d098a913b4a0e36ad44e45",
+    "new_human_output_evaluation": false
+  },
+  "post_run_documentation_changes": [
+    {
+      "path": "pilots/v03/README.md",
+      "before_sha256": "d1666c1fee92a9cad45421339f908d113196b16e406fc40413190adc8e4e1b30",
+      "after_sha256": "55cd0ef7d1b44b85506dd4e5895879fee992af78ecede1170cf089a0155d530a",
+      "reason": "Correct relative documentation links after live execution; no experimental change."
+    },
+    {
+      "path": "pilots/v03/SCENARIOS.md",
+      "before_sha256": "0496732267559d56dc34de37ca4c00ac2fc3b44e2986bb98ebb795fbf19f3b4d",
+      "after_sha256": "669d2609f8eb7887159b45d754c70ff827c747a4e52f2cf79768b77a112b69fc",
+      "reason": "Correct relative documentation links after live execution; no experimental change."
+    },
+    {
+      "path": "pilots/v03/CALIBRATION_R2_REPORT.md",
+      "before_sha256": "c3b3c3cbaf236414c11649a7d4cee57438708cd0d44528e640bcb7b80e96dd22",
+      "after_sha256": "e30d64edc76881816c9f7e399721aa261a6ae4aa97db2b40d10302351ed375e8",
+      "reason": "Correct relative documentation links after live execution; no experimental change."
+    }
+  ]
+}

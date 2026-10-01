@@ -1,0 +1,1036 @@
+{
+  "analysis": "posthoc_field_audit_not_registered_primary_result",
+  "source_run": "calibration-r1-sol-medium-20260929",
+  "source_results_sha256": "1782084578ff4feeb620aa9b90e451e2621f6fdb9b85b21240dffc37e818db00",
+  "artifact_manifest_sha256": "5fec2ea8fbecbfc386ceda29b768714eafe5a362a376ba38cfd202e1f5142e97",
+  "audit_script_sha256": "618a41fccb08d3156b54ece00660f1bbe1851a5b289abf9166db7a5a88ae15eb",
+  "verified_sealed_files": 907,
+  "registered_calibration_passed": false,
+  "registered_failed_checks": [
+    "C_keep_at_least_2_of_4",
+    "C_controls_at_least_7_of_8"
+  ],
+  "reported_budget": {
+    "attempted_calls": 64,
+    "failed_calls": 0,
+    "unfinished_calls": 0,
+    "reported_tokens": 745349,
+    "calls_with_unknown_token_usage": 0,
+    "total_tokens": 745349,
+    "max_calls": 64,
+    "max_reported_tokens": 2000000,
+    "strict_tokens": false
+  },
+  "definition": "Exact field equality in a decoded, completed response for the correct task, with no employee questions. It ignores decision labels and rule validity. It is neither update warrant nor real-world professional quality.",
+  "summary": {
+    "A": {
+      "diagnostic": {
+        "planned": 8,
+        "registered_update_correct": 8,
+        "registered_world_compliant": 3,
+        "exact_fields_in_completed_output": 3,
+        "declared_decision_mismatches": 0
+      },
+      "control": {
+        "planned": 8,
+        "registered_update_correct": 8,
+        "registered_world_compliant": 8,
+        "exact_fields_in_completed_output": 8,
+        "declared_decision_mismatches": 0
+      }
+    },
+    "B": {
+      "diagnostic": {
+        "planned": 8,
+        "registered_update_correct": 7,
+        "registered_world_compliant": 6,
+        "exact_fields_in_completed_output": 6,
+        "declared_decision_mismatches": 0
+      },
+      "control": {
+        "planned": 8,
+        "registered_update_correct": 8,
+        "registered_world_compliant": 8,
+        "exact_fields_in_completed_output": 8,
+        "declared_decision_mismatches": 0
+      }
+    },
+    "C": {
+      "diagnostic": {
+        "planned": 8,
+        "registered_update_correct": 4,
+        "registered_world_compliant": 4,
+        "exact_fields_in_completed_output": 4,
+        "declared_decision_mismatches": 1
+      },
+      "control": {
+        "planned": 8,
+        "registered_update_correct": 4,
+        "registered_world_compliant": 4,
+        "exact_fields_in_completed_output": 7,
+        "declared_decision_mismatches": 3
+      }
+    }
+  },
+  "rows": [
+    {
+      "call_id": "A-0-f2591eb1e13a3e05",
+      "scenario": "S01",
+      "probe": "diagnostic",
+      "arm": "A",
+      "task_id": "f2591eb1e13a3e05",
+      "registered_update_correct": true,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-f2591eb1e13a3e05",
+      "scenario": "S01",
+      "probe": "diagnostic",
+      "arm": "B",
+      "task_id": "f2591eb1e13a3e05",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-f2591eb1e13a3e05",
+      "scenario": "S01",
+      "probe": "diagnostic",
+      "arm": "C",
+      "task_id": "f2591eb1e13a3e05",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "A-0-122212938df73cc0",
+      "scenario": "S01",
+      "probe": "control",
+      "arm": "A",
+      "task_id": "122212938df73cc0",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-122212938df73cc0",
+      "scenario": "S01",
+      "probe": "control",
+      "arm": "B",
+      "task_id": "122212938df73cc0",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-122212938df73cc0",
+      "scenario": "S01",
+      "probe": "control",
+      "arm": "C",
+      "task_id": "122212938df73cc0",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": true,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": [
+        "declared_decision_disagrees_with_fields",
+        "unsupported_or_missed_update"
+      ]
+    },
+    {
+      "call_id": "A-0-c1cc37bc9b619921",
+      "scenario": "S02",
+      "probe": "diagnostic",
+      "arm": "A",
+      "task_id": "c1cc37bc9b619921",
+      "registered_update_correct": true,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-c1cc37bc9b619921",
+      "scenario": "S02",
+      "probe": "diagnostic",
+      "arm": "B",
+      "task_id": "c1cc37bc9b619921",
+      "registered_update_correct": true,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-c1cc37bc9b619921",
+      "scenario": "S02",
+      "probe": "diagnostic",
+      "arm": "C",
+      "task_id": "c1cc37bc9b619921",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "apply",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": true,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": [
+        "declared_decision_disagrees_with_fields",
+        "unsupported_or_missed_update"
+      ]
+    },
+    {
+      "call_id": "A-0-5b9ee762b5f29642",
+      "scenario": "S02",
+      "probe": "control",
+      "arm": "A",
+      "task_id": "5b9ee762b5f29642",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-5b9ee762b5f29642",
+      "scenario": "S02",
+      "probe": "control",
+      "arm": "B",
+      "task_id": "5b9ee762b5f29642",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-5b9ee762b5f29642",
+      "scenario": "S02",
+      "probe": "control",
+      "arm": "C",
+      "task_id": "5b9ee762b5f29642",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": true,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "work_email": "worker92501@synthetic.invalid",
+        "booking_reference": "BK-92501"
+      },
+      "registered_errors": [
+        "declared_decision_disagrees_with_fields",
+        "unsupported_or_missed_update"
+      ]
+    },
+    {
+      "call_id": "A-0-4e5d74f7fae1afea",
+      "scenario": "S03",
+      "probe": "diagnostic",
+      "arm": "A",
+      "task_id": "4e5d74f7fae1afea",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "monthly_unit_price": "55",
+        "seat_count": "12",
+        "contract_reference": "CS-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-4e5d74f7fae1afea",
+      "scenario": "S03",
+      "probe": "diagnostic",
+      "arm": "B",
+      "task_id": "4e5d74f7fae1afea",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "monthly_unit_price": "55",
+        "seat_count": "12",
+        "contract_reference": "CS-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-4e5d74f7fae1afea",
+      "scenario": "S03",
+      "probe": "diagnostic",
+      "arm": "C",
+      "task_id": "4e5d74f7fae1afea",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "monthly_unit_price": "55",
+        "seat_count": "12",
+        "contract_reference": "CS-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "A-0-6cd78362aa29c784",
+      "scenario": "S03",
+      "probe": "control",
+      "arm": "A",
+      "task_id": "6cd78362aa29c784",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "forecast_quarter": "Q4",
+        "pipeline_total": "35000",
+        "currency": "EUR"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-6cd78362aa29c784",
+      "scenario": "S03",
+      "probe": "control",
+      "arm": "B",
+      "task_id": "6cd78362aa29c784",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "forecast_quarter": "Q4",
+        "pipeline_total": "35000",
+        "currency": "EUR"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-6cd78362aa29c784",
+      "scenario": "S03",
+      "probe": "control",
+      "arm": "C",
+      "task_id": "6cd78362aa29c784",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "forecast_quarter": "Q4",
+        "pipeline_total": "35000",
+        "currency": "EUR"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "A-0-24958a2f9384800a",
+      "scenario": "S04",
+      "probe": "diagnostic",
+      "arm": "A",
+      "task_id": "24958a2f9384800a",
+      "registered_update_correct": true,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "monthly_unit_price": "55",
+        "seat_count": "12",
+        "contract_reference": "CS-92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-24958a2f9384800a",
+      "scenario": "S04",
+      "probe": "diagnostic",
+      "arm": "B",
+      "task_id": "24958a2f9384800a",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": false,
+      "actual_fields": {
+        "monthly_unit_price": "55",
+        "seat_count": "12",
+        "contract_reference": "CS-92501"
+      },
+      "registered_errors": [
+        "unsupported_or_missed_update"
+      ]
+    },
+    {
+      "call_id": "C-0-24958a2f9384800a",
+      "scenario": "S04",
+      "probe": "diagnostic",
+      "arm": "C",
+      "task_id": "24958a2f9384800a",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": false,
+      "actual_fields": {
+        "monthly_unit_price": "55",
+        "seat_count": "12",
+        "contract_reference": "CS-92501"
+      },
+      "registered_errors": [
+        "unsupported_or_missed_update"
+      ]
+    },
+    {
+      "call_id": "A-0-85c5861a7881759a",
+      "scenario": "S04",
+      "probe": "control",
+      "arm": "A",
+      "task_id": "85c5861a7881759a",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "forecast_quarter": "Q4",
+        "pipeline_total": "35000",
+        "currency": "EUR"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-85c5861a7881759a",
+      "scenario": "S04",
+      "probe": "control",
+      "arm": "B",
+      "task_id": "85c5861a7881759a",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "forecast_quarter": "Q4",
+        "pipeline_total": "35000",
+        "currency": "EUR"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-85c5861a7881759a",
+      "scenario": "S04",
+      "probe": "control",
+      "arm": "C",
+      "task_id": "85c5861a7881759a",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "forecast_quarter": "Q4",
+        "pipeline_total": "35000",
+        "currency": "EUR"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "A-0-77168350a418d4a7",
+      "scenario": "S05",
+      "probe": "diagnostic",
+      "arm": "A",
+      "task_id": "77168350a418d4a7",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-42",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-77168350a418d4a7",
+      "scenario": "S05",
+      "probe": "diagnostic",
+      "arm": "B",
+      "task_id": "77168350a418d4a7",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-42",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-77168350a418d4a7",
+      "scenario": "S05",
+      "probe": "diagnostic",
+      "arm": "C",
+      "task_id": "77168350a418d4a7",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": false,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-42",
+        "checksum_check": "true"
+      },
+      "registered_errors": [
+        "applied_rule_has_unsupported_scope_or_effect",
+        "unsupported_or_missed_update"
+      ]
+    },
+    {
+      "call_id": "A-0-08eb7517af1834b8",
+      "scenario": "S05",
+      "probe": "control",
+      "arm": "A",
+      "task_id": "08eb7517af1834b8",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-16",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-08eb7517af1834b8",
+      "scenario": "S05",
+      "probe": "control",
+      "arm": "B",
+      "task_id": "08eb7517af1834b8",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-16",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-08eb7517af1834b8",
+      "scenario": "S05",
+      "probe": "control",
+      "arm": "C",
+      "task_id": "08eb7517af1834b8",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": false,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-16",
+        "checksum_check": "true"
+      },
+      "registered_errors": [
+        "applied_rule_has_unsupported_scope_or_effect",
+        "unsupported_or_missed_update"
+      ]
+    },
+    {
+      "call_id": "A-0-d98dd9220f2a9364",
+      "scenario": "S06",
+      "probe": "diagnostic",
+      "arm": "A",
+      "task_id": "d98dd9220f2a9364",
+      "registered_update_correct": true,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-42",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-d98dd9220f2a9364",
+      "scenario": "S06",
+      "probe": "diagnostic",
+      "arm": "B",
+      "task_id": "d98dd9220f2a9364",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-64234",
+        "release_id": "REL-42",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-d98dd9220f2a9364",
+      "scenario": "S06",
+      "probe": "diagnostic",
+      "arm": "C",
+      "task_id": "d98dd9220f2a9364",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-64234",
+        "release_id": "REL-42",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "A-0-8d0c26682191b947",
+      "scenario": "S06",
+      "probe": "control",
+      "arm": "A",
+      "task_id": "8d0c26682191b947",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-16",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-8d0c26682191b947",
+      "scenario": "S06",
+      "probe": "control",
+      "arm": "B",
+      "task_id": "8d0c26682191b947",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-16",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-8d0c26682191b947",
+      "scenario": "S06",
+      "probe": "control",
+      "arm": "C",
+      "task_id": "8d0c26682191b947",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "endpoint": "ep-98141",
+        "release_id": "REL-16",
+        "checksum_check": "required"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "A-0-324890d5344e9b4f",
+      "scenario": "S07",
+      "probe": "diagnostic",
+      "arm": "A",
+      "task_id": "324890d5344e9b4f",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "title": "Response distribution / V92501",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-324890d5344e9b4f",
+      "scenario": "S07",
+      "probe": "diagnostic",
+      "arm": "B",
+      "task_id": "324890d5344e9b4f",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "title": "Response distribution / V92501",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-324890d5344e9b4f",
+      "scenario": "S07",
+      "probe": "diagnostic",
+      "arm": "C",
+      "task_id": "324890d5344e9b4f",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": false,
+      "actual_fields": {
+        "title": "Response distribution / V92501 / V92501",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": [
+        "applied_rule_has_unsupported_scope_or_effect",
+        "unsupported_or_missed_update"
+      ]
+    },
+    {
+      "call_id": "A-0-dfdcc63bb5620604",
+      "scenario": "S07",
+      "probe": "control",
+      "arm": "A",
+      "task_id": "dfdcc63bb5620604",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "paragraph": "The study records the response distribution.",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-dfdcc63bb5620604",
+      "scenario": "S07",
+      "probe": "control",
+      "arm": "B",
+      "task_id": "dfdcc63bb5620604",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "paragraph": "The study records the response distribution.",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-dfdcc63bb5620604",
+      "scenario": "S07",
+      "probe": "control",
+      "arm": "C",
+      "task_id": "dfdcc63bb5620604",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "paragraph": "The study records the response distribution.",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "A-0-964b74a62ab50baf",
+      "scenario": "S08",
+      "probe": "diagnostic",
+      "arm": "A",
+      "task_id": "964b74a62ab50baf",
+      "registered_update_correct": true,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": false,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "title": "Response distribution / V92501",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-964b74a62ab50baf",
+      "scenario": "S08",
+      "probe": "diagnostic",
+      "arm": "B",
+      "task_id": "964b74a62ab50baf",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "title": "Response distribution",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-964b74a62ab50baf",
+      "scenario": "S08",
+      "probe": "diagnostic",
+      "arm": "C",
+      "task_id": "964b74a62ab50baf",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "apply",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "title": "Response distribution",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "A-0-0545926cbae39b07",
+      "scenario": "S08",
+      "probe": "control",
+      "arm": "A",
+      "task_id": "0545926cbae39b07",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "paragraph": "The study records the response distribution.",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "B-0-0545926cbae39b07",
+      "scenario": "S08",
+      "probe": "control",
+      "arm": "B",
+      "task_id": "0545926cbae39b07",
+      "registered_update_correct": true,
+      "registered_world_compliant": true,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "keep",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": false,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "paragraph": "The study records the response distribution.",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": []
+    },
+    {
+      "call_id": "C-0-0545926cbae39b07",
+      "scenario": "S08",
+      "probe": "control",
+      "arm": "C",
+      "task_id": "0545926cbae39b07",
+      "registered_update_correct": false,
+      "registered_world_compliant": false,
+      "exact_fields_in_completed_output": true,
+      "declared_decision": "apply",
+      "effective_decision": "keep",
+      "declared_decision_mismatch": true,
+      "actual_equals_warranted_fields": true,
+      "actual_fields": {
+        "paragraph": "The study records the response distribution.",
+        "source_footnote": "Source dataset V92501"
+      },
+      "registered_errors": [
+        "declared_decision_disagrees_with_fields",
+        "unsupported_or_missed_update"
+      ]
+    }
+  ]
+}

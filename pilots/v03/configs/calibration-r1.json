@@ -1,0 +1,15 @@
+{
+  "protocol": "pilot-v0.3",
+  "phase": "calibration",
+  "repetitions": 1,
+  "seed": 3307,
+  "order_seed": 3308,
+  "backend": {
+    "backend": "codex",
+    "model": "gpt-6-sol",
+    "reasoning_effort": "medium",
+    "timeout_seconds": 300,
+    "max_calls": 64,
+    "max_reported_tokens": 2000000
+  }
+}

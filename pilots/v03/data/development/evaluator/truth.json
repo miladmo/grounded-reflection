@@ -1,0 +1,3134 @@
+{
+  "split": "development",
+  "seed": 3301,
+  "assignments": {
+    "hr_trigger": "recipient",
+    "hr_baseline_reference": "absent",
+    "sales_baseline_annual": "absent",
+    "report_baseline_tag": "absent",
+    "tag_separator": " / ",
+    "route_initial": "ep-31255",
+    "route_alternative": "ep-25424",
+    "hr_reviewer_1": "Dara",
+    "hr_reviewer_2": "Lena",
+    "sales_local_reviewer": "Kian",
+    "sales_other_reviewer": "Cleo",
+    "sales_template_reviewer": "Hugo",
+    "sales_future_reviewer": "Ari",
+    "report_reviewer_1": "Jori",
+    "report_reviewer_2": "Faye",
+    "history_snapshot": "V782"
+  },
+  "history_truths": [
+    {
+      "history_id": "646854e9fe7e7328",
+      "scenario_id": "S01",
+      "pair_id": "P01",
+      "world_policy": {
+        "policy_id": "recipient",
+        "rules": [
+          {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "contact_pack"
+                ],
+                "workflow": [
+                  "talent_ops"
+                ],
+                "recipient": [
+                  "external"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "recipient",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "contact_pack"
+                  ],
+                  "workflow": [
+                    "talent_ops"
+                  ],
+                  "recipient": [
+                    "external"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "identified-trigger",
+          "status": "adopt",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "contact_pack"
+                ],
+                "workflow": [
+                  "talent_ops"
+                ],
+                "recipient": [
+                  "external"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "rival-trigger",
+          "status": "reject",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "contact_pack"
+                ],
+                "workflow": [
+                  "talent_ops"
+                ],
+                "contract": [
+                  "temporary"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "private-probe-hr-0",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-1",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-2",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-3",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-4",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "unclassified",
+            "contract": "permanent"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-5",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "internal",
+            "contract": "unclassified"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-6",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "other_team",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-7",
+          "context": {
+            "task_family": "onboarding_note",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-8",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "department_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-9",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-10",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-11",
+          "context": {
+            "task_family": "contact_pack",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-12",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-918",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        }
+      ]
+    },
+    {
+      "history_id": "1c448f35b219884b",
+      "scenario_id": "S02",
+      "pair_id": "P01",
+      "world_policy": {
+        "policy_id": "recipient",
+        "rules": [
+          {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "contact_pack"
+                ],
+                "workflow": [
+                  "talent_ops"
+                ],
+                "recipient": [
+                  "external"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "recipient",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "contact_pack"
+                  ],
+                  "workflow": [
+                    "talent_ops"
+                  ],
+                  "recipient": [
+                    "external"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "contract",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "contact_pack"
+                  ],
+                  "workflow": [
+                    "talent_ops"
+                  ],
+                  "contract": [
+                    "temporary"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "conjunction",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "contact_pack"
+                  ],
+                  "workflow": [
+                    "talent_ops"
+                  ],
+                  "recipient": [
+                    "external"
+                  ],
+                  "contract": [
+                    "temporary"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "disjunction",
+          "rules": [
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "contact_pack"
+                  ],
+                  "workflow": [
+                    "talent_ops"
+                  ],
+                  "recipient": [
+                    "external"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "booking_reference",
+              "operation": "set_fact",
+              "value": "booking_reference",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "contact_pack"
+                  ],
+                  "workflow": [
+                    "talent_ops"
+                  ],
+                  "contract": [
+                    "temporary"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "partial-intersection",
+          "status": "adopt",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "contact_pack"
+                ],
+                "workflow": [
+                  "talent_ops"
+                ],
+                "recipient": [
+                  "external"
+                ],
+                "contract": [
+                  "temporary"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "recipient-trigger",
+          "status": "unresolved",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "contact_pack"
+                ],
+                "workflow": [
+                  "talent_ops"
+                ],
+                "recipient": [
+                  "external"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "contract-trigger",
+          "status": "unresolved",
+          "rule": {
+            "field": "booking_reference",
+            "operation": "set_fact",
+            "value": "booking_reference",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "contact_pack"
+                ],
+                "workflow": [
+                  "talent_ops"
+                ],
+                "contract": [
+                  "temporary"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "private-probe-hr-0",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-1",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-2",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-3",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-4",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "unclassified",
+            "contract": "permanent"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-5",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "internal",
+            "contract": "unclassified"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-6",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "other_team",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-7",
+          "context": {
+            "task_family": "onboarding_note",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-8",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "department_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-9",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-10",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-11",
+          "context": {
+            "task_family": "contact_pack",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-271",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-hr-12",
+          "context": {
+            "task_family": "contact_pack",
+            "workflow": "talent_ops",
+            "work_role": "recruitment_coordinator",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "facts": {
+            "booking_reference": "BK-918",
+            "work_email": "example@synthetic.invalid"
+          },
+          "baseline_fields": [
+            {
+              "name": "work_email",
+              "value": "example@synthetic.invalid"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        }
+      ]
+    },
+    {
+      "history_id": "01ef7896ce6d3255",
+      "scenario_id": "S03",
+      "pair_id": "P02",
+      "world_policy": {
+        "policy_id": "reviewer-specific",
+        "rules": [
+          {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "renewal_preview"
+                ],
+                "workflow": [
+                  "account_ops"
+                ],
+                "reviewer": [
+                  "Kian"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "reviewer-specific",
+          "rules": [
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "renewal_preview"
+                  ],
+                  "workflow": [
+                    "account_ops"
+                  ],
+                  "reviewer": [
+                    "Kian"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "local-exception",
+          "status": "adopt",
+          "rule": {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "renewal_preview"
+                ],
+                "workflow": [
+                  "account_ops"
+                ],
+                "reviewer": [
+                  "Kian"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "shared-convention",
+          "status": "reject",
+          "rule": {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "renewal_preview"
+                ],
+                "workflow": [
+                  "account_ops"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "private-probe-sales-0",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-1",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Cleo"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-2",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Ari"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-3",
+          "context": {
+            "task_family": "pipeline_forecast",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-4",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "other_team",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-5",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "renewals_specialist",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-6",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-7",
+          "context": {
+            "task_family": "renewal_preview",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-8",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "1900",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        }
+      ]
+    },
+    {
+      "history_id": "f3fd65055bb86ee4",
+      "scenario_id": "S04",
+      "pair_id": "P02",
+      "world_policy": {
+        "policy_id": "workflow-convention",
+        "rules": [
+          {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "renewal_preview"
+                ],
+                "workflow": [
+                  "account_ops"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "workflow-convention",
+          "rules": [
+            {
+              "field": "annual_total",
+              "operation": "set_fact",
+              "value": "annual_total",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "renewal_preview"
+                  ],
+                  "workflow": [
+                    "account_ops"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "shared-convention",
+          "status": "adopt",
+          "rule": {
+            "field": "annual_total",
+            "operation": "set_fact",
+            "value": "annual_total",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "renewal_preview"
+                ],
+                "workflow": [
+                  "account_ops"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "private-probe-sales-0",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-1",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Cleo"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-2",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Ari"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-3",
+          "context": {
+            "task_family": "pipeline_forecast",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-4",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "other_team",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-5",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "renewals_specialist",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-6",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-7",
+          "context": {
+            "task_family": "renewal_preview",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "4800",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-sales-8",
+          "context": {
+            "task_family": "renewal_preview",
+            "workflow": "account_ops",
+            "work_role": "account_executive",
+            "reviewer": "Kian"
+          },
+          "facts": {
+            "monthly_unit_price": "40",
+            "seat_count": "10",
+            "annual_total": "1900",
+            "contract_reference": "CS-441"
+          },
+          "baseline_fields": [
+            {
+              "name": "monthly_unit_price",
+              "value": "40"
+            },
+            {
+              "name": "seat_count",
+              "value": "10"
+            },
+            {
+              "name": "contract_reference",
+              "value": "CS-441"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        }
+      ]
+    },
+    {
+      "history_id": "c721b27d539a7da3",
+      "scenario_id": "S05",
+      "pair_id": "P03",
+      "world_policy": {
+        "policy_id": "unchanged-service",
+        "rules": []
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "unchanged-service",
+          "rules": []
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "durable-route-change",
+          "status": "reject",
+          "rule": {
+            "field": "endpoint",
+            "operation": "set_literal",
+            "value": "ep-25424",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "retrieval_plan"
+                ],
+                "workflow": [
+                  "evidence_collection"
+                ],
+                "collection": [
+                  "active"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "private-probe-route-0",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-1",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist",
+            "collection": "archive"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-2",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist",
+            "collection": "unclassified"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-3",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "other_collection",
+            "work_role": "research_scientist",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-4",
+          "context": {
+            "task_family": "literature_summary",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-5",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_associate",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-6",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-7",
+          "context": {
+            "task_family": "retrieval_plan",
+            "work_role": "research_scientist",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        }
+      ]
+    },
+    {
+      "history_id": "adef127f28b91a1d",
+      "scenario_id": "S06",
+      "pair_id": "P03",
+      "world_policy": {
+        "policy_id": "active-relocation",
+        "rules": [
+          {
+            "field": "endpoint",
+            "operation": "set_literal",
+            "value": "ep-25424",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "retrieval_plan"
+                ],
+                "workflow": [
+                  "evidence_collection"
+                ],
+                "collection": [
+                  "active"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "active-relocation",
+          "rules": [
+            {
+              "field": "endpoint",
+              "operation": "set_literal",
+              "value": "ep-25424",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "retrieval_plan"
+                  ],
+                  "workflow": [
+                    "evidence_collection"
+                  ],
+                  "collection": [
+                    "active"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "active-route",
+          "status": "adopt",
+          "rule": {
+            "field": "endpoint",
+            "operation": "set_literal",
+            "value": "ep-25424",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "retrieval_plan"
+                ],
+                "workflow": [
+                  "evidence_collection"
+                ],
+                "collection": [
+                  "active"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "global-route",
+          "status": "reject",
+          "rule": {
+            "field": "endpoint",
+            "operation": "set_literal",
+            "value": "ep-25424",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "retrieval_plan"
+                ],
+                "workflow": [
+                  "evidence_collection"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "private-probe-route-0",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-1",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist",
+            "collection": "archive"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-2",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist",
+            "collection": "unclassified"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-3",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "other_collection",
+            "work_role": "research_scientist",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-4",
+          "context": {
+            "task_family": "literature_summary",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-5",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_associate",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-6",
+          "context": {
+            "task_family": "retrieval_plan",
+            "workflow": "evidence_collection",
+            "work_role": "research_scientist"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-route-7",
+          "context": {
+            "task_family": "retrieval_plan",
+            "work_role": "research_scientist",
+            "collection": "active"
+          },
+          "facts": {
+            "release_id": "REL-42",
+            "checksum_check": "required"
+          },
+          "baseline_fields": [
+            {
+              "name": "endpoint",
+              "value": "ep-31255"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-42"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        }
+      ]
+    },
+    {
+      "history_id": "0c442e58d649f161",
+      "scenario_id": "S07",
+      "pair_id": "P04",
+      "world_policy": {
+        "policy_id": "chart-only",
+        "rules": [
+          {
+            "field": "title",
+            "operation": "append_fact",
+            "value": "snapshot",
+            "separator": " / ",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "study_report"
+                ],
+                "workflow": [
+                  "study_delta"
+                ],
+                "artifact": [
+                  "chart"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "chart-only",
+          "rules": [
+            {
+              "field": "title",
+              "operation": "append_fact",
+              "value": "snapshot",
+              "separator": " / ",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "study_report"
+                  ],
+                  "workflow": [
+                    "study_delta"
+                  ],
+                  "artifact": [
+                    "chart"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "chart-rule",
+          "status": "adopt",
+          "rule": {
+            "field": "title",
+            "operation": "append_fact",
+            "value": "snapshot",
+            "separator": " / ",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "study_report"
+                ],
+                "workflow": [
+                  "study_delta"
+                ],
+                "artifact": [
+                  "chart"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "broader-rule",
+          "status": "reject",
+          "rule": {
+            "field": "title",
+            "operation": "append_fact",
+            "value": "snapshot",
+            "separator": " / ",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "study_report"
+                ],
+                "workflow": [
+                  "study_delta"
+                ],
+                "artifact": [
+                  "chart",
+                  "numeric_table"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "private-probe-report-0",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-1",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "numeric_table"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-2",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "narrative"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-3",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "image"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-4",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "other_study",
+            "work_role": "research_scientist",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-5",
+          "context": {
+            "task_family": "presentation",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-6",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_associate",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-7",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-8",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response by cohort",
+            "snapshot": "V9999",
+            "source_footnote": "Source dataset V9999"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response by cohort"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V9999"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        }
+      ]
+    },
+    {
+      "history_id": "362205ab0529f9d0",
+      "scenario_id": "S08",
+      "pair_id": "P04",
+      "world_policy": {
+        "policy_id": "exhibits",
+        "rules": [
+          {
+            "field": "title",
+            "operation": "append_fact",
+            "value": "snapshot",
+            "separator": " / ",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "study_report"
+                ],
+                "workflow": [
+                  "study_delta"
+                ],
+                "artifact": [
+                  "chart",
+                  "numeric_table"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "exhibits",
+          "rules": [
+            {
+              "field": "title",
+              "operation": "append_fact",
+              "value": "snapshot",
+              "separator": " / ",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "study_report"
+                  ],
+                  "workflow": [
+                    "study_delta"
+                  ],
+                  "artifact": [
+                    "chart",
+                    "numeric_table"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "exhibit-rule",
+          "status": "adopt",
+          "rule": {
+            "field": "title",
+            "operation": "append_fact",
+            "value": "snapshot",
+            "separator": " / ",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "study_report"
+                ],
+                "workflow": [
+                  "study_delta"
+                ],
+                "artifact": [
+                  "chart",
+                  "numeric_table"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "private-probe-report-0",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-1",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "numeric_table"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-2",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "narrative"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-3",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "image"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-4",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "other_study",
+            "work_role": "research_scientist",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-5",
+          "context": {
+            "task_family": "presentation",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-6",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_associate",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-7",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist"
+          },
+          "facts": {
+            "base_title": "Response distribution",
+            "snapshot": "V782",
+            "source_footnote": "Source dataset V782"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response distribution"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V782"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        },
+        {
+          "task_id": "private-probe-report-8",
+          "context": {
+            "task_family": "study_report",
+            "workflow": "study_delta",
+            "work_role": "research_scientist",
+            "artifact": "chart"
+          },
+          "facts": {
+            "base_title": "Response by cohort",
+            "snapshot": "V9999",
+            "source_footnote": "Source dataset V9999"
+          },
+          "baseline_fields": [
+            {
+              "name": "title",
+              "value": "Response by cohort"
+            },
+            {
+              "name": "source_footnote",
+              "value": "Source dataset V9999"
+            }
+          ],
+          "request": "Evaluator-only scope probe; never send to a model."
+        }
+      ]
+    }
+  ],
+  "task_truths": [
+    {
+      "task_id": "363747c9cc3a3364",
+      "history_id": "646854e9fe7e7328",
+      "probe": "diagnostic",
+      "expected_decision": "apply",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "work_email",
+          "value": "worker44217@synthetic.invalid"
+        },
+        {
+          "name": "booking_reference",
+          "value": "BK-44217"
+        }
+      ]
+    },
+    {
+      "task_id": "18292102d28f9840",
+      "history_id": "1c448f35b219884b",
+      "probe": "diagnostic",
+      "expected_decision": "keep",
+      "recoverable": false,
+      "world_fields": [
+        {
+          "name": "work_email",
+          "value": "worker44217@synthetic.invalid"
+        },
+        {
+          "name": "booking_reference",
+          "value": "BK-44217"
+        }
+      ]
+    },
+    {
+      "task_id": "38d9a06b7bbbf8d7",
+      "history_id": "646854e9fe7e7328",
+      "probe": "control",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "work_email",
+          "value": "worker44217@synthetic.invalid"
+        }
+      ]
+    },
+    {
+      "task_id": "4e2e51d09a590afc",
+      "history_id": "1c448f35b219884b",
+      "probe": "control",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "work_email",
+          "value": "worker44217@synthetic.invalid"
+        }
+      ]
+    },
+    {
+      "task_id": "da52cd0cd7d602bd",
+      "history_id": "01ef7896ce6d3255",
+      "probe": "diagnostic",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "monthly_unit_price",
+          "value": "55"
+        },
+        {
+          "name": "seat_count",
+          "value": "12"
+        },
+        {
+          "name": "contract_reference",
+          "value": "CS-44217"
+        }
+      ]
+    },
+    {
+      "task_id": "edc28fe725cf7426",
+      "history_id": "f3fd65055bb86ee4",
+      "probe": "diagnostic",
+      "expected_decision": "apply",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "monthly_unit_price",
+          "value": "55"
+        },
+        {
+          "name": "seat_count",
+          "value": "12"
+        },
+        {
+          "name": "contract_reference",
+          "value": "CS-44217"
+        },
+        {
+          "name": "annual_total",
+          "value": "7920"
+        }
+      ]
+    },
+    {
+      "task_id": "897f640b5e0909c5",
+      "history_id": "01ef7896ce6d3255",
+      "probe": "control",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "forecast_quarter",
+          "value": "Q4"
+        },
+        {
+          "name": "pipeline_total",
+          "value": "35000"
+        },
+        {
+          "name": "currency",
+          "value": "EUR"
+        }
+      ]
+    },
+    {
+      "task_id": "1c708b8096e33ec1",
+      "history_id": "f3fd65055bb86ee4",
+      "probe": "control",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "forecast_quarter",
+          "value": "Q4"
+        },
+        {
+          "name": "pipeline_total",
+          "value": "35000"
+        },
+        {
+          "name": "currency",
+          "value": "EUR"
+        }
+      ]
+    },
+    {
+      "task_id": "21eaf70cd641e1da",
+      "history_id": "c721b27d539a7da3",
+      "probe": "diagnostic",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "endpoint",
+          "value": "ep-31255"
+        },
+        {
+          "name": "release_id",
+          "value": "REL-44217"
+        },
+        {
+          "name": "checksum_check",
+          "value": "required"
+        }
+      ]
+    },
+    {
+      "task_id": "e5956f570e4837d4",
+      "history_id": "adef127f28b91a1d",
+      "probe": "diagnostic",
+      "expected_decision": "apply",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "endpoint",
+          "value": "ep-25424"
+        },
+        {
+          "name": "release_id",
+          "value": "REL-44217"
+        },
+        {
+          "name": "checksum_check",
+          "value": "required"
+        }
+      ]
+    },
+    {
+      "task_id": "7c2f2d0e2c7ca017",
+      "history_id": "c721b27d539a7da3",
+      "probe": "control",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "endpoint",
+          "value": "ep-31255"
+        },
+        {
+          "name": "release_id",
+          "value": "REL-16"
+        },
+        {
+          "name": "checksum_check",
+          "value": "required"
+        }
+      ]
+    },
+    {
+      "task_id": "41d24e55da5fb6f1",
+      "history_id": "adef127f28b91a1d",
+      "probe": "control",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "endpoint",
+          "value": "ep-31255"
+        },
+        {
+          "name": "release_id",
+          "value": "REL-16"
+        },
+        {
+          "name": "checksum_check",
+          "value": "required"
+        }
+      ]
+    },
+    {
+      "task_id": "9a02cb854f8f2e3a",
+      "history_id": "0c442e58d649f161",
+      "probe": "diagnostic",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "title",
+          "value": "Response distribution"
+        },
+        {
+          "name": "source_footnote",
+          "value": "Source dataset V44217"
+        }
+      ]
+    },
+    {
+      "task_id": "56a8536f90b5ac7e",
+      "history_id": "362205ab0529f9d0",
+      "probe": "diagnostic",
+      "expected_decision": "apply",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "title",
+          "value": "Response distribution / V44217"
+        },
+        {
+          "name": "source_footnote",
+          "value": "Source dataset V44217"
+        }
+      ]
+    },
+    {
+      "task_id": "24a15d08f18bdbc2",
+      "history_id": "0c442e58d649f161",
+      "probe": "control",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "paragraph",
+          "value": "The study records the response distribution."
+        },
+        {
+          "name": "source_footnote",
+          "value": "Source dataset V44217"
+        }
+      ]
+    },
+    {
+      "task_id": "09799455d111a05c",
+      "history_id": "362205ab0529f9d0",
+      "probe": "control",
+      "expected_decision": "keep",
+      "recoverable": true,
+      "world_fields": [
+        {
+          "name": "paragraph",
+          "value": "The study records the response distribution."
+        },
+        {
+          "name": "source_footnote",
+          "value": "Source dataset V44217"
+        }
+      ]
+    }
+  ]
+}
