@@ -16,3 +16,22 @@ private-data/
 *.log
 .DS_Store
 pilots/*/runs/
+
+# Credentials (defence in depth). The FHGenie key lives DPAPI-encrypted in
+# %LOCALAPPDATA%\reflectAI, outside this repository.
+*.dpapi
+*api-key*
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Publication exclusions (1 October 2026). Originals and full run folders are in
+# the archive ZIP; see pilots/v04/PUBLICATION_SANITIZATION.md.
+pilots/v04/review/*/sources/
+pilots/v04/diagnostics/fhgenie/contract-test-*/run/calls/*/final.txt
+pilots/v04/diagnostics/fhgenie/contract-test-*/run/calls/*/final.json
+pilots/v04/diagnostics/fhgenie/probe-*/final-content.json
+pilots/v04/diagnostics/transport-smoke-20260929/attempt/transport/
+pilots/v04/diagnostics/transport-smoke-v2-20260929/attempt/transport/
+pilots/v04/preflight/fhgenie-20260929/offline-tests-*-failed.txt

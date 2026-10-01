@@ -1,0 +1,407 @@
+[
+  {
+    "case_id": "case-7e0f1bf5c240",
+    "family": "recruiting",
+    "category": "boundary",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-7e0f1bf5c240",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "research software vacancy K7e0f1b",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "capacity_planning",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "planning_queue",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "explicit",
+      "explicit"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "community_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "email_attachment",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "work_ownership",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "role_page",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-396efa64b58f",
+    "family": "recruiting",
+    "category": "ambiguous",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-396efa64b58f",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "research software vacancy K396efa",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "role_page",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "undetermined",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "hidden",
+      "generic"
+    ],
+    "allowed_actions": [
+      "clarify",
+      "defer"
+    ],
+    "missing_fields": [
+      "audience"
+    ],
+    "unresolved_output_fields": [
+      "emphasis"
+    ],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "community_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "email_attachment",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "capacity_planning",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-5353dbc1d5ac",
+    "family": "sales",
+    "category": "boundary",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-5353dbc1d5ac",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "measurement software opportunity K5353db",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "portfolio_coverage",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "territory_board",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "explicit",
+      "explicit"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "product_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "local_spreadsheet",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "unresolved_needs",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "account_workspace",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-aa2b6b82c6ca",
+    "family": "sales",
+    "category": "ambiguous",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-aa2b6b82c6ca",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "measurement software opportunity Kaa2b6b",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "account_workspace",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "undetermined",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "hidden",
+      "generic"
+    ],
+    "allowed_actions": [
+      "clarify",
+      "defer"
+    ],
+    "missing_fields": [
+      "audience"
+    ],
+    "unresolved_output_fields": [
+      "emphasis"
+    ],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "product_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "local_spreadsheet",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "portfolio_coverage",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-4826915e320e",
+    "family": "research",
+    "category": "boundary",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-4826915e320e",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "synthetic assay study K482691",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "programme_milestones",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "programme_board",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "explicit",
+      "explicit"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "novelty_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "unversioned_export",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "limitations",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "versioned_notebook",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-06dc380781e8",
+    "family": "research",
+    "category": "ambiguous",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-06dc380781e8",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "synthetic assay study K06dc38",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "versioned_notebook",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "undetermined",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "hidden",
+      "generic"
+    ],
+    "allowed_actions": [
+      "clarify",
+      "defer"
+    ],
+    "missing_fields": [
+      "audience"
+    ],
+    "unresolved_output_fields": [
+      "emphasis"
+    ],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "novelty_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "unversioned_export",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "programme_milestones",
+        "scope": null
+      }
+    ]
+  }
+]

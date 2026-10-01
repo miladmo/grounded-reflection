@@ -70,6 +70,10 @@ The pilot compares direct use of historical evidence, direct adaptation and stru
 
 The report explains how to repeat the experiment with an authenticated Codex CLI. A repeat makes 27 model calls and uses the caller's model access. Raw runtime logs are excluded from Git.
 
+## Synthetic pilot v0.2
+
+The [v0.2 pilot](pilots/v02/README.md) adds four comparison conditions, conflicting evidence and scoped requirements across three synthetic task families. It separates preparation, validation, source freeze and final evaluation, with deterministic checks and recorded budgets. A complete offline mock run requires no model access. Mock outputs test infrastructure and are not calibration or research results. The v0.1 findings above remain unchanged.
+
 ## Research and development
 
 The research question is when an explicit, evidence-grounded interpretation of work requirements helps agents adapt beyond retrieval or direct adaptation. Next steps are less explicit and conflicting evidence, practitioner-calibrated tasks, repeated trials and bounded adaptation cycles. See the [roadmap](docs/research-roadmap.md) and [HR data card](docs/hr-example.md).
