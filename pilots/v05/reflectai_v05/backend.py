@@ -12,6 +12,7 @@ from copy import deepcopy
 from datetime import datetime, timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 
 from reflectai_v03.context import render_rules
@@ -141,7 +142,7 @@ class Backend:
                 result = fhgenie_transport.run_completion(
                     prompt, schema, directory / 'transport', self.config.model, self.config.reasoning_effort,
                     self.config.timeout_seconds, max_output_tokens=self.config.max_output_tokens,
-                    executable=self.config.pwsh_executable)
+                    executable=os.path.expandvars(self.config.pwsh_executable))
                 raw, metadata = result['response'], result['metadata']
                 if metadata.get('response_model') != self.config.model:
                     self.halt_reason = 'transport_integrity_failure'

@@ -186,6 +186,29 @@ class LiveGateTests(unittest.TestCase):
         self.assertFalse((self.root / 'y').exists())
 
 
+class FrozenAndPathTests(unittest.TestCase):
+    def test_prompts_match_the_frozen_manifest(self):
+        folder = ROOT / 'pilots/v05/prompts'
+        manifest = json.loads((folder / 'FROZEN.json').read_text(encoding='utf-8'))
+        current = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(folder.glob('*.txt'))}
+        self.assertEqual(current, manifest['files'])
+        for name in ('d_index_v1.txt', 'd_round_v1.txt', 'd_final_v1.txt'):
+            self.assertNotIn('DRAFT', (folder / name).read_text(encoding='utf-8'))
+
+    def test_pinned_powershell_path_may_use_environment_variables(self):
+        from reflectai_v05.preflight import verify_executable
+        with tempfile.TemporaryDirectory() as temp:
+            pwsh = Path(temp) / 'pwsh.exe'
+            pwsh.write_bytes(b'offline fixture')
+            digest = hashlib.sha256(pwsh.read_bytes()).hexdigest()
+            with patch.dict(os.environ, {'V05_TEST_HOME': temp}):
+                config = phase_config('dcheck', backend='fhgenie', model=FHGENIE_MODEL,
+                                      pwsh_executable='%V05_TEST_HOME%/pwsh.exe', pwsh_sha256=digest)
+                verify_executable(config)
+                with self.assertRaises(PermissionError):
+                    verify_executable(config.model_copy(update={'pwsh_sha256': '0' * 64}))
+
+
 class TransportSyncTests(unittest.TestCase):
     def test_input_chars_match_the_bound_transport(self):
         endpoint = 'https://fhgenie.invalid/v1/chat/completions'

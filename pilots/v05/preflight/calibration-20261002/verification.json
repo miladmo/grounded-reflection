@@ -1,0 +1,51 @@
+{
+  "prepared_on": "2026-10-02",
+  "real_model_calls": 0,
+  "real_credential_reads": 0,
+  "phase": "calibration",
+  "config_sha256": "692239b0c229c1a82b87439c59f65e290166e284aa560cfebd975a714faa533b",
+  "source_sha256": "f94329843eeff3318c9a8d85a4b805867c1bef7c8e487dd36a5a831af82b3f50",
+  "material_review": {
+    "export": "pilots/v05/review/materials-v05-r3-20261002",
+    "seal_sha256": "2d5c5b8068d3bafa40494b43038f516d20c2fdbd729ed27cb64b1b844fd531b0",
+    "approval": "r3 approved by Milad Morad on 2 October 2026 (explicit confirmation pending)"
+  },
+  "frozen_prompts": {
+    "consolidate_C_v1.txt": "3ab7b227f45f3866251ecb6ae09e9ec4f9ad0ec9cf12d675add72323628c26b0",
+    "d_final_v1.txt": "93f1a580a7de3a9ee52eb25b21a6020ba14c3cf1778486ccbe79e6efe35d22e7",
+    "d_index_v1.txt": "844d3a2bce808651a94c4de6a457c7a5d1aa39e931c2dc0769b296c3dd1a2ee5",
+    "d_round_v1.txt": "0d132e761c4f351d6678631d8f41954baf986249a5c1f75ebbcace16f6b8872b",
+    "generate_v1.txt": "2d2d9cfb352bb02af0fd5fff05edb6f7214f3b2d6cb9d1acfd4c5fb21bace2e7",
+    "prepare_chunk_C_v1.txt": "950fc65efad767e791dd4515b84c9b9b9b5e41231282c9d99216c2f1f0523762",
+    "shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b"
+  },
+  "python": "3.12.14",
+  "pydantic": "2.13.5",
+  "offline_tests_passed": 503,
+  "offline_http_driver_cases_passed": 44,
+  "mock_calibration": {
+    "directory": "pilots/v05/runs/offline-calibration-20261002",
+    "manifest_sha256": "fffed9d53e8bd993de04ff654f9d8b6ba0896fbbbe7a910b9579907de3b32b5d",
+    "attempted_calls": 124,
+    "complete": true
+  },
+  "limits": {
+    "max_calls": 170,
+    "max_reported_tokens": 3000000,
+    "max_response_failures": 17,
+    "preparation_cap": 300000,
+    "call_input_tokens": 24000,
+    "max_output_tokens": 32768,
+    "timeout_seconds": 420
+  },
+  "estimate": {
+    "calls": "about 130 (mock: 124; live C chunks may add a few)",
+    "tokens": "about 2.0 million",
+    "runtime": "about 1.5 hours"
+  },
+  "limitations": [
+    "The pinned PowerShell path is stored with %USERPROFILE% and expanded locally.",
+    "Provider enforcement of reasoning effort and output limit is not independently attested.",
+    "The token stop is checked between calls; the last in-flight call can cross it."
+  ]
+}

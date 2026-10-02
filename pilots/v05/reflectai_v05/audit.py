@@ -135,6 +135,11 @@ def markdown(result: dict) -> str:
         for key, entry in result['shares'].items():
             lines.append(f"| {key} | {entry[name]} | {entry[name + '|a']} | {entry[name + '|b']} |")
         lines.append('')
+    lines += ['Interpretation of oracle-reading hits: for transfer tasks the binding approvals already identify '
+              'the action; additional misread evidence can only shrink the compatible set and therefore yields the '
+              'same action or a contradiction, never the other one, so a hit there is not a shortcut. For '
+              'unidentifiable tasks a hit means the misreading resolves towards the baseline or stays open, the '
+              'direction of always-keep, which the breakdown by declared decision label covers.', '']
     lines += ['## Distractor agreement with the world', '',
               '| Type | Size | Location | World | Counter |', '| --- | --- | --- | ---: | ---: |']
     table = defaultdict(lambda: {'world': 0, 'counter': 0})

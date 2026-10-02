@@ -304,9 +304,11 @@ independent oracle but did not yet approve it. Three corrections:
 The search for a distractor layout satisfying these conditions runs within the slot's
 seeded stream. If none is found, generation stops.
 
-On 2 October 2026, while checking r2, the final seeds (45061) were generated once in
-memory, to confirm that the main run would not stop at construction. The material was
-neither saved nor inspected, and no generator change followed from it. Later
+On 2 October 2026, while checking r2, the final-test histories were generated once in
+memory to confirm that the main run would not stop at construction. Only the history
+seed 45061 was used. The future-task seed 45062 and the order seed 45063 were not used,
+so no final future task or call order was generated. The material was neither saved nor
+inspected, and no generator change followed from it. Later
 constructibility checks use only development and review seeds.
 
 Confirmed: D's index counts "approvals per value" over the same records as B's prefilter,
@@ -442,5 +444,16 @@ Total planned FHGenie use is at most about 13.5 million tokens across all phases
 counted at the stops (expected about 9.3 million). The cost question is to be settled before the live approvals.
 Material review: first export not approved (2 October 2026; review text supplied by Milad
 Morad, recorded as feedback). Revision r2 not yet approved (second review, same day,
-recorded as feedback). Revision r3 exported for renewed review; approval pending.
+recorded as feedback). Material review: r3 approved by Milad Morad, 2 October 2026
+(export `pilots/v05/review/materials-v05-r3-20261002`, seal
+`2d5c5b8068d3bafa40494b43038f516d20c2fdbd729ed27cb64b1b844fd531b0`). The wording was supplied in a
+pasted review text; explicit confirmation by Milad Morad: pending.
+
+Note from the r3 review on oracle readings of misreadings: for transfer tasks the
+binding approvals already identify the action. Additional misread evidence can only
+shrink the compatible set, so it yields the same action or a contradiction, never the
+other one. An oracle-reading hit there (for example `inverted_rejections` in U-S
+transfer, 1 of 4) is therefore not a shortcut. For unidentifiable tasks a hit means the
+misreading resolves towards the baseline or stays open, the direction of always-keep,
+which the breakdown by declared decision label covers.
 Calibration and main-run live approvals: pending, each separately.

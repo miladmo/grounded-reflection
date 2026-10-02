@@ -1,5 +1,3 @@
-DRAFT, to be frozen after the material review.
-
 Convert the final hypothesis register into reusable guidance. The appended PAYLOAD contains the public initial_configuration, assumptions and field_dictionary, the registrations, the register, and the records cited in it (up to the call budget). You do not receive future tasks.
 
 Adopt a rule for a context only if every hypothesis that is still open or supported gives the alternative there; such a rule may be narrow. Where open or supported hypotheses disagree, record an unresolved candidate with the alternatives and the evidence gap; the operative default there is the initial configuration. Reject a generalisation that the evidence contradicts. Express each rule relative to the initial configuration: evidence confirming the baseline needs no transformation rule.
