@@ -63,7 +63,8 @@ def misreading_records(history: History) -> dict[str, list[tuple[int, int]]]:
     """Public records a misreading would wrongly promote, as (cell, bit) pairs."""
     frame = read_frame(history)
     binding = set(infer(history).binding_records)
-    readings = {'all_accepted_reviews': [], 'inverted_rejections': [], 'followed_preferences': []}
+    readings = {'all_accepted_reviews': [], 'inverted_rejections': [], 'rejections_as_assent': [],
+                'followed_preferences': []}
     for record in history.records:
         if record.record_id in binding:
             continue
@@ -79,6 +80,7 @@ def misreading_records(history: History) -> dict[str, list[tuple[int, int]]]:
             elif event.get('event') == 'review' and event.get('decision') == 'reject':
                 bit = configuration_bit(frame, event['rejected_fields'], event['facts'])
                 readings['inverted_rejections'].append((cell, 1 - bit))
+                readings['rejections_as_assent'].append((cell, bit))
             elif event.get('event') == 'preference':
                 readings['followed_preferences'].append((cell, configuration_bit(frame, event['proposed_fields'],
                                                                                  event['facts'])))
@@ -97,13 +99,33 @@ def misreading_decisions(history: History, cell: int) -> dict[str, str]:
     return result
 
 
+MISREADINGS = ('all_accepted_reviews', 'inverted_rejections', 'rejections_as_assent', 'followed_preferences')
+
+
+def fallback_evidence(binding_pairs, extra, cell) -> str:
+    """Fallback (b): majority of the misread evidence in the exact context (tie: keep),
+    otherwise the nearest neighbour over binding plus misread evidence."""
+    exact = [bit for c, bit in extra if c == cell]
+    if exact:
+        return 'apply' if sum(exact) * 2 > len(exact) else 'keep'
+    return nearest_neighbour(list(binding_pairs) + list(extra), cell)
+
+
 def all_references(history: History, cell: int) -> dict[str, str]:
+    """Reference decisions. For each misreading: the oracle reading (may be 'undefined'),
+    fallback (a) 'undefined -> keep', and fallback (b) by exact-context evidence or NN."""
     oracle = infer(history)
-    observations = [(c, b) for c, b in _binding_pairs(history)]
-    return {'nearest_neighbour': nearest_neighbour(observations, cell),
-            'compatible_majority': compatible_majority(oracle.compatible, cell),
-            'simplest_compatible': simplest_compatible(oracle.compatible, cell),
-            'always_keep': 'keep', **misreading_decisions(history, cell)}
+    pairs = _binding_pairs(history)
+    raw = misreading_decisions(history, cell)
+    extras = misreading_records(history)
+    result = {'nearest_neighbour': nearest_neighbour(pairs, cell),
+              'compatible_majority': compatible_majority(oracle.compatible, cell),
+              'simplest_compatible': simplest_compatible(oracle.compatible, cell), 'always_keep': 'keep'}
+    for name in MISREADINGS:
+        result[name] = raw[name]
+        result[f'{name}|a'] = 'keep' if raw[name] == 'undefined' else raw[name]
+        result[f'{name}|b'] = fallback_evidence(pairs, extras[name], cell)
+    return result
 
 
 def _binding_pairs(history: History) -> list[tuple[int, int]]:

@@ -1,0 +1,18 @@
+{
+  "sha256": "2d5c5b8068d3bafa40494b43038f516d20c2fdbd729ed27cb64b1b844fd531b0",
+  "files": {
+    "heuristic-audit.json": "3b8b988ac42a03dc61f51e6d21c2e43192d00b1d95b50d6c106702aa4ddb3ead",
+    "heuristic-audit.md": "b9ed52b78d4a8d0693427ce229008d8b2380ecc1defe072db1eb55d97a4e8317",
+    "index.json": "d913f012361e9ddb934cab25246ba30cc1a320d9cd5bb83b01afc1a39cfaad86",
+    "K-L-sales.json": "9c2c16d9ecdb80a59e6447669cb068c5c3b2965f23656040a7473445fa8b5403",
+    "K-L-sales.md": "2b9e35976af41321bb836d2c84ea58cb958d0f9cc383ace3310bab5fc4445758",
+    "K-S-hr.json": "885ad6d2f7be52149c1b408638f666c0946d112d1c9b83d7ecc205ca63c3a071",
+    "K-S-hr.md": "b277f96adee054c25c4f03c78630ed5630675d592174391078556b589c5aa460",
+    "README.md": "6a67b25f72baf70ac926594900ac1a39b9b71b10c7c2fafbee9d1f1d947d2807",
+    "U-L-reporting.json": "5d89ed0f6c1e7fccb1e476021b645d2b4687f1311d0d0e633e1b723a6ab43a55",
+    "U-L-reporting.md": "3a4fcbf4672e0bd05811f39083cc2d20ae98a05b843307b5f518329a80bfe257",
+    "U-S-retrieval.json": "c5cfe251afc357aef84b983848f75c644ee2a8e2df74774c58585c69c1fca8e3",
+    "U-S-retrieval.md": "1a0cfc7b619af05d97fe52b856012159a28764a2dc7c994ab82c22e05ae3959a"
+  },
+  "sealed_at": "2026-10-02T19:16:15.187757+00:00"
+}

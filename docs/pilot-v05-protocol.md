@@ -268,6 +268,47 @@ compatible function, always-keep and the three misreadings give the warranted ac
 also reports reviewer × configuration counts and name collisions. These reference lines
 also appear in the final report.
 
+### Changes from the second material review (material revision r3)
+
+The second review (2 October 2026, supplied as a pasted review text) confirmed r2 with an
+independent oracle but did not yet approve it. Three corrections:
+
+1. **Rejected versions carry no information.** The r2 rule that a rejected version in the
+   exact hard-task context carries the warranted configuration created a new shortcut:
+   reading a rejection on unrelated grounds as tacit assent to the field reached the
+   warranted action. Now no rejected version sits in the exact hard-task context.
+   Elsewhere, rejected versions are balanced between world and counter configuration
+   within the relevant cell of the probe and within the rest. In small histories the two
+   rejections carry one configuration each and lie outside the relevant cell. Every
+   rejected version is **strictly farther from the hard task (Hamming distance) than the
+   nearest binding approval**. Otherwise a rejection would decide the nearest neighbour,
+   and either inverting it or reading it as assent would reach the warranted action.
+2. **Distractors outside the exact context carry no information.** Non-binding accepted
+   reviews, preferences and rejections of each type are balanced between world and
+   counter configuration, separately in the relevant cell of the probe and in the rest
+   (deviation at most one per history). Ties are broken at random, so single records in
+   small histories do not systematically agree with the world.
+3. **The audit reports "undefined" separately.** Each misreading ("all accepted reviews
+   bind", "rejection inverted", "rejection as tacit assent", "preference followed") is
+   reported in three readings:
+   * the oracle reading, in which a contradiction is "undefined" and not a success;
+   * fallback (a), in which a contradiction means "keep";
+   * fallback (b), the majority of the misread evidence in the exact context, otherwise
+     the nearest neighbour over binding plus misread evidence.
+
+   Condition: under (b) no misreading reaches the warranted action. Under (a),
+   unidentifiable tasks are structurally always right, like always-keep. The audit also
+   reports distractor agreement with the world per type, size and location (exact,
+   relevant cell, rest). It covers all 32 histories of the review and development seeds.
+
+The search for a distractor layout satisfying these conditions runs within the slot's
+seeded stream. If none is found, generation stops.
+
+On 2 October 2026, while checking r2, the final seeds (45061) were generated once in
+memory, to confirm that the main run would not stop at construction. The material was
+neither saved nor inspected, and no generator change followed from it. Later
+constructibility checks use only development and review seeds.
+
 Confirmed: D's index counts "approvals per value" over the same records as B's prefilter,
 namely accepted reviews that list the target field in `reviewed_fields`, without any roster
 or validity check.
@@ -364,7 +405,13 @@ buffer once. If both occur, results move to about 23 October.
 Synthetic placeholder families; the public H134 restriction, on which transfer depends;
 supplied approval semantics; 16 diagnostics per setting and arm; one model; deterministic
 retrieval as one choice of strong direct baseline; and D as one specific mechanism, not
-grounded reflection in general. **Under H14 an identified transfer always equals the
+grounded reflection in general. **Hard tasks are deliberately constructed so that
+similarity and naive readings mislead.** Their accuracy is a stress test, not an estimate
+of natural error rates. Success on unidentifiable tasks is broken down secondarily by the
+declared decision label of each generation call, for all four arms. For C and D it is
+also broken down by whether their preparation marked the context unresolved, because
+confusion followed by fallback to the baseline also yields the correct fields.
+**Under H14 an identified transfer always equals the
 shared value of the two neighbour cells in the relevant pair**, so in known-2 a transfer
 is solvable within the pair by neighbourhood. The r2 similarity placement prevents this
 only over all six attributes, not within the pair. **An advantage of D cannot be attributed separately to
@@ -394,5 +441,6 @@ Milad Morad with "push +".
 Total planned FHGenie use is at most about 13.5 million tokens across all phases,
 counted at the stops (expected about 9.3 million). The cost question is to be settled before the live approvals.
 Material review: first export not approved (2 October 2026; review text supplied by Milad
-Morad, recorded as feedback). Revision r2 exported for renewed review; approval pending.
+Morad, recorded as feedback). Revision r2 not yet approved (second review, same day,
+recorded as feedback). Revision r3 exported for renewed review; approval pending.
 Calibration and main-run live approvals: pending, each separately.

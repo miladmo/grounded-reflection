@@ -35,6 +35,7 @@ def score_task(task: Task, truth: TaskTruth, output: WorkOutput | None) -> dict:
     else:
         reason = 'wrong_field_values'
     return {'task_id': truth.task_id, 'task_type': truth.task_type, 'correct': correct, 'reason': reason,
-            'implied_decision': implied, 'label_consistent': output.decision == implied,
+            'implied_decision': implied, 'declared_decision': output.decision,
+            'label_consistent': output.decision == implied,
             'world_compliant': produced == truth.world_fields,
             'declared_rule_count': len(output.applied_rules)}

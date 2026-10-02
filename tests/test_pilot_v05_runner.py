@@ -53,6 +53,15 @@ class MockRunTests(unittest.TestCase):
         self.assertEqual(len(hard), 8)
         self.assertIn('headroom', summary)
 
+    def test_unidentifiable_breakdown_covers_every_arm(self):
+        breakdown = self.result['summary']['unidentifiable_breakdown']
+        arms = {key.split('|')[1] for key in breakdown}
+        self.assertEqual(arms, {'A', 'B', 'C'})
+        for key, counts in breakdown.items():
+            for label in counts:
+                self.assertIn('declared=', label)
+                self.assertEqual('prep_unresolved=' in label, key.endswith('|C'))
+
     def test_every_prompt_is_within_budget_and_public(self):
         for record in glob.glob(str(self.root / 'calibration/**/record.json'), recursive=True):
             self.assertLessEqual(json.loads(Path(record).read_text(encoding='utf-8'))['input_chars'], CALL_INPUT_CHARS)

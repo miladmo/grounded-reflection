@@ -255,7 +255,14 @@ def run(output_dir: Path, config: RunConfig, *, allow_live: bool = False, approv
                     row['blocked_reason'] = str(stop)
                 except (BudgetExceeded, ValueError) as error:
                     row['blocked_reason'] = f'payload: {error}'
-            rows.append({**row, **score_task(task, truth, output)})
+            scored = {**row, **score_task(task, truth, output)}
+            if truth.task_type == 'unidentifiable' and arm in ('C', 'D'):
+                # Secondary only: did the arm's own preparation mark this context unresolved?
+                prep = preparations.get((hid, arm))
+                scored['preparation_marked_unresolved'] = None if prep is None else any(
+                    c.status == 'unresolved' and c.rule.scope.applies_to(task.context) == 'match'
+                    for c in prep.candidates)
+            rows.append(scored)
     summary = summarise(rows, backend, prep_logs, config)
     write_json(output_dir / 'calls.json', backend.records)
     write_json(output_dir / 'results.json', {'rows': rows, 'summary': summary,
@@ -282,6 +289,16 @@ def summarise(rows, backend, prep_logs, config) -> dict:
               'complete': backend.halt_reason is None}
     if config.phase == 'calibration':
         result['headroom'] = headroom(rows)
+    # Secondary breakdown of unidentifiable tasks (never part of the primary outcome): a
+    # correct baseline can come from recognised ambiguity or from confusion with fallback.
+    breakdown = defaultdict(Counter)
+    for row in rows:
+        if row['task_type'] == 'unidentifiable':
+            key = (f"correct={row['correct']}|declared={row.get('declared_decision')}"
+                   + (f"|prep_unresolved={row['preparation_marked_unresolved']}"
+                      if 'preparation_marked_unresolved' in row else ''))
+            breakdown[f"{row['setting']}|{row['arm']}"][key] += 1
+    result['unidentifiable_breakdown'] = {k: dict(v) for k, v in sorted(breakdown.items())}
     return result
 
 

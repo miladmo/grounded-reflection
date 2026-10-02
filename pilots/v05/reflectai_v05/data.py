@@ -9,6 +9,7 @@ is redrawn. The oracle re-derives every task status from public evidence only.
 
 from __future__ import annotations
 
+from collections import Counter
 import hashlib
 import json
 import random
@@ -335,46 +336,84 @@ def make_case(seed: int, split: str, setting: str, family: str) -> Case:
     required_bit = 1 if hard_type == 'transfer_change' else 0
     # r2: an existing non-target field of the artifact, not an invented one.
     other_field = next(name for name in frame.baseline_template if name != frame.field_option.field)
-    counts = {}
-    for record_type, count in quotas.items():
-        for ordinal in range(count):
-            # r2: in the exact context of the hard task, non-binding accepted reviews and
-            # preferences show the configuration that is not warranted there; the rejected
-            # version shows the warranted one. No misreading then reaches the warranted action.
-            if ordinal == 0 and record_type != 'technical':
-                cell = hard_cell
-                bit = required_bit if record_type == 'rejected_artifact' else 1 - required_bit
-            else:
-                cell = rng.choice([c for c in range(64) if c != hard_cell])
-                bit = rng.randrange(2)
-            if record_type == 'unauthorised_revision':
-                review(cell, bit, rng.choice(outsiders))
-            elif record_type == 'approval_without_target':
-                review(cell, bit, rng.choice(reviewers), reviewed=[other_field], comment=rng.choice(COMMENTS))
-            elif record_type == 'rejected_artifact':
-                stamp = _timestamp(rng)
-                facts = _facts(family, rng, stamp[:10])
-                fields = [baseline_values(frame, facts), alternative_values(frame, facts)][bit]
-                add('review', rng.choice(reviewers), frame.context_of(cell), {
-                    'event': 'review', 'format': 'interpreted', 'document_id': facts['document_id'],
-                    'authority_ref': registry, 'facts': facts, 'reviewed_fields': [], 'decision': 'reject',
-                    'rejected_fields': fields, 'rejection_grounds': 'The signature block is missing.',
-                    'comment': rng.choice(COMMENTS)}, stamp)
-            elif record_type == 'target_field_preference':
-                stamp = _timestamp(rng)
-                facts = _facts(family, rng, stamp[:10])
-                fields = [baseline_values(frame, facts), alternative_values(frame, facts)][bit]
-                target = frame.field_option.field
-                wording = f'{target} should be {fields[target]!r}' if target in fields else f'{target} should be omitted'
-                add('revision', 'work-item-author', frame.context_of(cell), {
-                    'event': 'preference', 'facts': facts, 'proposed_fields': fields,
-                    'message': f'My preference for this work item is that {wording}.'}, stamp)
-            else:
-                add('tool', 'runtime', frame.context_of(cell), {
-                    'event': 'execution', 'request_id': _opaque(rng, 'request'),
-                    'attempts': [{'attempt': 1, 'http_status': 503}, {'attempt': 2, 'http_status': 200}],
-                    'log': 'The request completed on retry.'}, _timestamp(rng))
-        counts[record_type] = count
+    counts = dict(quotas)
+    required_action = 'apply' if required_bit else 'keep'
+
+    def region(cell):
+        if cell == hard_cell:
+            return 'exact'
+        same = all(hclass.bit(cell, i) == hclass.bit(hard_cell, i) for i in function['relevant'])
+        return 'relevant' if same else 'rest'
+
+    # r3: accepted non-binding reviews and preferences in the exact hard-task context show
+    # the unwarranted configuration; no rejected version sits there. Elsewhere every type is
+    # balanced between world and counter configuration per region (relevant cell, rest).
+    # The layout is searched within the seeded stream until no rejection misreading reaches
+    # the warranted action under fallback (b).
+    binding_pairs = [(c, hclass.value(world, c)) for c in observed]
+    nearest_binding = min(bin(c ^ hard_cell).count('1') for c in observed)
+    layout = None
+    for _ in range(MAX_DESIGN_ATTEMPTS):
+        plan, balance = [], Counter()
+        for record_type, count in quotas.items():
+            for ordinal in range(count):
+                if ordinal == 0 and record_type not in ('technical', 'rejected_artifact'):
+                    plan.append((record_type, hard_cell, 1 - required_bit))
+                    continue
+                if record_type == 'rejected_artifact':
+                    # r3: every rejected version is strictly farther from the hard task than the
+                    # nearest binding approval; in small histories also outside the relevant cell.
+                    choices = [c for c in range(64) if bin(c ^ hard_cell).count('1') > nearest_binding
+                               and not (size == 'S' and region(c) == 'relevant')]
+                else:
+                    choices = [c for c in range(64) if c != hard_cell]
+                cell = rng.choice(choices)
+                key, agree = (record_type, region(cell)), hclass.value(world, cell)
+                # Balanced per type and region; a tie is broken at random, so single records
+                # in small histories do not systematically agree with the world.
+                if balance[key] < 0:
+                    bit = agree
+                elif balance[key] > 0:
+                    bit = 1 - agree
+                else:
+                    bit = rng.choice((agree, 1 - agree))
+                balance[key] += 1 if bit == agree else -1
+                plan.append((record_type, cell, bit))
+        rejected = [(c, b) for t, c, b in plan if t == 'rejected_artifact']
+        if all(heuristics.fallback_evidence(binding_pairs, extra, hard_cell) != required_action
+               for extra in ([(c, 1 - b) for c, b in rejected], rejected)):
+            layout = plan
+            break
+    if layout is None:
+        raise ValueError('no distractor layout satisfies the r3 conditions')
+    for record_type, cell, bit in layout:
+        if record_type == 'unauthorised_revision':
+            review(cell, bit, rng.choice(outsiders))
+        elif record_type == 'approval_without_target':
+            review(cell, bit, rng.choice(reviewers), reviewed=[other_field], comment=rng.choice(COMMENTS))
+        elif record_type == 'rejected_artifact':
+            stamp = _timestamp(rng)
+            facts = _facts(family, rng, stamp[:10])
+            fields = [baseline_values(frame, facts), alternative_values(frame, facts)][bit]
+            add('review', rng.choice(reviewers), frame.context_of(cell), {
+                'event': 'review', 'format': 'interpreted', 'document_id': facts['document_id'],
+                'authority_ref': registry, 'facts': facts, 'reviewed_fields': [], 'decision': 'reject',
+                'rejected_fields': fields, 'rejection_grounds': 'The signature block is missing.',
+                'comment': rng.choice(COMMENTS)}, stamp)
+        elif record_type == 'target_field_preference':
+            stamp = _timestamp(rng)
+            facts = _facts(family, rng, stamp[:10])
+            fields = [baseline_values(frame, facts), alternative_values(frame, facts)][bit]
+            target = frame.field_option.field
+            wording = f'{target} should be {fields[target]!r}' if target in fields else f'{target} should be omitted'
+            add('revision', 'work-item-author', frame.context_of(cell), {
+                'event': 'preference', 'facts': facts, 'proposed_fields': fields,
+                'message': f'My preference for this work item is that {wording}.'}, stamp)
+        else:
+            add('tool', 'runtime', frame.context_of(cell), {
+                'event': 'execution', 'request_id': _opaque(rng, 'request'),
+                'attempts': [{'attempt': 1, 'http_status': 503}, {'attempt': 2, 'http_status': 200}],
+                'log': 'The request completed on retry.'}, _timestamp(rng))
 
     expected = 1 + BINDING_APPROVALS + sum(quotas.values())
     if len(records) != expected:
@@ -402,7 +441,7 @@ def make_case(seed: int, split: str, setting: str, family: str) -> Case:
         raise ValueError('the hard-task cell must be unobserved')
     references = heuristics.all_references(history, hard_cell)
     required = 'apply' if hard_type == 'transfer_change' else 'keep'
-    shortcuts = ('nearest_neighbour', 'all_accepted_reviews', 'inverted_rejections', 'followed_preferences')
+    shortcuts = ('nearest_neighbour',) + tuple(f'{m}|b' for m in heuristics.MISREADINGS)
     reached = [name for name in shortcuts if references[name] == required]
     if reached:
         raise ValueError(f'hard task reachable by shortcut {reached}: seed={seed}')

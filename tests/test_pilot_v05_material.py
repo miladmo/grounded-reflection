@@ -163,7 +163,8 @@ class GeneratorTests(unittest.TestCase):
             cell = case.task_cells[case.hard_type]
             required = 'apply' if case.hard_type == 'transfer_change' else 'keep'
             references = all_references(case.history, cell)
-            for name in ('nearest_neighbour', 'all_accepted_reviews', 'inverted_rejections', 'followed_preferences'):
+            for name in ('nearest_neighbour', 'all_accepted_reviews|b', 'inverted_rejections|b',
+                         'rejections_as_assent|b', 'followed_preferences|b'):
                 self.assertNotEqual(references[name], required, (case.setting, case.family, name))
             if case.hard_type == 'unidentifiable':
                 functions = infer(case.history).compatible
@@ -190,6 +191,58 @@ class GeneratorTests(unittest.TestCase):
                 event = json.loads(record.observation)
                 for name in event.get('reviewed_fields', []):
                     self.assertIn(name, frame.baseline_template | {frame.field_option.field: ''})
+
+    def _distractors(self, case):
+        """(type, cell, agrees_with_world) for every non-binding distractor record."""
+        from reflectai_v05.audit import _distractor_type, _fields_of
+        from reflectai_v05.oracle import configuration_bit
+        frame = PublicFrame.model_validate_json(case.history.initial_configuration)
+        binding = set(infer(case.history).binding_records)
+        roster = next(json.loads(r.observation)['authorised_reviewers'] for r in case.history.records
+                      if json.loads(r.observation).get('event') == 'register_version')
+        world, result = int(case.world['table']), []
+        for record in case.history.records:
+            event = json.loads(record.observation)
+            if record.record_id in binding or event.get('event') == 'register_version':
+                continue
+            kind = _distractor_type(record, event, roster, frame.field_option.field)
+            if kind is None:
+                continue
+            cell = frame.cell_of(record.context)
+            bit = configuration_bit(frame, _fields_of(event), event['facts'])
+            result.append((kind, cell, bit == hclass.value(world, cell)))
+        return result
+
+    def test_r3_no_rejection_near_the_hard_task(self):
+        for case in self.cases:
+            hard = case.task_cells[case.hard_type]
+            frame = PublicFrame.model_validate_json(case.history.initial_configuration)
+            records = {r.record_id: r for r in case.history.records}
+            nearest = min(bin(frame.cell_of(records[i].context) ^ hard).count('1')
+                          for i in infer(case.history).binding_records)
+            for kind, cell, _ in self._distractors(case):
+                if kind == 'rejected_artifact':
+                    self.assertNotEqual(cell, hard)
+                    self.assertGreater(bin(cell ^ hard).count('1'), nearest)
+
+    def test_r3_distractors_outside_the_exact_context_carry_no_information(self):
+        for case in self.cases:
+            hard = case.task_cells[case.hard_type]
+            relevant = case.world['relevant']
+            balance = Counter()
+            for kind, cell, agrees in self._distractors(case):
+                if cell == hard:
+                    continue
+                place = 'relevant' if all(hclass.bit(cell, i) == hclass.bit(hard, i) for i in relevant) else 'rest'
+                balance[(kind, place)] += 1 if agrees else -1
+            for key, value in balance.items():
+                self.assertLessEqual(abs(value), 1, (case.setting, case.family, key))
+            if case.setting.endswith('S'):
+                rejected = [(cell, agrees) for kind, cell, agrees in self._distractors(case)
+                            if kind == 'rejected_artifact']
+                self.assertEqual(sorted(a for _, a in rejected), [False, True])
+                for cell, _ in rejected:
+                    self.assertFalse(all(hclass.bit(cell, i) == hclass.bit(hard, i) for i in relevant))
 
     def test_generation_is_deterministic(self):
         again = generate_histories(45021, 'development')
