@@ -28,7 +28,8 @@ def _shared(record: Record, task: Task, frame: PublicFrame) -> int:
 
 
 def record_chars(record: Record) -> int:
-    return len(json.dumps(record.model_dump(mode='json'), ensure_ascii=False, separators=(',', ':')))
+    # Same serialisation as the prompt payload (json.dumps defaults), plus the list separator.
+    return len(json.dumps(record.model_dump(mode='json'), ensure_ascii=False)) + 2
 
 
 def rank_records(history: History, task: Task, frame: PublicFrame) -> list[Record]:
@@ -60,7 +61,7 @@ def select_records(history: History, task: Task, frame: PublicFrame, available_c
     """Prefix of the ranking that fits; registrations are never dropped."""
     selected, used = [], 0
     for record in rank_records(history, task, frame):
-        size = record_chars(record) + 1
+        size = record_chars(record)
         if used + size > available_chars:
             if _event(record).get('event') == 'register_version':
                 raise ValueError('the call budget cannot hold the registrations')

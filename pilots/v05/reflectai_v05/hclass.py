@@ -88,10 +88,12 @@ def status_at(functions, cell: int) -> str:
     return 'apply' if values.pop() == 1 else 'keep'
 
 
-def describe(function: Function, names) -> str:
+def describe(function: Function, names, values=None) -> str:
+    """Readable form; with values (per-attribute value pairs) the literal shows the real value."""
     if function.form == 'const':
         return 'always alternative' if function.table else 'always baseline'
-    parts = [f"{names[a]}={'second' if p else 'first'}" for a, p in function.literals]
+    parts = [f"{names[a]}={values[a][1 if p else 0] if values else ('second' if p else 'first')}"
+             for a, p in function.literals]
     if function.form == 'lit':
         return parts[0]
     return f" {function.form.upper()} ".join(parts)

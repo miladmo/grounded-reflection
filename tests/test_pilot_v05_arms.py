@@ -56,7 +56,7 @@ class RetrievalTests(unittest.TestCase):
                 # Unauthorised target reviews look like binding ones apart from the actor, so
                 # in large histories coverage is measured, not guaranteed (the E1 difficulty).
                 self.assertLess(len(selected), len(case.history.records))
-                self.assertLessEqual(sum(record_chars(r) + 1 for r in selected), budget)
+                self.assertLessEqual(sum(record_chars(r) for r in selected), budget)
                 self.assertLessEqual(cov['binding_included'], cov['binding_total'])
 
     def test_retrieval_reads_no_evaluator_material(self):
