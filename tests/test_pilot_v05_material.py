@@ -157,6 +157,40 @@ class GeneratorTests(unittest.TestCase):
             for marker in PRIVATE_MARKERS:
                 self.assertNotIn(f'"{marker}', text)
 
+    def test_r2_hard_tasks_resist_shortcuts(self):
+        from reflectai_v05.heuristics import all_references
+        for case in self.cases:
+            cell = case.task_cells[case.hard_type]
+            required = 'apply' if case.hard_type == 'transfer_change' else 'keep'
+            references = all_references(case.history, cell)
+            for name in ('nearest_neighbour', 'all_accepted_reviews', 'inverted_rejections', 'followed_preferences'):
+                self.assertNotEqual(references[name], required, (case.setting, case.family, name))
+            if case.hard_type == 'unidentifiable':
+                functions = infer(case.history).compatible
+                self.assertGreaterEqual(sum(hclass.value(f, cell) for f in functions) / len(functions), 0.5)
+                if case.setting.startswith('U'):
+                    via = [f for f in functions if case.world['confusable'] in f.attributes]
+                    self.assertTrue(via and all(hclass.value(f, cell) for f in via))
+
+    def test_r2_reviewers_names_and_reviewed_fields(self):
+        from reflectai_v05.data import FAMILY_VOCABULARY
+        from reflectai_v05.oracle import configuration_bit
+        values = {v for vocab in FAMILY_VOCABULARY.values() for vs in vocab['attributes'].values() for v in vs}
+        for case in self.cases:
+            frame = PublicFrame.model_validate_json(case.history.initial_configuration)
+            records = {r.record_id: r for r in case.history.records}
+            approvals = Counter()
+            for record_id in infer(case.history).binding_records:
+                event = json.loads(records[record_id].observation)
+                approvals[(records[record_id].actor, configuration_bit(frame, event['accepted_fields'], event['facts']))] += 1
+            for actor in {a for a, _ in approvals}:
+                self.assertTrue(approvals[(actor, 0)] and approvals[(actor, 1)])
+            self.assertFalse({r.actor for r in case.history.records} & values)
+            for record in case.history.records:
+                event = json.loads(record.observation)
+                for name in event.get('reviewed_fields', []):
+                    self.assertIn(name, frame.baseline_template | {frame.field_option.field: ''})
+
     def test_generation_is_deterministic(self):
         again = generate_histories(45021, 'development')
         self.assertEqual([c.model_dump_json() for c in again], [c.model_dump_json() for c in self.cases])

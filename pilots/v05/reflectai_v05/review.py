@@ -97,8 +97,18 @@ def export_review(directory: Path) -> dict:
                       'direction': case.direction, 'file': f'{name}.md', 'history_id': case.history.history_id})
     if len(index) != 4:
         raise ValueError('the review export requires one example per setting')
-    lines = ['# v0.5 material review', '', 'Four synthetic examples from the review seeds (45031/45032), one per '
+    from .audit import audit, markdown
+    result = audit()
+    write_json(directory / 'heuristic-audit.json', result)
+    (directory / 'heuristic-audit.md').write_text(markdown(result), encoding='utf-8')
+    lines = ['# v0.5 material review, revision r2', '', 'Four synthetic examples from the review seeds (45031/45032), one per '
              'setting. They are not scored cases. Material approval is pending.', '',
+             'Revision r2 follows the first material review (no approval): nearest binding approvals show the '
+             'configuration that is not warranted at each hard task; unidentifiable probes change under at least half '
+             'of the compatible functions (in unknown-6 under every function over the confusable attribute); each '
+             'reviewer approves both configurations; misleading non-binding records sit in the exact hard-task '
+             'context; person names and attribute values are disjoint; approvals without the target field review an '
+             'existing field. See the [heuristic audit](heuristic-audit.md).', '',
              '| Setting | Family | Hard task | Alternative | File |', '| --- | --- | --- | --- | --- |']
     lines += [f"| {e['setting']} | {e['family']} | {e['hard_type']} | {e['direction']} | [{e['file']}]({e['file']}) |"
               for e in index]

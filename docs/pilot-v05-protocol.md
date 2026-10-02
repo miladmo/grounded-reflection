@@ -235,6 +235,43 @@ settings. The criterion replaces the earlier "at most 6 of 8" (later "at most 4 
 With only two hard diagnostics per setting, such a count would show headroom almost
 never, and the easy observed diagnostics would dilute the signal.
 
+## Changes from the first material review (material revision r2)
+
+The first material review (2 October 2026, supplied as a pasted review text) did not
+approve the materials. It reproduced the binding sets, compatible sets and all 16
+expected actions with an independent H134 oracle, found no surface separation between
+binding and similar reviews, and showed that every hard task was solvable by simple
+shortcuts. The generator was changed constructively within each slot's seeded stream,
+without redrawing seeds:
+
+1. **Similarity placement.** Nearest-neighbour heuristic: the configuration of the
+   binding approval(s) with minimal Hamming distance over all six attributes, majority on
+   ties, "keep" on a tied vote. For every hard task it must give the action that is not
+   warranted. For transfer the nearest approvals lie in the diagonal cell of the relevant
+   pair; for unidentifiable tasks they show the alternative.
+2. **Unidentifiable probes.** At least half of the compatible functions change at the
+   probe. In unknown-6 the probe breaks the covariance so that every function over the
+   confusable attribute changes.
+3. **Reviewers.** When both configurations occur, each listed reviewer approves each
+   configuration at least once. Each configuration then occurs at least twice.
+4. **Distractors in the exact hard-task context.** Non-binding accepted reviews and
+   preferences there show the configuration that is not warranted; a rejected version
+   there carries the warranted one. Neither of the misreadings "all accepted reviews
+   bind", "rejection inverted" or "preference followed" reaches the warranted action.
+5. **Names.** Person names and attribute values come from disjoint pools.
+6. **Approvals without the target field** list an existing other field of the artifact.
+
+Generation stops if any of these conditions fails. A **heuristic audit** without model
+calls (`pilots/v05/analysis/heuristic_audit.py`) reports, per setting and hard type, how
+often the nearest-neighbour heuristic, the majority of compatible functions, the simplest
+compatible function, always-keep and the three misreadings give the warranted action. It
+also reports reviewer × configuration counts and name collisions. These reference lines
+also appear in the final report.
+
+Confirmed: D's index counts "approvals per value" over the same records as B's prefilter,
+namely accepted reviews that list the target field in `reviewed_fields`, without any roster
+or validity check.
+
 ## Procedure
 
 1. **Protocol approval.**
@@ -327,7 +364,10 @@ buffer once. If both occur, results move to about 23 October.
 Synthetic placeholder families; the public H134 restriction, on which transfer depends;
 supplied approval semantics; 16 diagnostics per setting and arm; one model; deterministic
 retrieval as one choice of strong direct baseline; and D as one specific mechanism, not
-grounded reflection in general. **An advantage of D cannot be attributed separately to
+grounded reflection in general. **Under H14 an identified transfer always equals the
+shared value of the two neighbour cells in the relevant pair**, so in known-2 a transfer
+is solvable within the pair by neighbourhood. The r2 similarity placement prevents this
+only over all six attributes, not within the pair. **An advantage of D cannot be attributed separately to
 the hypothesis register or to targeted querying.** Separating them would need another
 arm, such as targeted queries without a register. Conclusions about D are worded
 accordingly.
@@ -353,5 +393,6 @@ Milad Morad with "push +".
 
 Total planned FHGenie use is at most about 13.5 million tokens across all phases,
 counted at the stops (expected about 9.3 million). The cost question is to be settled before the live approvals.
-Material review: pending.
+Material review: first export not approved (2 October 2026; review text supplied by Milad
+Morad, recorded as feedback). Revision r2 exported for renewed review; approval pending.
 Calibration and main-run live approvals: pending, each separately.

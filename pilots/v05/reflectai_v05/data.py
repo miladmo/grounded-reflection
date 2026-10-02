@@ -15,7 +15,7 @@ import random
 
 from reflectai_v03.contracts import History, OutputField, Record, Task
 
-from . import hclass
+from . import heuristics, hclass
 from .contracts import CLASS_DEFINITIONS, Case, FieldOption, PublicFrame, TaskTruth
 from .oracle import alternative_values, baseline_values, infer
 
@@ -40,7 +40,7 @@ DISTRACTOR_QUOTAS = {
     'large': {'unauthorised_revision': 49, 'rejected_artifact': 49, 'target_field_preference': 49,
               'approval_without_target': 49, 'technical': 31},
 }
-MAX_DESIGN_ATTEMPTS = 500
+MAX_DESIGN_ATTEMPTS = 5000
 AS_OF = '2026-06-15T12:00:00Z'
 PERSON_NAMES = ('Anika', 'Robin', 'Theo', 'Daria', 'Jonas', 'Elena', 'Mira', 'Leon', 'Nora', 'Emil',
                 'Sven', 'Lea', 'Paul', 'Ida', 'Malte', 'Greta')
@@ -160,32 +160,58 @@ def _project(cell: int, a: int, b: int) -> int:
     return hclass.bit(cell, a) | (hclass.bit(cell, b) << 1)
 
 
+def _background_at_distance(rng, reference: int, mask: int, minimum: int) -> int:
+    for _ in range(1000):
+        background = rng.getrandbits(6)
+        if bin((background ^ reference) & mask).count('1') >= minimum:
+            return background
+    raise ValueError('no background at the required distance')
+
+
 def _known_design(relevant, hard_type, rng):
-    """H14 over the two declared attributes, as in the v0.4 hand-checked templates."""
+    """H14 over the two declared attributes (v0.4 templates) with r2 similarity placement.
+
+    Within the relevant pair a warranted transfer always equals its two neighbour cells
+    (an H14 property, reported as a limit). Over all six attributes, the irrelevant
+    attributes are set so that the binding approvals nearest to the hard task come from
+    the cell that shows the configuration that is *not* warranted there.
+    """
     a, b = relevant
+    mask = 0b111111 & ~((1 << a) | (1 << b))
     flip_a, flip_b = rng.randrange(2), rng.randrange(2)
     lit_a = hclass.literal_table(6, a, flip_a == 0)
     lit_b = hclass.literal_table(6, b, flip_b == 0)
+    both = [p for p in range(4) if ((lit_a & lit_b) >> _cell_with(p, a, b, 0)) & 1][0]
+    neither = [p for p in range(4) if not ((lit_a | lit_b) >> _cell_with(p, a, b, 0)) & 1][0]
     if hard_type == 'transfer_change':
-        # Observing the "neither" cell (0) and both single-literal cells (1) leaves only
-        # the disjunction in H14, so the unobserved "both" cell is warranted to change.
+        # Observing "neither" (0) and both single-literal cells (1) leaves only the
+        # disjunction, so the unobserved "both" cell is warranted to change. Nearest
+        # approvals: the diagonal "neither" cell (baseline); neighbours are far.
         world = lit_a | lit_b
-        both = [p for p in range(4) if ((lit_a & lit_b) >> _cell_with(p, a, b, 0)) & 1][0]
-        ones = [p for p in range(4) if (world >> _cell_with(p, a, b, 0)) & 1]
-        zero = [p for p in range(4) if p not in ones][0]
-        observed_projected = [zero] + [p for p in ones if p != both]
-        hard_projected = both
+        observed_projected = [neither] + [p for p in range(4) if p not in (both, neither)]
+        hard_projected, near, far_minimum = both, neither, 2
     else:
+        # Observing "neither" (0) and "both" (1) leaves x, y, x AND y, x OR y; a mixed
+        # cell is unresolved (two of four functions change). Nearest approvals: "both"
+        # (alternative); "neither" is far.
         world = rng.choice([lit_a, lit_b, lit_a & lit_b, lit_a | lit_b])
-        both = [p for p in range(4) if ((lit_a & lit_b) >> _cell_with(p, a, b, 0)) & 1][0]
-        neither = [p for p in range(4) if not ((lit_a | lit_b) >> _cell_with(p, a, b, 0)) & 1][0]
         observed_projected = [neither, both]
         hard_projected = rng.choice([p for p in range(4) if p not in observed_projected])
+        near, far_minimum = both, 1
+    hard_background = rng.getrandbits(6)
+    per_cell = BINDING_APPROVALS // len(observed_projected)
     observed = []
-    for index in range(BINDING_APPROVALS):
-        projected = observed_projected[index % len(observed_projected)]
-        observed.append(_cell_with(projected, a, b, rng.getrandbits(6)))
-    hard_cell = _cell_with(hard_projected, a, b, rng.getrandbits(6))
+    for projected in observed_projected:
+        for copy in range(per_cell):
+            if projected == near and copy < 2:
+                background = hard_background
+            elif projected != near:
+                background = _background_at_distance(rng, hard_background, mask, far_minimum)
+            else:
+                background = rng.getrandbits(6)
+            observed.append(_cell_with(projected, a, b, background))
+    rng.shuffle(observed)
+    hard_cell = _cell_with(hard_projected, a, b, hard_background)
     function = {'table': world, 'relevant': list(relevant), 'confusable': None}
     return function, observed, hard_cell
 
@@ -208,17 +234,28 @@ def _unknown_design(relevant, hard_type, rng, klass):
             cell = rng.getrandbits(6)
             cell = (cell & ~(1 << confusable)) | (hclass.bit(cell, anchor) << confusable)
             observed.append(cell)
-        functions = hclass.compatible(klass, {cell: hclass.value(world, cell) for cell in observed})
+        pairs = [(cell, hclass.value(world, cell)) for cell in observed]
+        alternatives = sum(bit for _, bit in pairs)
+        if alternatives < 2 or len(pairs) - alternatives < 2:   # r2: both configurations at least twice
+            continue
+        functions = hclass.compatible(klass, dict(pairs))
         seen = set(observed)
         unseen = [c for c in range(64) if c not in seen]
         if hard_type == 'transfer_change':
-            hard = [c for c in unseen if hclass.status_at(functions, c) == 'apply']
+            # r2: the nearest binding approvals must show the baseline (not warranted here).
+            hard = [c for c in unseen if hclass.status_at(functions, c) == 'apply'
+                    and heuristics.nearest_neighbour(pairs, c) == 'keep']
         else:
+            def probes_change(c):
+                # r2: at least half of the compatible functions change, every function over
+                # the confusable attribute changes, and the nearest approvals show the alternative.
+                share = sum(hclass.value(f, c) for f in functions) / len(functions)
+                via_confusable = [f for f in functions if confusable in f.attributes]
+                return (share >= 0.5 and via_confusable and all(hclass.value(f, c) for f in via_confusable)
+                        and heuristics.nearest_neighbour(pairs, c) == 'apply')
             hard = [c for c in unseen if hclass.status_at(functions, c) == 'unresolved'
-                    and hclass.bit(c, confusable) != hclass.bit(c, anchor)]
-        has_change = any(hclass.value(world, c) for c in seen)
-        has_retention = any(not hclass.value(world, c) for c in seen)
-        if hard and has_change and has_retention:
+                    and hclass.bit(c, confusable) != hclass.bit(c, anchor) and probes_change(c)]
+        if hard:
             function = {'table': world, 'relevant': list(relevant), 'confusable': confusable, 'anchor': anchor}
             return function, observed, rng.choice(hard)
     raise ValueError('no constructible unknown-6 design within the registered attempt limit')
@@ -246,8 +283,11 @@ def make_case(seed: int, split: str, setting: str, family: str) -> Case:
         function, observed, hard_cell = _unknown_design(relevant, hard_type, rng, klass)
     world = function['table']
     records = []
-    reviewers = rng.sample(PERSON_NAMES, 2)
-    outsiders = [name for name in PERSON_NAMES if name not in reviewers]
+    # r2: person names never coincide with attribute values.
+    attribute_values = {v for vocab in FAMILY_VOCABULARY.values() for values in vocab['attributes'].values() for v in values}
+    people = [name for name in PERSON_NAMES if name not in attribute_values]
+    reviewers = rng.sample(people, 2)
+    outsiders = [name for name in people if name not in reviewers]
 
     def add(kind, actor, context, event, timestamp):
         record = Record(record_id=_opaque(rng, 'record'), timestamp=timestamp, kind=kind, actor=actor,
@@ -275,8 +315,15 @@ def make_case(seed: int, split: str, setting: str, family: str) -> Case:
                                        'after': options[bit].get(target)}
         return add(kind, actor, frame.context_of(cell), event, stamp)
 
+    # r2: each listed reviewer approves both configurations (each occurs at least twice).
+    approver = {}
+    for bit in (0, 1):
+        indices = [i for i, cell in enumerate(observed) if hclass.value(world, cell) == bit]
+        start = rng.randrange(2)
+        for k, i in enumerate(indices):
+            approver[i] = reviewers[(start + k) % 2]
     for index, cell in enumerate(observed):
-        review(cell, hclass.value(world, cell), reviewers[index % 2])
+        review(cell, hclass.value(world, cell), approver[index])
 
     observed_set = set(observed)
     change_cells = sorted(c for c in observed_set if hclass.value(world, c))
@@ -285,22 +332,25 @@ def make_case(seed: int, split: str, setting: str, family: str) -> Case:
                   hard_type: hard_cell}
 
     quotas = DISTRACTOR_QUOTAS['small' if size == 'S' else 'large']
+    required_bit = 1 if hard_type == 'transfer_change' else 0
+    # r2: an existing non-target field of the artifact, not an invented one.
+    other_field = next(name for name in frame.baseline_template if name != frame.field_option.field)
     counts = {}
     for record_type, count in quotas.items():
         for ordinal in range(count):
-            # The first record of each type targets the hard cell with a configuration
-            # that would change its status if it were (wrongly) treated as binding.
+            # r2: in the exact context of the hard task, non-binding accepted reviews and
+            # preferences show the configuration that is not warranted there; the rejected
+            # version shows the warranted one. No misreading then reaches the warranted action.
             if ordinal == 0 and record_type != 'technical':
                 cell = hard_cell
-                bit = 0 if hard_type == 'transfer_change' else rng.randrange(2)
+                bit = required_bit if record_type == 'rejected_artifact' else 1 - required_bit
             else:
-                cell = rng.getrandbits(6)
+                cell = rng.choice([c for c in range(64) if c != hard_cell])
                 bit = rng.randrange(2)
             if record_type == 'unauthorised_revision':
                 review(cell, bit, rng.choice(outsiders))
             elif record_type == 'approval_without_target':
-                review(cell, bit, rng.choice(reviewers), reviewed=['delivery_timestamp'],
-                       comment=rng.choice(COMMENTS))
+                review(cell, bit, rng.choice(reviewers), reviewed=[other_field], comment=rng.choice(COMMENTS))
             elif record_type == 'rejected_artifact':
                 stamp = _timestamp(rng)
                 facts = _facts(family, rng, stamp[:10])
@@ -350,6 +400,16 @@ def make_case(seed: int, split: str, setting: str, family: str) -> Case:
             raise ValueError(f'{task_type} not warranted by public evidence: seed={seed}')
     if hard_cell in oracle.observations:
         raise ValueError('the hard-task cell must be unobserved')
+    references = heuristics.all_references(history, hard_cell)
+    required = 'apply' if hard_type == 'transfer_change' else 'keep'
+    shortcuts = ('nearest_neighbour', 'all_accepted_reviews', 'inverted_rejections', 'followed_preferences')
+    reached = [name for name in shortcuts if references[name] == required]
+    if reached:
+        raise ValueError(f'hard task reachable by shortcut {reached}: seed={seed}')
+    if hard_type == 'unidentifiable':
+        share = sum(hclass.value(f, hard_cell) for f in oracle.compatible) / len(oracle.compatible)
+        if share < 0.5:
+            raise ValueError(f'unidentifiable probe changes under fewer than half of the functions: seed={seed}')
     return Case(case_id=_opaque(rng, 'case'), setting=setting, family=family, hard_type=hard_type,
                 direction=direction, seed=seed, split=split, history=history,
                 world={**function, 'table': str(world)}, task_cells=task_cells,
@@ -357,7 +417,8 @@ def make_case(seed: int, split: str, setting: str, family: str) -> Case:
                               'binding_records': oracle.binding_records,
                               'compatible_count': len(oracle.compatible)},
                 material_audit={'record_count': len(records), 'distractor_counts': counts,
-                                'size': size, 'condition': condition})
+                                'size': size, 'condition': condition, 'material_revision': 'v05-r2',
+                                'hard_task_references': references})
 
 
 def generate_histories(seed: int, split: str = 'development', settings=SETTINGS) -> list[Case]:

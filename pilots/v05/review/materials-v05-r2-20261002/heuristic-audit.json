@@ -1,0 +1,913 @@
+{
+  "rows": [
+    {
+      "split": "review",
+      "setting": "K-S",
+      "family": "hr",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "K-S",
+      "family": "sales",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "K-S",
+      "family": "retrieval",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "apply",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "K-S",
+      "family": "reporting",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "apply",
+      "inverted_rejections": "apply",
+      "followed_preferences": "apply"
+    },
+    {
+      "split": "review",
+      "setting": "K-L",
+      "family": "hr",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "K-L",
+      "family": "sales",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "K-L",
+      "family": "retrieval",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "K-L",
+      "family": "reporting",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "U-S",
+      "family": "hr",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "U-S",
+      "family": "sales",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "U-S",
+      "family": "retrieval",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "U-S",
+      "family": "reporting",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "apply",
+      "followed_preferences": "apply"
+    },
+    {
+      "split": "review",
+      "setting": "U-L",
+      "family": "hr",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "U-L",
+      "family": "sales",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "U-L",
+      "family": "retrieval",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "review",
+      "setting": "U-L",
+      "family": "reporting",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "K-S",
+      "family": "hr",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "K-S",
+      "family": "sales",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "K-S",
+      "family": "retrieval",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "K-S",
+      "family": "reporting",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "apply",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "apply"
+    },
+    {
+      "split": "development",
+      "setting": "K-L",
+      "family": "hr",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "K-L",
+      "family": "sales",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "K-L",
+      "family": "retrieval",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "K-L",
+      "family": "reporting",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "U-S",
+      "family": "hr",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "U-S",
+      "family": "sales",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "U-S",
+      "family": "retrieval",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "apply",
+      "inverted_rejections": "apply",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "U-S",
+      "family": "reporting",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "apply",
+      "followed_preferences": "apply"
+    },
+    {
+      "split": "development",
+      "setting": "U-L",
+      "family": "hr",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "U-L",
+      "family": "sales",
+      "hard_type": "unidentifiable",
+      "required": "keep",
+      "nearest_neighbour": "apply",
+      "compatible_majority": "keep",
+      "simplest_compatible": "keep",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "U-L",
+      "family": "retrieval",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    },
+    {
+      "split": "development",
+      "setting": "U-L",
+      "family": "reporting",
+      "hard_type": "transfer_change",
+      "required": "apply",
+      "nearest_neighbour": "keep",
+      "compatible_majority": "apply",
+      "simplest_compatible": "apply",
+      "always_keep": "keep",
+      "all_accepted_reviews": "undefined",
+      "inverted_rejections": "undefined",
+      "followed_preferences": "undefined"
+    }
+  ],
+  "shares": {
+    "K-L transfer_change": {
+      "nearest_neighbour": "0/4",
+      "compatible_majority": "4/4",
+      "simplest_compatible": "4/4",
+      "always_keep": "0/4",
+      "all_accepted_reviews": "0/4",
+      "inverted_rejections": "0/4",
+      "followed_preferences": "0/4"
+    },
+    "K-L unidentifiable": {
+      "nearest_neighbour": "0/4",
+      "compatible_majority": "4/4",
+      "simplest_compatible": "4/4",
+      "always_keep": "4/4",
+      "all_accepted_reviews": "0/4",
+      "inverted_rejections": "0/4",
+      "followed_preferences": "0/4"
+    },
+    "K-S transfer_change": {
+      "nearest_neighbour": "0/4",
+      "compatible_majority": "4/4",
+      "simplest_compatible": "4/4",
+      "always_keep": "0/4",
+      "all_accepted_reviews": "0/4",
+      "inverted_rejections": "0/4",
+      "followed_preferences": "0/4"
+    },
+    "K-S unidentifiable": {
+      "nearest_neighbour": "0/4",
+      "compatible_majority": "4/4",
+      "simplest_compatible": "4/4",
+      "always_keep": "4/4",
+      "all_accepted_reviews": "0/4",
+      "inverted_rejections": "0/4",
+      "followed_preferences": "0/4"
+    },
+    "U-L transfer_change": {
+      "nearest_neighbour": "0/4",
+      "compatible_majority": "4/4",
+      "simplest_compatible": "4/4",
+      "always_keep": "0/4",
+      "all_accepted_reviews": "0/4",
+      "inverted_rejections": "0/4",
+      "followed_preferences": "0/4"
+    },
+    "U-L unidentifiable": {
+      "nearest_neighbour": "0/4",
+      "compatible_majority": "4/4",
+      "simplest_compatible": "4/4",
+      "always_keep": "4/4",
+      "all_accepted_reviews": "0/4",
+      "inverted_rejections": "0/4",
+      "followed_preferences": "0/4"
+    },
+    "U-S transfer_change": {
+      "nearest_neighbour": "0/4",
+      "compatible_majority": "4/4",
+      "simplest_compatible": "4/4",
+      "always_keep": "0/4",
+      "all_accepted_reviews": "0/4",
+      "inverted_rejections": "0/4",
+      "followed_preferences": "0/4"
+    },
+    "U-S unidentifiable": {
+      "nearest_neighbour": "0/4",
+      "compatible_majority": "4/4",
+      "simplest_compatible": "4/4",
+      "always_keep": "4/4",
+      "all_accepted_reviews": "0/4",
+      "inverted_rejections": "0/4",
+      "followed_preferences": "0/4"
+    }
+  },
+  "reviewers": [
+    {
+      "split": "review",
+      "setting": "K-S",
+      "family": "hr",
+      "counts": {
+        "Emil:baseline": 2,
+        "Emil:alternative": 4,
+        "Theo:baseline": 2,
+        "Theo:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "K-S",
+      "family": "sales",
+      "counts": {
+        "Greta:baseline": 2,
+        "Greta:alternative": 4,
+        "Nora:baseline": 2,
+        "Nora:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "K-S",
+      "family": "retrieval",
+      "counts": {
+        "Paul:baseline": 3,
+        "Paul:alternative": 3,
+        "Robin:baseline": 3,
+        "Robin:alternative": 3
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "K-S",
+      "family": "reporting",
+      "counts": {
+        "Greta:baseline": 3,
+        "Greta:alternative": 3,
+        "Robin:baseline": 3,
+        "Robin:alternative": 3
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "K-L",
+      "family": "hr",
+      "counts": {
+        "Daria:baseline": 3,
+        "Daria:alternative": 3,
+        "Leon:baseline": 3,
+        "Leon:alternative": 3
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "K-L",
+      "family": "sales",
+      "counts": {
+        "Anika:baseline": 3,
+        "Anika:alternative": 3,
+        "Leon:baseline": 3,
+        "Leon:alternative": 3
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "K-L",
+      "family": "retrieval",
+      "counts": {
+        "Jonas:baseline": 2,
+        "Jonas:alternative": 4,
+        "Theo:baseline": 2,
+        "Theo:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "K-L",
+      "family": "reporting",
+      "counts": {
+        "Malte:baseline": 2,
+        "Malte:alternative": 4,
+        "Theo:baseline": 2,
+        "Theo:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "U-S",
+      "family": "hr",
+      "counts": {
+        "Greta:baseline": 2,
+        "Greta:alternative": 4,
+        "Paul:baseline": 2,
+        "Paul:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "U-S",
+      "family": "sales",
+      "counts": {
+        "Nora:baseline": 1,
+        "Nora:alternative": 5,
+        "Theo:baseline": 1,
+        "Theo:alternative": 5
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "U-S",
+      "family": "retrieval",
+      "counts": {
+        "Emil:baseline": 1,
+        "Emil:alternative": 5,
+        "Paul:baseline": 1,
+        "Paul:alternative": 5
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "U-S",
+      "family": "reporting",
+      "counts": {
+        "Daria:baseline": 5,
+        "Daria:alternative": 2,
+        "Lea:baseline": 4,
+        "Lea:alternative": 1
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "U-L",
+      "family": "hr",
+      "counts": {
+        "Elena:baseline": 2,
+        "Elena:alternative": 4,
+        "Robin:baseline": 2,
+        "Robin:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "U-L",
+      "family": "sales",
+      "counts": {
+        "Lea:baseline": 1,
+        "Lea:alternative": 5,
+        "Nora:baseline": 2,
+        "Nora:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "U-L",
+      "family": "retrieval",
+      "counts": {
+        "Greta:baseline": 5,
+        "Greta:alternative": 1,
+        "Lea:baseline": 5,
+        "Lea:alternative": 1
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "review",
+      "setting": "U-L",
+      "family": "reporting",
+      "counts": {
+        "Emil:baseline": 2,
+        "Emil:alternative": 4,
+        "Nora:baseline": 2,
+        "Nora:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "K-S",
+      "family": "hr",
+      "counts": {
+        "Daria:baseline": 2,
+        "Daria:alternative": 4,
+        "Ida:baseline": 2,
+        "Ida:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "K-S",
+      "family": "sales",
+      "counts": {
+        "Ida:baseline": 2,
+        "Ida:alternative": 4,
+        "Sven:baseline": 2,
+        "Sven:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "K-S",
+      "family": "retrieval",
+      "counts": {
+        "Emil:baseline": 3,
+        "Emil:alternative": 3,
+        "Paul:baseline": 3,
+        "Paul:alternative": 3
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "K-S",
+      "family": "reporting",
+      "counts": {
+        "Emil:baseline": 3,
+        "Emil:alternative": 3,
+        "Sven:baseline": 3,
+        "Sven:alternative": 3
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "K-L",
+      "family": "hr",
+      "counts": {
+        "Ida:baseline": 3,
+        "Ida:alternative": 3,
+        "Robin:baseline": 3,
+        "Robin:alternative": 3
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "K-L",
+      "family": "sales",
+      "counts": {
+        "Paul:baseline": 3,
+        "Paul:alternative": 3,
+        "Robin:baseline": 3,
+        "Robin:alternative": 3
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "K-L",
+      "family": "retrieval",
+      "counts": {
+        "Greta:baseline": 2,
+        "Greta:alternative": 4,
+        "Nora:baseline": 2,
+        "Nora:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "K-L",
+      "family": "reporting",
+      "counts": {
+        "Elena:baseline": 2,
+        "Elena:alternative": 4,
+        "Ida:baseline": 2,
+        "Ida:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "U-S",
+      "family": "hr",
+      "counts": {
+        "Daria:baseline": 1,
+        "Daria:alternative": 5,
+        "Emil:baseline": 1,
+        "Emil:alternative": 5
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "U-S",
+      "family": "sales",
+      "counts": {
+        "Lea:baseline": 5,
+        "Lea:alternative": 2,
+        "Robin:baseline": 4,
+        "Robin:alternative": 1
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "U-S",
+      "family": "retrieval",
+      "counts": {
+        "Jonas:baseline": 3,
+        "Jonas:alternative": 3,
+        "Leon:baseline": 4,
+        "Leon:alternative": 2
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "U-S",
+      "family": "reporting",
+      "counts": {
+        "Lea:baseline": 4,
+        "Lea:alternative": 3,
+        "Theo:baseline": 3,
+        "Theo:alternative": 2
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "U-L",
+      "family": "hr",
+      "counts": {
+        "Daria:baseline": 2,
+        "Daria:alternative": 4,
+        "Elena:baseline": 2,
+        "Elena:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "U-L",
+      "family": "sales",
+      "counts": {
+        "Greta:baseline": 1,
+        "Greta:alternative": 5,
+        "Jonas:baseline": 2,
+        "Jonas:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "U-L",
+      "family": "retrieval",
+      "counts": {
+        "Ida:baseline": 2,
+        "Ida:alternative": 4,
+        "Jonas:baseline": 2,
+        "Jonas:alternative": 4
+      },
+      "each_reviewer_both": true
+    },
+    {
+      "split": "development",
+      "setting": "U-L",
+      "family": "reporting",
+      "counts": {
+        "Daria:baseline": 5,
+        "Daria:alternative": 2,
+        "Theo:baseline": 4,
+        "Theo:alternative": 1
+      },
+      "each_reviewer_both": true
+    }
+  ],
+  "name_collisions": []
+}
