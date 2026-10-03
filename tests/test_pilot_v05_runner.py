@@ -128,6 +128,24 @@ class QueryAndBudgetTests(unittest.TestCase):
         self.assertNotIn('records', {k for k in index if k != 'records_total'})
         self.assertEqual(index['records_total'], 240)
 
+    def test_any_and_empty_do_not_filter_actor_or_field(self):
+        # D technical check: the model wrote actor "any", which the prompt allows.
+        case = next(c for c in generate_histories(45021, 'development') if c.setting == 'U-S')
+        expected = execute(case.history, [RecordQuery(query_id='e', event='review')], 10 ** 9)[0]['matches_total']
+        self.assertGreater(expected, 0)
+        for value in ('', 'any'):
+            query = RecordQuery(query_id='q', event='review', actor=value, reviewed_field=value)
+            self.assertEqual(execute(case.history, [query], 10 ** 9)[0]['matches_total'], expected)
+
+    def test_round_results_fit_the_room_with_many_matches(self):
+        # D technical check: the result wrappers pushed a full round 37 characters over the limit.
+        case = next(c for c in generate_histories(45021, 'development') if c.setting == 'U-L')
+        queries = [RecordQuery(query_id=f'q{i}', event='review', purpose='x' * 300) for i in range(3)]
+        for room in (3_000, 20_000, 49_420):
+            results = execute(case.history, queries, room)
+            self.assertLessEqual(len(json.dumps(results, ensure_ascii=False)), room)
+            self.assertTrue(any(r['omitted_for_budget'] for r in results))
+
     def test_preparation_budget_reserves_one_round_and_the_final_call(self):
         budget = runner.PrepBudget(300_000)
         budget.used = 300_000 - 2 * runner.MAX_CALL_TOKENS

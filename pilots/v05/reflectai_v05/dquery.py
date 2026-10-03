@@ -16,6 +16,8 @@ from .contracts import PublicFrame
 from .dcontracts import RecordQuery
 from .retrieval import record_chars
 
+WILDCARDS = ('', 'any')
+
 
 def _event(record: Record) -> dict:
     try:
@@ -52,18 +54,25 @@ def matches(record: Record, query: RecordQuery) -> bool:
         return False
     if query.decision != 'any' and event.get('decision') != query.decision:
         return False
-    if query.actor and record.actor != query.actor:
+    # The prompt promises that empty or "any" fields do not filter (D technical check, 3 October 2026).
+    if query.actor not in WILDCARDS and record.actor != query.actor:
         return False
-    if query.reviewed_field and query.reviewed_field not in event.get('reviewed_fields', []):
+    if query.reviewed_field not in WILDCARDS and query.reviewed_field not in event.get('reviewed_fields', []):
         return False
     return True
 
 
 def execute(history: History, queries: list[RecordQuery], available_chars: int) -> list[dict]:
     """Run queries in order; the shared character budget is spent first come, first served."""
-    results, used = [], 0
-    for query in queries:
-        found = sorted((r for r in history.records if matches(r, query)), key=lambda r: (r.timestamp, r.record_id))
+    found_by_query = [sorted((r for r in history.records if matches(r, query)), key=lambda r: (r.timestamp, r.record_id))
+                      for query in queries]
+    # Every result entry costs characters besides its records (query echo, counts, separator);
+    # all of them are reserved before any record is added (D technical check, 3 October 2026).
+    used = sum(len(json.dumps({'query': query.model_dump(mode='json'), 'matches_total': len(found), 'records': [],
+                               'omitted_for_budget': len(found)}, ensure_ascii=False)) + 2
+               for query, found in zip(queries, found_by_query))
+    results = []
+    for query, found in zip(queries, found_by_query):
         shown = []
         for record in found:
             size = record_chars(record)

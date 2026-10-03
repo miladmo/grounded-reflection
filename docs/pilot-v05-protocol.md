@@ -398,6 +398,17 @@ reserved single amendment is not used. The margin is one task in one setting, an
 calibration results are descriptive only. The next step is the D technical check, which
 needs its own live approval.
 
+D technical check (3 October 2026, approved by Milad Morad, folder
+`pilots/v05/runs/live-dcheck-20261003`, seal `9d822acc…c7263`): 4 calls, 53,826 tokens,
+all responses valid JSON. It found two contract defects in the query code, not in the
+model. First, `actor` and `reviewed_field` treated "any" as a literal value, although
+the prompt says "any" does not filter, so all queries of one history matched nothing.
+Second, query results did not budget their per-result wrappers, so a round prompt
+exceeded the call limit by 37 characters and the runner stopped before the call. Both
+are fixed as permitted contract changes, with regression tests. Prompts and strategy are
+unchanged. See `pilots/v05/runs/live-dcheck-20261003-INCIDENT.md`. A second check (at
+most the remaining 16 of the 20 D calls) needs its own approval.
+
 ## Seeds
 
 Development and calibration 45021/45022/45023, review 45031/45032, final 45061/45062/45063.
