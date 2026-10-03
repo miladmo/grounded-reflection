@@ -1,0 +1,31 @@
+{
+  "prepared_on": "2026-10-03",
+  "real_model_calls": 0,
+  "phase": "dcheck",
+  "attempt": 2,
+  "change_from_attempt_1": "query contract fixes in dquery.py (commit c560fe2); 16 calls and 446,174 tokens remain of the dcheck caps",
+  "purpose": "JSON validity and query execution of D only; no generation, no scoring",
+  "config_sha256": "14ac91ce0bf723b4a288985b85caa02258fcbb88de3aba0846f6d6f668615cd6",
+  "source_sha256": "8604ee240186d75b2f87a7183867d0a602dd80668118904a73f2ae5b447c67f1",
+  "material_review_seal": "2d5c5b8068d3bafa40494b43038f516d20c2fdbd729ed27cb64b1b844fd531b0",
+  "frozen_prompts": {
+    "consolidate_C_v1.txt": "3ab7b227f45f3866251ecb6ae09e9ec4f9ad0ec9cf12d675add72323628c26b0",
+    "d_final_v1.txt": "93f1a580a7de3a9ee52eb25b21a6020ba14c3cf1778486ccbe79e6efe35d22e7",
+    "d_index_v1.txt": "844d3a2bce808651a94c4de6a457c7a5d1aa39e931c2dc0769b296c3dd1a2ee5",
+    "d_round_v1.txt": "0d132e761c4f351d6678631d8f41954baf986249a5c1f75ebbcace16f6b8872b",
+    "generate_v1.txt": "2d2d9cfb352bb02af0fd5fff05edb6f7214f3b2d6cb9d1acfd4c5fb21bace2e7",
+    "prepare_chunk_C_v1.txt": "950fc65efad767e791dd4515b84c9b9b9b5e41231282c9d99216c2f1f0523762",
+    "shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b"
+  },
+  "calibration_seal": "0b2acde6ce83ef00fb598646cecea5866e6b2a8686b0fe24014b71d83546a7b1",
+  "headroom": "exists (no_headroom = False); reserved amendment not used",
+  "python": "3.11.9",
+  "pydantic": "2.10.6",
+  "offline_tests_passed": 505,
+  "mock_dcheck": {
+    "directory": "pilots/v05/runs/offline-dcheck-20261003-attempt2",
+    "manifest_sha256": "80c5611610bc565ba3ce79f43a130fb69cd37ef34dd61f79262ba366a4559e5f",
+    "attempted_calls": 6,
+    "complete": true
+  }
+}
