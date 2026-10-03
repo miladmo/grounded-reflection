@@ -409,6 +409,13 @@ are fixed as permitted contract changes, with regression tests. Prompts and stra
 unchanged. See `pilots/v05/runs/live-dcheck-20261003-INCIDENT.md`. A second check (at
 most the remaining 16 of the 20 D calls) needs its own approval.
 
+The second D technical check (3 October 2026, approved by Milad Morad, folder
+`pilots/v05/runs/live-dcheck-20261003-attempt2`, seal `80fee33a…64b7`) completed: 6 calls,
+146,294 tokens, all responses valid JSON, no failures. Queries returned matches (up to
+26 per query), round prompts stayed within the call limit, and "any" did not filter.
+Together both checks used 10 of the 20 D calls. JSON validity and query execution are
+thereby checked. Next: freeze D and all sources, then the main run with its own approval.
+
 ## Seeds
 
 Development and calibration 45021/45022/45023, review 45031/45032, final 45061/45062/45063.
