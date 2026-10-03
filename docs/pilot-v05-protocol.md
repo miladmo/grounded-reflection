@@ -387,6 +387,17 @@ the per-call timeout is 1,200 s for all v0.5 phases, which covers a full output 
 This correction is not the single amendment reserved for the headroom decision. Live
 phases run as independent processes, not as background tasks of a working session.
 
+Calibration attempt 3 (3 October 2026, folder
+`pilots/v05/runs/live-calibration-20261003-attempt3`) completed: 127 calls, 1,861,787
+reported tokens, no unknown usage, no response failures, no halt; seal
+`0b2acde6ce83ef00fb598646cecea5866e6b2a8686b0fe24014b71d83546a7b1`. Every C preparation
+stayed within its cap. Headroom decision by the registered rule: the better of B and C
+solved both hard calibration diagnostics in K-L, K-S and U-S, but only 1 of 2 in U-L
+(B failed the unidentifiable task, C the transfer task). Hence **headroom exists**, and the
+reserved single amendment is not used. The margin is one task in one setting, and the
+calibration results are descriptive only. The next step is the D technical check, which
+needs its own live approval.
+
 ## Seeds
 
 Development and calibration 45021/45022/45023, review 45031/45032, final 45061/45062/45063.
