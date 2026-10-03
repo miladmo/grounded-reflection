@@ -1,0 +1,9 @@
+{
+  "status": "incomplete",
+  "cause": "the launching session killed the background process at its time limit",
+  "completed_calls": 13,
+  "reported_tokens": 391653,
+  "in_flight_call": "preparation/history-1c5de8b77ead/C/C1-00 (request written, transport launched, no result; usage unknown)",
+  "phases_reached": "C preparation only; no preparation seal, no future tasks, no generation, no scoring",
+  "instruction": "Preserve all records. No resume. Any further calibration attempt needs an explicit, documented decision and a new approval."
+}

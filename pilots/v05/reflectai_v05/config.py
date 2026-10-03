@@ -39,7 +39,9 @@ class RunConfig(Contract):
     max_reported_tokens: int = Field(ge=1, le=10_000_000)
     max_response_failures: int = Field(ge=0)
     preparation_cap: int = PREPARATION_CAP
-    timeout_seconds: int = 420
+    # Technical correction of 3 October 2026: 420 s could not cover a full 32,768-token
+    # output at the observed FHGenie throughput (36 to 221 tokens/s).
+    timeout_seconds: int = 1200
 
     @property
     def is_live(self) -> bool:

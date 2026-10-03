@@ -343,7 +343,7 @@ At most one amendment is permitted.
 ## Model and budgets
 
 `deepseek-ai/DeepSeek-V4-Flash-0731` via FHGenie, reasoning `high`, output limit 32,768,
-temperature and top_p 1, timeout 420 s, as fixed for v0.5 by Amendment 4. The endpoint
+temperature and top_p 1, as fixed for v0.5 by Amendment 4, with a per-call timeout of 1,200 s (technical correction below). The endpoint
 is configured locally and verified by hash. It is never written to the repository.
 
 Estimates from v0.4 usage. Preparation calls averaged about 13,000 output tokens, B
@@ -369,6 +369,23 @@ Token stops are checked between calls, as in v0.4; the final in-flight call can 
 them. Up to 10 % isolated response failures per phase are tolerated under the Amendment 5
 rule; the next one stops scheduling. Estimated sequential runtime: calibration about
 1.5 hours, main run about 5.5 hours, based on v0.4 call durations.
+
+## Calibration attempts and technical correction of the timeout
+
+Calibration attempt 1 (2 October 2026) was killed after 13 valid calls by the time limit of
+the working session that had launched it as a background process. Attempt 2, started as an
+independent process, was stopped by the runner after 18 calls, when a C1 call exceeded the
+420 s timeout and its usage became unknown. Neither attempt reached generation or scoring,
+and no preparation content was inspected. Both run folders are sealed and kept, with
+incident reports. Each new attempt was explicitly decided and approved by Milad Morad.
+
+FHGenie throughput varied between about 36 and 221 output tokens per second. A full
+32,768-token output can therefore take far longer than 420 s. As a **technical
+correction** (3 October 2026, decided by Milad Morad: "A jetzt, und neue Live-Freigabe"),
+the per-call timeout is 1,200 s for all v0.5 phases, which covers a full output at about
+28 tokens per second. All other rules are unchanged, including "unknown usage stops".
+This correction is not the single amendment reserved for the headroom decision. Live
+phases run as independent processes, not as background tasks of a working session.
 
 ## Seeds
 
@@ -447,7 +464,7 @@ Morad, recorded as feedback). Revision r2 not yet approved (second review, same 
 recorded as feedback). Material review: r3 approved by Milad Morad, 2 October 2026
 (export `pilots/v05/review/materials-v05-r3-20261002`, seal
 `2d5c5b8068d3bafa40494b43038f516d20c2fdbd729ed27cb64b1b844fd531b0`). The wording was supplied in a
-pasted review text; explicit confirmation by Milad Morad: pending.
+pasted review text and confirmed by Milad Morad ("ja", 2 October 2026).
 
 Note from the r3 review on oracle readings of misreadings: for transfer tasks the
 binding approvals already identify the action. Additional misread evidence can only
