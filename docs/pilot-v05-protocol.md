@@ -416,6 +416,16 @@ The second D technical check (3 October 2026, approved by Milad Morad, folder
 Together both checks used 10 of the 20 D calls. JSON validity and query execution are
 thereby checked. Next: freeze D and all sources, then the main run with its own approval.
 
+**Freeze (3 October 2026, decided by Milad Morad).** D and all sources are frozen in
+`pilots/v05/FROZEN-SOURCES.json`. Compared with the second D check, only this protocol
+text changed. The main run uses the interpreter of the calibration run: Python 3.12.14
+with pydantic 2.13.5, the bundled runtime, called by its full path. The D checks ran
+under Python 3.11.9 with pydantic 2.10.6, because they were started with `python` from
+the PATH. All 505 offline tests pass under both. Estimate from the live calibration and
+D check: about 370 calls (up to about 400 if D uses more rounds) and about 5.1 M tokens
+(C preparation 2.0 M, D preparation 1.2 M, generation 2.0 M). Runtime is about 4 to 5
+hours. The caps stay at 560 calls and 10 M tokens.
+
 ## Seeds
 
 Development and calibration 45021/45022/45023, review 45031/45032, final 45061/45062/45063.
