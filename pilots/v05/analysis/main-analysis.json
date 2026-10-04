@@ -1661,7 +1661,23 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "contract": "second",
+        "recipient": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 2,
+        "and": 1,
+        "or": 1
+      },
+      "cited_records": 44,
+      "cited_binding": 44,
+      "world_polarity": "first_only",
+      "complement_listed": true
     },
     {
       "history_id": "history-548a79e9b9db",
@@ -1683,7 +1699,23 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "contract_term": "second",
+        "deal_source": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 2,
+        "and": 1,
+        "or": 1
+      },
+      "cited_records": 32,
+      "cited_binding": 32,
+      "world_polarity": "first_only",
+      "complement_listed": true
     },
     {
       "history_id": "history-c605640019bf",
@@ -1705,7 +1737,23 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "access": "second",
+        "priority": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 2,
+        "and": 1,
+        "or": 1
+      },
+      "cited_records": 60,
+      "cited_binding": 60,
+      "world_polarity": "first_only",
+      "complement_listed": true
     },
     {
       "history_id": "history-35d5286e87c9",
@@ -1727,7 +1775,23 @@
       "compatible_listed": 4,
       "compatible_wrongly_eliminated": 0,
       "world_listed": true,
-      "world_kept": true
+      "world_kept": true,
+      "literal_values_by_attribute": {
+        "artifact": "both",
+        "period": "both"
+      },
+      "literal_value_use": "both",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 4,
+        "and": 2,
+        "or": 2
+      },
+      "cited_records": 67,
+      "cited_binding": 67,
+      "world_polarity": "first_only",
+      "complement_listed": true
     },
     {
       "history_id": "history-80aeea38c4d2",
@@ -1749,7 +1813,23 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "location": "second",
+        "seniority": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 2,
+        "and": 1,
+        "or": 1
+      },
+      "cited_records": 36,
+      "cited_binding": 36,
+      "world_polarity": "first_only",
+      "complement_listed": true
     },
     {
       "history_id": "history-b785c97276f8",
@@ -1771,7 +1851,23 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "customer_segment": "second",
+        "region": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 2,
+        "and": 1,
+        "or": 1
+      },
+      "cited_records": 72,
+      "cited_binding": 72,
+      "world_polarity": "first_only",
+      "complement_listed": true
     },
     {
       "history_id": "history-e10528f0117b",
@@ -1793,7 +1889,23 @@
       "compatible_listed": 1,
       "compatible_wrongly_eliminated": 0,
       "world_listed": true,
-      "world_kept": true
+      "world_kept": true,
+      "literal_values_by_attribute": {
+        "access": "second",
+        "site": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 2,
+        "and": 1,
+        "or": 1
+      },
+      "cited_records": 56,
+      "cited_binding": 56,
+      "world_polarity": "second_only",
+      "complement_listed": false
     },
     {
       "history_id": "history-7b21f7009087",
@@ -1815,7 +1927,23 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "department": "second",
+        "language": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 2,
+        "and": 1,
+        "or": 1
+      },
+      "cited_records": 60,
+      "cited_binding": 60,
+      "world_polarity": "first_only",
+      "complement_listed": true
     },
     {
       "history_id": "history-ab40cf721992",
@@ -1837,7 +1965,27 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "channel": "second",
+        "contract": "second",
+        "language": "second",
+        "location": "second",
+        "recipient": "second",
+        "seniority": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 6,
+        "and": 15,
+        "or": 15
+      },
+      "cited_records": 10,
+      "cited_binding": 10,
+      "world_polarity": "mixed",
+      "complement_listed": false
     },
     {
       "history_id": "history-c3bafd0a1866",
@@ -1859,7 +2007,27 @@
       "compatible_listed": 2,
       "compatible_wrongly_eliminated": 0,
       "world_listed": true,
-      "world_kept": true
+      "world_kept": true,
+      "literal_values_by_attribute": {
+        "account_owner": "second",
+        "contract_term": "second",
+        "customer_segment": "second",
+        "deal_source": "second",
+        "product_line": "second",
+        "region": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 6,
+        "and": 15,
+        "or": 15
+      },
+      "cited_records": 91,
+      "cited_binding": 91,
+      "world_polarity": "second_only",
+      "complement_listed": false
     },
     {
       "history_id": "history-f7d0ba014bba",
@@ -1881,7 +2049,27 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "access": "second",
+        "collection": "second",
+        "document_class": "second",
+        "file_format": "second",
+        "priority": "second",
+        "site": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 6,
+        "and": 15,
+        "or": 15
+      },
+      "cited_records": 97,
+      "cited_binding": 97,
+      "world_polarity": "mixed",
+      "complement_listed": false
     },
     {
       "history_id": "history-148cbff6972d",
@@ -1903,7 +2091,27 @@
       "compatible_listed": 2,
       "compatible_wrongly_eliminated": 1,
       "world_listed": true,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "artifact": "second",
+        "audience": "second",
+        "channel": "second",
+        "department": "second",
+        "language": "second",
+        "period": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 6,
+        "and": 15,
+        "or": 15
+      },
+      "cited_records": 45,
+      "cited_binding": 43,
+      "world_polarity": "second_only",
+      "complement_listed": false
     },
     {
       "history_id": "history-7eb081ccc622",
@@ -1925,7 +2133,27 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "channel": "second",
+        "contract": "second",
+        "language": "second",
+        "location": "second",
+        "recipient": "second",
+        "seniority": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 6,
+        "or": 15,
+        "and": 15
+      },
+      "cited_records": 131,
+      "cited_binding": 28,
+      "world_polarity": "first_only",
+      "complement_listed": true
     },
     {
       "history_id": "history-dd4c7199f572",
@@ -1947,7 +2175,27 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "account_owner": "second",
+        "contract_term": "second",
+        "customer_segment": "second",
+        "deal_source": "second",
+        "product_line": "second",
+        "region": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 6,
+        "and": 15,
+        "or": 15
+      },
+      "cited_records": 64,
+      "cited_binding": 56,
+      "world_polarity": "mixed",
+      "complement_listed": false
     },
     {
       "history_id": "history-f09764e24578",
@@ -1969,7 +2217,27 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "access": "second",
+        "collection": "second",
+        "document_class": "second",
+        "file_format": "second",
+        "priority": "second",
+        "site": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_baseline": 1,
+        "always_alternative": 1,
+        "literal": 6,
+        "and": 15,
+        "or": 15
+      },
+      "cited_records": 38,
+      "cited_binding": 38,
+      "world_polarity": "mixed",
+      "complement_listed": false
     },
     {
       "history_id": "history-290afaaa1278",
@@ -1991,9 +2259,74 @@
       "compatible_listed": 0,
       "compatible_wrongly_eliminated": 0,
       "world_listed": false,
-      "world_kept": false
+      "world_kept": false,
+      "literal_values_by_attribute": {
+        "artifact": "second",
+        "audience": "second",
+        "channel": "second",
+        "department": "second",
+        "language": "second",
+        "period": "second"
+      },
+      "literal_value_use": "second_only",
+      "forms": {
+        "always_alternative": 1,
+        "literal": 1,
+        "or": 11
+      },
+      "cited_records": 35,
+      "cited_binding": 35,
+      "world_polarity": "first_only",
+      "complement_listed": false
     }
   ],
+  "D_summary": {
+    "literal_value_use": {
+      "second_only": 15,
+      "both": 1
+    },
+    "hypotheses_per_register": {
+      "K-S": [
+        6,
+        6,
+        6,
+        10
+      ],
+      "K-L": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "U-S": [
+        38,
+        38,
+        38,
+        38
+      ],
+      "U-L": [
+        38,
+        38,
+        38,
+        13
+      ]
+    },
+    "world_polarity_vs_listing": {
+      "first_only|world_listed=False|complement_listed=True": 7,
+      "first_only|world_listed=True|complement_listed=True": 1,
+      "second_only|world_listed=True|complement_listed=False": 3,
+      "mixed|world_listed=False|complement_listed=False": 4,
+      "first_only|world_listed=False|complement_listed=False": 1
+    },
+    "cited_binding": "825/938",
+    "register_collapsed": 10
+  },
+  "adopted_rule_scope": {
+    "C|workflow_in_scope=False": 2,
+    "C|workflow_in_scope=True": 20,
+    "D|workflow_in_scope=False": 8,
+    "D|workflow_in_scope=True": 1
+  },
   "heuristics_hard": [
     {
       "setting": "K-S",

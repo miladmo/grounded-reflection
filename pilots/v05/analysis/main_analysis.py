@@ -229,8 +229,51 @@ def main() -> dict:
                       'compatible_listed': len(listed & compatible),
                       'compatible_wrongly_eliminated': len((listed & compatible) - kept_tables),
                       'world_listed': world in listed, 'world_kept': world in kept_tables}
+            # Attribution review, part 1: which literal values D used, the form counts, the
+            # world function's polarity type and the share of binding records among citations.
+            used = defaultdict(set)
+            for h in register['hypotheses']:
+                for literal in h['literals']:
+                    values = frame.attributes.get(literal['attribute'], [])
+                    if literal['value'] in values:
+                        used[literal['attribute']].add(values.index(literal['value']))
+            entry['literal_values_by_attribute'] = {
+                name: {frozenset({1}): 'second', frozenset({0}): 'first'}.get(frozenset(v), 'both')
+                for name, v in sorted(used.items())}
+            entry['literal_value_use'] = ('none' if not used else 'second_only' if all(v == {1} for v in used.values())
+                                          else 'first_only' if all(v == {0} for v in used.values()) else 'both')
+            entry['forms'] = dict(Counter(h['form'] for h in register['hypotheses']))
+            cited = [i for h in register['hypotheses'] for i in h['evidence_ids'] + h['counterevidence_ids']]
+            entry['cited_records'] = len(cited)
+            entry['cited_binding'] = sum(i in set(oracle.binding_records) for i in cited)
+        klass = hclass.rule_class(len(frame.attributes), frame.candidate_indices())
+        function = next(f for f in klass if f.table == world)
+        signs = {positive for _, positive in function.literals}
+        entry['world_polarity'] = ('constant' if not signs else 'second_only' if signs == {True}
+                                   else 'first_only' if signs == {False} else 'mixed')
+        full = (1 << hclass.n_cells(len(frame.attributes))) - 1
+        entry['complement_listed'] = bool(register) and (full ^ world) in listed
         dstats.append(entry)
     out['D'] = dstats
+    out['D_summary'] = {
+        'literal_value_use': dict(Counter(d.get('literal_value_use') for d in dstats)),
+        'hypotheses_per_register': {s: [d.get('hypotheses') for d in dstats if d['setting'] == s] for s in SETTINGS},
+        'world_polarity_vs_listing': dict(Counter(
+            f"{d['world_polarity']}|world_listed={d.get('world_listed')}|complement_listed={d['complement_listed']}"
+            for d in dstats)),
+        'cited_binding': '%d/%d' % (sum(d.get('cited_binding', 0) for d in dstats),
+                                    sum(d.get('cited_records', 0) for d in dstats)),
+        'register_collapsed': sum(bool(d.get('all_eliminated')) for d in dstats)}
+
+    # Scope of adopted rules: does the retained guidance carry the declared workflow?
+    retained = load('preparation/retained.json')
+    scope = Counter()
+    for key, prep in retained.items():
+        for candidate in (prep or {}).get('candidates', []):
+            if candidate['status'] == 'adopt' and candidate.get('rule'):
+                match = candidate['rule'].get('scope', {}).get('match', {})
+                scope[f"{key.split('|')[1]}|workflow_in_scope={'workflow' in match}"] += 1
+    out['adopted_rule_scope'] = dict(sorted(scope.items()))
 
     # Heuristic references on the main-run material (hard tasks only).
     heuristics = []
