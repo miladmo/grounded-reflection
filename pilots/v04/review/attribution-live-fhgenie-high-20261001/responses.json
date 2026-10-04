@@ -1,0 +1,73 @@
+{
+  "run": "pilots/v04/runs/live-fhgenie-high-20260930",
+  "run_manifest_sha256": "7afab956742071b0c5ddd8d696e854630a2a6f25945a32d34e6ece3dddbb8594",
+  "reviewer": "Milad Morad",
+  "date": "2026-10-01",
+  "note": "Actual human attribution only. AI-assisted assessments are recorded separately and do not fill these fields.",
+  "cases": {
+    "S4-sales history-69cdd9239e11 task-f0ce9e3cd666": {
+      "automatic": {
+        "category": "content",
+        "provisional": true
+      },
+      "ai_assisted_assessment": {
+        "recommended": "technical",
+        "defensible": [
+          "mixed"
+        ],
+        "basis": "Correct requirement inferred; baseline polarity misread, so no executable omit rule encoded.",
+        "superseded_by": "feedback-20261001.md and human attribution"
+      },
+      "human": {
+        "category": "unresolved",
+        "tags": [
+          "baseline_polarity_inverted"
+        ],
+        "rationale": "C liest die Evidenz und die verträglichen Regeln in einem in sich stimmigen Rahmen korrekt, vertauscht aber die Polarität von Grundkonfiguration und Alternative und kodiert deshalb keine Weglass-Regel. Das ist keine korrekt formulierte, falsch kodierte Regel (technical) und kein nachgewiesener Schlussfehler aus der Evidenz (content). Ob die Vertauschung ein Lesefehler ist oder aus dem Versionswechsel auf eine geänderte Grundkonfiguration geschlossen wurde, lässt sich aus den Artefakten nicht entscheiden. Zusatzmerkmal: baseline_polarity_inverted.",
+        "response": "ja, übernehmen"
+      }
+    },
+    "S4-hr history-f22b09024bb8 task-a920bd4a9f81": {
+      "automatic": {
+        "category": "content",
+        "provisional": true
+      },
+      "ai_assisted_assessment": {
+        "recommended": "technical",
+        "defensible": [
+          "mixed"
+        ],
+        "basis": "Correct unique transfer inferred; baseline polarity misread, so only a no-op include rule encoded.",
+        "superseded_by": "feedback-20261001.md and human attribution"
+      },
+      "human": {
+        "category": "unresolved",
+        "tags": [
+          "baseline_polarity_inverted"
+        ],
+        "rationale": "unresolved, gleiche Begründung. Die Transferinferenz ist im vertauschten Rahmen korrekt. Zusatzmerkmal: baseline_polarity_inverted.",
+        "response": "ja, übernehmen"
+      }
+    },
+    "S1-sales history-d1b3a7f01f48 task-e259eacd8c3d": {
+      "automatic": {
+        "category": "content",
+        "provisional": true
+      },
+      "ai_assisted_assessment": {
+        "recommended": "content",
+        "defensible": [],
+        "basis": "Non-binding preference adopted as support; incomplete H14 enumeration; unsupported scope extension to Mira/strategic."
+      },
+      "human": {
+        "category": "content",
+        "tags": [],
+        "rationale": "Unverbindliche Präferenz als Beleg übernommen, unvollständige Aufzählung der verträglichen Regeln, ungedeckte Übertragung auf Mira/strategic.",
+        "response": "ja, übernehmen"
+      }
+    }
+  },
+  "confirmation": "ja, übernehmen",
+  "provenance": "Wording supplied in feedback-20261001.md (authorship unclear); explicitly confirmed by Milad Morad with \"ja, übernehmen\" on 2026-10-01.",
+  "report_instruction": "Headroom ist in keinem Setting erfüllt, in S4 vorläufig wegen strittiger Zuordnung. Nenne ausdrücklich, dass in S4 der zeitliche Bruch mit der Weglass-Richtung zusammenfällt, dass beide Polaritätsfehler in Historien mit Versionswechsel und gegenläufiger alter Evidenz auftreten und dass die Erklärung über einen vermeintlichen Wechsel der Grundkonfiguration ungeprüft ist. Für v0.5 vormerken: Richtung der Alternative innerhalb jeder Einstellung ausbalancieren, besonders beim zeitlichen Bruch."
+}

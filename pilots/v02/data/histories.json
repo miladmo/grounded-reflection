@@ -1,0 +1,1538 @@
+[
+  {
+    "family": "recruiting",
+    "episodes": [
+      {
+        "episode_id": "work-99aee07cfcde",
+        "split": "development",
+        "context": {
+          "family": "recruiting",
+          "role": "recruiting",
+          "occasion": "routine",
+          "channel": "vacancy_brief",
+          "audience": "specialists"
+        },
+        "task": "Prepare a decision record about research software vacancy 1-3678a. Work order 99aee07cfcde.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns research software vacancy 1-3678a, documenting reproducible experiments. The intended audience is specialists.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-99aee07cfcde-1",
+              "recorded_at": "2031-03-01T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=supported_learning; route=role_page.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-99aee07cfcde-2",
+              "recorded_at": "2031-03-01T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "An experienced applicant cannot yet see what they would own. Bring the concrete responsibility into the opening.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-99aee07cfcde-3",
+              "recorded_at": "2031-03-01T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=work_ownership; route=role_page. The underlying facts about research software vacancy 1-3678a remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-99aee07cfcde-4",
+              "recorded_at": "2031-03-01T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-079de391b683",
+        "split": "development",
+        "context": {
+          "family": "recruiting",
+          "role": "recruiting",
+          "occasion": "routine",
+          "channel": "vacancy_brief",
+          "audience": "specialists"
+        },
+        "task": "Prepare a decision record about research software vacancy 2-89de5. Work order 079de391b683.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns research software vacancy 2-89de5, documenting reproducible experiments. The intended audience is specialists.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-079de391b683-1",
+              "recorded_at": "2031-03-02T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=supported_learning; route=role_page.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-079de391b683-2",
+              "recorded_at": "2031-03-02T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The introduction reads like a training offer. Show the work the new colleague would be responsible for and why it matters.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-079de391b683-3",
+              "recorded_at": "2031-03-02T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=work_ownership; route=role_page. The underlying facts about research software vacancy 2-89de5 remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-079de391b683-4",
+              "recorded_at": "2031-03-02T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-efe05512fff7",
+        "split": "development",
+        "context": {
+          "family": "recruiting",
+          "role": "recruiting",
+          "occasion": "routine",
+          "channel": "vacancy_brief",
+          "audience": "career_starters"
+        },
+        "task": "Prepare a decision record about research software vacancy 3-c5d5a. Work order efe05512fff7.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns research software vacancy 3-c5d5a, documenting reproducible experiments. The intended audience is career_starters.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-efe05512fff7-1",
+              "recorded_at": "2031-03-03T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=work_ownership; route=role_page.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-efe05512fff7-2",
+              "recorded_at": "2031-03-03T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The draft sounds as though the new starter must take charge immediately. Explain the mentoring and supported first activities.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-efe05512fff7-3",
+              "recorded_at": "2031-03-03T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=supported_learning; route=role_page. The underlying facts about research software vacancy 3-c5d5a remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-efe05512fff7-4",
+              "recorded_at": "2031-03-03T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-07596e662c2f",
+        "split": "development",
+        "context": {
+          "family": "recruiting",
+          "role": "recruiting",
+          "occasion": "routine",
+          "channel": "vacancy_brief",
+          "audience": "career_starters"
+        },
+        "task": "Prepare a decision record about research software vacancy 4-d7ce0. Work order 07596e662c2f.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns research software vacancy 4-d7ce0, documenting reproducible experiments. The intended audience is career_starters.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-07596e662c2f-1",
+              "recorded_at": "2031-03-04T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=work_ownership; route=role_page.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-07596e662c2f-2",
+              "recorded_at": "2031-03-04T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The support arrangements are buried. Someone entering this work should be able to picture how they will learn it.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-07596e662c2f-3",
+              "recorded_at": "2031-03-04T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=supported_learning; route=role_page. The underlying facts about research software vacancy 4-d7ce0 remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-07596e662c2f-4",
+              "recorded_at": "2031-03-04T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-a538cc294f2b",
+        "split": "development",
+        "context": {
+          "family": "recruiting",
+          "role": "recruiting",
+          "occasion": "routine",
+          "channel": "staffing_review",
+          "audience": "specialists"
+        },
+        "task": "Prepare the record for the forthcoming planning meeting. Work order a538cc294f2b.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "The next quarterly planning meeting needs a view of staffing capacity and pending allocations.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a538cc294f2b-1",
+              "recorded_at": "2031-03-05T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=capacity_planning; route=planning_queue.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a538cc294f2b-2",
+              "recorded_at": "2031-03-05T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "This gives the planning group what it needs for the allocation discussion. Approved.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a538cc294f2b-3",
+              "recorded_at": "2031-03-05T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=capacity_planning; route=planning_queue.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a538cc294f2b-4",
+              "recorded_at": "2031-03-05T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-91cd5fb889d5",
+        "split": "development",
+        "context": {
+          "family": "recruiting",
+          "role": "recruiting",
+          "occasion": "routine",
+          "channel": "staffing_review",
+          "audience": "career_starters"
+        },
+        "task": "Prepare the record for the forthcoming planning meeting. Work order 91cd5fb889d5.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "The next quarterly planning meeting needs a view of staffing capacity and pending allocations.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-91cd5fb889d5-1",
+              "recorded_at": "2031-03-06T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=capacity_planning; route=planning_queue.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-91cd5fb889d5-2",
+              "recorded_at": "2031-03-06T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "This gives the planning group what it needs for the allocation discussion. Approved.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-91cd5fb889d5-3",
+              "recorded_at": "2031-03-06T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=capacity_planning; route=planning_queue.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-91cd5fb889d5-4",
+              "recorded_at": "2031-03-06T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-ae60b2764b21",
+        "split": "development",
+        "context": {
+          "family": "recruiting",
+          "role": "recruiting",
+          "occasion": "showcase",
+          "channel": "vacancy_brief",
+          "audience": "specialists"
+        },
+        "task": "Prepare a version of the existing record for tomorrow's showcase. Work order ae60b2764b21.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Commission: one presentation record for the project showcase. Editorial review batch 41 lists Mira, Ari and Bo, each with role=editor.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-ae60b2764b21-1",
+              "recorded_at": "2031-03-07T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=work_ownership; route=role_page.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-ae60b2764b21-2",
+              "recorded_at": "2031-03-07T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "Mira, editor: For tomorrow's project showcase, start with the story of how the team came together.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-ae60b2764b21-3",
+              "recorded_at": "2031-03-07T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted opening and destination for showcase copy: emphasis=community_story; route=role_page.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-ae60b2764b21-4",
+              "recorded_at": "2031-03-07T09:03:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-5",
+            "kind": "human_feedback",
+            "text": "Ari, editor, batch 41: End by inviting the reader to discuss the work with us.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-ae60b2764b21-5",
+              "recorded_at": "2031-03-07T09:04:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-6",
+            "kind": "agent_output",
+            "text": "Closing draft A, batch 41: closing_style=invitation.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-ae60b2764b21-6",
+              "recorded_at": "2031-03-07T09:05:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-7",
+            "kind": "human_feedback",
+            "text": "Bo, editor, batch 41: End with a concise statement of what the work contributes.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-ae60b2764b21-7",
+              "recorded_at": "2031-03-07T09:06:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-8",
+            "kind": "agent_output",
+            "text": "Closing draft B, batch 41: closing_style=statement.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-ae60b2764b21-8",
+              "recorded_at": "2031-03-07T09:07:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": [
+          "Release receipt is absent from the extracted records."
+        ]
+      },
+      {
+        "episode_id": "work-4d003044b0e6",
+        "split": "development",
+        "context": {
+          "family": "recruiting",
+          "role": "recruiting",
+          "occasion": "routine",
+          "channel": "vacancy_brief",
+          "audience": "specialists"
+        },
+        "task": "Save an accepted vacancy_brief record. Work order 4d003044b0e6.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "agent_output",
+            "text": "emphasis=work_ownership; route=role_page.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4d003044b0e6-1",
+              "recorded_at": "2031-03-08T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "tool_result",
+            "text": "save attempt=1 route=role_page status=503; client fallback option: route=email_attachment.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4d003044b0e6-2",
+              "recorded_at": "2031-03-08T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "tool_result",
+            "text": "save attempt=2 route=role_page status=200; stored=true.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4d003044b0e6-3",
+              "recorded_at": "2031-03-08T09:02:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      }
+    ]
+  },
+  {
+    "family": "sales",
+    "episodes": [
+      {
+        "episode_id": "work-a32f6d65c0b8",
+        "split": "development",
+        "context": {
+          "family": "sales",
+          "role": "sales",
+          "occasion": "routine",
+          "channel": "account_handover",
+          "audience": "discovery_team"
+        },
+        "task": "Prepare a decision record about measurement software opportunity 1-288e5. Work order a32f6d65c0b8.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns measurement software opportunity 1-288e5, checking the customer's workflow needs. The intended audience is discovery_team.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a32f6d65c0b8-1",
+              "recorded_at": "2031-03-01T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=agreed_next_steps; route=account_workspace.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a32f6d65c0b8-2",
+              "recorded_at": "2031-03-01T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The handover jumps to next steps before we know the customer's constraints. Make the unanswered questions visible.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a32f6d65c0b8-3",
+              "recorded_at": "2031-03-01T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=unresolved_needs; route=account_workspace. The underlying facts about measurement software opportunity 1-288e5 remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a32f6d65c0b8-4",
+              "recorded_at": "2031-03-01T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-83bbced180c8",
+        "split": "development",
+        "context": {
+          "family": "sales",
+          "role": "sales",
+          "occasion": "routine",
+          "channel": "account_handover",
+          "audience": "discovery_team"
+        },
+        "task": "Prepare a decision record about measurement software opportunity 2-38689. Work order 83bbced180c8.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns measurement software opportunity 2-38689, checking the customer's workflow needs. The intended audience is discovery_team.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-83bbced180c8-1",
+              "recorded_at": "2031-03-02T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=agreed_next_steps; route=account_workspace.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-83bbced180c8-2",
+              "recorded_at": "2031-03-02T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The receiving colleague still cannot tell which needs have been established and which they must investigate.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-83bbced180c8-3",
+              "recorded_at": "2031-03-02T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=unresolved_needs; route=account_workspace. The underlying facts about measurement software opportunity 2-38689 remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-83bbced180c8-4",
+              "recorded_at": "2031-03-02T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-f701268f6b77",
+        "split": "development",
+        "context": {
+          "family": "sales",
+          "role": "sales",
+          "occasion": "routine",
+          "channel": "account_handover",
+          "audience": "proposal_team"
+        },
+        "task": "Prepare a decision record about measurement software opportunity 3-811b4. Work order f701268f6b77.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns measurement software opportunity 3-811b4, checking the customer's workflow needs. The intended audience is proposal_team.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-f701268f6b77-1",
+              "recorded_at": "2031-03-03T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=unresolved_needs; route=account_workspace.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-f701268f6b77-2",
+              "recorded_at": "2031-03-03T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The needs review is complete. The receiving colleague needs the actions agreed with the customer, including who owns each one.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-f701268f6b77-3",
+              "recorded_at": "2031-03-03T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=agreed_next_steps; route=account_workspace. The underlying facts about measurement software opportunity 3-811b4 remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-f701268f6b77-4",
+              "recorded_at": "2031-03-03T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-15390b71e298",
+        "split": "development",
+        "context": {
+          "family": "sales",
+          "role": "sales",
+          "occasion": "routine",
+          "channel": "account_handover",
+          "audience": "proposal_team"
+        },
+        "task": "Prepare a decision record about measurement software opportunity 4-682b4. Work order 15390b71e298.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns measurement software opportunity 4-682b4, checking the customer's workflow needs. The intended audience is proposal_team.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-15390b71e298-1",
+              "recorded_at": "2031-03-04T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=unresolved_needs; route=account_workspace.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-15390b71e298-2",
+              "recorded_at": "2031-03-04T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "Another needs summary will not help the proposal team move this forward. Bring the agreed follow-up commitments to the front.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-15390b71e298-3",
+              "recorded_at": "2031-03-04T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=agreed_next_steps; route=account_workspace. The underlying facts about measurement software opportunity 4-682b4 remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-15390b71e298-4",
+              "recorded_at": "2031-03-04T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-627a1d42a9ff",
+        "split": "development",
+        "context": {
+          "family": "sales",
+          "role": "sales",
+          "occasion": "routine",
+          "channel": "territory_review",
+          "audience": "discovery_team"
+        },
+        "task": "Prepare the record for the forthcoming planning meeting. Work order 627a1d42a9ff.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "The territory planning meeting needs an overview of account coverage and gaps across the portfolio.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-627a1d42a9ff-1",
+              "recorded_at": "2031-03-05T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=portfolio_coverage; route=territory_board.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-627a1d42a9ff-2",
+              "recorded_at": "2031-03-05T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The coverage view is ready for the allocation meeting. Approved.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-627a1d42a9ff-3",
+              "recorded_at": "2031-03-05T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=portfolio_coverage; route=territory_board.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-627a1d42a9ff-4",
+              "recorded_at": "2031-03-05T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-9727cd6e896e",
+        "split": "development",
+        "context": {
+          "family": "sales",
+          "role": "sales",
+          "occasion": "routine",
+          "channel": "territory_review",
+          "audience": "proposal_team"
+        },
+        "task": "Prepare the record for the forthcoming planning meeting. Work order 9727cd6e896e.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "The territory planning meeting needs an overview of account coverage and gaps across the portfolio.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-9727cd6e896e-1",
+              "recorded_at": "2031-03-06T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=portfolio_coverage; route=territory_board.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-9727cd6e896e-2",
+              "recorded_at": "2031-03-06T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The coverage view is ready for the allocation meeting. Approved.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-9727cd6e896e-3",
+              "recorded_at": "2031-03-06T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=portfolio_coverage; route=territory_board.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-9727cd6e896e-4",
+              "recorded_at": "2031-03-06T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-d060d912819f",
+        "split": "development",
+        "context": {
+          "family": "sales",
+          "role": "sales",
+          "occasion": "showcase",
+          "channel": "account_handover",
+          "audience": "discovery_team"
+        },
+        "task": "Prepare a version of the existing record for tomorrow's showcase. Work order d060d912819f.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Commission: one presentation record for the project showcase. Editorial review batch 41 lists Mira, Ari and Bo, each with role=editor.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-d060d912819f-1",
+              "recorded_at": "2031-03-07T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=unresolved_needs; route=account_workspace.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-d060d912819f-2",
+              "recorded_at": "2031-03-07T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "Mira, editor: For tomorrow's product showcase, start with the story of how this product developed.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-d060d912819f-3",
+              "recorded_at": "2031-03-07T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted opening and destination for showcase copy: emphasis=product_story; route=account_workspace.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-d060d912819f-4",
+              "recorded_at": "2031-03-07T09:03:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-5",
+            "kind": "human_feedback",
+            "text": "Ari, editor, batch 41: End by inviting the reader to discuss the work with us.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-d060d912819f-5",
+              "recorded_at": "2031-03-07T09:04:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-6",
+            "kind": "agent_output",
+            "text": "Closing draft A, batch 41: closing_style=invitation.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-d060d912819f-6",
+              "recorded_at": "2031-03-07T09:05:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-7",
+            "kind": "human_feedback",
+            "text": "Bo, editor, batch 41: End with a concise statement of what the work contributes.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-d060d912819f-7",
+              "recorded_at": "2031-03-07T09:06:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-8",
+            "kind": "agent_output",
+            "text": "Closing draft B, batch 41: closing_style=statement.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-d060d912819f-8",
+              "recorded_at": "2031-03-07T09:07:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": [
+          "Release receipt is absent from the extracted records."
+        ]
+      },
+      {
+        "episode_id": "work-8af4d894cfee",
+        "split": "development",
+        "context": {
+          "family": "sales",
+          "role": "sales",
+          "occasion": "routine",
+          "channel": "account_handover",
+          "audience": "discovery_team"
+        },
+        "task": "Save an accepted account_handover record. Work order 8af4d894cfee.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "agent_output",
+            "text": "emphasis=unresolved_needs; route=account_workspace.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-8af4d894cfee-1",
+              "recorded_at": "2031-03-08T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "tool_result",
+            "text": "save attempt=1 route=account_workspace status=503; client fallback option: route=local_spreadsheet.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-8af4d894cfee-2",
+              "recorded_at": "2031-03-08T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "tool_result",
+            "text": "save attempt=2 route=account_workspace status=200; stored=true.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-8af4d894cfee-3",
+              "recorded_at": "2031-03-08T09:02:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      }
+    ]
+  },
+  {
+    "family": "research",
+    "episodes": [
+      {
+        "episode_id": "work-0534098607d7",
+        "split": "development",
+        "context": {
+          "family": "research",
+          "role": "research",
+          "occasion": "routine",
+          "channel": "study_note",
+          "audience": "exploratory_review"
+        },
+        "task": "Prepare a decision record about synthetic assay study 1-0e3c4. Work order 0534098607d7.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns synthetic assay study 1-0e3c4, comparing simulated measurement runs. The intended audience is exploratory_review.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-0534098607d7-1",
+              "recorded_at": "2031-03-01T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=reproducibility; route=versioned_notebook.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-0534098607d7-2",
+              "recorded_at": "2031-03-01T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "These are early simulated runs. The reader needs to see what the sample and assumptions do not let us conclude.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-0534098607d7-3",
+              "recorded_at": "2031-03-01T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=limitations; route=versioned_notebook. The underlying facts about synthetic assay study 1-0e3c4 remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-0534098607d7-4",
+              "recorded_at": "2031-03-01T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-a73334574095",
+        "split": "development",
+        "context": {
+          "family": "research",
+          "role": "research",
+          "occasion": "routine",
+          "channel": "study_note",
+          "audience": "exploratory_review"
+        },
+        "task": "Prepare a decision record about synthetic assay study 2-d089c. Work order a73334574095.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns synthetic assay study 2-d089c, comparing simulated measurement runs. The intended audience is exploratory_review.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a73334574095-1",
+              "recorded_at": "2031-03-02T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=reproducibility; route=versioned_notebook.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a73334574095-2",
+              "recorded_at": "2031-03-02T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The procedural detail is useful, but it hides the limits of this exploratory result. Bring those into the opening.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a73334574095-3",
+              "recorded_at": "2031-03-02T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=limitations; route=versioned_notebook. The underlying facts about synthetic assay study 2-d089c remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-a73334574095-4",
+              "recorded_at": "2031-03-02T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-51a62a55ef99",
+        "split": "development",
+        "context": {
+          "family": "research",
+          "role": "research",
+          "occasion": "routine",
+          "channel": "study_note",
+          "audience": "replication_review"
+        },
+        "task": "Prepare a decision record about synthetic assay study 3-5597e. Work order 51a62a55ef99.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns synthetic assay study 3-5597e, comparing simulated measurement runs. The intended audience is replication_review.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-51a62a55ef99-1",
+              "recorded_at": "2031-03-03T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=limitations; route=versioned_notebook.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-51a62a55ef99-2",
+              "recorded_at": "2031-03-03T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The replication group needs to repeat the analysis. Put the run configuration and the path to reproducing it first.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-51a62a55ef99-3",
+              "recorded_at": "2031-03-03T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=reproducibility; route=versioned_notebook. The underlying facts about synthetic assay study 3-5597e remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-51a62a55ef99-4",
+              "recorded_at": "2031-03-03T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-99dfc9846e7f",
+        "split": "development",
+        "context": {
+          "family": "research",
+          "role": "research",
+          "occasion": "routine",
+          "channel": "study_note",
+          "audience": "replication_review"
+        },
+        "task": "Prepare a decision record about synthetic assay study 4-7b81c. Work order 99dfc9846e7f.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Current work concerns synthetic assay study 4-7b81c, comparing simulated measurement runs. The intended audience is replication_review.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-99dfc9846e7f-1",
+              "recorded_at": "2031-03-04T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "Decision record: emphasis=limitations; route=versioned_notebook.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-99dfc9846e7f-2",
+              "recorded_at": "2031-03-04T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "This review is about recreating an already reported analysis. The reader should be able to locate the settings and sequence of steps.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-99dfc9846e7f-3",
+              "recorded_at": "2031-03-04T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=reproducibility; route=versioned_notebook. The underlying facts about synthetic assay study 4-7b81c remain unchanged.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-99dfc9846e7f-4",
+              "recorded_at": "2031-03-04T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-3eb59a229946",
+        "split": "development",
+        "context": {
+          "family": "research",
+          "role": "research",
+          "occasion": "routine",
+          "channel": "portfolio_summary",
+          "audience": "exploratory_review"
+        },
+        "task": "Prepare the record for the forthcoming planning meeting. Work order 3eb59a229946.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "The programme committee needs an overview of milestones completed and work remaining across studies.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-3eb59a229946-1",
+              "recorded_at": "2031-03-05T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=programme_milestones; route=programme_board.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-3eb59a229946-2",
+              "recorded_at": "2031-03-05T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The milestone view is ready for the programme meeting. Approved.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-3eb59a229946-3",
+              "recorded_at": "2031-03-05T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=programme_milestones; route=programme_board.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-3eb59a229946-4",
+              "recorded_at": "2031-03-05T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-9569fe5c3340",
+        "split": "development",
+        "context": {
+          "family": "research",
+          "role": "research",
+          "occasion": "routine",
+          "channel": "portfolio_summary",
+          "audience": "replication_review"
+        },
+        "task": "Prepare the record for the forthcoming planning meeting. Work order 9569fe5c3340.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "The programme committee needs an overview of milestones completed and work remaining across studies.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-9569fe5c3340-1",
+              "recorded_at": "2031-03-06T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=programme_milestones; route=programme_board.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-9569fe5c3340-2",
+              "recorded_at": "2031-03-06T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "The milestone view is ready for the programme meeting. Approved.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-9569fe5c3340-3",
+              "recorded_at": "2031-03-06T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted decision record: emphasis=programme_milestones; route=programme_board.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-9569fe5c3340-4",
+              "recorded_at": "2031-03-06T09:03:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      },
+      {
+        "episode_id": "work-4f38cba0391f",
+        "split": "development",
+        "context": {
+          "family": "research",
+          "role": "research",
+          "occasion": "showcase",
+          "channel": "study_note",
+          "audience": "exploratory_review"
+        },
+        "task": "Prepare a version of the existing record for tomorrow's showcase. Work order 4f38cba0391f.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "source",
+            "text": "Commission: one presentation record for the project showcase. Editorial review batch 41 lists Mira, Ari and Bo, each with role=editor.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4f38cba0391f-1",
+              "recorded_at": "2031-03-07T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "agent_output",
+            "text": "emphasis=limitations; route=versioned_notebook.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4f38cba0391f-2",
+              "recorded_at": "2031-03-07T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "human_feedback",
+            "text": "Mira, editor: For tomorrow's research showcase, lead with how the idea emerged and what makes it novel.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4f38cba0391f-3",
+              "recorded_at": "2031-03-07T09:02:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-4",
+            "kind": "human_revision",
+            "text": "Accepted opening and destination for showcase copy: emphasis=novelty_story; route=versioned_notebook.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4f38cba0391f-4",
+              "recorded_at": "2031-03-07T09:03:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-5",
+            "kind": "human_feedback",
+            "text": "Ari, editor, batch 41: End by inviting the reader to discuss the work with us.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4f38cba0391f-5",
+              "recorded_at": "2031-03-07T09:04:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-6",
+            "kind": "agent_output",
+            "text": "Closing draft A, batch 41: closing_style=invitation.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4f38cba0391f-6",
+              "recorded_at": "2031-03-07T09:05:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-7",
+            "kind": "human_feedback",
+            "text": "Bo, editor, batch 41: End with a concise statement of what the work contributes.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4f38cba0391f-7",
+              "recorded_at": "2031-03-07T09:06:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-8",
+            "kind": "agent_output",
+            "text": "Closing draft B, batch 41: closing_style=statement.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-4f38cba0391f-8",
+              "recorded_at": "2031-03-07T09:07:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": [
+          "Release receipt is absent from the extracted records."
+        ]
+      },
+      {
+        "episode_id": "work-8a0d38bc32e9",
+        "split": "development",
+        "context": {
+          "family": "research",
+          "role": "research",
+          "occasion": "routine",
+          "channel": "study_note",
+          "audience": "exploratory_review"
+        },
+        "task": "Save an accepted study_note record. Work order 8a0d38bc32e9.",
+        "evidence": [
+          {
+            "evidence_id": "record-1",
+            "kind": "agent_output",
+            "text": "emphasis=limitations; route=versioned_notebook.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-8a0d38bc32e9-1",
+              "recorded_at": "2031-03-08T09:00:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-2",
+            "kind": "tool_result",
+            "text": "save attempt=1 route=versioned_notebook status=503; client fallback option: route=unversioned_export.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-8a0d38bc32e9-2",
+              "recorded_at": "2031-03-08T09:01:00Z",
+              "model": null
+            }
+          },
+          {
+            "evidence_id": "record-3",
+            "kind": "tool_result",
+            "text": "save attempt=2 route=versioned_notebook status=200; stored=true.",
+            "provenance": {
+              "origin": "synthetic",
+              "source_id": "document-8a0d38bc32e9-3",
+              "recorded_at": "2031-03-08T09:02:00Z",
+              "model": null
+            }
+          }
+        ],
+        "missingness": []
+      }
+    ]
+  }
+]

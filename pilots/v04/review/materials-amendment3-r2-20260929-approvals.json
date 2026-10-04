@@ -1,0 +1,28 @@
+{
+  "live": {
+    "approved": null,
+    "config_sha256": null,
+    "date": null,
+    "response": null,
+    "reviewer": null
+  },
+  "material_revision": "v04-amendment-03-r2",
+  "material_sha256": "f6e3325338bfe3ea565c52a196fe8ab082d0b57e4ec8f97d9b2ced7fd2efe3df",
+  "materials": {
+    "approved": true,
+    "reviewer": "Milad Morad",
+    "date": "2026-09-29",
+    "response": "Materialprüfung Amendment 3, Revision r2, durch Milad Morad, 29. September 2026: freigegeben. Die erwarteten Entscheidungen folgen aus den öffentlichen Belegen und Konventionen; S1 und S5 habe ich selbst durchgesehen. Ergänzend bestätigt ein unabhängiger, KI-gestützter Nachbau des Orakels alle zwölf erwarteten Entscheidungen der sechs Beispiele (als KI-gestützte Prüfung dokumentieren). Der Oberflächentest zeigt für die geprüften Einzelmerkmale keine Trennung über Zufallsniveau; weitere Abkürzungen sind damit nicht ausgeschlossen, das bleibt im Bericht sichtbar."
+  },
+  "source_sha256": "3519cda4ca3018d1c332b576d40fa3a6ddb836e6f69bdabb3ba014b128e11ae6",
+  "review_annotations": {
+    "type": "AI-assisted implementation review; not additional human or field validation",
+    "date": "2026-09-29",
+    "own_public_evidence_check": "S1 and S5 independently checked against public conventions; four compatible rules and retention at both probes in S1, one compatible current rule with diagnostic change and control retention in S5.",
+    "factual_clarifications": [
+      "Daria, rather than Elena, is removed from the current S5 reviewer roster.",
+      "There are six distinct nonempty shared review comments. Null supplies the additional broad-audit category."
+    ],
+    "statistical_clarification": "Review-history macro balanced accuracy for the selected simple features ranges from 0.463 to 0.544 in the current accepted-review population. This is no equivalence test or proof of chance-level discrimination, and does not rule out combined or untested shortcuts."
+  }
+}

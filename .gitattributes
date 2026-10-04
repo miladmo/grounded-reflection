@@ -1,1 +1,12 @@
 * text=auto eol=lf
+
+# Pilot material keeps its recorded bytes, so seals, manifests and source
+# bindings verify from a clone without line-ending conversion.
+pilots/v02/** -text
+pilots/v03/** -text
+pilots/v04/** -text
+pilots/v05/** -text
+src/grounded_reflection/pilot_v02/** -text
+docs/pilot-v0*.md -text
+docs/pilot-replacement-run-rule.md -text
+tests/test_pilot_v0*.py -text

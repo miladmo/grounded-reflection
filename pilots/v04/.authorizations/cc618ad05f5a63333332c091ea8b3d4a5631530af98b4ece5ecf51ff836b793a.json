@@ -1,0 +1,8 @@
+{
+  "approval_sha256": "cc618ad05f5a63333332c091ea8b3d4a5631530af98b4ece5ecf51ff836b793a",
+  "source_sha256": "8dab3506c3c26b0c5eaeb3318104e2eec15efe8b5de1755ea42bcc9e75b47fd4",
+  "material_sha256": "fad6299fffe016c28c954ba0f34f6989f95c64c3953282071017fe2cccd1d31a",
+  "config_sha256": "e265476641d895eaea855b70844ee5d8228eb9e3383ea298207e11c76250d0cb",
+  "output_dir": "%USERPROFILE%\\Downloads\\RWTH\\RWTH\\Research\\PostDoc\\05_Software\\grounded-reflection\\pilots\\v04\\runs\\live-amendment3-r2-20260929",
+  "reserved_at": "2026-09-29T19:05:28.043431+00:00"
+}

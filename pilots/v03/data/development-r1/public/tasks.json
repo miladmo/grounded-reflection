@@ -1,0 +1,422 @@
+[
+  {
+    "task_id": "09799455d111a05c",
+    "context": {
+      "task_family": "study_report",
+      "workflow": "study_delta",
+      "work_role": "research_scientist",
+      "artifact": "narrative"
+    },
+    "facts": {
+      "snapshot": "V44217",
+      "base_title": "Response distribution",
+      "source_footnote": "Source dataset V44217"
+    },
+    "baseline_fields": [
+      {
+        "name": "paragraph",
+        "value": "The study records the response distribution."
+      },
+      {
+        "name": "source_footnote",
+        "value": "Source dataset V44217"
+      }
+    ],
+    "request": "Write the narrative paragraph with its established source reference; it has no exhibit title."
+  },
+  {
+    "task_id": "41d24e55da5fb6f1",
+    "context": {
+      "task_family": "retrieval_plan",
+      "workflow": "evidence_collection",
+      "work_role": "research_scientist",
+      "collection": "archive"
+    },
+    "facts": {
+      "release_id": "REL-16",
+      "checksum_check": "required"
+    },
+    "baseline_fields": [
+      {
+        "name": "endpoint",
+        "value": "ep-31255"
+      },
+      {
+        "name": "release_id",
+        "value": "REL-16"
+      },
+      {
+        "name": "checksum_check",
+        "value": "required"
+      }
+    ],
+    "request": "Prepare a structured retrieval plan for new record I44217. Select the endpoint and preserve the requested release and checksum verification. Do not execute retrieval."
+  },
+  {
+    "task_id": "4e2e51d09a590afc",
+    "context": {
+      "task_family": "contact_pack",
+      "workflow": "talent_ops",
+      "work_role": "recruitment_coordinator",
+      "recipient": "internal",
+      "contract": "permanent"
+    },
+    "facts": {
+      "booking_reference": "BK-44217",
+      "work_email": "worker44217@synthetic.invalid"
+    },
+    "baseline_fields": [
+      {
+        "name": "work_email",
+        "value": "worker44217@synthetic.invalid"
+      }
+    ],
+    "request": "Prepare the contact pack for this recipient and contract using these source values."
+  },
+  {
+    "task_id": "897f640b5e0909c5",
+    "context": {
+      "task_family": "pipeline_forecast",
+      "workflow": "account_ops",
+      "work_role": "account_executive",
+      "reviewer": "Ari",
+      "case_id": "D44217"
+    },
+    "facts": {
+      "monthly_unit_price": "55",
+      "seat_count": "12",
+      "annual_total": "7920",
+      "contract_reference": "CS-44217"
+    },
+    "baseline_fields": [
+      {
+        "name": "forecast_quarter",
+        "value": "Q4"
+      },
+      {
+        "name": "pipeline_total",
+        "value": "35000"
+      },
+      {
+        "name": "currency",
+        "value": "EUR"
+      }
+    ],
+    "request": "Prepare this quarterly pipeline forecast using its established forecast fields."
+  },
+  {
+    "task_id": "1c708b8096e33ec1",
+    "context": {
+      "task_family": "pipeline_forecast",
+      "workflow": "account_ops",
+      "work_role": "account_executive",
+      "reviewer": "Ari",
+      "case_id": "D44217"
+    },
+    "facts": {
+      "monthly_unit_price": "55",
+      "seat_count": "12",
+      "annual_total": "7920",
+      "contract_reference": "CS-44217"
+    },
+    "baseline_fields": [
+      {
+        "name": "forecast_quarter",
+        "value": "Q4"
+      },
+      {
+        "name": "pipeline_total",
+        "value": "35000"
+      },
+      {
+        "name": "currency",
+        "value": "EUR"
+      }
+    ],
+    "request": "Prepare this quarterly pipeline forecast using its established forecast fields."
+  },
+  {
+    "task_id": "18292102d28f9840",
+    "context": {
+      "task_family": "contact_pack",
+      "workflow": "talent_ops",
+      "work_role": "recruitment_coordinator",
+      "recipient": "external",
+      "contract": "permanent"
+    },
+    "facts": {
+      "booking_reference": "BK-44217",
+      "work_email": "worker44217@synthetic.invalid"
+    },
+    "baseline_fields": [
+      {
+        "name": "work_email",
+        "value": "worker44217@synthetic.invalid"
+      }
+    ],
+    "request": "Prepare the contact pack for this recipient and contract using these source values."
+  },
+  {
+    "task_id": "e5956f570e4837d4",
+    "context": {
+      "task_family": "retrieval_plan",
+      "workflow": "evidence_collection",
+      "work_role": "research_scientist",
+      "collection": "active"
+    },
+    "facts": {
+      "release_id": "REL-42",
+      "checksum_check": "required"
+    },
+    "baseline_fields": [
+      {
+        "name": "endpoint",
+        "value": "ep-31255"
+      },
+      {
+        "name": "release_id",
+        "value": "REL-42"
+      },
+      {
+        "name": "checksum_check",
+        "value": "required"
+      }
+    ],
+    "request": "Prepare a structured retrieval plan for new record I44217. Select the endpoint and preserve the requested release and checksum verification. Do not execute retrieval."
+  },
+  {
+    "task_id": "21eaf70cd641e1da",
+    "context": {
+      "task_family": "retrieval_plan",
+      "workflow": "evidence_collection",
+      "work_role": "research_scientist",
+      "collection": "active"
+    },
+    "facts": {
+      "release_id": "REL-42",
+      "checksum_check": "required"
+    },
+    "baseline_fields": [
+      {
+        "name": "endpoint",
+        "value": "ep-31255"
+      },
+      {
+        "name": "release_id",
+        "value": "REL-42"
+      },
+      {
+        "name": "checksum_check",
+        "value": "required"
+      }
+    ],
+    "request": "Prepare a structured retrieval plan for new record I44217. Select the endpoint and preserve the requested release and checksum verification. Do not execute retrieval."
+  },
+  {
+    "task_id": "24a15d08f18bdbc2",
+    "context": {
+      "task_family": "study_report",
+      "workflow": "study_delta",
+      "work_role": "research_scientist",
+      "artifact": "narrative"
+    },
+    "facts": {
+      "snapshot": "V44217",
+      "base_title": "Response distribution",
+      "source_footnote": "Source dataset V44217"
+    },
+    "baseline_fields": [
+      {
+        "name": "paragraph",
+        "value": "The study records the response distribution."
+      },
+      {
+        "name": "source_footnote",
+        "value": "Source dataset V44217"
+      }
+    ],
+    "request": "Write the narrative paragraph with its established source reference; it has no exhibit title."
+  },
+  {
+    "task_id": "363747c9cc3a3364",
+    "context": {
+      "task_family": "contact_pack",
+      "workflow": "talent_ops",
+      "work_role": "recruitment_coordinator",
+      "recipient": "external",
+      "contract": "permanent"
+    },
+    "facts": {
+      "booking_reference": "BK-44217",
+      "work_email": "worker44217@synthetic.invalid"
+    },
+    "baseline_fields": [
+      {
+        "name": "work_email",
+        "value": "worker44217@synthetic.invalid"
+      }
+    ],
+    "request": "Prepare the contact pack for this recipient and contract using these source values."
+  },
+  {
+    "task_id": "da52cd0cd7d602bd",
+    "context": {
+      "task_family": "renewal_preview",
+      "workflow": "account_ops",
+      "work_role": "account_executive",
+      "reviewer": "Ari",
+      "case_id": "D44217"
+    },
+    "facts": {
+      "monthly_unit_price": "55",
+      "seat_count": "12",
+      "annual_total": "7920",
+      "contract_reference": "CS-44217"
+    },
+    "baseline_fields": [
+      {
+        "name": "monthly_unit_price",
+        "value": "55"
+      },
+      {
+        "name": "seat_count",
+        "value": "12"
+      },
+      {
+        "name": "contract_reference",
+        "value": "CS-44217"
+      }
+    ],
+    "request": "Prepare a first renewal preview for the named reviewer using the validated contract values."
+  },
+  {
+    "task_id": "edc28fe725cf7426",
+    "context": {
+      "task_family": "renewal_preview",
+      "workflow": "account_ops",
+      "work_role": "account_executive",
+      "reviewer": "Ari",
+      "case_id": "D44217"
+    },
+    "facts": {
+      "monthly_unit_price": "55",
+      "seat_count": "12",
+      "annual_total": "7920",
+      "contract_reference": "CS-44217"
+    },
+    "baseline_fields": [
+      {
+        "name": "monthly_unit_price",
+        "value": "55"
+      },
+      {
+        "name": "seat_count",
+        "value": "12"
+      },
+      {
+        "name": "contract_reference",
+        "value": "CS-44217"
+      }
+    ],
+    "request": "Prepare a first renewal preview for the named reviewer using the validated contract values."
+  },
+  {
+    "task_id": "7c2f2d0e2c7ca017",
+    "context": {
+      "task_family": "retrieval_plan",
+      "workflow": "evidence_collection",
+      "work_role": "research_scientist",
+      "collection": "archive"
+    },
+    "facts": {
+      "release_id": "REL-16",
+      "checksum_check": "required"
+    },
+    "baseline_fields": [
+      {
+        "name": "endpoint",
+        "value": "ep-31255"
+      },
+      {
+        "name": "release_id",
+        "value": "REL-16"
+      },
+      {
+        "name": "checksum_check",
+        "value": "required"
+      }
+    ],
+    "request": "Prepare a structured retrieval plan for new record I44217. Select the endpoint and preserve the requested release and checksum verification. Do not execute retrieval."
+  },
+  {
+    "task_id": "9a02cb854f8f2e3a",
+    "context": {
+      "task_family": "study_report",
+      "workflow": "study_delta",
+      "work_role": "research_scientist",
+      "artifact": "numeric_table"
+    },
+    "facts": {
+      "snapshot": "V44217",
+      "base_title": "Response distribution",
+      "source_footnote": "Source dataset V44217"
+    },
+    "baseline_fields": [
+      {
+        "name": "title",
+        "value": "Response distribution"
+      },
+      {
+        "name": "source_footnote",
+        "value": "Source dataset V44217"
+      }
+    ],
+    "request": "Prepare a numeric table title for the current snapshot and preserve its source footnote."
+  },
+  {
+    "task_id": "38d9a06b7bbbf8d7",
+    "context": {
+      "task_family": "contact_pack",
+      "workflow": "talent_ops",
+      "work_role": "recruitment_coordinator",
+      "recipient": "internal",
+      "contract": "permanent"
+    },
+    "facts": {
+      "booking_reference": "BK-44217",
+      "work_email": "worker44217@synthetic.invalid"
+    },
+    "baseline_fields": [
+      {
+        "name": "work_email",
+        "value": "worker44217@synthetic.invalid"
+      }
+    ],
+    "request": "Prepare the contact pack for this recipient and contract using these source values."
+  },
+  {
+    "task_id": "56a8536f90b5ac7e",
+    "context": {
+      "task_family": "study_report",
+      "workflow": "study_delta",
+      "work_role": "research_scientist",
+      "artifact": "numeric_table"
+    },
+    "facts": {
+      "snapshot": "V44217",
+      "base_title": "Response distribution",
+      "source_footnote": "Source dataset V44217"
+    },
+    "baseline_fields": [
+      {
+        "name": "title",
+        "value": "Response distribution"
+      },
+      {
+        "name": "source_footnote",
+        "value": "Source dataset V44217"
+      }
+    ],
+    "request": "Prepare a numeric table title for the current snapshot and preserve its source footnote."
+  }
+]

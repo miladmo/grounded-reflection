@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "reviewer": "Milad Morad",
+  "phase": "calibration",
+  "date": "2026-10-03",
+  "response": "A jetzt, und neue Live-Freigabe",
+  "attempt": 3,
+  "context": "timeout 1,200 s after attempt 2; see runs/live-calibration-20261002-attempt2-INCIDENT.md",
+  "config_sha256": "60223819d237ae8e6ed8c6672a080ce21b35ce2a34ece57d42bde65f1efda554",
+  "source_sha256": "11c20819005f229a9428d4dcc18bc5df0d2561018404a9e2d905e1ae22880f17"
+}

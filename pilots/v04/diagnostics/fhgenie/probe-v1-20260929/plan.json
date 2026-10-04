@@ -1,0 +1,13 @@
+{
+  "purpose": "One separately approved FHGenie connection and JSON-contract probe; no research data or pilot run",
+  "endpoint": "<FHGENIE_ENDPOINT>",
+  "timeout_seconds": 90,
+  "max_calls": 1,
+  "retries": 0,
+  "requested_max_output_tokens": 2048,
+  "request_sha256": "fc8ccff9ec3a4189a47748b198bb806ccf628134dd4b848b9f721e097f098c5b",
+  "probe_sha256": "9042d3f2c14e621bb5a6026980e79da5bb2f519e7a7f2de99246badc291a8c35",
+  "tests_sha256": "8ff3e9a022001a46b72840d9699e8682d28f37508d54729afd4bb04ef70ba5a4",
+  "credential_source": "Existing Windows current-user encrypted FHGenie key; never stored in this plan or results",
+  "provider_capabilities": "JSON schema and reasoning controls are unverified capabilities tested by this request"
+}

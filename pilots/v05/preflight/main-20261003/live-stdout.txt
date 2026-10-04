@@ -1,0 +1,12 @@
+{
+  "manifest_sha256": "dc4fc775af49df6c838c1cba29d730155319920298596791ecfffd08eb4ff4ab",
+  "budget": {
+    "attempted_calls": 358,
+    "reported_tokens": 4954459,
+    "calls_with_unknown_usage": 0,
+    "failed_calls": 3,
+    "response_failures": 3,
+    "halt_reason": null
+  },
+  "complete": true
+}

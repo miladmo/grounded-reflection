@@ -1,0 +1,33 @@
+{
+  "purpose": "One separately approved connection diagnostic. No research evidence or evaluation.",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "medium",
+  "max_calls": 1,
+  "timeout_seconds": 60,
+  "retries": 0,
+  "purchases": false,
+  "research_data": false,
+  "prompt": "Return exactly this JSON object: {\"status\":\"ok\"}. This is a connection test. Do not use tools.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "status"
+    ],
+    "additionalProperties": false
+  },
+  "diagnostic_files": {
+    "run_smoke.py": "7a69a4a560210a28367c8c4840fe5afd105980ef6aedfd12176a2a842d786e21",
+    "observation.py": "ca1ec009275cf738219a131c86a02ecdce6563c9fd9d39d3dd8f9e49b201c886",
+    "proxy_connection.py": "18a37daeaad992adc3cb6ba4e349376b9206e0fdac3b8ad94d930602a782849e",
+    "test_observation.py": "7a87244d604d9253ea47d747a86465d555d005851d18ac90bac384b88f7e2952",
+    "test_proxy_connection.py": "a3681ab82142593569b6247f548ca1e0a628737887d6497a94e7c9eadf629191"
+  },
+  "runtime_attestation_sha256": "510412e3102687ef6ceab910fb7c3acc6f7ffb7ae868c385df3a9607ade2a9a4",
+  "change": "Diagnostic adapter respects existing HTTPS/ALL proxy and NO_PROXY settings. Header-only observation; canonical transport and gateway unchanged.",
+  "limits": "At most one upstream model POST, 60 seconds, no retry or automatic research restart. CLI context adds input tokens; no exact token or cost prediction."
+}

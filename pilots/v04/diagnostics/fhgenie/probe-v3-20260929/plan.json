@@ -1,0 +1,13 @@
+{
+  "purpose": "One separately approved FHGenie control without server-side response_format; no study run",
+  "endpoint": "<FHGENIE_ENDPOINT>",
+  "timeout_seconds": 90,
+  "max_calls": 1,
+  "retries": 0,
+  "requested_max_output_tokens": 2048,
+  "request_sha256": "9a8474bb9f47f1c6feeef51f4bb6368334af8a7d634f764eb39a1d5bffd5e5c2",
+  "probe_sha256": "96db898efce1125d22c13c1e2a529baff9097025434ae8d3df7ac717fc5b641e",
+  "tests_sha256": "66e7438cde506351ee5b1bb0bf892786fe533f4957171af0be2c9baf2b8e7fc8",
+  "request_delta": "Only response_format removed; all other request values unchanged",
+  "local_validation": "Strict JSON parsing and exact one-property status=ok contract unchanged; no repair"
+}

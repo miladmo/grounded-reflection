@@ -1,0 +1,24 @@
+{
+  "index": 8,
+  "label": "08-C2-C-H4",
+  "phase": "C2",
+  "arm": "C",
+  "history": "H4",
+  "setting": "S5",
+  "type": "C2_large",
+  "base_input_chars": 65464,
+  "outcome": "valid",
+  "reason": null,
+  "usage": {
+    "input_tokens": 21808,
+    "output_tokens": 14033,
+    "cached_input_tokens": null,
+    "reasoning_output_tokens": null
+  },
+  "wall_seconds": 91.111607,
+  "finish_reason": "stop",
+  "system_fingerprint": "vllm-0.25.1-dp4-ep-3e90b15f",
+  "input_chars": 67988,
+  "actual_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "reasoning_content_present": true
+}

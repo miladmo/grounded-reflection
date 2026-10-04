@@ -1,0 +1,24 @@
+{
+  "index": 13,
+  "label": "13-gen-B-H2",
+  "phase": "generate",
+  "arm": "B",
+  "history": "H2",
+  "setting": "S1",
+  "type": "B_small",
+  "base_input_chars": 21348,
+  "outcome": "valid",
+  "reason": null,
+  "usage": {
+    "input_tokens": 5123,
+    "output_tokens": 1988,
+    "cached_input_tokens": null,
+    "reasoning_output_tokens": null
+  },
+  "wall_seconds": 11.65259,
+  "finish_reason": "stop",
+  "system_fingerprint": "vllm-0.25.1-dp4-ep-3e90b15f",
+  "input_chars": 21348,
+  "actual_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "reasoning_content_present": true
+}

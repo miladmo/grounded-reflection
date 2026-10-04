@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-29",
+  "supplied_by": "Milad Morad",
+  "reviewed_material_revision": "v04-amendment-03",
+  "decision": "not_approved",
+  "validation_kind": "User-supplied AI-assisted independent reconstruction; not human validation",
+  "response_verbatim": "Materialprüfung Amendment 3 durch Milad Morad, 29. September 2026: noch nicht freigegeben. Die erwarteten Entscheidungen folgen in allen sechs Beispielen aus den öffentlichen Belegen; das wurde zusätzlich durch einen unabhängigen, KI-gestützten Nachbau des Orakels aus den öffentlichen Konventionen bestätigt (als KI-gestützte Prüfung dokumentieren, nicht als menschliche Validierung). Vor der Freigabe ist eine Überarbeitung nötig:\n\n1. Oberflächen-Abkürzungen entfernen: Zeitstempel aller Einträge (echte Freigaben und Störfaktoren) zufällig über den Gültigkeitszeitraum verteilen und die Reihenfolge durchmischen. Mehrere Formulierungen pro Eintragstyp verwenden, auch für echte Freigaben. Einige Störfaktoren sollen Oberflächenmerkmale echter Freigaben teilen, etwa ein nicht berechtigter Eintrag oder eine Freigabe ohne Zielfeld mit dem Kommentar \"Approved.\" Das gilt für alle Einstellungen, nicht nur S2 und S5.\n2. Test ergänzen: Einfache Heuristiken nach Datum, Uhrzeit, Kommentartext oder Position dürfen bindende Freigaben nicht besser als die Konvention selbst identifizieren. Dokumentiere das Ergebnis in der Materialprüfung.\n3. Fehlertaxonomie: Unterkategorie \"Widerspruch nach Mehrheit oder Aktualität aufgelöst\" für die eindeutig gelösten Fälle, in denen falsch gezählte Einträge nur Widersprüche erzeugen können. Headroom-Kriterium unverändert.\n\nDanach neue Beispiele exportieren, gleiche Auswahl der sechs Fälle. Live-Freigabe bleibt separat offen.",
+  "implementation_requested": true,
+  "live_authorised": false
+}

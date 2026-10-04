@@ -1,0 +1,10 @@
+{
+  "approved": true,
+  "reviewer": "Milad Morad",
+  "date": "2026-09-30",
+  "response": "Vertragstest 2 freigegeben, ausführen und danach vorbereiten",
+  "reasoning_effort": "high",
+  "max_output_tokens": 32768,
+  "planned_calls": 16,
+  "plan_sha256": "c0fd147d987f5e3115a087c7b55c76e97e7d5a13296a535df857433a03d08abe"
+}

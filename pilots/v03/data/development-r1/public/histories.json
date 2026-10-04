@@ -1,0 +1,736 @@
+[
+  {
+    "history_id": "adef127f28b91a1d",
+    "initial_configuration": "The configured endpoint is ep-31255 for active and archived records. Every retrieval plan must name the requested release and require checksum verification. A source can return acceptable records without being uniquely preferred. Review approval certifies record correctness, not a mandatory endpoint, and does not by itself establish that another route is invalid. Plans are synthetic selections; no live retrieval takes place.",
+    "assumptions": "All records and people are synthetic. Reviewers have authority for their recorded local workflow and period. Separate record identifiers denote separate reviews unless an observation explicitly describes a repeated attempt. The workflow is stable during this period except for changes recorded in the events. Future tasks occur within that same stable workflow period. In this bounded experiment, evaluated worker roles use the same local workflow rules. work_role records performer provenance, not a requirement trigger. This role invariance is supplied as a precondition, not inferred from the records. Reviewer-specific sign-off conditions may still differ. task_family and workflow are separate scope attributes. An accepted baseline remains applicable where no supported exception changes it. Do not infer an organisation-wide rule from a local review. Missing evidence is an internal uncertainty, not a reason to ask an employee or stop this synthetic task.",
+    "field_dictionary": {
+      "endpoint": "Opaque service address.",
+      "collection": "active or archive",
+      "release_id": "Requested record release, not merely the latest observed release.",
+      "checksum_check": "Whether verification is required."
+    },
+    "records": [
+      {
+        "record_id": "beaa80e064d95d8f",
+        "timestamp": "2026-08-03T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "ep-31255",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "I17 returns REL-40. Requested release REL-41 check fails."
+      },
+      {
+        "record_id": "4c69d70509a56ba6",
+        "timestamp": "2026-08-03T09:31:00+00:00",
+        "kind": "tool",
+        "actor": "collection_inventory",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "Active-collection inventory snapshot lists I17 REL-41 at ep-25424; retrieval there returns REL-41 with matching checksum CH-417."
+      },
+      {
+        "record_id": "17a211198addbb6f",
+        "timestamp": "2026-08-03T09:32:00+00:00",
+        "kind": "review",
+        "actor": "source_reviewer",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "I17 draft using ep-31255 REL-40 rejected; replacement using ep-25424 REL-41 accepted."
+      },
+      {
+        "record_id": "43aa13e3ceb144ac",
+        "timestamp": "2026-08-05T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "query_log",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "Independent queries on two later days: I18 requests REL-41, ep-31255 returns REL-40 and ep-25424 returns REL-41 with matching checksum CH-418; I19 requests REL-42, ep-31255 returns REL-40 and ep-25424 returns REL-42 with matching checksum CH-429."
+      },
+      {
+        "record_id": "8345bab91cffc50b",
+        "timestamp": "2026-08-06T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "ep-31255",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "archive"
+        },
+        "observation": "Archived I02 returns its requested archived release REL-16 and matching checksum CH-162."
+      }
+    ]
+  },
+  {
+    "history_id": "c721b27d539a7da3",
+    "initial_configuration": "The configured endpoint is ep-31255 for active and archived records. Every retrieval plan must name the requested release and require checksum verification. A source can return acceptable records without being uniquely preferred. Review approval certifies record correctness, not a mandatory endpoint, and does not by itself establish that another route is invalid. Plans are synthetic selections; no live retrieval takes place.",
+    "assumptions": "All records and people are synthetic. Reviewers have authority for their recorded local workflow and period. Separate record identifiers denote separate reviews unless an observation explicitly describes a repeated attempt. The workflow is stable during this period except for changes recorded in the events. Future tasks occur within that same stable workflow period. In this bounded experiment, evaluated worker roles use the same local workflow rules. work_role records performer provenance, not a requirement trigger. This role invariance is supplied as a precondition, not inferred from the records. Reviewer-specific sign-off conditions may still differ. task_family and workflow are separate scope attributes. An accepted baseline remains applicable where no supported exception changes it. Do not infer an organisation-wide rule from a local review. Missing evidence is an internal uncertainty, not a reason to ask an employee or stop this synthetic task.",
+    "field_dictionary": {
+      "endpoint": "Opaque service address.",
+      "collection": "active or archive",
+      "release_id": "Requested record release, not merely the latest observed release.",
+      "checksum_check": "Whether verification is required."
+    },
+    "records": [
+      {
+        "record_id": "b7b3904e9825e899",
+        "timestamp": "2026-08-03T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "ep-31255",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "I17 at 09:30:00 returns HTTP 503."
+      },
+      {
+        "record_id": "f3626bc0eff5da37",
+        "timestamp": "2026-08-03T09:30:20+00:00",
+        "kind": "tool",
+        "actor": "service_monitor",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "ep-25424 and ep-unrelated return HTTP 503 in the same minute as the I17 failure."
+      },
+      {
+        "record_id": "be0f9cb063aef107",
+        "timestamp": "2026-08-03T09:32:00+00:00",
+        "kind": "retrieval",
+        "actor": "ep-31255",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "I17 retry two minutes after the incident returns requested release REL-41 with matching checksum CH-417."
+      },
+      {
+        "record_id": "9a7ada50f536710d",
+        "timestamp": "2026-08-03T09:33:00+00:00",
+        "kind": "review",
+        "actor": "source_reviewer",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "I17 cached REL-40 draft rejected; otherwise unchanged draft using recovered ep-31255 REL-41 accepted."
+      },
+      {
+        "record_id": "00160393149922df",
+        "timestamp": "2026-08-04T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "ep-31255",
+        "context": {
+          "task_family": "retrieval_plan",
+          "workflow": "evidence_collection",
+          "work_role": "research_scientist",
+          "collection": "active"
+        },
+        "observation": "On the next workday, I18 returns requested current release REL-42 and matching checksum CH-428."
+      }
+    ]
+  },
+  {
+    "history_id": "646854e9fe7e7328",
+    "initial_configuration": "Contact packs in talent_ops always include work_email. The configured booking_reference field is absent. Source values remain available in facts. Formatting is a stable function of recipient and contract in this local workflow.",
+    "assumptions": "All records and people are synthetic. Reviewers have authority for their recorded local workflow and period. Separate record identifiers denote separate reviews unless an observation explicitly describes a repeated attempt. The workflow is stable during this period except for changes recorded in the events. Future tasks occur within that same stable workflow period. In this bounded experiment, evaluated worker roles use the same local workflow rules. work_role records performer provenance, not a requirement trigger. This role invariance is supplied as a precondition, not inferred from the records. Reviewer-specific sign-off conditions may still differ. task_family and workflow are separate scope attributes. An accepted baseline remains applicable where no supported exception changes it. Do not infer an organisation-wide rule from a local review. Missing evidence is an internal uncertainty, not a reason to ask an employee or stop this synthetic task.",
+    "field_dictionary": {
+      "booking_reference": "Neutral coordination token, not private candidate data.",
+      "work_email": "Synthetic work address.",
+      "recipient": "internal or external",
+      "contract": "permanent or temporary",
+      "work_role": "Worker role, distinct from task_family."
+    },
+    "records": [
+      {
+        "record_id": "08eeaf4ecad81578",
+        "timestamp": "2026-08-03T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "records_service",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "observation": "Pack P31 source contains booking_reference=BK-271 and work_email=example@synthetic.invalid."
+      },
+      {
+        "record_id": "1c3f6125273e7000",
+        "timestamp": "2026-08-03T09:31:00+00:00",
+        "kind": "revision",
+        "actor": "Dara",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "observation": "P31 diff: added booking_reference from source; work_email unchanged. Approved. Undoing this sole change was rejected."
+      },
+      {
+        "record_id": "f91a71b0e55d591a",
+        "timestamp": "2026-08-03T09:32:00+00:00",
+        "kind": "review",
+        "actor": "Dara",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "internal",
+          "contract": "permanent"
+        },
+        "observation": "P32 approved with the configured booking_reference state (absent); work_email retained."
+      },
+      {
+        "record_id": "7d42564323ffed69",
+        "timestamp": "2026-08-03T09:33:00+00:00",
+        "kind": "revision",
+        "actor": "Lena",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "observation": "Independent pack P33 diff: added booking_reference from source; work_email unchanged. Approved with its own source values."
+      },
+      {
+        "record_id": "84008604090f2647",
+        "timestamp": "2026-08-03T09:34:00+00:00",
+        "kind": "revision",
+        "actor": "Lena",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        "observation": "Pack P34 diff: removed the added booking_reference. Approved with all other fields unchanged. Undo rejected."
+      },
+      {
+        "record_id": "d728805b53d7fc96",
+        "timestamp": "2026-08-03T09:35:00+00:00",
+        "kind": "revision",
+        "actor": "Dara",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "external",
+          "contract": "permanent"
+        },
+        "observation": "Pack P35 diff: added booking_reference from source; work_email unchanged. Approved with all other fields unchanged. Undo rejected."
+      }
+    ]
+  },
+  {
+    "history_id": "01ef7896ce6d3255",
+    "initial_configuration": "Renewal preview baseline contains monthly_unit_price, seat_count, contract_reference, with annual_total absent. Reviewers have equal local sign-off authority for these previews. Each sign-off is independent and concerns the named reviewer. The same workflow and template version remain in effect throughout the recorded cases and future tasks. Use the configured baseline for a reviewer without a demonstrated exception. Pipeline forecasts have their own established template.",
+    "assumptions": "All records and people are synthetic. Reviewers have authority for their recorded local workflow and period. Separate record identifiers denote separate reviews unless an observation explicitly describes a repeated attempt. The workflow is stable during this period except for changes recorded in the events. Future tasks occur within that same stable workflow period. In this bounded experiment, evaluated worker roles use the same local workflow rules. work_role records performer provenance, not a requirement trigger. This role invariance is supplied as a precondition, not inferred from the records. Reviewer-specific sign-off conditions may still differ. task_family and workflow are separate scope attributes. An accepted baseline remains applicable where no supported exception changes it. Do not infer an organisation-wide rule from a local review. Missing evidence is an internal uncertainty, not a reason to ask an employee or stop this synthetic task.",
+    "field_dictionary": {
+      "annual_total": "Validated annual amount from the contract calculator.",
+      "reviewer": "Person approving this document, not its author.",
+      "case_id": "Source case identity used to match independent reviews of the same content.",
+      "workflow": "Local team process.",
+      "task_family": "Document kind, distinct from worker role."
+    },
+    "records": [
+      {
+        "record_id": "2a7e67db0cd00d52",
+        "timestamp": "2026-08-03T09:30:00+00:00",
+        "kind": "tool",
+        "actor": "contract_calculator",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "account_executive",
+          "reviewer": "Kian",
+          "case_id": "D41"
+        },
+        "observation": "D41 calculation: 40 per seat per month x 10 seats x 12 months = annual_total 4800. Contract CS-441 valid. Independent review copies contain the same customer, contract, source metadata and document content. Each reviewer receives the identical pair of drafts differing only in the annual_total line, without the other reviewers' decisions."
+      },
+      {
+        "record_id": "0288a9f0b97889ac",
+        "timestamp": "2026-08-03T09:31:00+00:00",
+        "kind": "revision",
+        "actor": "Kian",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "account_executive",
+          "reviewer": "Kian",
+          "case_id": "D41"
+        },
+        "observation": "D41 independent sign-off: adds the validated annual_total line; all other fields unchanged. Approved annual_total state=present. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      },
+      {
+        "record_id": "8ed88a38d3698bd4",
+        "timestamp": "2026-08-03T09:32:00+00:00",
+        "kind": "revision",
+        "actor": "Cleo",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "account_executive",
+          "reviewer": "Cleo",
+          "case_id": "D41"
+        },
+        "observation": "D41 independent sign-off: removes the annual_total line; all other fields unchanged. Approved annual_total state=absent. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      },
+      {
+        "record_id": "140c213d1d53c122",
+        "timestamp": "2026-08-03T09:33:00+00:00",
+        "kind": "tool",
+        "actor": "contract_calculator",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "renewals_specialist",
+          "reviewer": "Kian",
+          "case_id": "D42"
+        },
+        "observation": "D42 calculation: 50 per seat per month x 10 seats x 12 months = annual_total 6000. Contract CS-442 valid. Independent review copies contain the same customer, contract, source metadata and document content. Each reviewer receives the identical pair of drafts differing only in the annual_total line, without the other reviewers' decisions."
+      },
+      {
+        "record_id": "86d68f43dddfae4d",
+        "timestamp": "2026-08-03T09:34:00+00:00",
+        "kind": "revision",
+        "actor": "Kian",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "renewals_specialist",
+          "reviewer": "Kian",
+          "case_id": "D42"
+        },
+        "observation": "D42 independent sign-off: adds the validated annual_total line; all other fields unchanged. Approved annual_total state=present. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      },
+      {
+        "record_id": "313966edb3619e47",
+        "timestamp": "2026-08-03T09:35:00+00:00",
+        "kind": "revision",
+        "actor": "Cleo",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "renewals_specialist",
+          "reviewer": "Cleo",
+          "case_id": "D42"
+        },
+        "observation": "D42 independent sign-off: removes the annual_total line; all other fields unchanged. Approved annual_total state=absent. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      }
+    ]
+  },
+  {
+    "history_id": "1c448f35b219884b",
+    "initial_configuration": "Contact packs in talent_ops always include work_email. The configured booking_reference field is absent. Source values remain available in facts. Formatting is a stable function of recipient and contract in this local workflow.",
+    "assumptions": "All records and people are synthetic. Reviewers have authority for their recorded local workflow and period. Separate record identifiers denote separate reviews unless an observation explicitly describes a repeated attempt. The workflow is stable during this period except for changes recorded in the events. Future tasks occur within that same stable workflow period. In this bounded experiment, evaluated worker roles use the same local workflow rules. work_role records performer provenance, not a requirement trigger. This role invariance is supplied as a precondition, not inferred from the records. Reviewer-specific sign-off conditions may still differ. task_family and workflow are separate scope attributes. An accepted baseline remains applicable where no supported exception changes it. Do not infer an organisation-wide rule from a local review. Missing evidence is an internal uncertainty, not a reason to ask an employee or stop this synthetic task.",
+    "field_dictionary": {
+      "booking_reference": "Neutral coordination token, not private candidate data.",
+      "work_email": "Synthetic work address.",
+      "recipient": "internal or external",
+      "contract": "permanent or temporary",
+      "work_role": "Worker role, distinct from task_family."
+    },
+    "records": [
+      {
+        "record_id": "8211640825540f98",
+        "timestamp": "2026-08-03T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "records_service",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "observation": "Pack P31 source contains booking_reference=BK-271 and work_email=example@synthetic.invalid."
+      },
+      {
+        "record_id": "cb614533f1984f5e",
+        "timestamp": "2026-08-03T09:31:00+00:00",
+        "kind": "revision",
+        "actor": "Dara",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "observation": "P31 diff: added booking_reference from source; work_email unchanged. Approved. Undoing this sole change was rejected."
+      },
+      {
+        "record_id": "5b8faeb4e571b468",
+        "timestamp": "2026-08-03T09:32:00+00:00",
+        "kind": "review",
+        "actor": "Dara",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "internal",
+          "contract": "permanent"
+        },
+        "observation": "P32 approved with the configured booking_reference state (absent); work_email retained."
+      },
+      {
+        "record_id": "f28cc85d805a9a65",
+        "timestamp": "2026-08-03T09:33:00+00:00",
+        "kind": "revision",
+        "actor": "Lena",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "observation": "Independent pack P33 diff: added booking_reference from source; work_email unchanged. Approved with its own source values."
+      },
+      {
+        "record_id": "fada4c7b0b106c29",
+        "timestamp": "2026-08-03T09:34:00+00:00",
+        "kind": "revision",
+        "actor": "Lena",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "internal",
+          "contract": "permanent"
+        },
+        "observation": "P34 diff: removed the added booking_reference. Approved, all other fields unchanged."
+      },
+      {
+        "record_id": "37e47a6dd7496c18",
+        "timestamp": "2026-08-03T09:35:00+00:00",
+        "kind": "revision",
+        "actor": "Dara",
+        "context": {
+          "task_family": "contact_pack",
+          "workflow": "talent_ops",
+          "work_role": "recruitment_coordinator",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "observation": "P35 diff: added booking_reference from source; work_email unchanged. Approved, all other fields unchanged."
+      }
+    ]
+  },
+  {
+    "history_id": "f3fd65055bb86ee4",
+    "initial_configuration": "Renewal preview baseline contains monthly_unit_price, seat_count, contract_reference, with annual_total absent. Reviewers have equal local sign-off authority for these previews. Each sign-off is independent and concerns the named reviewer. The same workflow and template version remain in effect throughout the recorded cases and future tasks. Use the configured baseline for a reviewer without a demonstrated exception. Pipeline forecasts have their own established template.",
+    "assumptions": "All records and people are synthetic. Reviewers have authority for their recorded local workflow and period. Separate record identifiers denote separate reviews unless an observation explicitly describes a repeated attempt. The workflow is stable during this period except for changes recorded in the events. Future tasks occur within that same stable workflow period. In this bounded experiment, evaluated worker roles use the same local workflow rules. work_role records performer provenance, not a requirement trigger. This role invariance is supplied as a precondition, not inferred from the records. Reviewer-specific sign-off conditions may still differ. task_family and workflow are separate scope attributes. An accepted baseline remains applicable where no supported exception changes it. Do not infer an organisation-wide rule from a local review. Missing evidence is an internal uncertainty, not a reason to ask an employee or stop this synthetic task.",
+    "field_dictionary": {
+      "annual_total": "Validated annual amount from the contract calculator.",
+      "reviewer": "Person approving this document, not its author.",
+      "case_id": "Source case identity used to match independent reviews of the same content.",
+      "workflow": "Local team process.",
+      "task_family": "Document kind, distinct from worker role."
+    },
+    "records": [
+      {
+        "record_id": "cfe8196051401a19",
+        "timestamp": "2026-08-03T09:30:00+00:00",
+        "kind": "tool",
+        "actor": "contract_calculator",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "account_executive",
+          "reviewer": "Kian",
+          "case_id": "D41"
+        },
+        "observation": "D41 calculation: 40 per seat per month x 10 seats x 12 months = annual_total 4800. Contract CS-441 valid. Independent review copies contain the same customer, contract, source metadata and document content. Each reviewer receives the identical pair of drafts differing only in the annual_total line, without the other reviewers' decisions."
+      },
+      {
+        "record_id": "4aeccdd889b74193",
+        "timestamp": "2026-08-03T09:31:00+00:00",
+        "kind": "revision",
+        "actor": "Kian",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "account_executive",
+          "reviewer": "Kian",
+          "case_id": "D41"
+        },
+        "observation": "D41 independent sign-off: adds the validated annual_total line; all other fields unchanged. Approved annual_total state=present. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      },
+      {
+        "record_id": "9f9583ea1a5c18bb",
+        "timestamp": "2026-08-03T09:32:00+00:00",
+        "kind": "revision",
+        "actor": "Cleo",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "account_executive",
+          "reviewer": "Cleo",
+          "case_id": "D41"
+        },
+        "observation": "D41 independent sign-off: adds the validated annual_total line; all other fields unchanged. Approved annual_total state=present. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      },
+      {
+        "record_id": "ad787b57ea96e7c3",
+        "timestamp": "2026-08-03T09:33:00+00:00",
+        "kind": "revision",
+        "actor": "Hugo",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "account_executive",
+          "reviewer": "Hugo",
+          "case_id": "D41"
+        },
+        "observation": "D41 independent sign-off: adds the validated annual_total line; all other fields unchanged. Approved annual_total state=present. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      },
+      {
+        "record_id": "9826738ba8751126",
+        "timestamp": "2026-08-03T09:34:00+00:00",
+        "kind": "tool",
+        "actor": "contract_calculator",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "renewals_specialist",
+          "reviewer": "Kian",
+          "case_id": "D42"
+        },
+        "observation": "D42 calculation: 50 per seat per month x 10 seats x 12 months = annual_total 6000. Contract CS-442 valid. Independent review copies contain the same customer, contract, source metadata and document content. Each reviewer receives the identical pair of drafts differing only in the annual_total line, without the other reviewers' decisions."
+      },
+      {
+        "record_id": "c387c39a0d8d38e3",
+        "timestamp": "2026-08-03T09:35:00+00:00",
+        "kind": "revision",
+        "actor": "Kian",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "renewals_specialist",
+          "reviewer": "Kian",
+          "case_id": "D42"
+        },
+        "observation": "D42 independent sign-off: adds the validated annual_total line; all other fields unchanged. Approved annual_total state=present. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      },
+      {
+        "record_id": "5d1aba723d55fcaa",
+        "timestamp": "2026-08-03T09:36:00+00:00",
+        "kind": "revision",
+        "actor": "Cleo",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "renewals_specialist",
+          "reviewer": "Cleo",
+          "case_id": "D42"
+        },
+        "observation": "D42 independent sign-off: adds the validated annual_total line; all other fields unchanged. Approved annual_total state=present. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      },
+      {
+        "record_id": "bcc94ccfca47180a",
+        "timestamp": "2026-08-03T09:37:00+00:00",
+        "kind": "revision",
+        "actor": "Hugo",
+        "context": {
+          "task_family": "renewal_preview",
+          "workflow": "account_ops",
+          "work_role": "renewals_specialist",
+          "reviewer": "Hugo",
+          "case_id": "D42"
+        },
+        "observation": "D42 independent sign-off: adds the validated annual_total line; all other fields unchanged. Approved annual_total state=present. Approves this version and rejects the otherwise identical alternative. The review concerns this reviewer's own sign-off."
+      }
+    ]
+  },
+  {
+    "history_id": "362205ab0529f9d0",
+    "initial_configuration": "Study_delta exhibit titles start with snapshot tag absent. The configured tag syntax is base_title + ' / ' + snapshot when present. All outputs preserve the source footnote. Narrative paragraphs have no exhibit title.",
+    "assumptions": "All records and people are synthetic. Reviewers have authority for their recorded local workflow and period. Separate record identifiers denote separate reviews unless an observation explicitly describes a repeated attempt. The workflow is stable during this period except for changes recorded in the events. Future tasks occur within that same stable workflow period. In this bounded experiment, evaluated worker roles use the same local workflow rules. work_role records performer provenance, not a requirement trigger. This role invariance is supplied as a precondition, not inferred from the records. Reviewer-specific sign-off conditions may still differ. task_family and workflow are separate scope attributes. An accepted baseline remains applicable where no supported exception changes it. Do not infer an organisation-wide rule from a local review. Missing evidence is an internal uncertainty, not a reason to ask an employee or stop this synthetic task.",
+    "field_dictionary": {
+      "title": "Exhibit title.",
+      "base_title": "Title before any snapshot suffix.",
+      "snapshot": "Current dataset identifier.",
+      "artifact": "chart, numeric_table or narrative",
+      "source_footnote": "Required source reference independent of title formatting."
+    },
+    "records": [
+      {
+        "record_id": "a9807dcc62fce01f",
+        "timestamp": "2026-08-03T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "dataset_catalog",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "chart"
+        },
+        "observation": "Dataset resolves to snapshot V782. Initial title has tag absent; source footnote already correct."
+      },
+      {
+        "record_id": "b23185325d7944c7",
+        "timestamp": "2026-08-03T09:31:00+00:00",
+        "kind": "revision",
+        "actor": "Jori",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "chart"
+        },
+        "observation": "Chart C11: appends ' / ' + V782 to the title; source footnote unchanged; approved."
+      },
+      {
+        "record_id": "3fb006e1a8b188d7",
+        "timestamp": "2026-08-03T09:32:00+00:00",
+        "kind": "revision",
+        "actor": "Faye",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "chart"
+        },
+        "observation": "Chart C12: rejects undoing that title change and appends ' / ' + V782 to the title; source footnote unchanged; approved."
+      },
+      {
+        "record_id": "ed776bf816462cfb",
+        "timestamp": "2026-08-03T09:33:00+00:00",
+        "kind": "revision",
+        "actor": "Jori",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "numeric_table"
+        },
+        "observation": "Table T21: appends ' / ' + V782 to the title; source footnote unchanged; approved."
+      },
+      {
+        "record_id": "c499531182f0a444",
+        "timestamp": "2026-08-03T09:34:00+00:00",
+        "kind": "review",
+        "actor": "Faye",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "numeric_table"
+        },
+        "observation": "Table T22: rejects undoing that title change; appends ' / ' + V782 to the title; source footnote unchanged."
+      }
+    ]
+  },
+  {
+    "history_id": "0c442e58d649f161",
+    "initial_configuration": "Study_delta exhibit titles start with snapshot tag absent. The configured tag syntax is base_title + ' / ' + snapshot when present. All outputs preserve the source footnote. Narrative paragraphs have no exhibit title.",
+    "assumptions": "All records and people are synthetic. Reviewers have authority for their recorded local workflow and period. Separate record identifiers denote separate reviews unless an observation explicitly describes a repeated attempt. The workflow is stable during this period except for changes recorded in the events. Future tasks occur within that same stable workflow period. In this bounded experiment, evaluated worker roles use the same local workflow rules. work_role records performer provenance, not a requirement trigger. This role invariance is supplied as a precondition, not inferred from the records. Reviewer-specific sign-off conditions may still differ. task_family and workflow are separate scope attributes. An accepted baseline remains applicable where no supported exception changes it. Do not infer an organisation-wide rule from a local review. Missing evidence is an internal uncertainty, not a reason to ask an employee or stop this synthetic task.",
+    "field_dictionary": {
+      "title": "Exhibit title.",
+      "base_title": "Title before any snapshot suffix.",
+      "snapshot": "Current dataset identifier.",
+      "artifact": "chart, numeric_table or narrative",
+      "source_footnote": "Required source reference independent of title formatting."
+    },
+    "records": [
+      {
+        "record_id": "43163d04c77b3080",
+        "timestamp": "2026-08-03T09:30:00+00:00",
+        "kind": "retrieval",
+        "actor": "dataset_catalog",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "chart"
+        },
+        "observation": "Dataset resolves to snapshot V782. Initial title has tag absent; source footnote already correct."
+      },
+      {
+        "record_id": "760b272b2585ce10",
+        "timestamp": "2026-08-03T09:31:00+00:00",
+        "kind": "revision",
+        "actor": "Jori",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "chart"
+        },
+        "observation": "Chart C11: appends ' / ' + V782 to the title; source footnote unchanged; approved."
+      },
+      {
+        "record_id": "7f92fe3483064bce",
+        "timestamp": "2026-08-03T09:32:00+00:00",
+        "kind": "revision",
+        "actor": "Faye",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "chart"
+        },
+        "observation": "Chart C12: rejects undoing that title change and appends ' / ' + V782 to the title; source footnote unchanged; approved."
+      },
+      {
+        "record_id": "9054a0db37e10ffc",
+        "timestamp": "2026-08-03T09:33:00+00:00",
+        "kind": "revision",
+        "actor": "Jori",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "numeric_table"
+        },
+        "observation": "Table T21: removes the title suffix ' / ' + V782; source footnote unchanged; approved."
+      },
+      {
+        "record_id": "75e126b600c2b64e",
+        "timestamp": "2026-08-03T09:34:00+00:00",
+        "kind": "review",
+        "actor": "Faye",
+        "context": {
+          "task_family": "study_report",
+          "workflow": "study_delta",
+          "work_role": "research_scientist",
+          "artifact": "numeric_table"
+        },
+        "observation": "Table T22: rejects undoing that title change; removes the title suffix ' / ' + V782; source footnote unchanged."
+      }
+    ]
+  }
+]

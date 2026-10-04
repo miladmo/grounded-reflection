@@ -1,0 +1,37 @@
+{
+  "examples": [
+    {
+      "setting": "K-S",
+      "family": "hr",
+      "hard_type": "transfer_change",
+      "direction": "omit",
+      "file": "K-S-hr.md",
+      "history_id": "history-849bc0a746a9"
+    },
+    {
+      "setting": "K-L",
+      "family": "sales",
+      "hard_type": "unidentifiable",
+      "direction": "omit",
+      "file": "K-L-sales.md",
+      "history_id": "history-3bb964832bb4"
+    },
+    {
+      "setting": "U-S",
+      "family": "retrieval",
+      "hard_type": "unidentifiable",
+      "direction": "add",
+      "file": "U-S-retrieval.md",
+      "history_id": "history-54fba246d24d"
+    },
+    {
+      "setting": "U-L",
+      "family": "reporting",
+      "hard_type": "transfer_change",
+      "direction": "add",
+      "file": "U-L-reporting.md",
+      "history_id": "history-54bce27f3141"
+    }
+  ],
+  "source_sha256": "be2f581fb46071acf4ae6db8c12d4a1f18a75a4257cde917c09a64a9b0d296ec"
+}

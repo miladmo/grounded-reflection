@@ -1,0 +1,37 @@
+{
+  "prepared_on": "2026-10-03",
+  "real_model_calls": 0,
+  "phase": "calibration",
+  "attempt": 3,
+  "change_from_attempt_2": "timeout_seconds 420 -> 1200 (technical correction); everything else unchanged",
+  "config_sha256": "60223819d237ae8e6ed8c6672a080ce21b35ce2a34ece57d42bde65f1efda554",
+  "source_sha256": "11c20819005f229a9428d4dcc18bc5df0d2561018404a9e2d905e1ae22880f17",
+  "material_review_seal": "2d5c5b8068d3bafa40494b43038f516d20c2fdbd729ed27cb64b1b844fd531b0",
+  "frozen_prompts": {
+    "consolidate_C_v1.txt": "3ab7b227f45f3866251ecb6ae09e9ec4f9ad0ec9cf12d675add72323628c26b0",
+    "d_final_v1.txt": "93f1a580a7de3a9ee52eb25b21a6020ba14c3cf1778486ccbe79e6efe35d22e7",
+    "d_index_v1.txt": "844d3a2bce808651a94c4de6a457c7a5d1aa39e931c2dc0769b296c3dd1a2ee5",
+    "d_round_v1.txt": "0d132e761c4f351d6678631d8f41954baf986249a5c1f75ebbcace16f6b8872b",
+    "generate_v1.txt": "2d2d9cfb352bb02af0fd5fff05edb6f7214f3b2d6cb9d1acfd4c5fb21bace2e7",
+    "prepare_chunk_C_v1.txt": "950fc65efad767e791dd4515b84c9b9b9b5e41231282c9d99216c2f1f0523762",
+    "shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b"
+  },
+  "python": "3.12.14",
+  "pydantic": "2.13.5",
+  "offline_tests_passed": 503,
+  "mock_calibration": {
+    "directory": "pilots/v05/runs/offline-calibration-20261003",
+    "manifest_sha256": "e97700efd147619f612ac650df5671cc762bf170dfa72053eb4d977f0c12796e",
+    "attempted_calls": 124,
+    "complete": true
+  },
+  "previous_attempts": [
+    "pilots/v05/runs/live-calibration-20261002 (killed by session limit)",
+    "pilots/v05/runs/live-calibration-20261002-attempt2 (timeout, unknown usage stop)"
+  ],
+  "estimate": {
+    "calls": "about 130",
+    "tokens": "about 2.0 million",
+    "runtime": "about 2 to 3 hours"
+  }
+}

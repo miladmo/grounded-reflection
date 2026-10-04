@@ -1,0 +1,392 @@
+[
+  {
+    "case_id": "case-dbd31a91da82",
+    "family": "recruiting",
+    "category": "transfer",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-dbd31a91da82",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "research software vacancy Kdbd31a",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "work_ownership",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "role_page",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "hidden",
+      "hidden"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "community_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "email_attachment",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "capacity_planning",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-38623db1868a",
+    "family": "recruiting",
+    "category": "boundary",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-38623db1868a",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "research software vacancy K38623d",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "capacity_planning",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "planning_queue",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "explicit",
+      "explicit"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "community_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "email_attachment",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "work_ownership",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "role_page",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-e7ddb752bbc1",
+    "family": "sales",
+    "category": "transfer",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-e7ddb752bbc1",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "measurement software opportunity Ke7ddb7",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "unresolved_needs",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "account_workspace",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "hidden",
+      "hidden"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "product_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "local_spreadsheet",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "portfolio_coverage",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-8e9af8e12612",
+    "family": "sales",
+    "category": "boundary",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-8e9af8e12612",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "measurement software opportunity K8e9af8",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "portfolio_coverage",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "territory_board",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "explicit",
+      "explicit"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "product_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "local_spreadsheet",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "unresolved_needs",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "account_workspace",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-7bbe5e1fae8f",
+    "family": "research",
+    "category": "transfer",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-7bbe5e1fae8f",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "synthetic assay study K7bbe5e",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "limitations",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "versioned_notebook",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "hidden",
+      "hidden"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "novelty_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "unversioned_export",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "programme_milestones",
+        "scope": null
+      }
+    ]
+  },
+  {
+    "case_id": "case-fd02e0b9dd2a",
+    "family": "research",
+    "category": "boundary",
+    "checks": [
+      {
+        "field": "source_id",
+        "operator": "equals",
+        "value": "source-fd02e0b9dd2a",
+        "scope": null
+      },
+      {
+        "field": "summary",
+        "operator": "contains",
+        "value": "synthetic assay study Kfd02e0",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "programme_milestones",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "programme_board",
+        "scope": null
+      }
+    ],
+    "check_kinds": [
+      "explicit",
+      "generic",
+      "explicit",
+      "explicit"
+    ],
+    "allowed_actions": [
+      "deliver"
+    ],
+    "missing_fields": [],
+    "unresolved_output_fields": [],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "novelty_story",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "unversioned_export",
+        "scope": null
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "limitations",
+        "scope": null
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "versioned_notebook",
+        "scope": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "sha256": "a4c3ae4440f56255d1a1f048eb52f864c4cb6b2a7c126253065a28a292eabc4c",
+  "files": {
+    "index.json": "b9672bffe8db32606e3d1d0704e315fbae30e77cf5defcd3f46a7fdfdaaa3b40",
+    "K-L-sales.json": "cc5aa0a20876079c08c68213cb8c82596b8474019a9d8eb905b24e4ece70810a",
+    "K-L-sales.md": "7063afd3650d0407a183564ff8be400add793272d1266be924d4ac9f0c09a140",
+    "K-S-hr.json": "1ce8b569382c1ea9b3bab2edf5872b0f50ccab89766546f3a66641810a04750c",
+    "K-S-hr.md": "513ad3e2ee6d35a3ec9e49a69e8294a3b0862803a54e4bbd826ed9ffdafca177",
+    "README.md": "70fb3cf21be8d9971f92a0a4461c577d0369cf3171e04f3ebc98c25aca0812d5",
+    "U-L-reporting.json": "435bcbb32b59160c3a95cf5a414ab4e321177c441c9d4c7e328dad7d3a0531a6",
+    "U-L-reporting.md": "ed361759cf3a65b62151bb2b1c23861b4cfa71f1bb627c0440221b762873acd2",
+    "U-S-retrieval.json": "4f425ddb09c63fadfcc5005566aec745e01e8a9324c1338f6a3c2ca59b64d1c0",
+    "U-S-retrieval.md": "763ed23b46b4fd49b20e0b9a2a2ff6671d73bc7e9664b635a321dfa6e7da01a6"
+  },
+  "sealed_at": "2026-10-02T09:31:17.140112+00:00"
+}

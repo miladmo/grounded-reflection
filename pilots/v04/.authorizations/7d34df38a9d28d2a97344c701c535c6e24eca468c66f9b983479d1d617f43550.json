@@ -1,0 +1,8 @@
+{
+  "approval_sha256": "7d34df38a9d28d2a97344c701c535c6e24eca468c66f9b983479d1d617f43550",
+  "source_sha256": "1445c361ca7c3ec2f1048da47dc84432618545ab0fec94205e470205409badbb",
+  "material_sha256": "f2a7b110f5afe7837ee3864c9d708842c2c7d9ec17c532da4984b6b4d3ee965c",
+  "config_sha256": "23477ae8e2f511227f84cdcb1acb45f264b1d15ca704d8e628b0cdd145678829",
+  "output_dir": "%USERPROFILE%\\Downloads\\RWTH\\RWTH\\Research\\PostDoc\\05_Software\\grounded-reflection\\pilots\\v04\\runs\\live-fhgenie-high-20260930",
+  "reserved_at": "2026-09-30T21:16:35.979628+00:00"
+}

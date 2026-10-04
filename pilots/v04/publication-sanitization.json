@@ -1,0 +1,849 @@
+{
+ "archive": "grounded-reflection-originals-20261001.zip",
+ "archive_sha256": "822eb28069c67c2675133649edb6ef28f2d2fd9db6733489149b99b239cd6f2c",
+ "modified": [
+  {
+   "path": "docs/pilot-v02-protocol.md",
+   "original_sha256": "3e25574af8703daf633b8aa16a83dd2cc81b683ce0e9b5de4d4cfb25cd655c27",
+   "committed_sha256": "5f64b73cf90cd13554f7eb10e67edc72991f9a0b09d1f03ea6e647538c8d6388",
+   "change": "industry partner name -> generic wording"
+  },
+  {
+   "path": "docs/pilot-v04-amendment-04.md",
+   "original_sha256": "60d9f1a649e5d7352d74e56ffb033738c14e501d111ec5fe90c788cf3f0d5dc2",
+   "committed_sha256": "bee0a12d32e70198e2d2dd9c7f60db19a0b21506b4f97267dc7143dbdb87b789",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "docs/pilot-v04-fhgenie-transport.md",
+   "original_sha256": "c6cf72d40732b64122c7d4631a40ef3f4075481e0717e943c236fbaaefd8ab12",
+   "committed_sha256": "49766b6f98fa5510becbee8f64ee42e564ff27d80e991f648a74c41e885cad42",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "docs/pilot-v04-protocol.md",
+   "original_sha256": "b617e48ef51bcda0c0e1c329dbe202369731a9e5e84e4fc73dc64b4d063f96f1",
+   "committed_sha256": "0e25e6629e8f187cdabfa2a5a9ee59f37a6cfa3c4ac27dfa5b17a71687ff8855",
+   "change": "industry partner name -> generic wording"
+  },
+  {
+   "path": "pilots/v02/DATA_CARD.md",
+   "original_sha256": "95f8be08531c939733d292ee31e56218210c4c51293adae921a03f4744773464",
+   "committed_sha256": "8be53a7262dd6512e76eb3cf9443788984b8a527c63461409f0e7cbd323c9ac8",
+   "change": "industry partner name -> generic wording"
+  },
+  {
+   "path": "pilots/v04/.authorizations/7d34df38a9d28d2a97344c701c535c6e24eca468c66f9b983479d1d617f43550.json",
+   "original_sha256": "65bb256a37c734231e235061cf6b702c7b8d3ea26f041fcced20f71c41dd3a36",
+   "committed_sha256": "ec28fdfa4402862d0826fa620c9d9db028f40d6575195f1892bd8f9efe5f3305",
+   "change": "local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/.authorizations/cc618ad05f5a63333332c091ea8b3d4a5631530af98b4ece5ecf51ff836b793a.json",
+   "original_sha256": "be9938580fbc78ddc746d230ec8b8aa553de714297da7bc60bbcc9c574c70117",
+   "committed_sha256": "3414f7992fe2029d20bb1e036f119b078912a151c42cffed2d049ec86818ddda",
+   "change": "local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/README.md",
+   "original_sha256": "56aafee76049c37b6868dc12e8c202cb94d9d92cf4a3d3da59f09d25156fba52",
+   "committed_sha256": "175e1941c206314ee8a9a3737d83cef616759d290d0982b5d6856fbc0ca31d7f",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/plan.json",
+   "original_sha256": "3ee95edd8d63481ed32eaebb5a16c186b377bd306429537515606866eea920b6",
+   "committed_sha256": "7f81b96ac1980c64c1ffe13a7c0c51c64a1b8e5fb37c795db0aaef7518d7e7e8",
+   "change": "endpoint address -> placeholder; local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/01-C1-C-H1/metadata.json",
+   "original_sha256": "16bdc5826b171e3d388af9eaf9ad2607a594660326550d520111a6703110e28d",
+   "committed_sha256": "eacb54a2a527468c43583286ace4e647cb84c8c4cf198a51be6ba7f69582a479",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/02-C1-C-H2/metadata.json",
+   "original_sha256": "78c95b35771b57fe9413010d61bf050726ad2efc6edab2b5da9b20ce3e6e2f6a",
+   "committed_sha256": "c197f9afe6a1b5f29dfa4166b536c800432fd58c3bd3107eb488ddcb06fcb95b",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/03-C1-C-H3/metadata.json",
+   "original_sha256": "3b3edbeff2c08b1377700aab21356a8868c63aae93cd982accf085ff6cc04705",
+   "committed_sha256": "b62af6d1ca1fc1170852acd754bb5f1628243d877db39ff3b963aa13b644d6c4",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/04-C1-C-H4/metadata.json",
+   "original_sha256": "fae16568fb2758a90a47c8c8fa443922c7deb2ad623e0ee6ec8a9932827afba5",
+   "committed_sha256": "973389df693683f38ba82a3ecb69b6efc9df5d5dbd58d8e5497d65f9f94959ba",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/05-C2-C-H1/metadata.json",
+   "original_sha256": "33a9c62e8e5c097ff96705f0da8c8b24199d11c1c590608897a7087b493d8a21",
+   "committed_sha256": "edbb6c545999b4ce35ca5f0ad16b784c5ba049a3b3fe3d2f8682b902fd10b900",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/06-C2-C-H2/metadata.json",
+   "original_sha256": "18063cc418c840e6ecf6027e5f4b00123354fdc74a48be20a66cfbc2cd15d02a",
+   "committed_sha256": "5b88db643caf66744b96213e16db0875c18393d9a82f90c8e366b52bff02a7ac",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/07-C2-C-H3/metadata.json",
+   "original_sha256": "b6d88e84e2127151021f3fdc5a02edbc7fcd7928a1108b31de549a0709928e01",
+   "committed_sha256": "8c4ec1ebd470fd515c8c29d3f948f251d2a54d760112d23ef68ccdb547273ebe",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/08-C2-C-H4/metadata.json",
+   "original_sha256": "e3002cef858393aacedaaf523f1a82707a060074a9438d4ac8d302a69ac8adb6",
+   "committed_sha256": "017d7d38128e3b87045388ceceff2c2f3e458b0a1503bcd83f0f0fe8024f9894",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/09-gen-C-H1/metadata.json",
+   "original_sha256": "c2d9643823c4c713bd05f966eb2d65ece597a02c8f18efccb7f2bfd9368740a6",
+   "committed_sha256": "f6368a36efb9021281f3756babd0ce8c0fed17a85fbb195ea2bb01f579e975b5",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/10-gen-C-H2/metadata.json",
+   "original_sha256": "7ff1d47d346bb1f82fdb80ed56f2c48284bcfaaa7e8948a0d2a793914b63f51b",
+   "committed_sha256": "b9626d022119bc88aef58f2f1b2e9cebd22cbe03f1daadd879168e466169e11b",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/11-gen-C-H3/metadata.json",
+   "original_sha256": "586e1d8d48e11136c3d0313cdf5239e6e3ade78cfdeea5f15ba1d9c8a1390f78",
+   "committed_sha256": "b6e08fb900cbe9f6b76d5505b35d8d5fea1cdf095ad1e9a477adfc4a91b87823",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/12-gen-C-H4/metadata.json",
+   "original_sha256": "04d24e90cd92d79bfd7f691a3db1b3266c3fa88dc7cb22038b1c1da21641d1c4",
+   "committed_sha256": "a0b7719f86eed138d310ab2ca56c98d244eda95619b99b5b5d5a33ae81adcdcf",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/13-gen-B-H2/metadata.json",
+   "original_sha256": "bdb5ba178d1f1e0e435fa265c8c208a701c3dc52f5432702536b5c672f4bcd90",
+   "committed_sha256": "0ee89bcb6fd6349072cf5d0ed805c908c56e781d4ff1252474b731534039953d",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/14-gen-B-H4/metadata.json",
+   "original_sha256": "0bb7b0717e7ad654f5f2b986076aabc854d6c6f498d8cf1c008a8f86164ddb53",
+   "committed_sha256": "ca2d92f93787b7cd5a50f266133bf17d6c4a228c373ea1d3ab31b1eac8fad095",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/15-gen-A-H1/metadata.json",
+   "original_sha256": "7f6baa50284fbaab90c0edde8d7de867ff9a3e975dd5e54253ade8194d1f29c1",
+   "committed_sha256": "e58ce58b605b836d246fb63c5486b6bbb255cb2dce58df6e1b2c60ee7d44511c",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/16-gen-A-H3/metadata.json",
+   "original_sha256": "a4a0a0d08d9d9ad89998fa0deccf9c939b30285b056669671197cf75a310978a",
+   "committed_sha256": "053b0a833974a025783b8275b54bd7b7b68d03b314921ca351c062c5f6c2bb91",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/test_contract_test.py",
+   "original_sha256": "613001b34b237bff11fd16a9febfdab5d3dbe4d2bab0d406b9d0649cd8141163",
+   "committed_sha256": "00ea7b6983091fac11bd3073b17bc698fb7992f11e11d81cfc424e285fcf1a78",
+   "change": "transport code/tests changed after the run: endpoint read locally and verified by SHA-256"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/plan.json",
+   "original_sha256": "c0fd147d987f5e3115a087c7b55c76e97e7d5a13296a535df857433a03d08abe",
+   "committed_sha256": "ab65a6c6b4b15bf497f740abde6ea5c34e549e67683230b2af2895c06f3d5f69",
+   "change": "endpoint address -> placeholder; local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/01-C1-C-H1/metadata.json",
+   "original_sha256": "a4de4eabcb99602834b9aaa8265aac249de013c5b9e51cc109fc1cbb4a760e2f",
+   "committed_sha256": "4ebdfce0c839f988a6e36a5c6fffd11782e7c5e9a536203c3965356a3db404fe",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/02-C1-C-H2/metadata.json",
+   "original_sha256": "b5ab0e4ec2bcc8f7a56bdd920759365d3387c589a27e3592a4a5a5b47181e53f",
+   "committed_sha256": "097c0716fe390e53ffb13f14b03149b38931dd773681e3f0c63b04eb96b3e5a2",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/03-C1-C-H3/metadata.json",
+   "original_sha256": "7c70932fd063f21c0ada69f93c4e2c275c051dd60f1ef8bde25576a1cff274ed",
+   "committed_sha256": "6f609ecbeff31cd933381afaebb2e478ccb849d5a9a546b9d534cf6f93f6ae62",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/04-C1-C-H4/metadata.json",
+   "original_sha256": "a9a733a149e8e8cac6673d22d741e9927adc623101802ded4995b08f11005636",
+   "committed_sha256": "d0e025399229df079ed2f3fc18ed4ad2befc2fb080a767f296b0f388d171f933",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/05-C2-C-H1/metadata.json",
+   "original_sha256": "ba1d911dd917d93526fe05046abe922a82f33519eaea8a929fdaf8ef664d5440",
+   "committed_sha256": "838412b7e3f9e34ffcc520f4590cbeeb36c961ee2171ae1b18e7ceaa6495db32",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/06-C2-C-H2/metadata.json",
+   "original_sha256": "5c091b6ac6d0e64dcbff88621ad4a44681b92c8590d30b12f865afd2a06a7f29",
+   "committed_sha256": "a4069e844c71e97ec9737a2c3fcfbf7b4b1016bc6c4ae91cb1fa636b6448243b",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/07-C2-C-H3/metadata.json",
+   "original_sha256": "0da449af65cb90d67b5fee033c2d5403681bd8af1dcb79d4787a3555028198a8",
+   "committed_sha256": "24d2ca3188dd9af8bd6557d232c28f4a58eff7fb4b48a48105973293f957803e",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/08-C2-C-H4/metadata.json",
+   "original_sha256": "7a446e9a50fdfd54205ede64c8fc8b0e4c23693979d877a093757d86a7a7c81e",
+   "committed_sha256": "6af7e20c778e3551da516f5db5ba3a9e831250dab5e26c711b8be6bda578a6bb",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/09-gen-C-H1/metadata.json",
+   "original_sha256": "fa2d69d2af1916ba28bb9894ad06c7003dbc3c9a642494ce763870d06653944f",
+   "committed_sha256": "e5157623bfe32ab5a8e990565c17233a2a885a39f937a8be94a067ecdf6a5e66",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/10-gen-C-H2/metadata.json",
+   "original_sha256": "bad53808604d71a6e2b94c9a19eddfce62ffc758a3fd4428766e4e24c0e4591c",
+   "committed_sha256": "97d3843aa7ff378352f72b965dfe55061c19d55509a3f7b139fc24a50fb94cf4",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/11-gen-C-H3/metadata.json",
+   "original_sha256": "80889e1cf7f4ec88e922c1f1ae7ec77e423ab003bef973e3aacaf70cf10aa8f6",
+   "committed_sha256": "580ac97feaeadf439f61700810d49011d18cf5a254c18c023c04ad24ee8fb403",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/12-gen-C-H4/metadata.json",
+   "original_sha256": "81502f203af8bf069083cf8d5f2a300bf3db86f9e5f9092e7be58a075b93c6b5",
+   "committed_sha256": "f135c170ef7e3fa5570400b39c6ed271711f0e29fde4e8edb2fcc9fc514bcf89",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/13-gen-B-H2/metadata.json",
+   "original_sha256": "185c9e3a6e439b41ac8bf29e1be1db469ffa96afec8f95848e782e081abfc8c8",
+   "committed_sha256": "b6db34b42f5d5f149415b57bae36ec3ac557b1bb2836eaa110f99ba25542206f",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/14-gen-B-H4/metadata.json",
+   "original_sha256": "4dc7844bef66036ae88920e4cf9ee6a89db9ad9a34eda1eb6d621aa88f5fa3f4",
+   "committed_sha256": "7a6868ca00d437ec0a70990549cebcf0583feace3cdbfd504603bea73e87dfd2",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/15-gen-A-H1/metadata.json",
+   "original_sha256": "492949aef669498b4d2487aaae458076aa2f2972bb782791bd31e45bf5287e6e",
+   "committed_sha256": "7165fdf9c7aea7d7dc22cc94dedd3f8767807fd0551365466e2a6a5b9972e528",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/16-gen-A-H3/metadata.json",
+   "original_sha256": "b1ef9e778b9a353c263e4b28d1612b64497e1cba56b4eeaab699c1c7ee8b8516",
+   "committed_sha256": "b88c4e0293d0527f9142dbd2ad286ae77f4489108d0424a71518bec485844144",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/test_contract_test.py",
+   "original_sha256": "6e4abf4942fbf25911c3d7f9c12cb1e1ed332d08143161b831805d2c4e98db92",
+   "committed_sha256": "8554b87bbfa7d545948aeeec04b466a6f828c17d03f544069d5330fe38ded205",
+   "change": "transport code/tests changed after the run: endpoint read locally and verified by SHA-256"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/fhgenie.ps1",
+   "original_sha256": "ce88f8baa8d3f9c02dced7b2e03671ffd9dece2b88ddd48556e97ad65d55e237",
+   "committed_sha256": "5f7440b992d5ed81e1cd590bdaa99d18248735399754eb7af12f7ba2a608737d",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v1-20260929/plan.json",
+   "original_sha256": "36b4df7f563f9aaf8abf869e5c96123555944835c4554d53f922ba7e54a8216e",
+   "committed_sha256": "099b194108c201d711bc369613dedbc6c1f83039e70df56061adf22d356547bb",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v1-20260929/probe.ps1",
+   "original_sha256": "9042d3f2c14e621bb5a6026980e79da5bb2f519e7a7f2de99246badc291a8c35",
+   "committed_sha256": "6541110990f97f54e719286c3f8f1fc929a3ae30323e9c458ff8b7ce89098a93",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v1-20260929/test_probe.ps1",
+   "original_sha256": "8ff3e9a022001a46b72840d9699e8682d28f37508d54729afd4bb04ef70ba5a4",
+   "committed_sha256": "338dd247028266d5dde0dfbabfdcead1865db8eb9b8663a138a3d06fcb4fd76c",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v2-20260929/plan.json",
+   "original_sha256": "1eebe9265fb3f9a1ec7980cba4c9c2d05a830ddf8a8c08bc427cecf361aac25e",
+   "committed_sha256": "b7900de453806479b286ee454410d05857be46534cbc5d4512b4ba8ab055a474",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v2-20260929/probe.ps1",
+   "original_sha256": "86371eb4efe5598fde608cd151bde4945e4a6dc73e56d27530dfb6924e8d325e",
+   "committed_sha256": "17023c1a3b19b68f2cfe357e2479f00feb4e676d86851200cbb70d88a119eb91",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v2-20260929/test_probe.ps1",
+   "original_sha256": "dd66f4a8a9a881106b42f60e56762f32302033383f890d7c53059817dcf7cc6c",
+   "committed_sha256": "9bcf0f143805fc373b6a8ea5b7ef27c958783e90500493a83226b32a325ee43b",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v3-20260929/plan.json",
+   "original_sha256": "80394dfa9a9d583f5c03025594c507758b045dba299acc84e8b932e20d59f3d7",
+   "committed_sha256": "0206620522b3ce4621df40785133e963a492312359eb071d117e92b5d11bc479",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v3-20260929/probe.ps1",
+   "original_sha256": "96db898efce1125d22c13c1e2a529baff9097025434ae8d3df7ac717fc5b641e",
+   "committed_sha256": "a9232460619c0524fd279d54420db61d845dd93556d7ebed84749e3575375ea6",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/probe-v3-20260929/test_probe.ps1",
+   "original_sha256": "66e7438cde506351ee5b1bb0bf892786fe533f4957171af0be2c9baf2b8e7fc8",
+   "committed_sha256": "7b1f485fc3e8e8acbef4652821ccf6521a3091e6604625be50317f34c92bed8c",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/fhgenie/test_fhgenie.ps1",
+   "original_sha256": "fe05f0a125c208069ed6976547e9136d35d9cecf1be357b6a422b4c00cc07415",
+   "committed_sha256": "ad0b9818662f0691caa15565578f550d2be82d2d3fd95c53bc35bef2a8445bb6",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/diagnostics/transport-smoke-20260929/attempt/summary.json",
+   "original_sha256": "c1f1d5ec9d1806196242f661d768edced0d1ea0346c47412eaae79a2dad224f9",
+   "committed_sha256": "1856d0bb87d10da119b1ba12dde6fc0b4b87f0edc233fd99f154e7bab921915c",
+   "change": "local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/diagnostics/transport-smoke-v2-20260929/attempt/summary.json",
+   "original_sha256": "b07faba9ac88057071b8a888d7e29321dfec26543bf7d98fb16df4c4a49254dc",
+   "committed_sha256": "72ffd4fda337aec62c58c0b22b751f7520402d646035f9e2917cac6e8e9689c6",
+   "change": "local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/diagnostics/transport-smoke-v3-20260929/capture_local.py",
+   "original_sha256": "86c571916538097572ca25b830ee9a161fffc6088acbdc7704c30f881882f0eb",
+   "committed_sha256": "329aa623aea91917502c15adc600753387d07dcb8f5818f1a63a3151f9a7d315",
+   "change": "local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/preflight/fhgenie-20260929/LIVE_FREIGABE.md",
+   "original_sha256": "70ad8897fbfd65a84c14b8e704eef34b815247541690946c3a4846edffc241b4",
+   "committed_sha256": "e585b54b8cab487e7cfcb60c1e455e3a2f4cab5875ff1222d9b88ca783c1ca9c",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/preflight/fhgenie-20260929/copy-verification.json",
+   "original_sha256": "509bbc535a02e375147292ddd1afae3436ca06825c6f359162c931a78903d9bb",
+   "committed_sha256": "36c04d0a44a2b4e86b6b1f095dc5512b6513d129499518e5613903ed7d85a823",
+   "change": "local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/preflight/fhgenie-20260929/run-config.json",
+   "original_sha256": "54a65d9ec390e2d14d6e5b9c8698eb0d5c914ec1134a043722350e39159f94cf",
+   "committed_sha256": "ad78c4c6e57583bc53307e73922bbd6f4246ec4b834ca0c0cc198a8250cc6df6",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/preflight/fhgenie-high-20260930/LIVE_FREIGABE.md",
+   "original_sha256": "6d14266991c24596b82b3d623f05d3474ff63b080bb5aec2bc05615996cb537d",
+   "committed_sha256": "bb1cd6084b066ca111f2a4bf4cdac790917e9b24a1c8919a86d5d62a5a20902d",
+   "change": "endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/preflight/fhgenie-high-20260930/run-config.json",
+   "original_sha256": "d0da743cb0c49fcd33b1fd366c1a284ea51c2f1da62746bf00c625b9287556af",
+   "committed_sha256": "378b349d6d1a10282ffcd8e63979e5a22728dbd67f733bf9e194b774e51115e2",
+   "change": "endpoint address -> placeholder; local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/preflight/fhgenie-high-20260930/verification.json",
+   "original_sha256": "8e760984aaef5e35d2f2c1e8dfc284b577470933df87c6638378049e756c3873",
+   "committed_sha256": "5b89802a62027c173b81ef751906f5dbd613c6e72cb631db0430181ec25fec78",
+   "change": "endpoint address -> placeholder; local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/preflight/live-20260929/verification.json",
+   "original_sha256": "b63013de237d64c16490ba8ea321387b7356208da80acb2c29f6d77c1d716371",
+   "committed_sha256": "811ffb1cf1135563260a3d53983d0d8ea55f0bc7177a484f194e0bbe32cf73cf",
+   "change": "local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/reflectai_v04/config.py",
+   "original_sha256": "a2b63261bd81c1711e4e7a799b0e575783099e7416cdb97a8ba090fe2059fa3d",
+   "committed_sha256": "db45bfbc01e7a73b567bb3049905428eb8c0a34fc02509d5862718605a931f85",
+   "change": "transport code/tests changed after the run: endpoint read locally and verified by SHA-256; endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/reflectai_v04/fhgenie_transport.py",
+   "original_sha256": "38f275261ee4d48797a97fe41d5737704f869f1268843ee2cca67fc146c67bf5",
+   "committed_sha256": "593c5102a87ff8101a4ab25dd9264741629c0df591ca788e335c223fecc1509b",
+   "change": "transport code/tests changed after the run: endpoint read locally and verified by SHA-256; endpoint address -> placeholder"
+  },
+  {
+   "path": "pilots/v04/transport/fhgenie-request.ps1",
+   "original_sha256": "bb79246517ba609b3506e21d0c1abf83c51785fa89897f0174813606ff0befd6",
+   "committed_sha256": "36e06b3ed2460d6971f6fe20834c57133c8c8c150eb2d10705bcac80bb59e815",
+   "change": "transport code/tests changed after the run: endpoint read locally and verified by SHA-256"
+  },
+  {
+   "path": "pilots/v04/transport/runtime-attestation.json",
+   "original_sha256": "510412e3102687ef6ceab910fb7c3acc6f7ffb7ae868c385df3a9607ade2a9a4",
+   "committed_sha256": "f5d0f9ccaebcf9ebd502b0f0ac68994628fd0e49b49ad77f2ddaa80bb3de7a91",
+   "change": "local user path -> %USERPROFILE%"
+  },
+  {
+   "path": "pilots/v04/transport/test_fhgenie_request.ps1",
+   "original_sha256": "0d4a3532c8aee9184baba156ce332f10cb87ea2fd027f60dee357848a6bbd0f1",
+   "committed_sha256": "7245addc6f5e64f2f1a0b9ed01b95294f80dba5eca18abf33cba9138b6ea5eec",
+   "change": "transport code/tests changed after the run: endpoint read locally and verified by SHA-256"
+  },
+  {
+   "path": "tests/test_pilot_v04_fhgenie_transport.py",
+   "original_sha256": "ca884a98e024641bb6b7747739825c8ff803e1e8387001dfe9975928f5b6df4a",
+   "committed_sha256": "b3150a2cab7a659c171d40515358387b959280d62a60b3fda184b3ea4907ef0e",
+   "change": "transport code/tests changed after the run: endpoint read locally and verified by SHA-256"
+  }
+ ],
+ "new_after_archive": [],
+ "excluded": {
+  "pilots/v04/review/*/sources/**": {
+   "count": 301,
+   "files": {
+    "pilots/v04/review/materials-amendment3-20260929/sources/binding.json": "8f1d5e4826805b6e9d55ba318291c47f8252ae1b4523ea7716fdc5a397c0d453",
+    "pilots/v04/review/materials-amendment3-20260929/sources/docs/pilot-v04-amendment-03.md": "0b5bc94567eaa15520d1734a460431bc4d651b5bb43748b5ce528e6dd840a593",
+    "pilots/v04/review/materials-amendment3-20260929/sources/docs/pilot-v04-protocol.md": "fa1fc10f1f213af7d526fadf19891070adfdebfcaea107663cef5be40ba18a39",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v03/reflectai_v03/__init__.py": "26f38842a0502cb75d02a4913e5b50fc7c5e133728a4569c226a018130eaa509",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v03/reflectai_v03/context.py": "75c0ac74dfcf2c88a5c079879be1cb20f45cc0c753d6398f1fd10caf38de7d9d",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v03/reflectai_v03/contracts.py": "05944b171b341c070e37cbf0fec250a5e66c6adcb2c929a5609c7d1731e47b42",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v03/reflectai_v03/evaluation.py": "67dc4cf3081de9cb4e444503d826de8f2ea84f9879384988c00b1a4d3d2a28cd",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v03/reflectai_v03/wire.py": "3c0bc3d762b6bd56b877dca9b25dcee896449f82578eac3b0fded5230315c39b",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/prompts/generate_v1.txt": "71d534ec42df93fb255661851569b11626740ff1415816f3ccccc444bcef24bd",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/prompts/prepare_C_v1.txt": "33be323abde404ec8bc6c11584f1c00d4e2eabde3fd8074468f0808d20177ea7",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/prompts/review_C_v1.txt": "67963d0457abbb1fb42ddb8eb4edd0bd46666720b6021fe08a5de3c6667f32c2",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/prompts/shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/__init__.py": "91380fab96193615642454ef748ae6f1d17b2349b99af9c289a618cd5d54696f",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/backend.py": "bd7b891e1d792bfc1b490cde096de055906458ea226aabf15580ec5f55400001",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/config.py": "d0fa0d6e8ca330f34ca95af13d50ae94a3aad20de0f7d13916db8424ff8c7fe5",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/counterfactual.py": "ae73072d02e59880af82c56987b8799c71f8d055f1589806222bf30cc67b8ae0",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/data.py": "1e025717d8e172c7d8474a8507545a8421c05507f1bc7225ecc5f7fd1991312b",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/data_contracts.py": "a8d6739f65bdd02df0ef4874cbf703a3a12c46cd95b852598aa50f8c54b5ba70",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/evaluation.py": "9f9414813b176a5e2daf95f6eab91242dc404889de2a25480ce758c97ac9dde0",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/oracle.py": "401e87aa828e8ba28b590bf19183a866dc05336cac2e95952dc6d43ebfbe18b0",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/payloads.py": "951cfc01854d6a402a8a8860a4d6d8305d7278af2138865849b29c6ea7746b2c",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/report.py": "773347cc30e055e4b320a7d9cff711a44a546fe5cfd8ed2517bee9804a1065a1",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/review.py": "967344a93ed65566d2aba2ca12dcb4fbffb1eb0728b6793a0e00440d19582d79",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/runner.py": "30784b9c8cdff23b4048e9d4ac28a27cc3b9d3e1e704b734cac2479a5910b477",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/reflectai_v04/storage.py": "7df0ac604f510f917e2f495a965c7a91691d320192093f5f97f12232bb8df328",
+    "pilots/v04/review/materials-amendment3-20260929/sources/pilots/v04/run.py": "32a73dbb1500b1dd3ab744c44ce023db89e9b29f96b8b89cb9432a0e5d314f97",
+    "pilots/v04/review/materials-amendment3-20260929/sources/src/grounded_reflection/__init__.py": "afbfc7215c8900bd1396433ecd252cfb915cfd78ef3ad83e51e9686af992a2be",
+    "pilots/v04/review/materials-amendment3-20260929/sources/src/grounded_reflection/codex_backend.py": "5629534a6af79f67dcee39bbc2a8c413d008512d7a175412cd2ee74333cfbff6",
+    "pilots/v04/review/materials-amendment3-20260929/sources/src/grounded_reflection/models.py": "04ca17f0ae0cc30958c683d53f4d865241fa09b8b3ecae877d2742800055ed24",
+    "pilots/v04/review/materials-amendment3-20260929/sources/src/grounded_reflection/workflow.py": "d5f6f72cbce5233cc3c471e6b0d45ce1c0d1cebac45b9c28eb081864a7e0a152",
+    "pilots/v04/review/materials-amendment3-20260929/sources/tests/test_pilot_v04_counterfactual.py": "d618fbee30c013a80a9912b96a95c0898cdd2c2eb1f442d95116f23735e833eb",
+    "pilots/v04/review/materials-amendment3-20260929/sources/tests/test_pilot_v04_data.py": "b261c5c989b39f6ae460397f8cb58848237b7efd015980a7abc182c668238e05",
+    "pilots/v04/review/materials-amendment3-20260929/sources/tests/test_pilot_v04_evaluation.py": "236103cd726d830bcecb2205b9adb21120883d18971bc8db9e861b2d4c67de3f",
+    "pilots/v04/review/materials-amendment3-20260929/sources/tests/test_pilot_v04_execution.py": "00c4540ba0a0fcc278d29ca7c9c730444b5a88aed81c48bc077d750fead6a60c",
+    "pilots/v04/review/materials-amendment3-20260929/sources/tests/test_pilot_v04_input_boundaries.py": "8b4f0c3035994386c729e135054af140f4161cd85b6eb4dd2827367ba13ddbee",
+    "pilots/v04/review/materials-amendment3-20260929/sources/tests/test_pilot_v04_oracle.py": "8ca45461546a2f440579ce44f883cac52031dddb0ab89570f383de5a6460fe47",
+    "pilots/v04/review/materials-amendment3-20260929/sources/tests/test_pilot_v04_runner.py": "05cc38e28c89e417a45fa8c39725b3370175957998705c8f8c6781433a3e6120",
+    "pilots/v04/review/materials-amendment3-20260929/sources/tests/test_pilot_v04_scope_analysis.py": "de7173d9e1d1c48cd71f598f2e90a87840673e917eae0e84e079845ed084bce7",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/binding.json": "5cdd7282bc73bd2060c539222bd43c430f0bdff8682b370501b1c32bbd32fd52",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/docs/pilot-v04-amendment-03.md": "0b5bc94567eaa15520d1734a460431bc4d651b5bb43748b5ce528e6dd840a593",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/docs/pilot-v04-protocol.md": "ce0c6e0c9620207f4e68080075505f5b5ba6d7969f048eaa63389199846de4ef",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/docs/pilot-v04-surface-repair.md": "04f6bfa43e6bb85b7e83cd7acd19fd5d4f4269a319720c4738ff837f6fed4894",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v03/reflectai_v03/__init__.py": "26f38842a0502cb75d02a4913e5b50fc7c5e133728a4569c226a018130eaa509",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v03/reflectai_v03/context.py": "75c0ac74dfcf2c88a5c079879be1cb20f45cc0c753d6398f1fd10caf38de7d9d",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v03/reflectai_v03/contracts.py": "05944b171b341c070e37cbf0fec250a5e66c6adcb2c929a5609c7d1731e47b42",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v03/reflectai_v03/evaluation.py": "67dc4cf3081de9cb4e444503d826de8f2ea84f9879384988c00b1a4d3d2a28cd",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v03/reflectai_v03/wire.py": "3c0bc3d762b6bd56b877dca9b25dcee896449f82578eac3b0fded5230315c39b",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/prompts/generate_v1.txt": "71d534ec42df93fb255661851569b11626740ff1415816f3ccccc444bcef24bd",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/prompts/prepare_C_v1.txt": "33be323abde404ec8bc6c11584f1c00d4e2eabde3fd8074468f0808d20177ea7",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/prompts/review_C_v1.txt": "67963d0457abbb1fb42ddb8eb4edd0bd46666720b6021fe08a5de3c6667f32c2",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/prompts/shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/__init__.py": "91380fab96193615642454ef748ae6f1d17b2349b99af9c289a618cd5d54696f",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/backend.py": "bd7b891e1d792bfc1b490cde096de055906458ea226aabf15580ec5f55400001",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/config.py": "c9f86d13dbca01c701c290377c2bac1afdc0b0fd20a9901cf8bb3e54e149e42c",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/counterfactual.py": "ae73072d02e59880af82c56987b8799c71f8d055f1589806222bf30cc67b8ae0",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/data.py": "49602e85dd8b75ff5377fed7520045305cb9e1c44fcf3594998b86e8be0561bb",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/data_contracts.py": "a8d6739f65bdd02df0ef4874cbf703a3a12c46cd95b852598aa50f8c54b5ba70",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/evaluation.py": "7b288f4f38d5c8a1cd570638c3ba41ac75ea3e492ad1319badc27b877535e0dc",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/oracle.py": "401e87aa828e8ba28b590bf19183a866dc05336cac2e95952dc6d43ebfbe18b0",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/payloads.py": "951cfc01854d6a402a8a8860a4d6d8305d7278af2138865849b29c6ea7746b2c",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/presentation.py": "592e5724d1f33f0170ad88550156ead1d100c6b6d5c8026ba38d8ed834bc3ede",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/report.py": "13c80c9e3b4fada2f373add41fe45453e8722c435d3491bc9e6c62a2d6487ba2",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/review.py": "02d7f5d02b450dc4d1e15a584c51ca4e66321502685cbd414908ec1233cfac00",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/runner.py": "2324ae68422b8d412c31dba2e2b87f0e197bc084f8b18c6d053f3a79c4016058",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/storage.py": "3f481a8cc64a7b889d0f121c5804ca384c0cb797580291dc8f8759cc3c3846fe",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/reflectai_v04/surface_audit.py": "320151d5fed68959756ad65ad3d89578ee69c763ffc84ba973e2d8eca8f6da51",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/pilots/v04/run.py": "32a73dbb1500b1dd3ab744c44ce023db89e9b29f96b8b89cb9432a0e5d314f97",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/src/grounded_reflection/__init__.py": "afbfc7215c8900bd1396433ecd252cfb915cfd78ef3ad83e51e9686af992a2be",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/src/grounded_reflection/codex_backend.py": "5629534a6af79f67dcee39bbc2a8c413d008512d7a175412cd2ee74333cfbff6",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/src/grounded_reflection/models.py": "04ca17f0ae0cc30958c683d53f4d865241fa09b8b3ecae877d2742800055ed24",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/src/grounded_reflection/workflow.py": "d5f6f72cbce5233cc3c471e6b0d45ce1c0d1cebac45b9c28eb081864a7e0a152",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_conflict_resolution.py": "5bfd4abb82c9929fc027b996477ccf998efb4ded961fce66fe3aa9f93b8c684f",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_counterfactual.py": "9a08b71e25a7a18885b736e793b3e0f8e1d0751838a24ceb6010196b781f4d15",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_data.py": "21c4b1204a0d7200dbb9b7b915893161a52e86e04d87a0150273cb282cfa30c5",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_evaluation.py": "236103cd726d830bcecb2205b9adb21120883d18971bc8db9e861b2d4c67de3f",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_execution.py": "00c4540ba0a0fcc278d29ca7c9c730444b5a88aed81c48bc077d750fead6a60c",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_input_boundaries.py": "8b4f0c3035994386c729e135054af140f4161cd85b6eb4dd2827367ba13ddbee",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_oracle.py": "8ca45461546a2f440579ce44f883cac52031dddb0ab89570f383de5a6460fe47",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_presentation.py": "d8df1c4850915ed787a9a95a184b0c1f81804eb738109cc9e8ded29afc02dfad",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_runner.py": "2c134392298aeac520cf8958ad5c1d0b277f8deefe8b637481cb7356448c0cf1",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_scope_analysis.py": "de7173d9e1d1c48cd71f598f2e90a87840673e917eae0e84e079845ed084bce7",
+    "pilots/v04/review/materials-amendment3-r2-20260929/sources/tests/test_pilot_v04_surface_audit.py": "1ab52f45eff86de114547765a65eba73e4fe1ef3779ea2b9218bfded18c6e530",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/binding.json": "d144f9fdfa04c85e93213372550ae5f21420de8a164c29055d6f90d6375cf571",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/docs/pilot-v04-amendment-03.md": "0b5bc94567eaa15520d1734a460431bc4d651b5bb43748b5ce528e6dd840a593",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/docs/pilot-v04-amendment-04.md": "60d9f1a649e5d7352d74e56ffb033738c14e501d111ec5fe90c788cf3f0d5dc2",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/docs/pilot-v04-amendment-05.md": "023217cd0eb68fa590eef6b5c6b0a0c99ab01f6d65e4a57b66288d703e227736",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/docs/pilot-v04-fhgenie-contract-test.md": "b1f2a0672183e6ee5473e39387a4ffd3bcea9eab02e43ed8d2dcd90762b50350",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/docs/pilot-v04-fhgenie-transport.md": "c6cf72d40732b64122c7d4631a40ef3f4075481e0717e943c236fbaaefd8ab12",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/docs/pilot-v04-protocol.md": "8858d40ba4adb42f808adc6d052121affd4901be87118c06aaffc964ab64aebf",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/docs/pilot-v04-surface-repair.md": "04f6bfa43e6bb85b7e83cd7acd19fd5d4f4269a319720c4738ff837f6fed4894",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/docs/pilot-v04-transport-preflight.md": "169caa3120e78d573e9826daa2515cd0461bcadfe5a1a35801d82117e5afd5ef",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v03/reflectai_v03/__init__.py": "26f38842a0502cb75d02a4913e5b50fc7c5e133728a4569c226a018130eaa509",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v03/reflectai_v03/context.py": "75c0ac74dfcf2c88a5c079879be1cb20f45cc0c753d6398f1fd10caf38de7d9d",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v03/reflectai_v03/contracts.py": "05944b171b341c070e37cbf0fec250a5e66c6adcb2c929a5609c7d1731e47b42",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v03/reflectai_v03/evaluation.py": "67dc4cf3081de9cb4e444503d826de8f2ea84f9879384988c00b1a4d3d2a28cd",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v03/reflectai_v03/wire.py": "3c0bc3d762b6bd56b877dca9b25dcee896449f82578eac3b0fded5230315c39b",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/prompts/generate_v1.txt": "71d534ec42df93fb255661851569b11626740ff1415816f3ccccc444bcef24bd",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/prompts/prepare_C_v1.txt": "33be323abde404ec8bc6c11584f1c00d4e2eabde3fd8074468f0808d20177ea7",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/prompts/review_C_v1.txt": "67963d0457abbb1fb42ddb8eb4edd0bd46666720b6021fe08a5de3c6667f32c2",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/prompts/shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/__init__.py": "91380fab96193615642454ef748ae6f1d17b2349b99af9c289a618cd5d54696f",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/backend.py": "fc57b99a29cfcdf3caefbc7bb6c55e61fa8dc7b1abca2d925b9bc4d6dc26fd4a",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/config.py": "a2b63261bd81c1711e4e7a799b0e575783099e7416cdb97a8ba090fe2059fa3d",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/counterfactual.py": "ae73072d02e59880af82c56987b8799c71f8d055f1589806222bf30cc67b8ae0",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/data.py": "49602e85dd8b75ff5377fed7520045305cb9e1c44fcf3594998b86e8be0561bb",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/data_contracts.py": "a8d6739f65bdd02df0ef4874cbf703a3a12c46cd95b852598aa50f8c54b5ba70",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/evaluation.py": "7b288f4f38d5c8a1cd570638c3ba41ac75ea3e492ad1319badc27b877535e0dc",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/fhgenie_transport.py": "38f275261ee4d48797a97fe41d5737704f869f1268843ee2cca67fc146c67bf5",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/gateway.py": "198a9af5fb79dd28d7254de4eb7f56cd534d1fd3b600c969ee49ff9415116b3d",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/oracle.py": "401e87aa828e8ba28b590bf19183a866dc05336cac2e95952dc6d43ebfbe18b0",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/payloads.py": "951cfc01854d6a402a8a8860a4d6d8305d7278af2138865849b29c6ea7746b2c",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/presentation.py": "592e5724d1f33f0170ad88550156ead1d100c6b6d5c8026ba38d8ed834bc3ede",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/report.py": "13c80c9e3b4fada2f373add41fe45453e8722c435d3491bc9e6c62a2d6487ba2",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/review.py": "02d7f5d02b450dc4d1e15a584c51ca4e66321502685cbd414908ec1233cfac00",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/runner.py": "1654cc0fef4529424578853532b1719e55633f9af774208a378b640404c8b89e",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/storage.py": "16b09c3c5c9d9edc5b0b9a2a9b546cc45658c85dc3333e9c85ef9cb55a34924e",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/surface_audit.py": "320151d5fed68959756ad65ad3d89578ee69c763ffc84ba973e2d8eca8f6da51",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/reflectai_v04/transport.py": "87a49d2f33f4fe1824a8ccbb5cfbb1dfdd6d9004522017861882f9d27591b997",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/run.py": "ef9055247d32bcf55b8e15bc519ca4a5511b66c30af82a25984cac8bbaab590f",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/transport/fhgenie-request.ps1": "bb79246517ba609b3506e21d0c1abf83c51785fa89897f0174813606ff0befd6",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/transport/model-catalog.json": "49f82ce1b3474c0b9e5daa769c9e9a08033ec4bb9be055700253027fe7111ab5",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/transport/runtime-attestation.json": "510412e3102687ef6ceab910fb7c3acc6f7ffb7ae868c385df3a9607ade2a9a4",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/pilots/v04/transport/test_fhgenie_request.ps1": "0d4a3532c8aee9184baba156ce332f10cb87ea2fd027f60dee357848a6bbd0f1",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/src/grounded_reflection/__init__.py": "afbfc7215c8900bd1396433ecd252cfb915cfd78ef3ad83e51e9686af992a2be",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/src/grounded_reflection/codex_backend.py": "5629534a6af79f67dcee39bbc2a8c413d008512d7a175412cd2ee74333cfbff6",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/src/grounded_reflection/models.py": "04ca17f0ae0cc30958c683d53f4d865241fa09b8b3ecae877d2742800055ed24",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/src/grounded_reflection/workflow.py": "d5f6f72cbce5233cc3c471e6b0d45ce1c0d1cebac45b9c28eb081864a7e0a152",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_conflict_resolution.py": "5bfd4abb82c9929fc027b996477ccf998efb4ded961fce66fe3aa9f93b8c684f",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_counterfactual.py": "9a08b71e25a7a18885b736e793b3e0f8e1d0751838a24ceb6010196b781f4d15",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_data.py": "21c4b1204a0d7200dbb9b7b915893161a52e86e04d87a0150273cb282cfa30c5",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_evaluation.py": "236103cd726d830bcecb2205b9adb21120883d18971bc8db9e861b2d4c67de3f",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_execution.py": "00c4540ba0a0fcc278d29ca7c9c730444b5a88aed81c48bc077d750fead6a60c",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_fhgenie_backend.py": "8ebc8467d2fb6032ef8be5a84f62b1e625fbf11a937216f9bdef22fe274feaa1",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_fhgenie_transport.py": "ca884a98e024641bb6b7747739825c8ff803e1e8387001dfe9975928f5b6df4a",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_gateway.py": "b011ad4a6070e84459ef2793660f143d55f6e1d355e66a68df959bbd5dadfdb5",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_input_boundaries.py": "8b4f0c3035994386c729e135054af140f4161cd85b6eb4dd2827367ba13ddbee",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_oracle.py": "8ca45461546a2f440579ce44f883cac52031dddb0ab89570f383de5a6460fe47",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_presentation.py": "d8df1c4850915ed787a9a95a184b0c1f81804eb738109cc9e8ded29afc02dfad",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_runner.py": "c8c2591bee5d4c25b83a1101f03057e76fae6cbcdf4322cb08846a249f77273d",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_scope_analysis.py": "de7173d9e1d1c48cd71f598f2e90a87840673e917eae0e84e079845ed084bce7",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_surface_audit.py": "1ab52f45eff86de114547765a65eba73e4fe1ef3779ea2b9218bfded18c6e530",
+    "pilots/v04/review/materials-amendment3-r2-amendment5-20260930/sources/tests/test_pilot_v04_transport.py": "c4ecc849301d63128bcf60a8ae8d13581c7742b8e5d84f100085153bc5b79c93",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/binding.json": "5b77a072b7e3a1f35df08f472146d208f40d258c9ec9cb7ae260c4896fe1a0f1",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/docs/pilot-v04-amendment-03.md": "0b5bc94567eaa15520d1734a460431bc4d651b5bb43748b5ce528e6dd840a593",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/docs/pilot-v04-fhgenie-transport.md": "c6cf72d40732b64122c7d4631a40ef3f4075481e0717e943c236fbaaefd8ab12",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/docs/pilot-v04-protocol.md": "ce0c6e0c9620207f4e68080075505f5b5ba6d7969f048eaa63389199846de4ef",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/docs/pilot-v04-surface-repair.md": "04f6bfa43e6bb85b7e83cd7acd19fd5d4f4269a319720c4738ff837f6fed4894",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/docs/pilot-v04-transport-preflight.md": "169caa3120e78d573e9826daa2515cd0461bcadfe5a1a35801d82117e5afd5ef",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v03/reflectai_v03/__init__.py": "26f38842a0502cb75d02a4913e5b50fc7c5e133728a4569c226a018130eaa509",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v03/reflectai_v03/context.py": "75c0ac74dfcf2c88a5c079879be1cb20f45cc0c753d6398f1fd10caf38de7d9d",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v03/reflectai_v03/contracts.py": "05944b171b341c070e37cbf0fec250a5e66c6adcb2c929a5609c7d1731e47b42",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v03/reflectai_v03/evaluation.py": "67dc4cf3081de9cb4e444503d826de8f2ea84f9879384988c00b1a4d3d2a28cd",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v03/reflectai_v03/wire.py": "3c0bc3d762b6bd56b877dca9b25dcee896449f82578eac3b0fded5230315c39b",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/prompts/generate_v1.txt": "71d534ec42df93fb255661851569b11626740ff1415816f3ccccc444bcef24bd",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/prompts/prepare_C_v1.txt": "33be323abde404ec8bc6c11584f1c00d4e2eabde3fd8074468f0808d20177ea7",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/prompts/review_C_v1.txt": "67963d0457abbb1fb42ddb8eb4edd0bd46666720b6021fe08a5de3c6667f32c2",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/prompts/shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/__init__.py": "91380fab96193615642454ef748ae6f1d17b2349b99af9c289a618cd5d54696f",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/backend.py": "d0ff8aefd41d71881111113776347b0674fa1bcc3f914e795f32235e9ba03559",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/config.py": "61f5954650611e4408892a6c6ec237c21bb57009dd316b995fc47d2d119d5a0c",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/counterfactual.py": "ae73072d02e59880af82c56987b8799c71f8d055f1589806222bf30cc67b8ae0",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/data.py": "49602e85dd8b75ff5377fed7520045305cb9e1c44fcf3594998b86e8be0561bb",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/data_contracts.py": "a8d6739f65bdd02df0ef4874cbf703a3a12c46cd95b852598aa50f8c54b5ba70",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/evaluation.py": "7b288f4f38d5c8a1cd570638c3ba41ac75ea3e492ad1319badc27b877535e0dc",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/fhgenie_transport.py": "a5289f88f2b16a5fed0435495d56c9f0245125e5d7ea915437236998ba723185",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/gateway.py": "198a9af5fb79dd28d7254de4eb7f56cd534d1fd3b600c969ee49ff9415116b3d",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/oracle.py": "401e87aa828e8ba28b590bf19183a866dc05336cac2e95952dc6d43ebfbe18b0",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/payloads.py": "951cfc01854d6a402a8a8860a4d6d8305d7278af2138865849b29c6ea7746b2c",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/presentation.py": "592e5724d1f33f0170ad88550156ead1d100c6b6d5c8026ba38d8ed834bc3ede",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/report.py": "13c80c9e3b4fada2f373add41fe45453e8722c435d3491bc9e6c62a2d6487ba2",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/review.py": "02d7f5d02b450dc4d1e15a584c51ca4e66321502685cbd414908ec1233cfac00",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/runner.py": "dba544ac20ac0d168ce4c0cfdd49e8dc0426d4cf8024b47659ef2147b2f30084",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/storage.py": "a3a91f8b21fb24e7d5daeac767c2ec3223242421bb8cf11188c995c5135fc0bd",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/surface_audit.py": "320151d5fed68959756ad65ad3d89578ee69c763ffc84ba973e2d8eca8f6da51",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/reflectai_v04/transport.py": "87a49d2f33f4fe1824a8ccbb5cfbb1dfdd6d9004522017861882f9d27591b997",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/run.py": "ef9055247d32bcf55b8e15bc519ca4a5511b66c30af82a25984cac8bbaab590f",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/transport/fhgenie-request.ps1": "24c1807bdd132776eb757ae55126c01a5b51cc583b4ed94c3b5e802eb7420e58",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/transport/model-catalog.json": "49f82ce1b3474c0b9e5daa769c9e9a08033ec4bb9be055700253027fe7111ab5",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/transport/runtime-attestation.json": "510412e3102687ef6ceab910fb7c3acc6f7ffb7ae868c385df3a9607ade2a9a4",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/pilots/v04/transport/test_fhgenie_request.ps1": "a9db61c3f0de460a764fa4341fe550aeafb75bd77894708a2d0d012144ffa4cc",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/src/grounded_reflection/__init__.py": "afbfc7215c8900bd1396433ecd252cfb915cfd78ef3ad83e51e9686af992a2be",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/src/grounded_reflection/codex_backend.py": "5629534a6af79f67dcee39bbc2a8c413d008512d7a175412cd2ee74333cfbff6",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/src/grounded_reflection/models.py": "04ca17f0ae0cc30958c683d53f4d865241fa09b8b3ecae877d2742800055ed24",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/src/grounded_reflection/workflow.py": "d5f6f72cbce5233cc3c471e6b0d45ce1c0d1cebac45b9c28eb081864a7e0a152",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_conflict_resolution.py": "5bfd4abb82c9929fc027b996477ccf998efb4ded961fce66fe3aa9f93b8c684f",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_counterfactual.py": "9a08b71e25a7a18885b736e793b3e0f8e1d0751838a24ceb6010196b781f4d15",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_data.py": "21c4b1204a0d7200dbb9b7b915893161a52e86e04d87a0150273cb282cfa30c5",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_evaluation.py": "236103cd726d830bcecb2205b9adb21120883d18971bc8db9e861b2d4c67de3f",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_execution.py": "00c4540ba0a0fcc278d29ca7c9c730444b5a88aed81c48bc077d750fead6a60c",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_fhgenie_backend.py": "db5a67d0203e6fc17cd587e4fd803943f67bdf175854028722931ffb602b6989",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_fhgenie_transport.py": "19ac2833aa8fe485cb5a01ded62c373677751e8ce1979eda2dd480fd4b9b6c33",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_gateway.py": "b011ad4a6070e84459ef2793660f143d55f6e1d355e66a68df959bbd5dadfdb5",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_input_boundaries.py": "8b4f0c3035994386c729e135054af140f4161cd85b6eb4dd2827367ba13ddbee",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_oracle.py": "8ca45461546a2f440579ce44f883cac52031dddb0ab89570f383de5a6460fe47",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_presentation.py": "d8df1c4850915ed787a9a95a184b0c1f81804eb738109cc9e8ded29afc02dfad",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_runner.py": "e19694f2796066f38124211e6cd57ecef261f652b2b2795472c9158739df19c9",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_scope_analysis.py": "de7173d9e1d1c48cd71f598f2e90a87840673e917eae0e84e079845ed084bce7",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_surface_audit.py": "1ab52f45eff86de114547765a65eba73e4fe1ef3779ea2b9218bfded18c6e530",
+    "pilots/v04/review/materials-amendment3-r2-fhgenie-20260929/sources/tests/test_pilot_v04_transport.py": "c4ecc849301d63128bcf60a8ae8d13581c7742b8e5d84f100085153bc5b79c93",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/binding.json": "aa6cb0780f9829f0996c8052910fa957a52883b7231d2a29e4de9cb5d9443621",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/docs/pilot-v04-amendment-03.md": "0b5bc94567eaa15520d1734a460431bc4d651b5bb43748b5ce528e6dd840a593",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/docs/pilot-v04-protocol.md": "ce0c6e0c9620207f4e68080075505f5b5ba6d7969f048eaa63389199846de4ef",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/docs/pilot-v04-surface-repair.md": "04f6bfa43e6bb85b7e83cd7acd19fd5d4f4269a319720c4738ff837f6fed4894",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/docs/pilot-v04-transport-preflight.md": "169caa3120e78d573e9826daa2515cd0461bcadfe5a1a35801d82117e5afd5ef",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v03/reflectai_v03/__init__.py": "26f38842a0502cb75d02a4913e5b50fc7c5e133728a4569c226a018130eaa509",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v03/reflectai_v03/context.py": "75c0ac74dfcf2c88a5c079879be1cb20f45cc0c753d6398f1fd10caf38de7d9d",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v03/reflectai_v03/contracts.py": "05944b171b341c070e37cbf0fec250a5e66c6adcb2c929a5609c7d1731e47b42",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v03/reflectai_v03/evaluation.py": "67dc4cf3081de9cb4e444503d826de8f2ea84f9879384988c00b1a4d3d2a28cd",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v03/reflectai_v03/wire.py": "3c0bc3d762b6bd56b877dca9b25dcee896449f82578eac3b0fded5230315c39b",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/prompts/generate_v1.txt": "71d534ec42df93fb255661851569b11626740ff1415816f3ccccc444bcef24bd",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/prompts/prepare_C_v1.txt": "33be323abde404ec8bc6c11584f1c00d4e2eabde3fd8074468f0808d20177ea7",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/prompts/review_C_v1.txt": "67963d0457abbb1fb42ddb8eb4edd0bd46666720b6021fe08a5de3c6667f32c2",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/prompts/shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/__init__.py": "91380fab96193615642454ef748ae6f1d17b2349b99af9c289a618cd5d54696f",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/backend.py": "521fbdff9dd691d8af6df6bc24bfefb150deb36145def4a1f75715bc4378c88f",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/config.py": "c9f86d13dbca01c701c290377c2bac1afdc0b0fd20a9901cf8bb3e54e149e42c",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/counterfactual.py": "ae73072d02e59880af82c56987b8799c71f8d055f1589806222bf30cc67b8ae0",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/data.py": "49602e85dd8b75ff5377fed7520045305cb9e1c44fcf3594998b86e8be0561bb",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/data_contracts.py": "a8d6739f65bdd02df0ef4874cbf703a3a12c46cd95b852598aa50f8c54b5ba70",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/evaluation.py": "7b288f4f38d5c8a1cd570638c3ba41ac75ea3e492ad1319badc27b877535e0dc",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/gateway.py": "198a9af5fb79dd28d7254de4eb7f56cd534d1fd3b600c969ee49ff9415116b3d",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/oracle.py": "401e87aa828e8ba28b590bf19183a866dc05336cac2e95952dc6d43ebfbe18b0",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/payloads.py": "951cfc01854d6a402a8a8860a4d6d8305d7278af2138865849b29c6ea7746b2c",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/presentation.py": "592e5724d1f33f0170ad88550156ead1d100c6b6d5c8026ba38d8ed834bc3ede",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/report.py": "13c80c9e3b4fada2f373add41fe45453e8722c435d3491bc9e6c62a2d6487ba2",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/review.py": "02d7f5d02b450dc4d1e15a584c51ca4e66321502685cbd414908ec1233cfac00",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/runner.py": "2324ae68422b8d412c31dba2e2b87f0e197bc084f8b18c6d053f3a79c4016058",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/storage.py": "cf1fa862076b9a956c85fa5268e200ed320d2a069b57529186aed196bd799433",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/surface_audit.py": "320151d5fed68959756ad65ad3d89578ee69c763ffc84ba973e2d8eca8f6da51",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/reflectai_v04/transport.py": "87a49d2f33f4fe1824a8ccbb5cfbb1dfdd6d9004522017861882f9d27591b997",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/run.py": "32a73dbb1500b1dd3ab744c44ce023db89e9b29f96b8b89cb9432a0e5d314f97",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/transport/model-catalog.json": "49f82ce1b3474c0b9e5daa769c9e9a08033ec4bb9be055700253027fe7111ab5",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/pilots/v04/transport/runtime-attestation.json": "510412e3102687ef6ceab910fb7c3acc6f7ffb7ae868c385df3a9607ade2a9a4",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/src/grounded_reflection/__init__.py": "afbfc7215c8900bd1396433ecd252cfb915cfd78ef3ad83e51e9686af992a2be",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/src/grounded_reflection/codex_backend.py": "5629534a6af79f67dcee39bbc2a8c413d008512d7a175412cd2ee74333cfbff6",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/src/grounded_reflection/models.py": "04ca17f0ae0cc30958c683d53f4d865241fa09b8b3ecae877d2742800055ed24",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/src/grounded_reflection/workflow.py": "d5f6f72cbce5233cc3c471e6b0d45ce1c0d1cebac45b9c28eb081864a7e0a152",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_conflict_resolution.py": "5bfd4abb82c9929fc027b996477ccf998efb4ded961fce66fe3aa9f93b8c684f",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_counterfactual.py": "9a08b71e25a7a18885b736e793b3e0f8e1d0751838a24ceb6010196b781f4d15",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_data.py": "21c4b1204a0d7200dbb9b7b915893161a52e86e04d87a0150273cb282cfa30c5",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_evaluation.py": "236103cd726d830bcecb2205b9adb21120883d18971bc8db9e861b2d4c67de3f",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_execution.py": "00c4540ba0a0fcc278d29ca7c9c730444b5a88aed81c48bc077d750fead6a60c",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_gateway.py": "b011ad4a6070e84459ef2793660f143d55f6e1d355e66a68df959bbd5dadfdb5",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_input_boundaries.py": "8b4f0c3035994386c729e135054af140f4161cd85b6eb4dd2827367ba13ddbee",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_oracle.py": "8ca45461546a2f440579ce44f883cac52031dddb0ab89570f383de5a6460fe47",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_presentation.py": "d8df1c4850915ed787a9a95a184b0c1f81804eb738109cc9e8ded29afc02dfad",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_runner.py": "4895b6a42e2be5ef7c25cb60e3e39323343f5d0fc18cc521940d47389e049338",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_scope_analysis.py": "de7173d9e1d1c48cd71f598f2e90a87840673e917eae0e84e079845ed084bce7",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_surface_audit.py": "1ab52f45eff86de114547765a65eba73e4fe1ef3779ea2b9218bfded18c6e530",
+    "pilots/v04/review/materials-amendment3-r2-live-ready-20260929/sources/tests/test_pilot_v04_transport.py": "c4ecc849301d63128bcf60a8ae8d13581c7742b8e5d84f100085153bc5b79c93",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/binding.json": "e43b0f0c2e6dcae235f56ea6efc110bdfcf02a3f14d3f8c392a973e53ed520c0",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/docs/pilot-v04-amendment-03.md": "0b5bc94567eaa15520d1734a460431bc4d651b5bb43748b5ce528e6dd840a593",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/docs/pilot-v04-protocol.md": "ce0c6e0c9620207f4e68080075505f5b5ba6d7969f048eaa63389199846de4ef",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/docs/pilot-v04-surface-repair.md": "04f6bfa43e6bb85b7e83cd7acd19fd5d4f4269a319720c4738ff837f6fed4894",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/docs/pilot-v04-transport-preflight.md": "169caa3120e78d573e9826daa2515cd0461bcadfe5a1a35801d82117e5afd5ef",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v03/reflectai_v03/__init__.py": "26f38842a0502cb75d02a4913e5b50fc7c5e133728a4569c226a018130eaa509",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v03/reflectai_v03/context.py": "75c0ac74dfcf2c88a5c079879be1cb20f45cc0c753d6398f1fd10caf38de7d9d",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v03/reflectai_v03/contracts.py": "05944b171b341c070e37cbf0fec250a5e66c6adcb2c929a5609c7d1731e47b42",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v03/reflectai_v03/evaluation.py": "67dc4cf3081de9cb4e444503d826de8f2ea84f9879384988c00b1a4d3d2a28cd",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v03/reflectai_v03/wire.py": "3c0bc3d762b6bd56b877dca9b25dcee896449f82578eac3b0fded5230315c39b",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/prompts/generate_v1.txt": "71d534ec42df93fb255661851569b11626740ff1415816f3ccccc444bcef24bd",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/prompts/prepare_C_v1.txt": "33be323abde404ec8bc6c11584f1c00d4e2eabde3fd8074468f0808d20177ea7",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/prompts/review_C_v1.txt": "67963d0457abbb1fb42ddb8eb4edd0bd46666720b6021fe08a5de3c6667f32c2",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/prompts/shared_contract_v1.txt": "520b3feeacc52e80ef6399a822efb63a767135fb9d95957e381bd5b24b0bf47b",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/__init__.py": "91380fab96193615642454ef748ae6f1d17b2349b99af9c289a618cd5d54696f",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/backend.py": "521fbdff9dd691d8af6df6bc24bfefb150deb36145def4a1f75715bc4378c88f",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/config.py": "c9f86d13dbca01c701c290377c2bac1afdc0b0fd20a9901cf8bb3e54e149e42c",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/counterfactual.py": "ae73072d02e59880af82c56987b8799c71f8d055f1589806222bf30cc67b8ae0",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/data.py": "49602e85dd8b75ff5377fed7520045305cb9e1c44fcf3594998b86e8be0561bb",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/data_contracts.py": "a8d6739f65bdd02df0ef4874cbf703a3a12c46cd95b852598aa50f8c54b5ba70",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/evaluation.py": "7b288f4f38d5c8a1cd570638c3ba41ac75ea3e492ad1319badc27b877535e0dc",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/gateway.py": "198a9af5fb79dd28d7254de4eb7f56cd534d1fd3b600c969ee49ff9415116b3d",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/oracle.py": "401e87aa828e8ba28b590bf19183a866dc05336cac2e95952dc6d43ebfbe18b0",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/payloads.py": "951cfc01854d6a402a8a8860a4d6d8305d7278af2138865849b29c6ea7746b2c",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/presentation.py": "592e5724d1f33f0170ad88550156ead1d100c6b6d5c8026ba38d8ed834bc3ede",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/report.py": "13c80c9e3b4fada2f373add41fe45453e8722c435d3491bc9e6c62a2d6487ba2",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/review.py": "02d7f5d02b450dc4d1e15a584c51ca4e66321502685cbd414908ec1233cfac00",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/runner.py": "2324ae68422b8d412c31dba2e2b87f0e197bc084f8b18c6d053f3a79c4016058",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/storage.py": "cf1fa862076b9a956c85fa5268e200ed320d2a069b57529186aed196bd799433",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/surface_audit.py": "320151d5fed68959756ad65ad3d89578ee69c763ffc84ba973e2d8eca8f6da51",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/reflectai_v04/transport.py": "87a49d2f33f4fe1824a8ccbb5cfbb1dfdd6d9004522017861882f9d27591b997",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/run.py": "32a73dbb1500b1dd3ab744c44ce023db89e9b29f96b8b89cb9432a0e5d314f97",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/transport/model-catalog.json": "49f82ce1b3474c0b9e5daa769c9e9a08033ec4bb9be055700253027fe7111ab5",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/pilots/v04/transport/runtime-attestation.json": "510412e3102687ef6ceab910fb7c3acc6f7ffb7ae868c385df3a9607ade2a9a4",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/src/grounded_reflection/__init__.py": "afbfc7215c8900bd1396433ecd252cfb915cfd78ef3ad83e51e9686af992a2be",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/src/grounded_reflection/codex_backend.py": "5629534a6af79f67dcee39bbc2a8c413d008512d7a175412cd2ee74333cfbff6",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/src/grounded_reflection/models.py": "04ca17f0ae0cc30958c683d53f4d865241fa09b8b3ecae877d2742800055ed24",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/src/grounded_reflection/workflow.py": "d5f6f72cbce5233cc3c471e6b0d45ce1c0d1cebac45b9c28eb081864a7e0a152",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_conflict_resolution.py": "5bfd4abb82c9929fc027b996477ccf998efb4ded961fce66fe3aa9f93b8c684f",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_counterfactual.py": "9a08b71e25a7a18885b736e793b3e0f8e1d0751838a24ceb6010196b781f4d15",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_data.py": "21c4b1204a0d7200dbb9b7b915893161a52e86e04d87a0150273cb282cfa30c5",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_evaluation.py": "236103cd726d830bcecb2205b9adb21120883d18971bc8db9e861b2d4c67de3f",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_execution.py": "00c4540ba0a0fcc278d29ca7c9c730444b5a88aed81c48bc077d750fead6a60c",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_gateway.py": "b011ad4a6070e84459ef2793660f143d55f6e1d355e66a68df959bbd5dadfdb5",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_input_boundaries.py": "8b4f0c3035994386c729e135054af140f4161cd85b6eb4dd2827367ba13ddbee",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_oracle.py": "8ca45461546a2f440579ce44f883cac52031dddb0ab89570f383de5a6460fe47",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_presentation.py": "d8df1c4850915ed787a9a95a184b0c1f81804eb738109cc9e8ded29afc02dfad",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_runner.py": "2c134392298aeac520cf8958ad5c1d0b277f8deefe8b637481cb7356448c0cf1",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_scope_analysis.py": "de7173d9e1d1c48cd71f598f2e90a87840673e917eae0e84e079845ed084bce7",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_surface_audit.py": "1ab52f45eff86de114547765a65eba73e4fe1ef3779ea2b9218bfded18c6e530",
+    "pilots/v04/review/materials-amendment3-r2-transport-20260929/sources/tests/test_pilot_v04_transport.py": "c4ecc849301d63128bcf60a8ae8d13581c7742b8e5d84f100085153bc5b79c93"
+   }
+  },
+  "pilots/v04/diagnostics/fhgenie/contract-test-*/run/calls/*/final.txt": {
+   "count": 32,
+   "files": {
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/01-C1-C-H1/final.txt": "863ac68d0f5a59ca85752c80e8547b9f2eda3ce450bddfb19f0975bfed36e1ca",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/02-C1-C-H2/final.txt": "9ab148faa7dfe19493f5a8967e5db76e574bff57855846ce92b5c48011c826c6",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/03-C1-C-H3/final.txt": "4c133ac43f15dad674964977e85e0c75e308e31f545f99dc417010066744046a",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/04-C1-C-H4/final.txt": "1f60b2a2a440e3f1f8718c129b980e3c596a80c9831638a377a9333cee06f758",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/05-C2-C-H1/final.txt": "434a08b447dfde49656a0199a14b7c7acd8c04fb8e6f57006d9d9c7d65b19cc9",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/06-C2-C-H2/final.txt": "e436bec01aa194146e69763b08a41e9796a510a0b0ac72cc0917dc265177817a",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/07-C2-C-H3/final.txt": "d451dda55afe409ba91dfa508c876a5dfe39f2a2b77d07a4bdb0c4b51f722f9b",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/08-C2-C-H4/final.txt": "710fed0a5aae0a6d0cee1f29fc6b99195c3720b267f70782ab112c22399b16d4",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/09-gen-C-H1/final.txt": "1e7b99ddc84e2ecb228969fbc9fbdd31d7606d8e1b7f9f6727101ce747f9677b",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/10-gen-C-H2/final.txt": "64089c5016e82ee57920ea810f8dd1c7d13207847b6fb9c59f1b3575f114104d",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/11-gen-C-H3/final.txt": "c29f43e17745ac94a066b36a78e0b284dcd49f710c84a52d4406f8514d22af74",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/12-gen-C-H4/final.txt": "17750ee1d8e1057b81435498959a5e4d73c3dd5d72f3c26d0d7c2707d696fa53",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/13-gen-B-H2/final.txt": "64089c5016e82ee57920ea810f8dd1c7d13207847b6fb9c59f1b3575f114104d",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/14-gen-B-H4/final.txt": "b0872432c28ca57ff840791f03570ba99f91b4846b99e71429e5a6060f4a62ca",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/15-gen-A-H1/final.txt": "79f0f3a92801433ce7d06afb66ef43af347358c9931c2ebc30c6dfcea3936bd3",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/16-gen-A-H3/final.txt": "c29f43e17745ac94a066b36a78e0b284dcd49f710c84a52d4406f8514d22af74",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/01-C1-C-H1/final.txt": "99943f4566b2c9739af05e36579f7d893385735f42ca832eb076a37e6b95afc5",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/02-C1-C-H2/final.txt": "cee12085e7558347b267b49153192df49f98d3eb43fe3df0f93a9007ec67a11a",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/03-C1-C-H3/final.txt": "73faef5cd14b732f6cb7b40bf8cc8f47a9696345e8beeafdb580854912070bf4",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/04-C1-C-H4/final.txt": "8de411c0e481b0754b4cb0b8041eb393ef46b23703709ad20a24e459f54a0e20",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/05-C2-C-H1/final.txt": "284cce4241ea9ae59581929ef6a069744dbe5099c3f449a60d525ce07e8540ec",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/06-C2-C-H2/final.txt": "dbac66781db0c02377834784dded42c7d78fc8c2d01f4c401617e98772940e23",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/07-C2-C-H3/final.txt": "654a70d4888a8d23dd6cac864e31cca438f86b1886a4a0ffa98b1be40c1c7860",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/08-C2-C-H4/final.txt": "0fb53f7fdde708d15f4f7ca27abe79df144b8fd2b3439cb69fdac20bc0029323",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/09-gen-C-H1/final.txt": "7daaec4cadfd5eec2be019c82fe48a41ecf6c706f597b435c04ae97c65db5bb7",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/10-gen-C-H2/final.txt": "64089c5016e82ee57920ea810f8dd1c7d13207847b6fb9c59f1b3575f114104d",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/11-gen-C-H3/final.txt": "c29f43e17745ac94a066b36a78e0b284dcd49f710c84a52d4406f8514d22af74",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/12-gen-C-H4/final.txt": "901a6900ffe1996063804a379b111e2c2727f6cdad86e8793aeb7a1748549211",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/13-gen-B-H2/final.txt": "64089c5016e82ee57920ea810f8dd1c7d13207847b6fb9c59f1b3575f114104d",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/14-gen-B-H4/final.txt": "71a655055a6951713c9dcf8238ea3c707c580560b4c817fccd060c8f5612ed39",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/15-gen-A-H1/final.txt": "79f0f3a92801433ce7d06afb66ef43af347358c9931c2ebc30c6dfcea3936bd3",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/16-gen-A-H3/final.txt": "c29f43e17745ac94a066b36a78e0b284dcd49f710c84a52d4406f8514d22af74"
+   }
+  },
+  "pilots/v04/diagnostics/fhgenie/contract-test-*/run/calls/*/final.json": {
+   "count": 32,
+   "files": {
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/01-C1-C-H1/final.json": "deffdf937351b431141cfad98d57e1e457e65a3575214590b3f36e1b9a7a3b71",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/02-C1-C-H2/final.json": "60086b98743f309c884dfeed7c21d57275a12fb864c871a9a65148ea24573aea",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/03-C1-C-H3/final.json": "dcd98fd4a5e1f037d530e22da26fb0fb86aa1a0ca22af1f788ab04d2f4880389",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/04-C1-C-H4/final.json": "83593e5d49763dc61ca38f2c7b7421b7e487f0fa1622b39a46d205a7163938cc",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/05-C2-C-H1/final.json": "02b25b22134cd4e03516eecf90fa66e7d7fcb8b150b933ac9028380f2fe1aca0",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/06-C2-C-H2/final.json": "6e1c7e94a823196246e5ed7e8e51b090eea27880e361a4a511712824de600bbc",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/07-C2-C-H3/final.json": "f3cef29147706503dc96e97d49fc1839319b49a511b4f8644765634b91d7a8ce",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/08-C2-C-H4/final.json": "f35630246cebbce10ad9079960fa4c46825fef7cf0c73ce5e2765bb7a0804d0c",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/09-gen-C-H1/final.json": "840edfc9061088421d0280c729c2bc9c05a273e74034ec2d37dfb94b34b9a679",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/10-gen-C-H2/final.json": "75f6f032ede37deb621caca742625919633a85608953b127c3f44343feb1d307",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/11-gen-C-H3/final.json": "2983c550a7c16262a13d17b1c04e8ee84695482ea979e8c067df1a4f9a2f137b",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/12-gen-C-H4/final.json": "ca6d68a13264b69d80618f03d6ef89f54e2ff176e9e8e82d392ac046cdf3dddd",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/13-gen-B-H2/final.json": "75f6f032ede37deb621caca742625919633a85608953b127c3f44343feb1d307",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/14-gen-B-H4/final.json": "32479801d8b0f60215b2d65fd91024882e26a30444963f8f6a9175b00a324304",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/15-gen-A-H1/final.json": "bb292029e5015841013608683de27e8dd379b0c0b2836749f9d346678039175e",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-20260930/run/calls/16-gen-A-H3/final.json": "2983c550a7c16262a13d17b1c04e8ee84695482ea979e8c067df1a4f9a2f137b",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/01-C1-C-H1/final.json": "4f5189ac5cfb4481ed657bc623189a6190164f6c81fcd2d8ab40b61358f68c01",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/02-C1-C-H2/final.json": "47d7bd2144f380bfef34daa202b1d1d507e5fd73dbf8081fbef4d1e847b6f454",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/03-C1-C-H3/final.json": "77f90aabe0702ce9445f91ff9c45e38a1f090847ae8351369021da91a07b63dd",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/04-C1-C-H4/final.json": "6a1d0a154c152de4d0b2b98a0eacc23017f5e2459798d26c066ec9e8069d8c3a",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/05-C2-C-H1/final.json": "41560701661f4c64980fd26022978a61cedc2d09bc4af648696d943017a432b5",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/06-C2-C-H2/final.json": "9d17ab58a11f5e539fddf50f7bfe993b11b6b17377d06f52cabe99275ebf8ebb",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/07-C2-C-H3/final.json": "b749868ae5d36c0a00610979bb632b50c3a988c7a8a0cdf96c573bbc1646e796",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/08-C2-C-H4/final.json": "3566f8a88e055d91b5c1ee1dfeb7f8bd00737af78eda2f3d09dac6452ab19c46",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/09-gen-C-H1/final.json": "cca20cfcb5470bbfab2b2d31cb83ac69304e43b05597d5abffd1a933579846e9",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/10-gen-C-H2/final.json": "75f6f032ede37deb621caca742625919633a85608953b127c3f44343feb1d307",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/11-gen-C-H3/final.json": "2983c550a7c16262a13d17b1c04e8ee84695482ea979e8c067df1a4f9a2f137b",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/12-gen-C-H4/final.json": "ca6d68a13264b69d80618f03d6ef89f54e2ff176e9e8e82d392ac046cdf3dddd",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/13-gen-B-H2/final.json": "75f6f032ede37deb621caca742625919633a85608953b127c3f44343feb1d307",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/14-gen-B-H4/final.json": "f264547c540f0eb781e6e2ac2ad16fb01cd94c7e22e8f25c249552cf88017915",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/15-gen-A-H1/final.json": "bb292029e5015841013608683de27e8dd379b0c0b2836749f9d346678039175e",
+    "pilots/v04/diagnostics/fhgenie/contract-test-high-32k-20260930/run/calls/16-gen-A-H3/final.json": "2983c550a7c16262a13d17b1c04e8ee84695482ea979e8c067df1a4f9a2f137b"
+   }
+  },
+  "pilots/v04/diagnostics/fhgenie/probe-*/final-content.json": {
+   "count": 2,
+   "files": {
+    "pilots/v04/diagnostics/fhgenie/probe-v2-20260929/final-content.json": "212ef9379ffce13e7514e0262ae0caec507be6ad31cce40e3df0599af7e4a0dc",
+    "pilots/v04/diagnostics/fhgenie/probe-v3-20260929/final-content.json": "b02411c2046768d02979f09bdcf138716c32de5a58b131d691dc42290cebd313"
+   }
+  },
+  "pilots/v04/diagnostics/transport-smoke-20260929/attempt/transport/*": {
+   "count": 5,
+   "files": {
+    "pilots/v04/diagnostics/transport-smoke-20260929/attempt/transport/metadata.json": "427d64bf2aec89ad5a0efeb6c3df164527750dd8901335eacecd23cef4670922",
+    "pilots/v04/diagnostics/transport-smoke-20260929/attempt/transport/prompt.txt": "5282c44c5f198c9bc21c499cac9800cb73515ef6fe57f6614912b62a4bf374b0",
+    "pilots/v04/diagnostics/transport-smoke-20260929/attempt/transport/response.schema.json": "4d1bad5a5ecb34297f6897b446319826dca6edef62a27cd571002cb2c3b14c6c",
+    "pilots/v04/diagnostics/transport-smoke-20260929/attempt/transport/stderr.txt": "85b06a3d3745814714701b7c9e8f54b4623f080418a814196119fcbf18ee06bd",
+    "pilots/v04/diagnostics/transport-smoke-20260929/attempt/transport/stdout.jsonl": "bf243e19bdba8c25f42590fbd7afb30c4844a50e23844e9360ed7930e7188e93"
+   }
+  },
+  "pilots/v04/diagnostics/transport-smoke-v2-20260929/attempt/transport/*": {
+   "count": 5,
+   "files": {
+    "pilots/v04/diagnostics/transport-smoke-v2-20260929/attempt/transport/metadata.json": "cb5a9d97c97a8763a221a4c9f5dbb558ee9c5e0d108dbeab2d402e46cee55f8e",
+    "pilots/v04/diagnostics/transport-smoke-v2-20260929/attempt/transport/prompt.txt": "5282c44c5f198c9bc21c499cac9800cb73515ef6fe57f6614912b62a4bf374b0",
+    "pilots/v04/diagnostics/transport-smoke-v2-20260929/attempt/transport/response.schema.json": "4d1bad5a5ecb34297f6897b446319826dca6edef62a27cd571002cb2c3b14c6c",
+    "pilots/v04/diagnostics/transport-smoke-v2-20260929/attempt/transport/stderr.txt": "f376dca94c563988699e2eb371cc36c2a73b978a6ffb954a88bf8b20ca55ed58",
+    "pilots/v04/diagnostics/transport-smoke-v2-20260929/attempt/transport/stdout.jsonl": "03f506a92f632472ee645fdb1fa72d8087c5af16e1bb1e4fd343320e5e9aa95b"
+   }
+  },
+  "pilots/v04/preflight/fhgenie-20260929/offline-tests-*-failed.txt": {
+   "count": 2,
+   "files": {
+    "pilots/v04/preflight/fhgenie-20260929/offline-tests-default-temp-failed.txt": "8a1d18510fb9e6c583ade0c5c507229b8423bb95ff64b510e058ca0863d72562",
+    "pilots/v04/preflight/fhgenie-20260929/offline-tests-workspace-temp-failed.txt": "05c99962b1f93723e9e91b7d562ce229acde0a91bb37efc188fcd3b3f3df6ac1"
+   }
+  }
+ }
+}

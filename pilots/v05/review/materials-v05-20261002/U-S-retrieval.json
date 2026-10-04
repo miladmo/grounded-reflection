@@ -1,0 +1,705 @@
+{
+  "case": {
+    "case_id": "case-c2e1f706a6d4",
+    "setting": "U-S",
+    "family": "retrieval",
+    "hard_type": "unidentifiable",
+    "direction": "add",
+    "seed": 18148965953506287773,
+    "split": "review",
+    "history": {
+      "history_id": "history-54fba246d24d",
+      "initial_configuration": "{\"task_family\":\"document_retrieval\",\"workflow\":\"workflow-67fdbdc2ca66\",\"version\":\"edition-53e3959f5fd1\",\"as_of\":\"2026-06-15T12:00:00Z\",\"attributes\":{\"access\":[\"partner\",\"internal\"],\"priority\":[\"routine\",\"urgent\"],\"document_class\":[\"assay_report\",\"protocol\"],\"collection\":[\"active\",\"archive\"],\"site\":[\"lab_a\",\"lab_b\"],\"file_format\":[\"xml\",\"pdf\"]},\"candidate_attributes\":[\"access\",\"priority\",\"document_class\",\"collection\",\"site\",\"file_format\"],\"field_option\":{\"field\":\"checksum\",\"operation\":\"set_fact\",\"value\":\"checksum\",\"separator\":\"\"},\"baseline_template\":{\"release_id\":\"{release_id}\",\"source_route\":\"{source_route}\"},\"fact_descriptions\":{\"release_id\":\"Requested release.\",\"source_route\":\"Configured retrieval endpoint.\",\"checksum\":\"Checksum of the retrieved release.\"},\"hypothesis_class\":\"h134\",\"hypothesis_definition\":\"Six binary context attributes are recorded for every work item. Which of them determine the target field configuration is not known; at most two do. Each attribute defines a predicate testing its second listed value. The configuration is one Boolean function from the following class over the attributes listed in candidate_attributes: constant 0 or 1; a single literal; a conjunction of one literal from each of two distinct attributes; or a disjunction of one literal from each of two distinct attributes. XOR and XNOR are excluded. Zero selects the configured baseline and one the available alternative. This restriction is a supplied synthetic assumption.\"}",
+      "assumptions": "This is a bounded synthetic workflow model. initial_configuration declares the field option, six binary context attributes, the candidate attributes and the complete hypothesis class. Facts provide current artifact values. Other fields retain their configured baseline. Outside the declared task_family, workflow and version, or without a complete declared context, no update is authorised by this model. A register_version event supplies trusted workflow metadata with the authority roster and half-open validity interval. Binding field approval is an event of type review with decision accept, performed by a listed reviewer within that interval, with the field included in reviewed_fields. Its accepted fields establish the field configuration at the recorded context. This explicit approval convention is a supplied synthetic assumption. A rejection records a whole-artifact decision and its stated grounds. A preference, an unreviewed field or a review by a person outside the roster supplies no approved assignment. The configured baseline is retained when the available evidence does not establish an update.",
+      "field_dictionary": {
+        "release_id": "Configured output field release_id; preserve unless an applicable update is established.",
+        "source_route": "Configured output field source_route; preserve unless an applicable update is established.",
+        "checksum": "Canonical field checksum. Available alternative operation set_fact, value='checksum', separator=''. Its requirement depends on the evidence.",
+        "fact.release_id": "Requested release.",
+        "fact.source_route": "Configured retrieval endpoint.",
+        "fact.checksum": "Checksum of the retrieved release."
+      },
+      "records": [
+        {
+          "record_id": "record-beb55b5b976e",
+          "timestamp": "2026-04-19T08:54:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "urgent",
+            "document_class": "protocol",
+            "collection": "archive",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"checksum\":\"sha256:ab26445e49f26d15\",\"release_id\":\"REL-70541\",\"source_route\":\"index-db56e9\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":\"sha256:ab26445e49f26d15\",\"before\":null,\"field\":\"checksum\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-70541\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:ab26445e49f26d15\",\"date\":\"2026-04-19\",\"document_id\":\"DOC-70541\",\"release_id\":\"REL-70541\",\"source_route\":\"index-db56e9\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"delivery_timestamp\"]}"
+        },
+        {
+          "record_id": "record-cd9fe93a5173",
+          "timestamp": "2026-02-23T16:02:00Z",
+          "kind": "review",
+          "actor": "Greta",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_b",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-78612\",\"source_route\":\"index-98cf95\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:765f10d8ba237c9c\",\"field\":\"checksum\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-78612\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:765f10d8ba237c9c\",\"date\":\"2026-02-23\",\"document_id\":\"DOC-78612\",\"release_id\":\"REL-78612\",\"source_route\":\"index-98cf95\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-3f7a1eb77b1c",
+          "timestamp": "2026-06-04T17:43:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "xml"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-13260\",\"source_route\":\"index-e51c1c\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:efb6f6fac13bb2f2\",\"field\":\"checksum\"},\"comment\":\"Approved.\",\"decision\":\"accept\",\"document_id\":\"DOC-13260\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:efb6f6fac13bb2f2\",\"date\":\"2026-06-04\",\"document_id\":\"DOC-13260\",\"release_id\":\"REL-13260\",\"source_route\":\"index-e51c1c\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-9d3e48d1e448",
+          "timestamp": "2026-05-28T11:57:00Z",
+          "kind": "tool",
+          "actor": "runtime",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_b",
+            "file_format": "xml"
+          },
+          "observation": "{\"attempts\":[{\"attempt\":1,\"http_status\":503},{\"attempt\":2,\"http_status\":200}],\"event\":\"execution\",\"log\":\"The request completed on retry.\",\"request_id\":\"request-9d033bc3b116\"}"
+        },
+        {
+          "record_id": "record-f6c3214e88f6",
+          "timestamp": "2026-03-18T16:25:00Z",
+          "kind": "revision",
+          "actor": "work-item-author",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "urgent",
+            "document_class": "protocol",
+            "collection": "archive",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"event\":\"preference\",\"facts\":{\"checksum\":\"sha256:20792c5e31a7159f\",\"date\":\"2026-03-18\",\"document_id\":\"DOC-20618\",\"release_id\":\"REL-20618\",\"source_route\":\"index-fa0d09\"},\"message\":\"My preference for this work item is that checksum should be 'sha256:20792c5e31a7159f'.\",\"proposed_fields\":{\"checksum\":\"sha256:20792c5e31a7159f\",\"release_id\":\"REL-20618\",\"source_route\":\"index-fa0d09\"}}"
+        },
+        {
+          "record_id": "record-f41a7510e350",
+          "timestamp": "2026-05-28T16:45:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "urgent",
+            "document_class": "assay_report",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-58478\",\"source_route\":\"index-09d58d\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:7b1cd207c125367a\",\"field\":\"checksum\"},\"comment\":\"Recorded.\",\"decision\":\"accept\",\"document_id\":\"DOC-58478\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:7b1cd207c125367a\",\"date\":\"2026-05-28\",\"document_id\":\"DOC-58478\",\"release_id\":\"REL-58478\",\"source_route\":\"index-09d58d\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-13d40b094fa4",
+          "timestamp": "2026-03-10T10:57:00Z",
+          "kind": "revision",
+          "actor": "work-item-author",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "archive",
+            "site": "lab_b",
+            "file_format": "xml"
+          },
+          "observation": "{\"event\":\"preference\",\"facts\":{\"checksum\":\"sha256:f1be4fc941acbfaf\",\"date\":\"2026-03-10\",\"document_id\":\"DOC-94615\",\"release_id\":\"REL-94615\",\"source_route\":\"index-bdd13c\"},\"message\":\"My preference for this work item is that checksum should be omitted.\",\"proposed_fields\":{\"release_id\":\"REL-94615\",\"source_route\":\"index-bdd13c\"}}"
+        },
+        {
+          "record_id": "record-8e75e14294aa",
+          "timestamp": "2026-01-29T15:28:00Z",
+          "kind": "review",
+          "actor": "Nora",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "archive",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-58244\",\"source_route\":\"index-27b6b3\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:5dcf92237fe69648\",\"field\":\"checksum\"},\"comment\":\"Recorded.\",\"decision\":\"accept\",\"document_id\":\"DOC-58244\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:5dcf92237fe69648\",\"date\":\"2026-01-29\",\"document_id\":\"DOC-58244\",\"release_id\":\"REL-58244\",\"source_route\":\"index-27b6b3\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-4db607caf0d9",
+          "timestamp": "2026-05-14T15:24:00Z",
+          "kind": "review",
+          "actor": "Greta",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-91263\",\"source_route\":\"index-bcadb7\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:3fa05775415a7a5e\",\"field\":\"checksum\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-91263\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:3fa05775415a7a5e\",\"date\":\"2026-05-14\",\"document_id\":\"DOC-91263\",\"release_id\":\"REL-91263\",\"source_route\":\"index-bcadb7\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-c1ba8c9d083b",
+          "timestamp": "2026-05-18T12:26:00Z",
+          "kind": "review",
+          "actor": "Greta",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "urgent",
+            "document_class": "protocol",
+            "collection": "archive",
+            "site": "lab_b",
+            "file_format": "pdf"
+          },
+          "observation": "{\"authority_ref\":\"record-15812970a6cc\",\"comment\":\"Review complete.\",\"decision\":\"reject\",\"document_id\":\"DOC-69690\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:175bf16693c25f60\",\"date\":\"2026-05-18\",\"document_id\":\"DOC-69690\",\"release_id\":\"REL-69690\",\"source_route\":\"index-2212f5\"},\"format\":\"interpreted\",\"rejected_fields\":{\"release_id\":\"REL-69690\",\"source_route\":\"index-2212f5\"},\"rejection_grounds\":\"The signature block is missing.\",\"reviewed_fields\":[]}"
+        },
+        {
+          "record_id": "record-07b26ea8d229",
+          "timestamp": "2026-04-28T15:57:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "routine",
+            "document_class": "assay_report",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"checksum\":\"sha256:133ac1e60549c293\",\"release_id\":\"REL-41888\",\"source_route\":\"index-8b095c\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":\"sha256:133ac1e60549c293\",\"before\":null,\"field\":\"checksum\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-41888\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:133ac1e60549c293\",\"date\":\"2026-04-28\",\"document_id\":\"DOC-41888\",\"release_id\":\"REL-41888\",\"source_route\":\"index-8b095c\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"delivery_timestamp\"]}"
+        },
+        {
+          "record_id": "record-15812970a6cc",
+          "timestamp": "2026-01-01T00:00:00Z",
+          "kind": "template",
+          "actor": "workflow-registry",
+          "context": {},
+          "observation": "{\"authorised_reviewers\":[\"Leon\",\"Greta\"],\"event\":\"register_version\",\"task_family\":\"document_retrieval\",\"valid_from\":\"2026-01-01T00:00:00Z\",\"valid_until\":\"2027-01-01T00:00:00Z\",\"version\":\"edition-53e3959f5fd1\",\"workflow\":\"workflow-67fdbdc2ca66\"}"
+        },
+        {
+          "record_id": "record-0d6c70009a10",
+          "timestamp": "2026-01-14T08:13:00Z",
+          "kind": "review",
+          "actor": "Greta",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_b",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-22003\",\"source_route\":\"index-be3843\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:7cac4e945e7a4eba\",\"field\":\"checksum\"},\"comment\":\"Reviewed.\",\"decision\":\"accept\",\"document_id\":\"DOC-22003\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:7cac4e945e7a4eba\",\"date\":\"2026-01-14\",\"document_id\":\"DOC-22003\",\"release_id\":\"REL-22003\",\"source_route\":\"index-be3843\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-6e8401f132cc",
+          "timestamp": "2026-04-20T16:27:00Z",
+          "kind": "review",
+          "actor": "Greta",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "urgent",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "xml"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-42669\",\"source_route\":\"index-d24884\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:0252f051c3f2730e\",\"field\":\"checksum\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-42669\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:0252f051c3f2730e\",\"date\":\"2026-04-20\",\"document_id\":\"DOC-42669\",\"release_id\":\"REL-42669\",\"source_route\":\"index-d24884\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-9f391b501ac0",
+          "timestamp": "2026-04-21T13:30:00Z",
+          "kind": "review",
+          "actor": "Ida",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "urgent",
+            "document_class": "assay_report",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "xml"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-36417\",\"source_route\":\"index-c83d6a\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:ba61c9775c48b2cc\",\"field\":\"checksum\"},\"comment\":\"Reviewed.\",\"decision\":\"accept\",\"document_id\":\"DOC-36417\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:ba61c9775c48b2cc\",\"date\":\"2026-04-21\",\"document_id\":\"DOC-36417\",\"release_id\":\"REL-36417\",\"source_route\":\"index-c83d6a\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-050967727dc0",
+          "timestamp": "2026-05-06T08:08:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "routine",
+            "document_class": "assay_report",
+            "collection": "archive",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"checksum\":\"sha256:86ec6bcf9510aedd\",\"release_id\":\"REL-65331\",\"source_route\":\"index-66a269\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":\"sha256:86ec6bcf9510aedd\",\"before\":null,\"field\":\"checksum\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-65331\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:86ec6bcf9510aedd\",\"date\":\"2026-05-06\",\"document_id\":\"DOC-65331\",\"release_id\":\"REL-65331\",\"source_route\":\"index-66a269\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-95f8e9105a94",
+          "timestamp": "2026-04-23T08:09:00Z",
+          "kind": "tool",
+          "actor": "runtime",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "xml"
+          },
+          "observation": "{\"attempts\":[{\"attempt\":1,\"http_status\":503},{\"attempt\":2,\"http_status\":200}],\"event\":\"execution\",\"log\":\"The request completed on retry.\",\"request_id\":\"request-d6e1bca599a0\"}"
+        },
+        {
+          "record_id": "record-16de3744f510",
+          "timestamp": "2026-02-03T10:42:00Z",
+          "kind": "review",
+          "actor": "Daria",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "urgent",
+            "document_class": "protocol",
+            "collection": "archive",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"checksum\":\"sha256:b08e6b9e0e331e0d\",\"release_id\":\"REL-11781\",\"source_route\":\"index-c27747\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":\"sha256:b08e6b9e0e331e0d\",\"before\":null,\"field\":\"checksum\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-11781\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:b08e6b9e0e331e0d\",\"date\":\"2026-02-03\",\"document_id\":\"DOC-11781\",\"release_id\":\"REL-11781\",\"source_route\":\"index-c27747\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-5931ed1dcd83",
+          "timestamp": "2026-01-15T16:19:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "urgent",
+            "document_class": "protocol",
+            "collection": "archive",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-52087\",\"source_route\":\"index-497c72\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:77ac54fba771f5ce\",\"field\":\"checksum\"},\"comment\":\"Approved.\",\"decision\":\"accept\",\"document_id\":\"DOC-52087\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:77ac54fba771f5ce\",\"date\":\"2026-01-15\",\"document_id\":\"DOC-52087\",\"release_id\":\"REL-52087\",\"source_route\":\"index-497c72\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-c70c3bd77986",
+          "timestamp": "2026-04-27T12:14:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "urgent",
+            "document_class": "protocol",
+            "collection": "archive",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"authority_ref\":\"record-15812970a6cc\",\"comment\":\"Recorded.\",\"decision\":\"reject\",\"document_id\":\"DOC-68953\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:8fa44393c73460f7\",\"date\":\"2026-04-27\",\"document_id\":\"DOC-68953\",\"release_id\":\"REL-68953\",\"source_route\":\"index-7b8f12\"},\"format\":\"interpreted\",\"rejected_fields\":{\"release_id\":\"REL-68953\",\"source_route\":\"index-7b8f12\"},\"rejection_grounds\":\"The signature block is missing.\",\"reviewed_fields\":[]}"
+        },
+        {
+          "record_id": "record-8432b2d84ee7",
+          "timestamp": "2026-05-28T17:09:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "xml"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-15130\",\"source_route\":\"index-4d76da\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:bae8ae99a7a4e15f\",\"field\":\"checksum\"},\"comment\":\"Reviewed.\",\"decision\":\"accept\",\"document_id\":\"DOC-15130\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:bae8ae99a7a4e15f\",\"date\":\"2026-05-28\",\"document_id\":\"DOC-15130\",\"release_id\":\"REL-15130\",\"source_route\":\"index-4d76da\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-ee194f668ebb",
+          "timestamp": "2026-05-01T11:43:00Z",
+          "kind": "review",
+          "actor": "Greta",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "partner",
+            "priority": "urgent",
+            "document_class": "assay_report",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-94347\",\"source_route\":\"index-d1a938\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:0ea9a75cca73b1be\",\"field\":\"checksum\"},\"comment\":\"Completed.\",\"decision\":\"accept\",\"document_id\":\"DOC-94347\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:0ea9a75cca73b1be\",\"date\":\"2026-05-01\",\"document_id\":\"DOC-94347\",\"release_id\":\"REL-94347\",\"source_route\":\"index-d1a938\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-5268c7c51195",
+          "timestamp": "2026-02-19T16:04:00Z",
+          "kind": "review",
+          "actor": "Greta",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_b",
+            "file_format": "xml"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-31365\",\"source_route\":\"index-ac01c1\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:26984f663b283ff1\",\"field\":\"checksum\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-31365\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:26984f663b283ff1\",\"date\":\"2026-02-19\",\"document_id\":\"DOC-31365\",\"release_id\":\"REL-31365\",\"source_route\":\"index-ac01c1\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        },
+        {
+          "record_id": "record-cf3477ede979",
+          "timestamp": "2026-03-16T16:51:00Z",
+          "kind": "review",
+          "actor": "Leon",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-67fdbdc2ca66",
+            "version": "edition-53e3959f5fd1",
+            "access": "internal",
+            "priority": "routine",
+            "document_class": "protocol",
+            "collection": "active",
+            "site": "lab_a",
+            "file_format": "pdf"
+          },
+          "observation": "{\"accepted_fields\":{\"release_id\":\"REL-44340\",\"source_route\":\"index-a96840\"},\"authority_ref\":\"record-15812970a6cc\",\"change_summary\":{\"after\":null,\"before\":\"sha256:91b212ff7c814044\",\"field\":\"checksum\"},\"comment\":\"Reviewed.\",\"decision\":\"accept\",\"document_id\":\"DOC-44340\",\"event\":\"review\",\"facts\":{\"checksum\":\"sha256:91b212ff7c814044\",\"date\":\"2026-03-16\",\"document_id\":\"DOC-44340\",\"release_id\":\"REL-44340\",\"source_route\":\"index-a96840\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"checksum\"]}"
+        }
+      ]
+    },
+    "world": {
+      "table": "217020518514230019",
+      "relevant": [
+        1,
+        2
+      ],
+      "confusable": 0,
+      "anchor": 2
+    },
+    "task_cells": {
+      "observed_change": 40,
+      "observed_retention": 53,
+      "unidentifiable": 46
+    },
+    "oracle_audit": {
+      "observations": {
+        "53": 0,
+        "5": 0,
+        "34": 0,
+        "37": 0,
+        "7": 0,
+        "40": 1,
+        "47": 0,
+        "21": 0
+      },
+      "binding_records": [
+        "record-cd9fe93a5173",
+        "record-3f7a1eb77b1c",
+        "record-f41a7510e350",
+        "record-4db607caf0d9",
+        "record-0d6c70009a10",
+        "record-6e8401f132cc",
+        "record-050967727dc0",
+        "record-5931ed1dcd83",
+        "record-8432b2d84ee7",
+        "record-ee194f668ebb",
+        "record-5268c7c51195",
+        "record-cf3477ede979"
+      ],
+      "compatible_count": 5
+    },
+    "material_audit": {
+      "record_count": 24,
+      "distractor_counts": {
+        "unauthorised_revision": 3,
+        "rejected_artifact": 2,
+        "target_field_preference": 2,
+        "approval_without_target": 2,
+        "technical": 2
+      },
+      "size": "S",
+      "condition": "U"
+    }
+  },
+  "tasks": [
+    {
+      "task": {
+        "task_id": "task-f155e5504069",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-67fdbdc2ca66",
+          "version": "edition-53e3959f5fd1",
+          "access": "partner",
+          "priority": "routine",
+          "document_class": "assay_report",
+          "collection": "archive",
+          "site": "lab_a",
+          "file_format": "pdf"
+        },
+        "facts": {
+          "document_id": "DOC-19658",
+          "date": "2026-06-15",
+          "release_id": "REL-19658",
+          "source_route": "index-a85336",
+          "checksum": "sha256:6f3105e5ea076087"
+        },
+        "baseline_fields": [
+          {
+            "name": "release_id",
+            "value": "REL-19658"
+          },
+          {
+            "name": "source_route",
+            "value": "index-a85336"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-f155e5504069",
+        "history_id": "history-54fba246d24d",
+        "task_type": "observed_change",
+        "cell": 40,
+        "expected_decision": "apply",
+        "oracle_status": "apply",
+        "expected_fields": {
+          "release_id": "REL-19658",
+          "source_route": "index-a85336",
+          "checksum": "sha256:6f3105e5ea076087"
+        },
+        "world_fields": {
+          "release_id": "REL-19658",
+          "source_route": "index-a85336",
+          "checksum": "sha256:6f3105e5ea076087"
+        }
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-68c0bf0d2f67",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-67fdbdc2ca66",
+          "version": "edition-53e3959f5fd1",
+          "access": "internal",
+          "priority": "routine",
+          "document_class": "protocol",
+          "collection": "active",
+          "site": "lab_b",
+          "file_format": "pdf"
+        },
+        "facts": {
+          "document_id": "DOC-14836",
+          "date": "2026-06-15",
+          "release_id": "REL-14836",
+          "source_route": "index-c9f019",
+          "checksum": "sha256:f17942d484c6e095"
+        },
+        "baseline_fields": [
+          {
+            "name": "release_id",
+            "value": "REL-14836"
+          },
+          {
+            "name": "source_route",
+            "value": "index-c9f019"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-68c0bf0d2f67",
+        "history_id": "history-54fba246d24d",
+        "task_type": "observed_retention",
+        "cell": 53,
+        "expected_decision": "keep",
+        "oracle_status": "keep",
+        "expected_fields": {
+          "release_id": "REL-14836",
+          "source_route": "index-c9f019"
+        },
+        "world_fields": {
+          "release_id": "REL-14836",
+          "source_route": "index-c9f019"
+        }
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-3e47d0dc8e5f",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-67fdbdc2ca66",
+          "version": "edition-53e3959f5fd1",
+          "access": "partner",
+          "priority": "urgent",
+          "document_class": "protocol",
+          "collection": "archive",
+          "site": "lab_a",
+          "file_format": "pdf"
+        },
+        "facts": {
+          "document_id": "DOC-52441",
+          "date": "2026-06-15",
+          "release_id": "REL-52441",
+          "source_route": "index-e78183",
+          "checksum": "sha256:ca62c134add9aa06"
+        },
+        "baseline_fields": [
+          {
+            "name": "release_id",
+            "value": "REL-52441"
+          },
+          {
+            "name": "source_route",
+            "value": "index-e78183"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-3e47d0dc8e5f",
+        "history_id": "history-54fba246d24d",
+        "task_type": "unidentifiable",
+        "cell": 46,
+        "expected_decision": "keep",
+        "oracle_status": "unresolved",
+        "expected_fields": {
+          "release_id": "REL-52441",
+          "source_route": "index-e78183"
+        },
+        "world_fields": {
+          "release_id": "REL-52441",
+          "source_route": "index-e78183"
+        }
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-9c62120d75d7",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-ff5a149fe593",
+          "version": "edition-53e3959f5fd1",
+          "access": "partner",
+          "priority": "urgent",
+          "document_class": "protocol",
+          "collection": "archive",
+          "site": "lab_b",
+          "file_format": "pdf"
+        },
+        "facts": {
+          "document_id": "DOC-91562",
+          "date": "2026-06-15",
+          "release_id": "REL-91562",
+          "source_route": "index-549df4",
+          "checksum": "sha256:bbaadf54e9f6689d"
+        },
+        "baseline_fields": [
+          {
+            "name": "release_id",
+            "value": "REL-91562"
+          },
+          {
+            "name": "source_route",
+            "value": "index-549df4"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-9c62120d75d7",
+        "history_id": "history-54fba246d24d",
+        "task_type": "control",
+        "cell": null,
+        "expected_decision": "keep",
+        "oracle_status": "out_of_scope",
+        "expected_fields": {
+          "release_id": "REL-91562",
+          "source_route": "index-549df4"
+        },
+        "world_fields": {
+          "release_id": "REL-91562",
+          "source_route": "index-549df4"
+        }
+      }
+    }
+  ]
+}

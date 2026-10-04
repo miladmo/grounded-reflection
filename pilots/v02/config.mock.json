@@ -1,0 +1,14 @@
+{
+  "protocol": "pilot-v0.2",
+  "backend": {
+    "backend": "mock",
+    "model": "offline-mock",
+    "reasoning_effort": "medium",
+    "timeout_seconds": 300,
+    "max_calls": 220,
+    "max_reported_tokens": 1000000
+  },
+  "repetitions": 2,
+  "order_seed": 20260928,
+  "human_sample_seed": 43
+}

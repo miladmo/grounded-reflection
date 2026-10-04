@@ -1,0 +1,3831 @@
+{
+  "material_revision": "v04-amendment-03-r2",
+  "synthetic_placeholder": true,
+  "development_only": true,
+  "case": {
+    "case_id": "case-8a8e173f9217",
+    "setting": "S4",
+    "family": "retrieval",
+    "regime": "resolved_keep",
+    "seed": 9309286326459880652,
+    "split": "review",
+    "history": {
+      "history_id": "history-7b76660c7faa",
+      "initial_configuration": "{\"task_family\":\"document_retrieval\",\"workflow\":\"workflow-891f5dfcb0f4\",\"as_of\":\"2026-06-15T12:00:00Z\",\"dimensions\":{\"collection\":[\"active\",\"archive\"],\"document_class\":[\"protocol\",\"assay_report\"]},\"field_option\":{\"field\":\"source_route\",\"operation\":\"set_fact\",\"value\":\"alternative_route\",\"separator\":\"\"},\"baseline_template\":{\"source_route\":\"{configured_route}\",\"release_id\":\"{release_id}\",\"checksum_check\":\"required\"},\"fact_descriptions\":{\"configured_route\":\"Endpoint selected by the initial configuration.\",\"alternative_route\":\"The other available endpoint.\",\"release_id\":\"Requested release.\",\"checksum_check\":\"The exact canonical marker required means verify the retrieved checksum.\"},\"hypothesis_class\":\"h14\",\"hypothesis_definition\":\"Each of the two declared binary context dimensions defines a predicate testing its second listed value. Call these predicates x and y. In each registered version the target field configuration is one Boolean function from the following class: constant 0 or 1; x, not x, y, or not y; a conjunction of one literal from each dimension; or a disjunction of one literal from each dimension. Zero selects the configured baseline and one the available alternative. The fourteen distinct truth tables exclude only XOR and XNOR. Each version has its own class member, with no cross-version coupling. This restriction is a supplied synthetic assumption, not an established property of enterprise work.\"}",
+      "assumptions": "This is a bounded synthetic workflow model. initial_configuration declares the field options, two context dimensions and the complete H14 hypothesis class. Each registered version has one class member. A field observation constrains the member indexed by its recorded version. Broader consequences follow from the declared class. Facts provide current artifact values. Other fields retain their configured baseline. Outside the declared task_family and workflow, or without a complete declared context, no update is authorised by this model. A register_version event supplies trusted workflow metadata with the authority roster and half-open validity interval. Binding field approval is an event of type review with decision accept, performed by a listed reviewer within that interval, with the field included in reviewed_fields. Its accepted artifact establishes the field configuration at the recorded context. This explicit approval convention is a supplied synthetic assumption. A forward has an origin_ref identifying the record whose content it reproduces. Raw artifacts expose named revisions and a selected artifact reference; interpreted records expose the selected fields directly. A rejection records a whole-artifact decision and its stated grounds. An artifact field whose review is not recorded has no approved assignment. The configured baseline is retained when the available evidence does not establish an update. Dates and version labels in new work identify the applicable registration.",
+      "field_dictionary": {
+        "source_route": "Canonical field source_route. Available alternative operation set_fact, value='alternative_route', separator=''. Its requirement depends on the evidence.",
+        "release_id": "Configured output field release_id; preserve unless an applicable update is established.",
+        "checksum_check": "Configured output field checksum_check; preserve unless an applicable update is established.",
+        "fact.configured_route": "Endpoint selected by the initial configuration.",
+        "fact.alternative_route": "The other available endpoint.",
+        "fact.release_id": "Requested release.",
+        "fact.checksum_check": "The exact canonical marker required means verify the retrieved checksum."
+      },
+      "records": [
+        {
+          "record_id": "record-bef7444d2efe",
+          "timestamp": "2026-06-05T10:51:20Z",
+          "kind": "review",
+          "actor": "Elena",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "observation": "{\"accepted_fields\":{\"checksum_check\":\"required\",\"release_id\":\"REL-67407\",\"source_route\":\"index-891f5d\"},\"authority_ref\":\"record-0289b140f7f7\",\"change_summary\":{\"after\":\"index-891f5d\",\"before\":\"index-fcb0f4\",\"field\":\"source_route\"},\"comment\":\"Completed.\",\"decision\":\"accept\",\"document_id\":\"DOC-67407\",\"event\":\"review\",\"facts\":{\"alternative_route\":\"index-fcb0f4\",\"checksum\":\"sha256:54e9beb9db6196b41a8ab57fc7ec05cd\",\"configured_route\":\"index-891f5d\",\"date\":\"2026-06-05\",\"document_id\":\"DOC-67407\",\"release_id\":\"REL-67407\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"source_route\"]}"
+        },
+        {
+          "record_id": "record-3fe900f8a425",
+          "timestamp": "2026-06-10T14:28:27Z",
+          "kind": "review",
+          "actor": "Robin",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "observation": "{\"accepted_fields\":{\"checksum_check\":\"required\",\"release_id\":\"REL-40810\",\"source_route\":\"index-891f5d\"},\"authority_ref\":\"record-0289b140f7f7\",\"change_summary\":{\"after\":\"index-891f5d\",\"before\":\"index-fcb0f4\",\"field\":\"source_route\"},\"comment\":\"Approved.\",\"decision\":\"accept\",\"document_id\":\"DOC-40810\",\"event\":\"review\",\"facts\":{\"alternative_route\":\"index-fcb0f4\",\"checksum\":\"sha256:c78ad11c79b1955d1974410cae6cf7f4\",\"configured_route\":\"index-891f5d\",\"date\":\"2026-06-10\",\"document_id\":\"DOC-40810\",\"release_id\":\"REL-40810\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"source_route\"]}"
+        },
+        {
+          "record_id": "record-cccde5fd4d91",
+          "timestamp": "2026-06-03T15:24:01Z",
+          "kind": "review",
+          "actor": "Robin",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "observation": "{\"accepted_fields\":{\"checksum_check\":\"required\",\"release_id\":\"REL-95843\",\"source_route\":\"index-fcb0f4\"},\"authority_ref\":\"record-0289b140f7f7\",\"change_summary\":{\"after\":\"index-fcb0f4\",\"before\":\"index-891f5d\",\"field\":\"source_route\"},\"comment\":\"Reviewed.\",\"decision\":\"accept\",\"document_id\":\"DOC-95843\",\"event\":\"review\",\"facts\":{\"alternative_route\":\"index-fcb0f4\",\"checksum\":\"sha256:a1461e78ef5a3c75309e8762644dce0e\",\"configured_route\":\"index-891f5d\",\"date\":\"2026-06-03\",\"document_id\":\"DOC-95843\",\"release_id\":\"REL-95843\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"source_route\"]}"
+        },
+        {
+          "record_id": "record-c98c5f595368",
+          "timestamp": "2026-05-24T08:46:18Z",
+          "kind": "review",
+          "actor": "Robin",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "observation": "{\"accepted_fields\":{\"checksum_check\":\"required\",\"release_id\":\"REL-33803\",\"source_route\":\"index-fcb0f4\"},\"authority_ref\":\"record-61cb6ba05acc\",\"change_summary\":{\"after\":\"index-fcb0f4\",\"before\":\"index-891f5d\",\"field\":\"source_route\"},\"comment\":\"Reviewed.\",\"decision\":\"accept\",\"document_id\":\"DOC-33803\",\"event\":\"review\",\"facts\":{\"alternative_route\":\"index-fcb0f4\",\"checksum\":\"sha256:4f0f5a4b13974748d21b2f05d178207c\",\"configured_route\":\"index-891f5d\",\"date\":\"2026-05-24\",\"document_id\":\"DOC-33803\",\"release_id\":\"REL-33803\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"source_route\"]}"
+        },
+        {
+          "record_id": "record-61cb6ba05acc",
+          "timestamp": "2026-01-01T00:00:00Z",
+          "kind": "template",
+          "actor": "workflow-registry",
+          "context": {},
+          "observation": "{\"authorised_reviewers\":[\"Robin\",\"Daria\"],\"event\":\"register_version\",\"supersedes\":null,\"task_family\":\"document_retrieval\",\"valid_from\":\"2026-01-01T00:00:00Z\",\"valid_until\":\"2026-06-01T00:00:00Z\",\"version\":\"edition-ba9a27ca804a\",\"workflow\":\"workflow-891f5dfcb0f4\"}"
+        },
+        {
+          "record_id": "record-0289b140f7f7",
+          "timestamp": "2026-06-01T00:00:00Z",
+          "kind": "template",
+          "actor": "workflow-registry",
+          "context": {},
+          "observation": "{\"authorised_reviewers\":[\"Robin\",\"Elena\"],\"event\":\"register_version\",\"supersedes\":\"record-61cb6ba05acc\",\"task_family\":\"document_retrieval\",\"valid_from\":\"2026-06-01T00:00:00Z\",\"valid_until\":\"2027-01-01T00:00:00Z\",\"version\":\"edition-63094e2a57bb\",\"workflow\":\"workflow-891f5dfcb0f4\"}"
+        }
+      ]
+    },
+    "truth": {
+      "history_id": "history-7b76660c7faa",
+      "scenario_id": "S4-retrieval",
+      "pair_id": "case-8a8e173f9217",
+      "world_policy": {
+        "policy_id": "actual-world",
+        "rules": [
+          {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-63094e2a57bb"
+                ],
+                "collection": [
+                  "active"
+                ],
+                "document_class": [
+                  "protocol"
+                ]
+              }
+            }
+          },
+          {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-ba9a27ca804a"
+                ],
+                "collection": [
+                  "archive"
+                ],
+                "document_class": [
+                  "assay_report"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "admissible_policies": [
+        {
+          "policy_id": "policy-000",
+          "rules": [
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-63094e2a57bb"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-001",
+          "rules": [
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-63094e2a57bb"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-002",
+          "rules": [
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-63094e2a57bb"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-003",
+          "rules": [
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-63094e2a57bb"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-004",
+          "rules": [
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-63094e2a57bb"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-005",
+          "rules": [
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-63094e2a57bb"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "policy_id": "policy-006",
+          "rules": [
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-63094e2a57bb"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "active"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "protocol"
+                  ]
+                }
+              }
+            },
+            {
+              "field": "source_route",
+              "operation": "set_fact",
+              "value": "alternative_route",
+              "separator": "",
+              "scope": {
+                "match": {
+                  "task_family": [
+                    "document_retrieval"
+                  ],
+                  "workflow": [
+                    "workflow-891f5dfcb0f4"
+                  ],
+                  "version": [
+                    "edition-ba9a27ca804a"
+                  ],
+                  "collection": [
+                    "archive"
+                  ],
+                  "document_class": [
+                    "assay_report"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_targets": [
+        {
+          "target_id": "target-0",
+          "status": "unresolved",
+          "rule": {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-ba9a27ca804a"
+                ],
+                "collection": [
+                  "active"
+                ],
+                "document_class": [
+                  "protocol"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-1",
+          "status": "unresolved",
+          "rule": {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-ba9a27ca804a"
+                ],
+                "collection": [
+                  "active"
+                ],
+                "document_class": [
+                  "assay_report"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-2",
+          "status": "unresolved",
+          "rule": {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-ba9a27ca804a"
+                ],
+                "collection": [
+                  "archive"
+                ],
+                "document_class": [
+                  "protocol"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-3",
+          "status": "adopt",
+          "rule": {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-ba9a27ca804a"
+                ],
+                "collection": [
+                  "archive"
+                ],
+                "document_class": [
+                  "assay_report"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-4",
+          "status": "adopt",
+          "rule": {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-63094e2a57bb"
+                ],
+                "collection": [
+                  "active"
+                ],
+                "document_class": [
+                  "protocol"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-5",
+          "status": "reject",
+          "rule": {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-63094e2a57bb"
+                ],
+                "collection": [
+                  "active"
+                ],
+                "document_class": [
+                  "assay_report"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-6",
+          "status": "reject",
+          "rule": {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-63094e2a57bb"
+                ],
+                "collection": [
+                  "archive"
+                ],
+                "document_class": [
+                  "protocol"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "target_id": "target-7",
+          "status": "reject",
+          "rule": {
+            "field": "source_route",
+            "operation": "set_fact",
+            "value": "alternative_route",
+            "separator": "",
+            "scope": {
+              "match": {
+                "task_family": [
+                  "document_retrieval"
+                ],
+                "workflow": [
+                  "workflow-891f5dfcb0f4"
+                ],
+                "version": [
+                  "edition-63094e2a57bb"
+                ],
+                "collection": [
+                  "archive"
+                ],
+                "document_class": [
+                  "assay_report"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "scope_probes": [
+        {
+          "task_id": "witness-c7a71f663db7",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-77735",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-77735",
+            "checksum": "sha256:1dc98a034b1a29a8d88a0b39c1bd7900"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-77735"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-d53dc3ba1a6b",
+          "context": {
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-15028",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-15028",
+            "checksum": "sha256:1466646d7b1c18ff14cd56c61bcdcb5d"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-15028"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-b8b456b6f7f0",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-82298",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-82298",
+            "checksum": "sha256:c16430c51abe8737de93a4594f9dc4db"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-82298"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-ab61e79c2f56",
+          "context": {
+            "task_family": "document_retrieval",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-79834",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-79834",
+            "checksum": "sha256:c8ead32585eee7c4cda3ff5630de46fa"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-79834"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-4ebeffef8af9",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "outside-registered-domain",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-89629",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-89629",
+            "checksum": "sha256:7d3e774ceddec05ac263c613c88288a0"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-89629"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-37b7df676014",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-60524",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-60524",
+            "checksum": "sha256:bc15239a2135ed05e150d725a33c49b7"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-60524"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-f7fda8424e8d",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "outside-registered-domain",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-26927",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-26927",
+            "checksum": "sha256:3362f294c1514bc555fd7e16888271c2"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-26927"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-9010b9404927",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-45903",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-45903",
+            "checksum": "sha256:64c8e91b5339f74b0817506e565a9c01"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-45903"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-58af25024361",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "outside-registered-domain",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-59134",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-59134",
+            "checksum": "sha256:c860ba0e74c0c7fd68d6a2f3a75e5dc7"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-59134"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-d8ba817cc11d",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active"
+          },
+          "facts": {
+            "document_id": "DOC-43245",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-43245",
+            "checksum": "sha256:168e9f93716bb2e6aeed14269786fd29"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-43245"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-48f72d56c9b3",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "outside-registered-domain"
+          },
+          "facts": {
+            "document_id": "DOC-95766",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-95766",
+            "checksum": "sha256:011bccb0510b3d725c91605379391152"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-95766"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-8e8a2db94961",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-10776",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-10776",
+            "checksum": "sha256:1f80bd253f7c64898f366cbefb3dce31"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-10776"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-01e54336f4c4",
+          "context": {
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-71833",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-71833",
+            "checksum": "sha256:76e5798874b5163d20825bfeda2cff0a"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-71833"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-d0d9be49e9d4",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-55696",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-55696",
+            "checksum": "sha256:59616e5c169a1c8b2ebcb8ddb998b00c"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-55696"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-40e31b421fa3",
+          "context": {
+            "task_family": "document_retrieval",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-71109",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-71109",
+            "checksum": "sha256:02d12b5eb77f5663f918745bf36b4597"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-71109"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-a771d68131d0",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "outside-registered-domain",
+            "version": "edition-ba9a27ca804a",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-14203",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-14203",
+            "checksum": "sha256:196844d5b314e6a34f523c52bf095148"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-14203"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-5e42da53fb5b",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-96687",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-96687",
+            "checksum": "sha256:ac3a8c052f6c133f24c37e8d95018d26"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-96687"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3540424565c9",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "outside-registered-domain",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-82774",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-82774",
+            "checksum": "sha256:d6e26cdf119f90300155e952ef294c55"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-82774"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-ebd276c4f2dc",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-46955",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-46955",
+            "checksum": "sha256:0bd25a4b07a7ac38bce6a7e5c35e4d4b"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-46955"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-c60b88abc5d9",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "outside-registered-domain",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-65050",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-65050",
+            "checksum": "sha256:c1f5f0eef9e151b4747677a4e97acada"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-65050"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-e6fe2f45bbbe",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-96583",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-96583",
+            "checksum": "sha256:48c919c13af0c21fe1caa05c52a7a4d9"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-96583"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-ff31b2c37a84",
+          "context": {
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-71912",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-71912",
+            "checksum": "sha256:9ad43d225b6e8d6ca6cab3ba0e82d91f"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-71912"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-d432d72647c9",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-30620",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-30620",
+            "checksum": "sha256:7ef728020b5ec2b25ee1c4be7c220643"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-30620"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-14c034eacda3",
+          "context": {
+            "task_family": "document_retrieval",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-80922",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-80922",
+            "checksum": "sha256:1d1108325751d5844c525c453d100274"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-80922"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3fb8753d18cb",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "outside-registered-domain",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-99135",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-99135",
+            "checksum": "sha256:1388a240f5b9c6a9bdbe21f7dd09c274"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-99135"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-beab038090b8",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-25626",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-25626",
+            "checksum": "sha256:d6015abbb588137de23f2ee51b1c3949"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-25626"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-518f35914106",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "outside-registered-domain",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-49289",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-49289",
+            "checksum": "sha256:9fa5776736a102fdd0717c46c61b5c64"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-49289"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-f85c8d56cc56",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive"
+          },
+          "facts": {
+            "document_id": "DOC-26471",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-26471",
+            "checksum": "sha256:e948be0dda5db1499a848ba63ee7c8c6"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-26471"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3473b3ef6905",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "outside-registered-domain"
+          },
+          "facts": {
+            "document_id": "DOC-48420",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-48420",
+            "checksum": "sha256:4f9050cf03fee794efcce187f92f3258"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-48420"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-ea384e52a204",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-61424",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-61424",
+            "checksum": "sha256:c80778901f8ebba87affcbbe178af4d3"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-61424"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-c295f0e9e10a",
+          "context": {
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-81524",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-81524",
+            "checksum": "sha256:1322c15cb39619de196b001b490fb33e"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-81524"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-df99850e87aa",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-40017",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-40017",
+            "checksum": "sha256:d94d5688da707a1d5bf30e137b7646fd"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-40017"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-b60e10c715c3",
+          "context": {
+            "task_family": "document_retrieval",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-68444",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-68444",
+            "checksum": "sha256:faa2ee61593550c3d0a1fe5cff9fbb55"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-68444"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-65acd791a0c3",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "outside-registered-domain",
+            "version": "edition-ba9a27ca804a",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-26816",
+            "date": "2026-05-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-26816",
+            "checksum": "sha256:095332636fc14db55464cc786c801a04"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-26816"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-738822783f4f",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-30372",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-30372",
+            "checksum": "sha256:ffc0b799cf96b9bb896261eb31391590"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-30372"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3518336db92c",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "outside-registered-domain",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-66692",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-66692",
+            "checksum": "sha256:8b11257f9a78a9c58fa3e8bae4b30cbe"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-66692"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3d904c4742e0",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-60548",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-60548",
+            "checksum": "sha256:34f32934fa703e2bc60abc1335df3bc0"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-60548"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-f8cb2f36c213",
+          "context": {
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-54606",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-54606",
+            "checksum": "sha256:09a37e7c8d2bf1063f095d0e484077dd"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-54606"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-8a5a58f83f3c",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-55609",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-55609",
+            "checksum": "sha256:b6e4b9f042ee2a3d7fe2bb14b61c62af"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-55609"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-02708b3f4ea1",
+          "context": {
+            "task_family": "document_retrieval",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-89476",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-89476",
+            "checksum": "sha256:f2dd21098b5d26be81ae4008041b80df"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-89476"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-a13745867c49",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "outside-registered-domain",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-68294",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-68294",
+            "checksum": "sha256:46182a427ee4430052b053bfd2d9ec8c"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-68294"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-3d83f62f0e57",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-21076",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-21076",
+            "checksum": "sha256:a8e1fd0bf8215dba90fda729c36e9c18"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-21076"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-5e10d460ce25",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "outside-registered-domain",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-28583",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-28583",
+            "checksum": "sha256:eaceb76880984b49cfda3768a611cc55"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-28583"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-7feb82b41e11",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active"
+          },
+          "facts": {
+            "document_id": "DOC-51074",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-51074",
+            "checksum": "sha256:ccf7aab8030592c5c1fb7c2e44dd3bf7"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-51074"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-837dce34ad08",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "outside-registered-domain"
+          },
+          "facts": {
+            "document_id": "DOC-76185",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-76185",
+            "checksum": "sha256:773329b58601f46ec60bfd0bcef1dc15"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-76185"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-9bf46372252a",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-80571",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-80571",
+            "checksum": "sha256:eff06b9ff81c9bde484a13ce736a9e44"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-80571"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-25df4558c343",
+          "context": {
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-93497",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-93497",
+            "checksum": "sha256:bf0d492ebe2d660ecf124fc9ddde56b4"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-93497"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-cdefa29688ba",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-54908",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-54908",
+            "checksum": "sha256:c38d1c90100d72c4821b5c64977c4103"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-54908"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-5f7413fe49ae",
+          "context": {
+            "task_family": "document_retrieval",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-21898",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-21898",
+            "checksum": "sha256:30486ec546b9d2dc2e90de5777e3011d"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-21898"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-19708c1674b4",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "outside-registered-domain",
+            "version": "edition-63094e2a57bb",
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-17397",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-17397",
+            "checksum": "sha256:bc03b287686295d7a289c9474678868d"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-17397"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-bc114ea00b95",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-80287",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-80287",
+            "checksum": "sha256:e13bc1e61b70fd66c52cf24eeb3973dc"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-80287"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-c2d6be848dc4",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "outside-registered-domain",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-60388",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-60388",
+            "checksum": "sha256:18b6616e91cd7ba91be073f178f38ec5"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-60388"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-65cfbd0e50d8",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-19433",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-19433",
+            "checksum": "sha256:abd324dce78177cd38e37ff5bf5216b0"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-19433"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-45ef7927a4de",
+          "context": {
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-76852",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-76852",
+            "checksum": "sha256:dc63a082719594e9120c43ba26937cab"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-76852"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-740470cf4768",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-78743",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-78743",
+            "checksum": "sha256:05c2e674bf9326899a995420766597bf"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-78743"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-e7658c8bce4e",
+          "context": {
+            "task_family": "document_retrieval",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-55492",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-55492",
+            "checksum": "sha256:66470b402ef2880a2eae3c0265844164"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-55492"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-1ed4c2d2d428",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "outside-registered-domain",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          "facts": {
+            "document_id": "DOC-68525",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-68525",
+            "checksum": "sha256:37296992a5ce6ef54facfe359c657815"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-68525"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-f1dfeb021951",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive"
+          },
+          "facts": {
+            "document_id": "DOC-95509",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-95509",
+            "checksum": "sha256:f6b18319d1bfe6471a512a9c13e14da3"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-95509"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-b66e7c1bca18",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "outside-registered-domain"
+          },
+          "facts": {
+            "document_id": "DOC-56592",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-56592",
+            "checksum": "sha256:ca49009844cf2b0c6606313e16ee8e64"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-56592"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-75402b1d5540",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-41852",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-41852",
+            "checksum": "sha256:e6c7df647fb8fb2bccae7a48433443c9"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-41852"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-50ede34d4603",
+          "context": {
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-97038",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-97038",
+            "checksum": "sha256:002495f36aa8dc0527bd4564f14d90fa"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-97038"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-2ff4fb06254e",
+          "context": {
+            "task_family": "outside-registered-domain",
+            "workflow": "workflow-891f5dfcb0f4",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-83403",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-83403",
+            "checksum": "sha256:2a1ba49016f86538387b70c2b016e05a"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-83403"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-d3da5ec7fac7",
+          "context": {
+            "task_family": "document_retrieval",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-69956",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-69956",
+            "checksum": "sha256:40887587dfbd97ed54f778b2310b169c"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-69956"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        },
+        {
+          "task_id": "witness-12eb2b7a777d",
+          "context": {
+            "task_family": "document_retrieval",
+            "workflow": "outside-registered-domain",
+            "version": "edition-63094e2a57bb",
+            "collection": "archive",
+            "document_class": "assay_report"
+          },
+          "facts": {
+            "document_id": "DOC-24318",
+            "date": "2026-06-15",
+            "configured_route": "index-891f5d",
+            "alternative_route": "index-fcb0f4",
+            "release_id": "REL-24318",
+            "checksum": "sha256:291ad143ce8f7c36afb6354bdb3bd3b4"
+          },
+          "baseline_fields": [
+            {
+              "name": "source_route",
+              "value": "index-891f5d"
+            },
+            {
+              "name": "release_id",
+              "value": "REL-24318"
+            },
+            {
+              "name": "checksum_check",
+              "value": "required"
+            }
+          ],
+          "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+        }
+      ]
+    },
+    "diagnostic_context": {
+      "task_family": "document_retrieval",
+      "workflow": "workflow-891f5dfcb0f4",
+      "version": "edition-63094e2a57bb",
+      "collection": "archive",
+      "document_class": "assay_report"
+    },
+    "control_context": {
+      "task_family": "document_retrieval",
+      "workflow": "workflow-891f5dfcb0f4",
+      "version": "edition-63094e2a57bb",
+      "collection": "archive",
+      "document_class": "protocol"
+    },
+    "oracle_audit": {
+      "record-bef7444d2efe": {
+        "root_id": "record-bef7444d2efe",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "protocol"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-3fe900f8a425": {
+        "root_id": "record-3fe900f8a425",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "active",
+          "document_class": "assay_report"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-cccde5fd4d91": {
+        "root_id": "record-cccde5fd4d91",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "active",
+          "document_class": "protocol"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-c98c5f595368": {
+        "root_id": "record-c98c5f595368",
+        "validity": "superseded",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-ba9a27ca804a",
+          "collection": "archive",
+          "document_class": "assay_report"
+        },
+        "constraint_applied": true,
+        "usable_current_support": false
+      },
+      "record-61cb6ba05acc": {
+        "root_id": "record-61cb6ba05acc",
+        "validity": "superseded",
+        "kind": "version_event",
+        "scope_context": {},
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-0289b140f7f7": {
+        "root_id": "record-0289b140f7f7",
+        "validity": "active",
+        "kind": "version_event",
+        "scope_context": {},
+        "constraint_applied": false,
+        "usable_current_support": false
+      }
+    },
+    "material_audit": {
+      "material_revision": "v04-amendment-03-r2",
+      "task_type": "resolved_retention_transfer",
+      "record_count": 6,
+      "rendering": "interpreted",
+      "additional_noise_counts": {},
+      "reversed_option": true,
+      "current_witness_contexts": [
+        {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "active",
+          "document_class": "protocol"
+        },
+        {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "protocol"
+        },
+        {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "active",
+          "document_class": "assay_report"
+        }
+      ],
+      "diagnostic_observed": false,
+      "control_basis": "resolved_keep",
+      "registered_versions": [
+        "edition-ba9a27ca804a",
+        "edition-63094e2a57bb"
+      ],
+      "admissible_count": 7,
+      "current_admissible_count": 1,
+      "counterfactual": {
+        "baseline": {
+          "diagnostic": "keep",
+          "control": "keep"
+        },
+        "records": [
+          {
+            "record_id": "record-c98c5f595368",
+            "record_type": "old_approval",
+            "origin_record_id": "record-c98c5f595368",
+            "context": {
+              "task_family": "document_retrieval",
+              "workflow": "workflow-891f5dfcb0f4",
+              "version": "edition-63094e2a57bb",
+              "collection": "archive",
+              "document_class": "assay_report"
+            },
+            "option_index": 1,
+            "selected_field": "source_route",
+            "selected_field_present": true,
+            "selected_field_value": "index-fcb0f4",
+            "promotion": "Add this publicly recovered field configuration as one binding current-version observation; preserve all genuine observations.",
+            "remaining_policy_count": 0,
+            "outcome": "contradiction",
+            "diagnostic_action": null,
+            "control_action": null,
+            "diagnostic_basis": "contradiction",
+            "control_basis": "contradiction"
+          }
+        ],
+        "by_type": {
+          "old_approval": {
+            "record_count": 1,
+            "action_flip": 0,
+            "contradiction": 1,
+            "unchanged_constraints": 0,
+            "narrower_same_actions": 0,
+            "retention_resolved": 0,
+            "unassessable": 0,
+            "qualifying_record_ids": [
+              "record-c98c5f595368"
+            ]
+          }
+        },
+        "required_outcome": "contradiction",
+        "passed": true
+      }
+    }
+  },
+  "oracle_proof": {
+    "source": "Recomputed solely from the public History by the independent oracle.",
+    "hypothesis_class": "h14",
+    "class_limit": "H14 excludes XOR and XNOR; transfer identification depends on this supplied restriction.",
+    "current_version": "edition-63094e2a57bb",
+    "versions": {
+      "edition-ba9a27ca804a": {
+        "authorised_reviewers": [
+          "Robin",
+          "Daria"
+        ],
+        "event": "register_version",
+        "supersedes": null,
+        "task_family": "document_retrieval",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2026-06-01T00:00:00Z",
+        "version": "edition-ba9a27ca804a",
+        "workflow": "workflow-891f5dfcb0f4",
+        "registry_id": "record-61cb6ba05acc"
+      },
+      "edition-63094e2a57bb": {
+        "authorised_reviewers": [
+          "Robin",
+          "Elena"
+        ],
+        "event": "register_version",
+        "supersedes": "record-61cb6ba05acc",
+        "task_family": "document_retrieval",
+        "valid_from": "2026-06-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z",
+        "version": "edition-63094e2a57bb",
+        "workflow": "workflow-891f5dfcb0f4",
+        "registry_id": "record-0289b140f7f7"
+      }
+    },
+    "current_compatible_function_count": 1,
+    "constraints": [
+      {
+        "record_id": "record-bef7444d2efe",
+        "root_id": "record-bef7444d2efe",
+        "version": "edition-63094e2a57bb",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "protocol"
+        },
+        "option_index": 0
+      },
+      {
+        "record_id": "record-3fe900f8a425",
+        "root_id": "record-3fe900f8a425",
+        "version": "edition-63094e2a57bb",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "active",
+          "document_class": "assay_report"
+        },
+        "option_index": 0
+      },
+      {
+        "record_id": "record-cccde5fd4d91",
+        "root_id": "record-cccde5fd4d91",
+        "version": "edition-63094e2a57bb",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "active",
+          "document_class": "protocol"
+        },
+        "option_index": 1
+      },
+      {
+        "record_id": "record-c98c5f595368",
+        "root_id": "record-c98c5f595368",
+        "version": "edition-ba9a27ca804a",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-ba9a27ca804a",
+          "collection": "archive",
+          "document_class": "assay_report"
+        },
+        "option_index": 1
+      }
+    ],
+    "admissible_policy_count": 7,
+    "compatible_functions_by_version": [
+      {
+        "version": "edition-63094e2a57bb",
+        "cells": [
+          {
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          {
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          {
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          {
+            "collection": "archive",
+            "document_class": "assay_report"
+          }
+        ],
+        "compatible_function_count": 1,
+        "functions": [
+          {
+            "values": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "complexity": 2
+          }
+        ]
+      },
+      {
+        "version": "edition-ba9a27ca804a",
+        "cells": [
+          {
+            "collection": "active",
+            "document_class": "protocol"
+          },
+          {
+            "collection": "active",
+            "document_class": "assay_report"
+          },
+          {
+            "collection": "archive",
+            "document_class": "protocol"
+          },
+          {
+            "collection": "archive",
+            "document_class": "assay_report"
+          }
+        ],
+        "compatible_function_count": 7,
+        "functions": [
+          {
+            "values": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "complexity": 2
+          },
+          {
+            "values": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "complexity": 1
+          },
+          {
+            "values": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "complexity": 1
+          },
+          {
+            "values": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "complexity": 2
+          },
+          {
+            "values": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "complexity": 2
+          },
+          {
+            "values": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "complexity": 2
+          },
+          {
+            "values": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "complexity": 0
+          }
+        ]
+      }
+    ],
+    "task_obligations": [
+      {
+        "probe": "diagnostic",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "assay_report"
+        },
+        "observed_context": false,
+        "direct_witnesses": [],
+        "unanimous_fields": true,
+        "warranted_fields": {
+          "source_route": "index-891f5d",
+          "release_id": "REL-21057",
+          "checksum_check": "required"
+        },
+        "expected_decision": "keep",
+        "retention_basis": "resolved"
+      },
+      {
+        "probe": "control",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "protocol"
+        },
+        "observed_context": true,
+        "direct_witnesses": [
+          "record-bef7444d2efe"
+        ],
+        "unanimous_fields": true,
+        "warranted_fields": {
+          "source_route": "index-891f5d",
+          "release_id": "REL-90991",
+          "checksum_check": "required"
+        },
+        "expected_decision": "keep",
+        "retention_basis": "resolved"
+      }
+    ],
+    "evidence_audit": {
+      "record-bef7444d2efe": {
+        "root_id": "record-bef7444d2efe",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "protocol"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-3fe900f8a425": {
+        "root_id": "record-3fe900f8a425",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "active",
+          "document_class": "assay_report"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-cccde5fd4d91": {
+        "root_id": "record-cccde5fd4d91",
+        "validity": "active",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "active",
+          "document_class": "protocol"
+        },
+        "constraint_applied": true,
+        "usable_current_support": true
+      },
+      "record-c98c5f595368": {
+        "root_id": "record-c98c5f595368",
+        "validity": "superseded",
+        "kind": "authoritative_review",
+        "scope_context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-ba9a27ca804a",
+          "collection": "archive",
+          "document_class": "assay_report"
+        },
+        "constraint_applied": true,
+        "usable_current_support": false
+      },
+      "record-61cb6ba05acc": {
+        "root_id": "record-61cb6ba05acc",
+        "validity": "superseded",
+        "kind": "version_event",
+        "scope_context": {},
+        "constraint_applied": false,
+        "usable_current_support": false
+      },
+      "record-0289b140f7f7": {
+        "root_id": "record-0289b140f7f7",
+        "validity": "active",
+        "kind": "version_event",
+        "scope_context": {},
+        "constraint_applied": false,
+        "usable_current_support": false
+      }
+    }
+  },
+  "counterfactual": {
+    "baseline": {
+      "diagnostic": "keep",
+      "control": "keep"
+    },
+    "records": [
+      {
+        "record_id": "record-c98c5f595368",
+        "record_type": "old_approval",
+        "origin_record_id": "record-c98c5f595368",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "assay_report"
+        },
+        "option_index": 1,
+        "selected_field": "source_route",
+        "selected_field_present": true,
+        "selected_field_value": "index-fcb0f4",
+        "promotion": "Add this publicly recovered field configuration as one binding current-version observation; preserve all genuine observations.",
+        "remaining_policy_count": 0,
+        "outcome": "contradiction",
+        "diagnostic_action": null,
+        "control_action": null,
+        "diagnostic_basis": "contradiction",
+        "control_basis": "contradiction"
+      }
+    ],
+    "by_type": {
+      "old_approval": {
+        "record_count": 1,
+        "action_flip": 0,
+        "contradiction": 1,
+        "unchanged_constraints": 0,
+        "narrower_same_actions": 0,
+        "retention_resolved": 0,
+        "unassessable": 0,
+        "qualifying_record_ids": [
+          "record-c98c5f595368"
+        ]
+      }
+    },
+    "required_outcome": "contradiction",
+    "passed": true
+  },
+  "surface_audit": {
+    "report": "surface-audit.json",
+    "markdown": "surface-audit.md",
+    "history_id": "history-7b76660c7faa",
+    "construction_checks": {
+      "history_id": "history-7b76660c7faa",
+      "positive_records": 3,
+      "negative_records": 0,
+      "negative_categories": [],
+      "label_transitions_in_delivered_order": 0,
+      "mixed_delivered_order": null,
+      "applicable": false,
+      "passed": null,
+      "order_check_is_descriptive": true
+    }
+  },
+  "future": [
+    {
+      "task": {
+        "task_id": "task-10dd81571202",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "assay_report"
+        },
+        "facts": {
+          "document_id": "DOC-21057",
+          "date": "2026-06-15",
+          "configured_route": "index-891f5d",
+          "alternative_route": "index-fcb0f4",
+          "release_id": "REL-21057",
+          "checksum": "sha256:f7bf98840af9a88b922660c0f8939c42"
+        },
+        "baseline_fields": [
+          {
+            "name": "source_route",
+            "value": "index-891f5d"
+          },
+          {
+            "name": "release_id",
+            "value": "REL-21057"
+          },
+          {
+            "name": "checksum_check",
+            "value": "required"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-10dd81571202",
+        "history_id": "history-7b76660c7faa",
+        "probe": "diagnostic",
+        "expected_decision": "keep",
+        "recoverable": true,
+        "world_fields": [
+          {
+            "name": "source_route",
+            "value": "index-891f5d"
+          },
+          {
+            "name": "release_id",
+            "value": "REL-21057"
+          },
+          {
+            "name": "checksum_check",
+            "value": "required"
+          }
+        ]
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-b96913b3b884",
+        "context": {
+          "task_family": "document_retrieval",
+          "workflow": "workflow-891f5dfcb0f4",
+          "version": "edition-63094e2a57bb",
+          "collection": "archive",
+          "document_class": "protocol"
+        },
+        "facts": {
+          "document_id": "DOC-90991",
+          "date": "2026-06-15",
+          "configured_route": "index-891f5d",
+          "alternative_route": "index-fcb0f4",
+          "release_id": "REL-90991",
+          "checksum": "sha256:dc325b30090eb2bf3c037675bbcdd685"
+        },
+        "baseline_fields": [
+          {
+            "name": "source_route",
+            "value": "index-891f5d"
+          },
+          {
+            "name": "release_id",
+            "value": "REL-90991"
+          },
+          {
+            "name": "checksum_check",
+            "value": "required"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-b96913b3b884",
+        "history_id": "history-7b76660c7faa",
+        "probe": "control",
+        "expected_decision": "keep",
+        "recoverable": true,
+        "world_fields": [
+          {
+            "name": "source_route",
+            "value": "index-891f5d"
+          },
+          {
+            "name": "release_id",
+            "value": "REL-90991"
+          },
+          {
+            "name": "checksum_check",
+            "value": "required"
+          }
+        ]
+      }
+    }
+  ],
+  "human_review": {
+    "status": "pending",
+    "reviewer": null,
+    "response": null
+  }
+}

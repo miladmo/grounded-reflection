@@ -1,0 +1,24 @@
+{
+  "index": 12,
+  "label": "12-gen-C-H4",
+  "phase": "generate",
+  "arm": "C",
+  "history": "H4",
+  "setting": "S5",
+  "type": "C_gen",
+  "base_input_chars": 12406,
+  "outcome": "valid",
+  "reason": null,
+  "usage": {
+    "input_tokens": 2707,
+    "output_tokens": 1030,
+    "cached_input_tokens": null,
+    "reasoning_output_tokens": null
+  },
+  "wall_seconds": 5.856625,
+  "finish_reason": "stop",
+  "system_fingerprint": "vllm-0.25.1-dp4-ep-3e90b15f",
+  "input_chars": 12714,
+  "actual_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "reasoning_content_present": true
+}

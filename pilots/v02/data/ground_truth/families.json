@@ -1,0 +1,674 @@
+[
+  {
+    "family": "recruiting",
+    "recoverable": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "work_ownership",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ],
+            "audience": [
+              "specialists"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "supported_learning",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ],
+            "audience": [
+              "career_starters"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "role_page",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ]
+          }
+        }
+      }
+    ],
+    "unidentifiable": [
+      {
+        "field": "closing_style",
+        "operator": "equals",
+        "value": "invitation",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ]
+          }
+        }
+      },
+      {
+        "field": "closing_style",
+        "operator": "equals",
+        "value": "statement",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ]
+          }
+        }
+      }
+    ],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "community_story",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "capacity_planning",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "email_attachment",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ]
+          }
+        }
+      }
+    ],
+    "supported_exceptions": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "capacity_planning",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "staffing_review"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "planning_queue",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "staffing_review"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "community_story",
+        "scope": {
+          "match": {
+            "role": [
+              "recruiting"
+            ],
+            "channel": [
+              "vacancy_brief"
+            ],
+            "audience": [
+              "specialists"
+            ],
+            "occasion": [
+              "showcase"
+            ]
+          }
+        }
+      }
+    ],
+    "scope_probes": [
+      {
+        "family": "recruiting",
+        "role": "recruiting",
+        "occasion": "routine",
+        "channel": "vacancy_brief",
+        "audience": "specialists"
+      },
+      {
+        "family": "recruiting",
+        "role": "recruiting",
+        "occasion": "routine",
+        "channel": "vacancy_brief",
+        "audience": "career_starters"
+      },
+      {
+        "family": "recruiting",
+        "role": "recruiting",
+        "occasion": "routine",
+        "channel": "staffing_review",
+        "audience": "specialists"
+      },
+      {
+        "family": "recruiting",
+        "role": "recruiting",
+        "occasion": "routine",
+        "channel": "staffing_review",
+        "audience": "career_starters"
+      },
+      {
+        "family": "recruiting",
+        "role": "recruiting",
+        "occasion": "routine",
+        "channel": "vacancy_brief"
+      }
+    ]
+  },
+  {
+    "family": "sales",
+    "recoverable": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "unresolved_needs",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ],
+            "audience": [
+              "discovery_team"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "agreed_next_steps",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ],
+            "audience": [
+              "proposal_team"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "account_workspace",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ]
+          }
+        }
+      }
+    ],
+    "unidentifiable": [
+      {
+        "field": "closing_style",
+        "operator": "equals",
+        "value": "invitation",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ]
+          }
+        }
+      },
+      {
+        "field": "closing_style",
+        "operator": "equals",
+        "value": "statement",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ]
+          }
+        }
+      }
+    ],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "product_story",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "portfolio_coverage",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "local_spreadsheet",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ]
+          }
+        }
+      }
+    ],
+    "supported_exceptions": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "portfolio_coverage",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "territory_review"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "territory_board",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "territory_review"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "product_story",
+        "scope": {
+          "match": {
+            "role": [
+              "sales"
+            ],
+            "channel": [
+              "account_handover"
+            ],
+            "audience": [
+              "discovery_team"
+            ],
+            "occasion": [
+              "showcase"
+            ]
+          }
+        }
+      }
+    ],
+    "scope_probes": [
+      {
+        "family": "sales",
+        "role": "sales",
+        "occasion": "routine",
+        "channel": "account_handover",
+        "audience": "discovery_team"
+      },
+      {
+        "family": "sales",
+        "role": "sales",
+        "occasion": "routine",
+        "channel": "account_handover",
+        "audience": "proposal_team"
+      },
+      {
+        "family": "sales",
+        "role": "sales",
+        "occasion": "routine",
+        "channel": "territory_review",
+        "audience": "discovery_team"
+      },
+      {
+        "family": "sales",
+        "role": "sales",
+        "occasion": "routine",
+        "channel": "territory_review",
+        "audience": "proposal_team"
+      },
+      {
+        "family": "sales",
+        "role": "sales",
+        "occasion": "routine",
+        "channel": "account_handover"
+      }
+    ]
+  },
+  {
+    "family": "research",
+    "recoverable": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "limitations",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ],
+            "audience": [
+              "exploratory_review"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "reproducibility",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ],
+            "audience": [
+              "replication_review"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "versioned_notebook",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ]
+          }
+        }
+      }
+    ],
+    "unidentifiable": [
+      {
+        "field": "closing_style",
+        "operator": "equals",
+        "value": "invitation",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ]
+          }
+        }
+      },
+      {
+        "field": "closing_style",
+        "operator": "equals",
+        "value": "statement",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ]
+          }
+        }
+      }
+    ],
+    "distractors": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "novelty_story",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "programme_milestones",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "unversioned_export",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ]
+          }
+        }
+      }
+    ],
+    "supported_exceptions": [
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "programme_milestones",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "portfolio_summary"
+            ]
+          }
+        }
+      },
+      {
+        "field": "route",
+        "operator": "equals",
+        "value": "programme_board",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "portfolio_summary"
+            ]
+          }
+        }
+      },
+      {
+        "field": "emphasis",
+        "operator": "equals",
+        "value": "novelty_story",
+        "scope": {
+          "match": {
+            "role": [
+              "research"
+            ],
+            "channel": [
+              "study_note"
+            ],
+            "audience": [
+              "exploratory_review"
+            ],
+            "occasion": [
+              "showcase"
+            ]
+          }
+        }
+      }
+    ],
+    "scope_probes": [
+      {
+        "family": "research",
+        "role": "research",
+        "occasion": "routine",
+        "channel": "study_note",
+        "audience": "exploratory_review"
+      },
+      {
+        "family": "research",
+        "role": "research",
+        "occasion": "routine",
+        "channel": "study_note",
+        "audience": "replication_review"
+      },
+      {
+        "family": "research",
+        "role": "research",
+        "occasion": "routine",
+        "channel": "portfolio_summary",
+        "audience": "exploratory_review"
+      },
+      {
+        "family": "research",
+        "role": "research",
+        "occasion": "routine",
+        "channel": "portfolio_summary",
+        "audience": "replication_review"
+      },
+      {
+        "family": "research",
+        "role": "research",
+        "occasion": "routine",
+        "channel": "study_note"
+      }
+    ]
+  }
+]

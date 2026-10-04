@@ -1,0 +1,152 @@
+[
+  {
+    "case_id": "case-dbd31a91da82",
+    "family": "recruiting",
+    "split": "calibration",
+    "context": {
+      "family": "recruiting",
+      "role": "recruiting",
+      "occasion": "routine",
+      "channel": "vacancy_brief",
+      "audience": "specialists"
+    },
+    "request": "Produce a compact work decision record. Copy the current source_id into its field and include the complete subject name in a factual summary. Choose emphasis and route for the supplied context, using prior workflow records when available. If a required decision cannot be supported, identify the missing context instead of guessing. Use undetermined or omit a field that cannot yet be settled. You may retain independently supported fields when asking or deferring.",
+    "facts": {
+      "source_id": "source-dbd31a91da82",
+      "subject": "research software vacancy Kdbd31a",
+      "work_detail": "documenting reproducible experiments",
+      "source_note": "Current source document source-dbd31a91da82 describes research software vacancy Kdbd31a."
+    },
+    "output_fields": [
+      "emphasis",
+      "route",
+      "source_id",
+      "summary"
+    ]
+  },
+  {
+    "case_id": "case-38623db1868a",
+    "family": "recruiting",
+    "split": "calibration",
+    "context": {
+      "family": "recruiting",
+      "role": "recruiting",
+      "occasion": "routine",
+      "channel": "staffing_review",
+      "audience": "career_starters"
+    },
+    "request": "Produce a compact work decision record. Copy the current source_id into its field and include the complete subject name in a factual summary. Choose emphasis and route for the supplied context, using prior workflow records when available. If a required decision cannot be supported, identify the missing context instead of guessing. Use undetermined or omit a field that cannot yet be settled. You may retain independently supported fields when asking or deferring. For this internal record, use emphasis=capacity_planning and route=planning_queue as specified by its current owner.",
+    "facts": {
+      "source_id": "source-38623db1868a",
+      "subject": "research software vacancy K38623d",
+      "work_detail": "documenting reproducible experiments",
+      "source_note": "Current source document source-38623db1868a describes research software vacancy K38623d."
+    },
+    "output_fields": [
+      "emphasis",
+      "route",
+      "source_id",
+      "summary"
+    ]
+  },
+  {
+    "case_id": "case-e7ddb752bbc1",
+    "family": "sales",
+    "split": "calibration",
+    "context": {
+      "family": "sales",
+      "role": "sales",
+      "occasion": "routine",
+      "channel": "account_handover",
+      "audience": "discovery_team"
+    },
+    "request": "Produce a compact work decision record. Copy the current source_id into its field and include the complete subject name in a factual summary. Choose emphasis and route for the supplied context, using prior workflow records when available. If a required decision cannot be supported, identify the missing context instead of guessing. Use undetermined or omit a field that cannot yet be settled. You may retain independently supported fields when asking or deferring.",
+    "facts": {
+      "source_id": "source-e7ddb752bbc1",
+      "subject": "measurement software opportunity Ke7ddb7",
+      "work_detail": "checking the customer's workflow needs",
+      "source_note": "Current source document source-e7ddb752bbc1 describes measurement software opportunity Ke7ddb7."
+    },
+    "output_fields": [
+      "emphasis",
+      "route",
+      "source_id",
+      "summary"
+    ]
+  },
+  {
+    "case_id": "case-8e9af8e12612",
+    "family": "sales",
+    "split": "calibration",
+    "context": {
+      "family": "sales",
+      "role": "sales",
+      "occasion": "routine",
+      "channel": "territory_review",
+      "audience": "proposal_team"
+    },
+    "request": "Produce a compact work decision record. Copy the current source_id into its field and include the complete subject name in a factual summary. Choose emphasis and route for the supplied context, using prior workflow records when available. If a required decision cannot be supported, identify the missing context instead of guessing. Use undetermined or omit a field that cannot yet be settled. You may retain independently supported fields when asking or deferring. For this internal record, use emphasis=portfolio_coverage and route=territory_board as specified by its current owner.",
+    "facts": {
+      "source_id": "source-8e9af8e12612",
+      "subject": "measurement software opportunity K8e9af8",
+      "work_detail": "checking the customer's workflow needs",
+      "source_note": "Current source document source-8e9af8e12612 describes measurement software opportunity K8e9af8."
+    },
+    "output_fields": [
+      "emphasis",
+      "route",
+      "source_id",
+      "summary"
+    ]
+  },
+  {
+    "case_id": "case-7bbe5e1fae8f",
+    "family": "research",
+    "split": "calibration",
+    "context": {
+      "family": "research",
+      "role": "research",
+      "occasion": "routine",
+      "channel": "study_note",
+      "audience": "exploratory_review"
+    },
+    "request": "Produce a compact work decision record. Copy the current source_id into its field and include the complete subject name in a factual summary. Choose emphasis and route for the supplied context, using prior workflow records when available. If a required decision cannot be supported, identify the missing context instead of guessing. Use undetermined or omit a field that cannot yet be settled. You may retain independently supported fields when asking or deferring.",
+    "facts": {
+      "source_id": "source-7bbe5e1fae8f",
+      "subject": "synthetic assay study K7bbe5e",
+      "work_detail": "comparing simulated measurement runs",
+      "source_note": "Current source document source-7bbe5e1fae8f describes synthetic assay study K7bbe5e."
+    },
+    "output_fields": [
+      "emphasis",
+      "route",
+      "source_id",
+      "summary"
+    ]
+  },
+  {
+    "case_id": "case-fd02e0b9dd2a",
+    "family": "research",
+    "split": "calibration",
+    "context": {
+      "family": "research",
+      "role": "research",
+      "occasion": "routine",
+      "channel": "portfolio_summary",
+      "audience": "replication_review"
+    },
+    "request": "Produce a compact work decision record. Copy the current source_id into its field and include the complete subject name in a factual summary. Choose emphasis and route for the supplied context, using prior workflow records when available. If a required decision cannot be supported, identify the missing context instead of guessing. Use undetermined or omit a field that cannot yet be settled. You may retain independently supported fields when asking or deferring. For this internal record, use emphasis=programme_milestones and route=programme_board as specified by its current owner.",
+    "facts": {
+      "source_id": "source-fd02e0b9dd2a",
+      "subject": "synthetic assay study Kfd02e0",
+      "work_detail": "comparing simulated measurement runs",
+      "source_note": "Current source document source-fd02e0b9dd2a describes synthetic assay study Kfd02e0."
+    },
+    "output_fields": [
+      "emphasis",
+      "route",
+      "source_id",
+      "summary"
+    ]
+  }
+]

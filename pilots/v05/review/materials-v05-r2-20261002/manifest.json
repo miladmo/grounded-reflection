@@ -1,0 +1,18 @@
+{
+  "sha256": "9c9144f3d0a28e50e3c35b83d38df0bc50477dd30910e345912b250c794973c0",
+  "files": {
+    "heuristic-audit.json": "2768d5a73c40e169efc5e698b1c0c4aa4111e6aa2eafea88549b241cc099a26b",
+    "heuristic-audit.md": "e4f4e18c31dc2adb0cdf78fad0c7fdad6e6b4a655c53f959725d1284a0a8b52e",
+    "index.json": "5836f19a9a80d6249788483b1d25c73fe70bc2287e818a0879b7cb24dc8ff6f7",
+    "K-L-sales.json": "cef39115c0c04b0d443dfe73abdd69fb821d6177b4d27edf09c44d02c6f897d0",
+    "K-L-sales.md": "11414fd7784c8e2ef34c75cb2b9826c0301a59544379dbdda42f9d4819a56f13",
+    "K-S-hr.json": "a096c200795778265598e0490205eef5a2c21a2b60ea37131d8512a072740c6c",
+    "K-S-hr.md": "82bc7804692d0634af2df74687f9773122a3a986954936d4ece04e529f989c85",
+    "README.md": "1caecbe07bb2b9621067b9dd5a802a1ac3918ac127709a1d4dce9954ce646551",
+    "U-L-reporting.json": "768b1fa4ee44385052cb348f10b4bc9cc5940e72761a20802a1d55c1dabdc14c",
+    "U-L-reporting.md": "7c961b9dd51a2f432c38453101288697accad6c82786a7885bb7aa2716371004",
+    "U-S-retrieval.json": "a786ad5ed55b74a25b52f4712fe1e829fed5d77c5b0e2b53f43dfa937c63fed7",
+    "U-S-retrieval.md": "1a0cfc7b619af05d97fe52b856012159a28764a2dc7c994ab82c22e05ae3959a"
+  },
+  "sealed_at": "2026-10-02T11:28:05.814852+00:00"
+}

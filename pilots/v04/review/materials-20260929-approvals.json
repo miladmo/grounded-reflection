@@ -1,0 +1,17 @@
+{
+  "source_sha256": "64a31e0036bf623020e188a573cca8709a20ccd30a7e991a595df71e06963dab",
+  "material_sha256": "2a0f999762949321acd62bd57be9d409c40f6bab6b2244cdefc69bbfb19cc0ca",
+  "materials": {
+    "approved": false,
+    "reviewer": null,
+    "date": null,
+    "response": null
+  },
+  "live": {
+    "approved": false,
+    "reviewer": null,
+    "date": null,
+    "response": null,
+    "config_sha256": null
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "network_route": {
+    "https_proxy_configured": false,
+    "destination_bypassed": false,
+    "route": "direct_by_environment"
+  }
+}

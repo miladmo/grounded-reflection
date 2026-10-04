@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "reviewer": "Milad Morad",
+  "phase": "calibration",
+  "date": "2026-10-02",
+  "response": "ja, neuer Versuch freigegeben",
+  "attempt": 2,
+  "context": "first attempt killed by the session time limit; see runs/live-calibration-20261002-INCIDENT.md",
+  "config_sha256": "692239b0c229c1a82b87439c59f65e290166e284aa560cfebd975a714faa533b",
+  "source_sha256": "f94329843eeff3318c9a8d85a4b805867c1bef7c8e487dd36a5a831af82b3f50"
+}

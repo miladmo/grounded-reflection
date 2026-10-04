@@ -1,0 +1,725 @@
+{
+  "case": {
+    "case_id": "case-c0a039fa2f9f",
+    "setting": "K-S",
+    "family": "hr",
+    "hard_type": "transfer_change",
+    "direction": "omit",
+    "seed": 7035461297053101778,
+    "split": "review",
+    "history": {
+      "history_id": "history-849bc0a746a9",
+      "initial_configuration": "{\"task_family\":\"personnel_document\",\"workflow\":\"workflow-45f55aa8ab97\",\"version\":\"edition-f2ff5eca9fcc\",\"as_of\":\"2026-06-15T12:00:00Z\",\"attributes\":{\"seniority\":[\"senior\",\"junior\"],\"channel\":[\"email\",\"portal\"],\"language\":[\"german\",\"english\"],\"location\":[\"onsite\",\"remote\"],\"recipient\":[\"external\",\"internal\"],\"contract\":[\"permanent\",\"temporary\"]},\"candidate_attributes\":[\"recipient\",\"contract\"],\"field_option\":{\"field\":\"booking_reference\",\"operation\":\"omit\",\"value\":\"\",\"separator\":\"\"},\"baseline_template\":{\"message\":\"{message}\",\"work_email\":\"{work_email}\",\"booking_reference\":\"{booking_reference}\"},\"fact_descriptions\":{\"message\":\"Current personnel document text.\",\"work_email\":\"Current contact email.\",\"booking_reference\":\"Current booking reference.\"},\"hypothesis_class\":\"h14-declared\",\"hypothesis_definition\":\"Six binary context attributes are recorded for every work item. Only the two attributes listed in candidate_attributes can determine the target field configuration; the other attributes do not affect it. Each attribute defines a predicate testing its second listed value. The configuration is one Boolean function from the following class over the candidate attributes: constant 0 or 1; a single literal; a conjunction of one literal from each of two distinct candidate attributes; or a disjunction of one literal from each of two distinct candidate attributes. XOR and XNOR are excluded. Zero selects the configured baseline and one the available alternative. This restriction is a supplied synthetic assumption.\"}",
+      "assumptions": "This is a bounded synthetic workflow model. initial_configuration declares the field option, six binary context attributes, the candidate attributes and the complete hypothesis class. Facts provide current artifact values. Other fields retain their configured baseline. Outside the declared task_family, workflow and version, or without a complete declared context, no update is authorised by this model. A register_version event supplies trusted workflow metadata with the authority roster and half-open validity interval. Binding field approval is an event of type review with decision accept, performed by a listed reviewer within that interval, with the field included in reviewed_fields. Its accepted fields establish the field configuration at the recorded context. This explicit approval convention is a supplied synthetic assumption. A rejection records a whole-artifact decision and its stated grounds. A preference, an unreviewed field or a review by a person outside the roster supplies no approved assignment. The configured baseline is retained when the available evidence does not establish an update.",
+      "field_dictionary": {
+        "message": "Configured output field message; preserve unless an applicable update is established.",
+        "work_email": "Configured output field work_email; preserve unless an applicable update is established.",
+        "booking_reference": "Canonical field booking_reference. Available alternative operation omit, value='', separator=''. Its requirement depends on the evidence.",
+        "fact.message": "Current personnel document text.",
+        "fact.work_email": "Current contact email.",
+        "fact.booking_reference": "Current booking reference."
+      },
+      "records": [
+        {
+          "record_id": "record-77f8a788e197",
+          "timestamp": "2026-04-25T09:39:00Z",
+          "kind": "review",
+          "actor": "Jonas",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "english",
+            "location": "remote",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-21420\",\"message\":\"Please prepare the appointment documents for case 21420.\",\"work_email\":\"contact21420@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":\"BK-21420\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-21420\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-21420\",\"date\":\"2026-04-25\",\"document_id\":\"DOC-21420\",\"message\":\"Please prepare the appointment documents for case 21420.\",\"work_email\":\"contact21420@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-856f76962111",
+          "timestamp": "2026-01-01T00:00:00Z",
+          "kind": "template",
+          "actor": "workflow-registry",
+          "context": {},
+          "observation": "{\"authorised_reviewers\":[\"Malte\",\"Jonas\"],\"event\":\"register_version\",\"task_family\":\"personnel_document\",\"valid_from\":\"2026-01-01T00:00:00Z\",\"valid_until\":\"2027-01-01T00:00:00Z\",\"version\":\"edition-f2ff5eca9fcc\",\"workflow\":\"workflow-45f55aa8ab97\"}"
+        },
+        {
+          "record_id": "record-2e4d7c589bf0",
+          "timestamp": "2026-02-22T14:32:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "portal",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-93488\",\"message\":\"Please prepare the appointment documents for case 93488.\",\"work_email\":\"contact93488@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":\"BK-93488\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-93488\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-93488\",\"date\":\"2026-02-22\",\"document_id\":\"DOC-93488\",\"message\":\"Please prepare the appointment documents for case 93488.\",\"work_email\":\"contact93488@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-f084dddd04ae",
+          "timestamp": "2026-05-10T11:28:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "senior",
+            "channel": "portal",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-11071\",\"message\":\"Please prepare the appointment documents for case 11071.\",\"work_email\":\"contact11071@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":\"BK-11071\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-11071\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-11071\",\"date\":\"2026-05-10\",\"document_id\":\"DOC-11071\",\"message\":\"Please prepare the appointment documents for case 11071.\",\"work_email\":\"contact11071@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-3064844238b0",
+          "timestamp": "2026-02-09T08:43:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "observation": "{\"authority_ref\":\"record-856f76962111\",\"comment\":\"Reviewed.\",\"decision\":\"reject\",\"document_id\":\"DOC-16119\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-16119\",\"date\":\"2026-02-09\",\"document_id\":\"DOC-16119\",\"message\":\"Please prepare the appointment documents for case 16119.\",\"work_email\":\"contact16119@example.test\"},\"format\":\"interpreted\",\"rejected_fields\":{\"booking_reference\":\"BK-16119\",\"message\":\"Please prepare the appointment documents for case 16119.\",\"work_email\":\"contact16119@example.test\"},\"rejection_grounds\":\"The signature block is missing.\",\"reviewed_fields\":[]}"
+        },
+        {
+          "record_id": "record-2be51c3d9169",
+          "timestamp": "2026-03-09T12:16:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "english",
+            "location": "onsite",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "observation": "{\"authority_ref\":\"record-856f76962111\",\"comment\":\"Recorded.\",\"decision\":\"reject\",\"document_id\":\"DOC-68070\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-68070\",\"date\":\"2026-03-09\",\"document_id\":\"DOC-68070\",\"message\":\"Please prepare the appointment documents for case 68070.\",\"work_email\":\"contact68070@example.test\"},\"format\":\"interpreted\",\"rejected_fields\":{\"message\":\"Please prepare the appointment documents for case 68070.\",\"work_email\":\"contact68070@example.test\"},\"rejection_grounds\":\"The signature block is missing.\",\"reviewed_fields\":[]}"
+        },
+        {
+          "record_id": "record-32763992d87f",
+          "timestamp": "2026-05-15T10:33:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-23482\",\"message\":\"Please prepare the appointment documents for case 23482.\",\"work_email\":\"contact23482@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":\"BK-23482\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Recorded.\",\"decision\":\"accept\",\"document_id\":\"DOC-23482\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-23482\",\"date\":\"2026-05-15\",\"document_id\":\"DOC-23482\",\"message\":\"Please prepare the appointment documents for case 23482.\",\"work_email\":\"contact23482@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"delivery_timestamp\"]}"
+        },
+        {
+          "record_id": "record-bfef71c8c817",
+          "timestamp": "2026-06-11T15:26:00Z",
+          "kind": "review",
+          "actor": "Jonas",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "english",
+            "location": "onsite",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 39742.\",\"work_email\":\"contact39742@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-39742\",\"field\":\"booking_reference\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-39742\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-39742\",\"date\":\"2026-06-11\",\"document_id\":\"DOC-39742\",\"message\":\"Please prepare the appointment documents for case 39742.\",\"work_email\":\"contact39742@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-0f523ec202d9",
+          "timestamp": "2026-02-11T17:26:00Z",
+          "kind": "revision",
+          "actor": "work-item-author",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "senior",
+            "channel": "email",
+            "language": "english",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "observation": "{\"event\":\"preference\",\"facts\":{\"booking_reference\":\"BK-99268\",\"date\":\"2026-02-11\",\"document_id\":\"DOC-99268\",\"message\":\"Please prepare the appointment documents for case 99268.\",\"work_email\":\"contact99268@example.test\"},\"message\":\"My preference for this work item is that booking_reference should be omitted.\",\"proposed_fields\":{\"message\":\"Please prepare the appointment documents for case 99268.\",\"work_email\":\"contact99268@example.test\"}}"
+        },
+        {
+          "record_id": "record-809479e491e7",
+          "timestamp": "2026-01-16T16:48:00Z",
+          "kind": "revision",
+          "actor": "work-item-author",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "observation": "{\"event\":\"preference\",\"facts\":{\"booking_reference\":\"BK-78458\",\"date\":\"2026-01-16\",\"document_id\":\"DOC-78458\",\"message\":\"Please prepare the appointment documents for case 78458.\",\"work_email\":\"contact78458@example.test\"},\"message\":\"My preference for this work item is that booking_reference should be 'BK-78458'.\",\"proposed_fields\":{\"booking_reference\":\"BK-78458\",\"message\":\"Please prepare the appointment documents for case 78458.\",\"work_email\":\"contact78458@example.test\"}}"
+        },
+        {
+          "record_id": "record-c10448c1238d",
+          "timestamp": "2026-02-03T17:48:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "portal",
+            "language": "german",
+            "location": "remote",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 44260.\",\"work_email\":\"contact44260@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-44260\",\"field\":\"booking_reference\"},\"comment\":\"Reviewed.\",\"decision\":\"accept\",\"document_id\":\"DOC-44260\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-44260\",\"date\":\"2026-02-03\",\"document_id\":\"DOC-44260\",\"message\":\"Please prepare the appointment documents for case 44260.\",\"work_email\":\"contact44260@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-e02f4f40870b",
+          "timestamp": "2026-05-18T15:32:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "english",
+            "location": "onsite",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 87892.\",\"work_email\":\"contact87892@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-87892\",\"field\":\"booking_reference\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-87892\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-87892\",\"date\":\"2026-05-18\",\"document_id\":\"DOC-87892\",\"message\":\"Please prepare the appointment documents for case 87892.\",\"work_email\":\"contact87892@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-412c9c4031e4",
+          "timestamp": "2026-02-20T10:29:00Z",
+          "kind": "review",
+          "actor": "Mira",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "english",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 31747.\",\"work_email\":\"contact31747@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-31747\",\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-31747\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-31747\",\"date\":\"2026-02-20\",\"document_id\":\"DOC-31747\",\"message\":\"Please prepare the appointment documents for case 31747.\",\"work_email\":\"contact31747@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-82951132ebce",
+          "timestamp": "2026-02-27T14:40:00Z",
+          "kind": "tool",
+          "actor": "runtime",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "senior",
+            "channel": "portal",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "observation": "{\"attempts\":[{\"attempt\":1,\"http_status\":503},{\"attempt\":2,\"http_status\":200}],\"event\":\"execution\",\"log\":\"The request completed on retry.\",\"request_id\":\"request-98ec51d21ef3\"}"
+        },
+        {
+          "record_id": "record-7c3bcb290def",
+          "timestamp": "2026-04-16T11:44:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "senior",
+            "channel": "portal",
+            "language": "english",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-17600\",\"message\":\"Please prepare the appointment documents for case 17600.\",\"work_email\":\"contact17600@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":\"BK-17600\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Review complete.\",\"decision\":\"accept\",\"document_id\":\"DOC-17600\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-17600\",\"date\":\"2026-04-16\",\"document_id\":\"DOC-17600\",\"message\":\"Please prepare the appointment documents for case 17600.\",\"work_email\":\"contact17600@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"delivery_timestamp\"]}"
+        },
+        {
+          "record_id": "record-3f4936ee4304",
+          "timestamp": "2026-02-09T08:59:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "senior",
+            "channel": "portal",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 18276.\",\"work_email\":\"contact18276@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-18276\",\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-18276\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-18276\",\"date\":\"2026-02-09\",\"document_id\":\"DOC-18276\",\"message\":\"Please prepare the appointment documents for case 18276.\",\"work_email\":\"contact18276@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-7440f8240df9",
+          "timestamp": "2026-02-26T15:32:00Z",
+          "kind": "review",
+          "actor": "Jonas",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 78914.\",\"work_email\":\"contact78914@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-78914\",\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-78914\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-78914\",\"date\":\"2026-02-26\",\"document_id\":\"DOC-78914\",\"message\":\"Please prepare the appointment documents for case 78914.\",\"work_email\":\"contact78914@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-e5bce0899c7e",
+          "timestamp": "2026-05-08T15:54:00Z",
+          "kind": "review",
+          "actor": "Jonas",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "portal",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 55047.\",\"work_email\":\"contact55047@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-55047\",\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-55047\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-55047\",\"date\":\"2026-05-08\",\"document_id\":\"DOC-55047\",\"message\":\"Please prepare the appointment documents for case 55047.\",\"work_email\":\"contact55047@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-6e04bd443190",
+          "timestamp": "2026-04-30T15:07:00Z",
+          "kind": "review",
+          "actor": "Robin",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "portal",
+            "language": "english",
+            "location": "onsite",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-35590\",\"message\":\"Please prepare the appointment documents for case 35590.\",\"work_email\":\"contact35590@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":\"BK-35590\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-35590\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-35590\",\"date\":\"2026-04-30\",\"document_id\":\"DOC-35590\",\"message\":\"Please prepare the appointment documents for case 35590.\",\"work_email\":\"contact35590@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-bbeb82d2d6d6",
+          "timestamp": "2026-03-30T16:10:00Z",
+          "kind": "review",
+          "actor": "Jonas",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "english",
+            "location": "remote",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 50289.\",\"work_email\":\"contact50289@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-50289\",\"field\":\"booking_reference\"},\"comment\":\"Approved.\",\"decision\":\"accept\",\"document_id\":\"DOC-50289\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-50289\",\"date\":\"2026-03-30\",\"document_id\":\"DOC-50289\",\"message\":\"Please prepare the appointment documents for case 50289.\",\"work_email\":\"contact50289@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-5b6d061b4a64",
+          "timestamp": "2026-01-05T10:48:00Z",
+          "kind": "review",
+          "actor": "Malte",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "senior",
+            "channel": "email",
+            "language": "english",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"message\":\"Please prepare the appointment documents for case 34809.\",\"work_email\":\"contact34809@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":null,\"before\":\"BK-34809\",\"field\":\"booking_reference\"},\"comment\":\"Recorded.\",\"decision\":\"accept\",\"document_id\":\"DOC-34809\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-34809\",\"date\":\"2026-01-05\",\"document_id\":\"DOC-34809\",\"message\":\"Please prepare the appointment documents for case 34809.\",\"work_email\":\"contact34809@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-bbdc47c53c80",
+          "timestamp": "2026-04-20T16:29:00Z",
+          "kind": "review",
+          "actor": "Lea",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "email",
+            "language": "german",
+            "location": "onsite",
+            "recipient": "external",
+            "contract": "temporary"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-23905\",\"message\":\"Please prepare the appointment documents for case 23905.\",\"work_email\":\"contact23905@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":\"BK-23905\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Checked.\",\"decision\":\"accept\",\"document_id\":\"DOC-23905\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-23905\",\"date\":\"2026-04-20\",\"document_id\":\"DOC-23905\",\"message\":\"Please prepare the appointment documents for case 23905.\",\"work_email\":\"contact23905@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        },
+        {
+          "record_id": "record-4dc61d42b6e4",
+          "timestamp": "2026-03-31T13:47:00Z",
+          "kind": "tool",
+          "actor": "runtime",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "junior",
+            "channel": "portal",
+            "language": "english",
+            "location": "remote",
+            "recipient": "internal",
+            "contract": "temporary"
+          },
+          "observation": "{\"attempts\":[{\"attempt\":1,\"http_status\":503},{\"attempt\":2,\"http_status\":200}],\"event\":\"execution\",\"log\":\"The request completed on retry.\",\"request_id\":\"request-122f92d5449c\"}"
+        },
+        {
+          "record_id": "record-6971fcc8e8f4",
+          "timestamp": "2026-04-18T08:49:00Z",
+          "kind": "review",
+          "actor": "Jonas",
+          "context": {
+            "task_family": "personnel_document",
+            "workflow": "workflow-45f55aa8ab97",
+            "version": "edition-f2ff5eca9fcc",
+            "seniority": "senior",
+            "channel": "portal",
+            "language": "english",
+            "location": "remote",
+            "recipient": "internal",
+            "contract": "permanent"
+          },
+          "observation": "{\"accepted_fields\":{\"booking_reference\":\"BK-75891\",\"message\":\"Please prepare the appointment documents for case 75891.\",\"work_email\":\"contact75891@example.test\"},\"authority_ref\":\"record-856f76962111\",\"change_summary\":{\"after\":\"BK-75891\",\"before\":null,\"field\":\"booking_reference\"},\"comment\":\"Recorded.\",\"decision\":\"accept\",\"document_id\":\"DOC-75891\",\"event\":\"review\",\"facts\":{\"booking_reference\":\"BK-75891\",\"date\":\"2026-04-18\",\"document_id\":\"DOC-75891\",\"message\":\"Please prepare the appointment documents for case 75891.\",\"work_email\":\"contact75891@example.test\"},\"format\":\"interpreted\",\"reviewed_fields\":[\"booking_reference\"]}"
+        }
+      ]
+    },
+    "world": {
+      "table": "18446744069414649855",
+      "relevant": [
+        4,
+        5
+      ],
+      "confusable": null
+    },
+    "task_cells": {
+      "observed_change": 53,
+      "observed_retention": 18,
+      "transfer_change": 33
+    },
+    "oracle_audit": {
+      "observations": {
+        "29": 0,
+        "19": 0,
+        "18": 0,
+        "53": 1,
+        "59": 1,
+        "2": 1,
+        "49": 1,
+        "3": 1,
+        "13": 1,
+        "4": 1,
+        "30": 0
+      },
+      "binding_records": [
+        "record-77f8a788e197",
+        "record-2e4d7c589bf0",
+        "record-f084dddd04ae",
+        "record-bfef71c8c817",
+        "record-c10448c1238d",
+        "record-e02f4f40870b",
+        "record-3f4936ee4304",
+        "record-7440f8240df9",
+        "record-e5bce0899c7e",
+        "record-bbeb82d2d6d6",
+        "record-5b6d061b4a64",
+        "record-6971fcc8e8f4"
+      ],
+      "compatible_count": 1
+    },
+    "material_audit": {
+      "record_count": 24,
+      "distractor_counts": {
+        "unauthorised_revision": 3,
+        "rejected_artifact": 2,
+        "target_field_preference": 2,
+        "approval_without_target": 2,
+        "technical": 2
+      },
+      "size": "S",
+      "condition": "K"
+    }
+  },
+  "tasks": [
+    {
+      "task": {
+        "task_id": "task-4e6e6287de4e",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-45f55aa8ab97",
+          "version": "edition-f2ff5eca9fcc",
+          "seniority": "junior",
+          "channel": "email",
+          "language": "english",
+          "location": "onsite",
+          "recipient": "internal",
+          "contract": "temporary"
+        },
+        "facts": {
+          "document_id": "DOC-25348",
+          "date": "2026-06-15",
+          "message": "Please prepare the appointment documents for case 25348.",
+          "work_email": "contact25348@example.test",
+          "booking_reference": "BK-25348"
+        },
+        "baseline_fields": [
+          {
+            "name": "message",
+            "value": "Please prepare the appointment documents for case 25348."
+          },
+          {
+            "name": "work_email",
+            "value": "contact25348@example.test"
+          },
+          {
+            "name": "booking_reference",
+            "value": "BK-25348"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-4e6e6287de4e",
+        "history_id": "history-849bc0a746a9",
+        "task_type": "observed_change",
+        "cell": 53,
+        "expected_decision": "apply",
+        "oracle_status": "apply",
+        "expected_fields": {
+          "message": "Please prepare the appointment documents for case 25348.",
+          "work_email": "contact25348@example.test"
+        },
+        "world_fields": {
+          "message": "Please prepare the appointment documents for case 25348.",
+          "work_email": "contact25348@example.test"
+        }
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-1d88134787ee",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-45f55aa8ab97",
+          "version": "edition-f2ff5eca9fcc",
+          "seniority": "senior",
+          "channel": "portal",
+          "language": "german",
+          "location": "onsite",
+          "recipient": "internal",
+          "contract": "permanent"
+        },
+        "facts": {
+          "document_id": "DOC-50334",
+          "date": "2026-06-15",
+          "message": "Please prepare the appointment documents for case 50334.",
+          "work_email": "contact50334@example.test",
+          "booking_reference": "BK-50334"
+        },
+        "baseline_fields": [
+          {
+            "name": "message",
+            "value": "Please prepare the appointment documents for case 50334."
+          },
+          {
+            "name": "work_email",
+            "value": "contact50334@example.test"
+          },
+          {
+            "name": "booking_reference",
+            "value": "BK-50334"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-1d88134787ee",
+        "history_id": "history-849bc0a746a9",
+        "task_type": "observed_retention",
+        "cell": 18,
+        "expected_decision": "keep",
+        "oracle_status": "keep",
+        "expected_fields": {
+          "message": "Please prepare the appointment documents for case 50334.",
+          "work_email": "contact50334@example.test",
+          "booking_reference": "BK-50334"
+        },
+        "world_fields": {
+          "message": "Please prepare the appointment documents for case 50334.",
+          "work_email": "contact50334@example.test",
+          "booking_reference": "BK-50334"
+        }
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-7382737ed712",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-45f55aa8ab97",
+          "version": "edition-f2ff5eca9fcc",
+          "seniority": "junior",
+          "channel": "email",
+          "language": "german",
+          "location": "onsite",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "facts": {
+          "document_id": "DOC-20797",
+          "date": "2026-06-15",
+          "message": "Please prepare the appointment documents for case 20797.",
+          "work_email": "contact20797@example.test",
+          "booking_reference": "BK-20797"
+        },
+        "baseline_fields": [
+          {
+            "name": "message",
+            "value": "Please prepare the appointment documents for case 20797."
+          },
+          {
+            "name": "work_email",
+            "value": "contact20797@example.test"
+          },
+          {
+            "name": "booking_reference",
+            "value": "BK-20797"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-7382737ed712",
+        "history_id": "history-849bc0a746a9",
+        "task_type": "transfer_change",
+        "cell": 33,
+        "expected_decision": "apply",
+        "oracle_status": "apply",
+        "expected_fields": {
+          "message": "Please prepare the appointment documents for case 20797.",
+          "work_email": "contact20797@example.test"
+        },
+        "world_fields": {
+          "message": "Please prepare the appointment documents for case 20797.",
+          "work_email": "contact20797@example.test"
+        }
+      }
+    },
+    {
+      "task": {
+        "task_id": "task-a883e9b0352e",
+        "context": {
+          "task_family": "personnel_document",
+          "workflow": "workflow-4182414ec4b9",
+          "version": "edition-f2ff5eca9fcc",
+          "seniority": "senior",
+          "channel": "email",
+          "language": "german",
+          "location": "remote",
+          "recipient": "external",
+          "contract": "temporary"
+        },
+        "facts": {
+          "document_id": "DOC-44670",
+          "date": "2026-06-15",
+          "message": "Please prepare the appointment documents for case 44670.",
+          "work_email": "contact44670@example.test",
+          "booking_reference": "BK-44670"
+        },
+        "baseline_fields": [
+          {
+            "name": "message",
+            "value": "Please prepare the appointment documents for case 44670."
+          },
+          {
+            "name": "work_email",
+            "value": "contact44670@example.test"
+          },
+          {
+            "name": "booking_reference",
+            "value": "BK-44670"
+          }
+        ],
+        "request": "Complete the current work item using the supplied facts and field dictionary. Use only contextually supported adjustments. Retain all unaffected fields."
+      },
+      "truth": {
+        "task_id": "task-a883e9b0352e",
+        "history_id": "history-849bc0a746a9",
+        "task_type": "control",
+        "cell": null,
+        "expected_decision": "keep",
+        "oracle_status": "out_of_scope",
+        "expected_fields": {
+          "message": "Please prepare the appointment documents for case 44670.",
+          "work_email": "contact44670@example.test",
+          "booking_reference": "BK-44670"
+        },
+        "world_fields": {
+          "message": "Please prepare the appointment documents for case 44670.",
+          "work_email": "contact44670@example.test",
+          "booking_reference": "BK-44670"
+        }
+      }
+    }
+  ]
+}
