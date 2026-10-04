@@ -284,6 +284,28 @@ def main() -> dict:
         heuristics.append({'setting': case['setting'], 'hard_type': case['hard_type'], 'required': required,
                            **refs})
     out['heuristics_hard'] = heuristics
+
+    # Attribution review part 2: the hard tasks under the reading "a literal tests only the
+    # second listed value" (D's reading), against the B and C results.
+    reading = []
+    for hid, case in cases.items():
+        oracle, frame = oracles[hid], read_frame(History.model_validate(case['history']))
+        klass = hclass.rule_class(len(frame.attributes), frame.candidate_indices())
+        positive = [f for f in klass if all(p for _, p in f.literals)]
+        fits = hclass.compatible(positive, oracle.observations)
+        cell = case['task_cells'][case['hard_type']]
+        status = hclass.status_at(fits, cell) if fits else 'no_function_fits'
+        result = {a: next(bool(r['correct']) for r in rows if r['history_id'] == hid and r['arm'] == a
+                          and r['task_type'] == case['hard_type']) for a in ('B', 'C')}
+        blocked = {a: next(r['blocked_reason'] for r in rows if r['history_id'] == hid and r['arm'] == a
+                           and r['task_type'] == case['hard_type']) for a in ('B', 'C')}
+        reading.append({'history_id': hid, 'setting': case['setting'], 'hard_type': case['hard_type'],
+                        'direction': case['direction'],
+                        'required': 'apply' if case['hard_type'] == 'transfer_change' else 'keep',
+                        'second_only_fitting': len(fits), 'second_only_status': status,
+                        'B_correct': result['B'], 'C_correct': result['C'],
+                        'C_blocked': blocked['C']})
+    out['second_value_reading_hard'] = reading
     OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + chr(10), encoding='utf-8', newline=chr(10))
     return out
 

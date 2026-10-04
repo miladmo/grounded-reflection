@@ -435,6 +435,23 @@ outside the agreed list format, which blocked C for two histories (8 tasks, coun
 incorrect). One B generation call failed in transport. No retries. Attribution review and
 report follow.
 
+**Attribution review (Milad Morad, parts 1 and 2, 4 October 2026).**
+
+* **E3: mixed, model and specification.** D read a literal only as a test of the second
+  listed value (15 of 16 registers), so the correct rule was rarely proposed. The public
+  class text did not state that a literal may test either value, and the round prompt
+  offered no way to extend the register. There is no repair and no follow-up run in v0.5.
+* **Decisive B and C failures: substantive, each with complete binding evidence in
+  context.**
+  * C missed a transfer: the class restriction was not applied.
+  * B made an unsupported change, a rule over an irrelevant attribute.
+  * B missed a change under omission: it did not recognise the relevant attributes.
+* **C preparation failures in U-L: technical.**
+* **Verdicts.** E1 is formally met but not shown as a selection effect. E2 is partly
+  consistent, not shown. E3 is not met. E4 is not applicable.
+
+The final report is `pilots/v05/DIFFICULTY_MAP_REPORT.md`.
+
 ## Seeds
 
 Development and calibration 45021/45022/45023, review 45031/45032, final 45061/45062/45063.
