@@ -213,6 +213,8 @@ class FrozenAndPathTests(unittest.TestCase):
         for name in ('d_index_v1.txt', 'd_round_v1.txt', 'd_final_v1.txt'):
             self.assertNotIn('DRAFT', (folder / name).read_text(encoding='utf-8'))
 
+    # %VAR% expansion is Windows-only; the live runs are Windows-only (publication note, 4 October 2026).
+    @unittest.skipUnless(os.name == 'nt', 'os.path.expandvars expands %VAR% only on Windows')
     def test_pinned_powershell_path_may_use_environment_variables(self):
         from reflectai_v05.preflight import verify_executable
         with tempfile.TemporaryDirectory() as temp:

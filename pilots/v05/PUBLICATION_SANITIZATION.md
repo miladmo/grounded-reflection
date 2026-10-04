@@ -59,3 +59,20 @@ Two further backups are kept outside the repository, as git bundles:
   `pilot-v05-results-20261004`; the latter points to the README correction commit
   `0386d21`. SHA-256 `5f423e990e31ec65b1378bde50f0c32ad5096f3f8c297e70418666d9103a6602`.
   This record was committed after the tagged commit, so the bundle does not contain it.
+
+## Change after publication: Windows-only test skipped elsewhere
+
+On 4 October 2026, after the first push, CI on Linux failed in one test,
+`test_pinned_powershell_path_may_use_environment_variables`. The test relies on `%VAR%`
+expansion, which `os.path.expandvars` performs only on Windows. All live runs were made on
+Windows. Milad Morad decided to skip the test on other systems; the study code is
+unchanged.
+
+**Consequence.** `tests/test_pilot_v05_runner.py` is part of the v0.5 source binding, so
+the committed sources no longer reproduce the frozen binding in `FROZEN-SOURCES.json`
+(`9487e28b…`). The original test file is at tag `pilot-v05-results-20261004` and in the
+archive of originals.
+
+| File | Original SHA-256 | Committed SHA-256 |
+| --- | --- | --- |
+| `tests/test_pilot_v05_runner.py` | `4751137d0b02e9fb78edf48a22efed985cf643231a15b79da1199562152c49be` | `2c074b66be138dc75b1e5e53482d40338a7bb98e4672ec088147f209ffc11879` |
