@@ -10,6 +10,34 @@ Work evidence → Requirement hypothesis → Context update → Paired evaluatio
 
 **Early development — `0.1.0.dev1`.** The library implements data models, evidence and scope checks, and a selector for supplied evaluation records. An optional model backend supports a first experiment; repeated autonomous adaptation remains research work.
 
+## Latest result: synthetic pilot v0.5
+
+**Question.** Is direct use of organisational evidence still enough when a history does not fit into one model call, and when it is publicly unknown which attributes of a work item determine a requirement? An oracle computes the warranted action from the public evidence, so every answer can be scored.
+
+**Four arms**, all using one model (DeepSeek-V4-Flash via FHGenie):
+
+* A: no history;
+* B: direct use with deterministic retrieval;
+* C: chunked preparation;
+* D: a hypothesis register with targeted record queries.
+
+**Results** (correct diagnostics out of 48):
+
+| Arm | Correct |
+| --- | ---: |
+| B, direct use | **44** |
+| C, chunked preparation | 39 |
+| D, hypothesis register | 29 |
+| Never change anything (keep floor) | 24 |
+
+* **The decisive errors happened with complete evidence.** The binding evidence was fully in context, but the arms generalised wrongly. B stated a rule over an irrelevant attribute or missed the relevant ones. C did not apply the rule class to an unobserved combination. In each case the decision matched a pure similarity heuristic.
+* **D's shortfall lies in setting up the hypothesis space, not in testing.** D considered only one of the two values per attribute. It therefore proposed only 6 of 14 or 38 of 134 possible rules, which an unclear sentence in our class description invited. Where the correct rule was in its register, D solved every diagnostic.
+* **Removing a field is missed more often than adding one.** All five missed changes by B and C concern omission, as in v0.4.
+
+**Limits.** Synthetic data, one model, thin cells (two diagnostics per hard type, setting and arm). The hard tasks are a stress test built so that similarity misleads, not an estimate of natural error rates. The protocol was approved before any data, the runs are sealed, and changes and incidents are documented.
+
+See the [v0.5 report](pilots/v05/DIFFICULTY_MAP_REPORT.md) and [protocol](docs/pilot-v05-protocol.md).
+
 ## A recorded example
 
 The model pilot produced hypothesis `H1` and candidate update `C1` from fictional HR work records:
