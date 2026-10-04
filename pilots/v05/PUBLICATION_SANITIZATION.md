@@ -55,4 +55,7 @@ Two further backups are kept outside the repository, as git bundles:
 
 * `pilot-v05-before-identity-rewrite-20261004.bundle`: the branch before the identity
   rewrite;
-* `pilot-v05-results-20261004.bundle`: the final branch with its tags.
+* `pilot-v05-results-20261004.bundle`: the tags `pilot-v05-frozen-20261003` and
+  `pilot-v05-results-20261004`; the latter points to the README correction commit
+  `0386d21`. SHA-256 `5f423e990e31ec65b1378bde50f0c32ad5096f3f8c297e70418666d9103a6602`.
+  This record was committed after the tagged commit, so the bundle does not contain it.
