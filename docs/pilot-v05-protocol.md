@@ -426,6 +426,15 @@ D check: about 370 calls (up to about 400 if D uses more rounds) and about 5.1 M
 (C preparation 2.0 M, D preparation 1.2 M, generation 2.0 M). Runtime is about 4 to 5
 hours. The caps stay at 560 calls and 10 M tokens.
 
+**Main run (3/4 October 2026, approved by Milad Morad: "Hauptlauf live freigegeben").**
+Folder `pilots/v05/runs/live-main-20261003`, seal
+`dc4fc775af49df6c838c1cba29d730155319920298596791ecfffd08eb4ff4ab`. Complete, no halt:
+358 calls, 4,954,459 reported tokens, no unknown usage. Three isolated response failures
+were tolerated under the Amendment 5 rule (limit 56). Two C1 chunks returned `Scope.match`
+outside the agreed list format, which blocked C for two histories (8 tasks, counted as
+incorrect). One B generation call failed in transport. No retries. Attribution review and
+report follow.
+
 ## Seeds
 
 Development and calibration 45021/45022/45023, review 45031/45032, final 45061/45062/45063.
