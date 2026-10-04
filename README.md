@@ -31,7 +31,7 @@ Work evidence → Requirement hypothesis → Context update → Paired evaluatio
 | Never change anything (keep floor) | 24 |
 
 * **The decisive errors happened with complete evidence.** The binding evidence was fully in context, but the arms generalised wrongly. B stated a rule over an irrelevant attribute or missed the relevant ones. C did not apply the rule class to an unobserved combination. In each case the decision matched a pure similarity heuristic.
-* **D's shortfall lies in setting up the hypothesis space, not in testing.** D considered only one of the two values per attribute. It therefore proposed only 6 of 14 or 38 of 134 possible rules, which an unclear sentence in our class description invited. Where the correct rule was in its register, D solved every diagnostic.
+* **D's shortfall lies in setting up the hypothesis space, not in testing.** In 15 of 16 histories D considered only one of the two values per attribute, so most registers held only 6 of 14 or 38 of 134 possible rules; an unclear sentence in our class description invited this reading. Where D kept the correct rule (3 histories), it solved every diagnostic.
 * **Removing a field is missed more often than adding one.** All five missed changes by B and C concern omission, as in v0.4.
 * **Prespecified expectations.**
   * Larger histories did lower the best direct arm slightly, but this is not shown as a selection effect: no decisive error rested on missing evidence.
