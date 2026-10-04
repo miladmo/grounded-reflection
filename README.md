@@ -8,7 +8,7 @@ Work evidence → Requirement hypothesis → Context update → Paired evaluatio
                 alternatives             effect           defer or accept
 ```
 
-**Early development — `0.1.0.dev1`.** The library implements data models, evidence and scope checks, and a selector for supplied evaluation records. An optional model backend supports a first experiment; repeated autonomous adaptation remains research work.
+**Early development — `0.1.0.dev1`.** The library implements data models, evidence and scope checks, and a selector for supplied evaluation records. An optional model backend is used in five synthetic pilot studies; repeated autonomous adaptation remains research work.
 
 ## Pilot studies
 
@@ -69,8 +69,6 @@ The model pilot produced hypothesis `H1` and candidate update `C1` from fictiona
 
 This summarises actual model-generated hypotheses and updates from synthetic records. The [recorded preparation](pilots/hr_v01/observed_outputs.json) preserves exact source quotes, alternative explanations and untested predictions.
 
-**Pilot finding:** all three conditions received 10/10 model ratings on all six synthetic tasks. This complete rating ceiling provides no observed advantage for structured reflection. There has been no human evaluation. See the [results and limitations](pilots/hr_v01/REPORT_en.md).
-
 ## Quick start
 
 Requires Python 3.11+. Install from a checkout; the package is not on PyPI.
@@ -105,7 +103,7 @@ grounded-reflection select --help
 
 Output commands refuse to overwrite existing files. The selector can export an accepted context artifact; deployment belongs to the consuming application. The library trusts supplied labels and ratings and includes no anonymisation or secure data storage. See the [protocol](docs/protocol.md) for policy defaults, split checks and limits.
 
-## Model pilot
+## Pilot v0.1 in detail
 
 The pilot compares direct use of historical evidence, direct adaptation and structured reflection on six independently authored synthetic recruiting tasks. Unlike the offline demo, its hypotheses and texts are actual model outputs. It uses one generation per case and condition, with a separate, blinded judge call from the same model family.
 
@@ -115,10 +113,6 @@ The pilot compares direct use of historical evidence, direct adaptation and stru
 - [Preparations, outputs and judgments as JSON](pilots/hr_v01/observed_outputs.json)
 
 The report explains how to repeat the experiment with an authenticated Codex CLI. A repeat makes 27 model calls and uses the caller's model access. Raw runtime logs are excluded from Git.
-
-## Synthetic pilot v0.2
-
-The [v0.2 pilot](pilots/v02/README.md) adds four comparison conditions, conflicting evidence and scoped requirements across three synthetic task families. It separates preparation, validation, source freeze and final evaluation, with deterministic checks and recorded budgets. A complete offline mock run requires no model access. Mock outputs test infrastructure and are not calibration or research results. The v0.1 findings above remain unchanged.
 
 ## Research and development
 
