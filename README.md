@@ -21,7 +21,7 @@ Pilot numbers identify study stages, not software releases. All use synthetic da
 | v0.1 | Does structured reflection improve recruiting posts? | All three conditions received 10/10 model ratings on six tasks. This ceiling, without human evaluation, could not distinguish them. | [Report](pilots/hr_v01/REPORT_en.md) |
 | v0.2 | Can reflection recover omitted requirements from conflicting evidence? | Reflection passed 19/24 task attempts, direct adaptation 23/24 and direct evidence 21/24. Rejected alternatives became unnecessary clarifications. | [Report](pilots/v02/REPORT_en.md) |
 | v0.3 | Can warranted adaptation be measured separately from hidden-world accuracy? | Direct evidence and adaptation each passed 8/8 calibration tasks. The ceiling stopped the main comparison before reflection was run. | [Calibration](pilots/v03/CALIBRATION_R2_REPORT.md) |
-| v0.4 | Which evidence difficulties challenge direct methods? | Preparation scored 21/24 and direct use 16/24 on the registered metric including declared scope. The post hoc fields-only scores were 21/24 and 23/24. No setting established headroom. | [Guide and results](pilots/v04/GUIDE.md) |
+| v0.4 | Which evidence difficulties challenge direct methods? | Preparation scored 21/24 and direct use 16/24 on the registered metric including declared scope. The post hoc fields-only scores were 21/24 and 23/24. No setting met the prespecified difficulty criterion. | [Guide and results](pilots/v04/GUIDE.md) |
 | v0.5 | Does a hypothesis register help with large histories and unknown relevant attributes? | Direct retrieval scored 44/48, chunked preparation 39/48 and the register procedure 29/48. Never changing the configuration scored 24/48. | [Study and results](pilots/v05/README.md) |
 
 ## Latest result: synthetic pilot v0.5
@@ -36,7 +36,7 @@ The design and decision rules were recorded before the evaluated runs. Technical
 
 ## Reading the v0.4 result
 
-Seven of direct use's eight registered failures had correct output fields but declared rules with excessive scope. Its post hoc fields-only score of 23/24 exceeds preparation's 21/24. The registered comparison therefore does not establish better task decisions through preparation. No setting met both headroom conditions. S4 remains provisional because its two failure causes are unresolved. The [guide](pilots/v04/GUIDE.md) keeps these measurements separate.
+Seven of direct use's eight registered failures had correct output fields but declared rules with excessive scope. Its post hoc fields-only score of 23/24 exceeds preparation's 21/24. The registered comparison therefore does not establish better task decisions through preparation. The prespecified criterion for sufficient difficulty, called headroom, requires preparation to pass at most 70% of diagnostic tasks, with confirmed content errors accounting for at least 60% of its diagnostic failures. No setting met both conditions. The change-over-time setting (S4) remains provisional because its two failure causes are unresolved. The [guide](pilots/v04/GUIDE.md) keeps these measurements separate.
 
 ## A recorded example
 

@@ -85,29 +85,9 @@ This criterion differs from v0.4's threshold on C accuracy and the share of subs
 
 These are descriptive expectations, not significance tests. Calibration headroom did not predict that D would succeed.
 
-## What happened
-
-| Date in 2026 | Step | Outcome | Evidence |
-| --- | --- | --- | --- |
-| 1 October | Protocol and constructibility | Design and decision rules recorded before the evaluated runs. | [Methods](../../docs/methods.md#pilot-v05) |
-| 2 October | Material reviews and revisions | First and second exports exposed shortcuts. Revision r3 repaired the materials before calibration. | [Material history](../../docs/provenance.md#pilot-v05) |
-| 2 October | Calibration attempt 1 | Session time limit killed the background process after 13 valid calls. One further call had unknown usage. | [Incident](runs/live-calibration-20261002-INCIDENT.md) |
-| 2 October | Calibration attempt 2 | 18 calls, including one format failure and one timeout. Unknown usage stopped the run before generation. | [Incident](runs/live-calibration-20261002-attempt2-INCIDENT.md) |
-| 3 October | Technical correction | Call timeout increased from 420 to 1,200 seconds. | [Incident and correction](runs/live-calibration-20261002-attempt2-INCIDENT.md) |
-| 3 October | Calibration attempt 3 | Completed 127 calls and 1,861,787 tokens. Headroom found by the registered rule. No difficulty amendment. | [Report](runs/live-calibration-20261003-attempt3/REPORT.md) |
-| 3 October | First D technical check | Four calls. Found an incorrect `any` filter and missing budget for query-result wrappers. Both were contract defects. | [Incident](runs/live-dcheck-20261003-INCIDENT.md) |
-| 3 October | Second D technical check | Six calls. Query execution and response format passed after those contract fixes. No scoring. | [Report](runs/live-dcheck-20261003-attempt2/REPORT.md) |
-| 3 October | Freeze | D and study sources frozen before the main run. | [Source record](FROZEN-SOURCES.json) |
-| 3–4 October | Main run | 358 calls, 4,954,459 tokens, no halt or unknown usage. Three isolated response failures retained. | [Machine report](runs/live-main-20261003/REPORT.md) |
-| 4 October | Attribution and final report | Decisive errors reviewed. No repair or follow-up run. | [Cases](review/attribution-20261004/CASES.md), [full report](DIFFICULTY_MAP_REPORT.md) |
-
-The two incomplete calibration attempts generated no future tasks or scores. Their preparation contents were not inspected. They are not additional performance results. The main run had no retries or replacement calls.
-
-In the main run, two malformed C1 responses made C unavailable for two U-L histories. All eight planned C tasks in those histories count as incorrect, including six diagnostics and two controls. One B generation failed in transport and also counts as incorrect. These failures are not removed to improve the reported results.
-
 ## Results
 
-The following tables reproduce the primary-outcome tables in the [full report](DIFFICULTY_MAP_REPORT.md#primary-outcome).
+The following tables reproduce the primary-outcome tables in the [full report](DIFFICULTY_MAP_REPORT.md#primary-outcome). Technical failures remain in these fixed denominators; see [execution details](#what-happened).
 
 | Arm | Observed change | Observed retention | Transfer | Unidentifiable | Control |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -158,6 +138,26 @@ Preparation was sealed before future tasks were generated. There is one disclose
 - Would a complete register that explicitly allows both attribute values, supports new hypotheses and preserves workflow scope improve D? That requires fresh material and a new protocol, not rescoring this run.
 - Does the pattern of missed omission requirements persist beyond these small cells and this model? The [report](DIFFICULTY_MAP_REPORT.md#b-and-c) treats it as a limited observation.
 - Full external reanalysis requires the preserved original run archive. Its permanent access location is not specified in the public repository. The archive name and hash are recorded in [publication sanitization](PUBLICATION_SANITIZATION.md#archive-of-originals).
+
+## What happened
+
+| Date in 2026 | Step | Outcome | Evidence |
+| --- | --- | --- | --- |
+| 1 October | Protocol and constructibility | Design and decision rules recorded before the evaluated runs. | [Methods](../../docs/methods.md#pilot-v05) |
+| 2 October | Material reviews and revisions | First and second exports exposed shortcuts. Revision r3 repaired the materials before calibration. | [Material history](../../docs/provenance.md#pilot-v05) |
+| 2 October | Calibration attempt 1 | Session time limit killed the background process after 13 valid calls. One further call had unknown usage. | [Incident](runs/live-calibration-20261002-INCIDENT.md) |
+| 2 October | Calibration attempt 2 | 18 calls, including one format failure and one timeout. Unknown usage stopped the run before generation. | [Incident](runs/live-calibration-20261002-attempt2-INCIDENT.md) |
+| 3 October | Technical correction | Call timeout increased from 420 to 1,200 seconds. | [Incident and correction](runs/live-calibration-20261002-attempt2-INCIDENT.md) |
+| 3 October | Calibration attempt 3 | Completed 127 calls and 1,861,787 tokens. Headroom found by the registered rule. No difficulty amendment. | [Report](runs/live-calibration-20261003-attempt3/REPORT.md) |
+| 3 October | First D technical check | Four calls. Found an incorrect `any` filter and missing budget for query-result wrappers. Both were contract defects. | [Incident](runs/live-dcheck-20261003-INCIDENT.md) |
+| 3 October | Second D technical check | Six calls. Query execution and response format passed after those contract fixes. No scoring. | [Report](runs/live-dcheck-20261003-attempt2/REPORT.md) |
+| 3 October | Freeze | D and study sources frozen before the main run. | [Source record](FROZEN-SOURCES.json) |
+| 3–4 October | Main run | 358 calls, 4,954,459 tokens, no halt or unknown usage. Three isolated response failures retained. | [Machine report](runs/live-main-20261003/REPORT.md) |
+| 4 October | Attribution and final report | Decisive errors reviewed. No repair or follow-up run. | [Cases](review/attribution-20261004/CASES.md), [full report](DIFFICULTY_MAP_REPORT.md) |
+
+The two incomplete calibration attempts generated no future tasks or scores. Their preparation contents were not inspected. They are not additional performance results. The main run had no retries or replacement calls.
+
+In the main run, two malformed C1 responses made C unavailable for two U-L histories. All eight planned C tasks in those histories count as incorrect, including six diagnostics and two controls. One B generation failed in transport and also counts as incorrect. These failures are not removed to improve the reported results.
 
 ## Verify it yourself
 
