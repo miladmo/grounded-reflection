@@ -52,6 +52,8 @@ The oracle enumerates H14, a supplied class of fourteen Boolean functions over t
 
 Three objects remain separate. The private *world function* specifies the constructed truth. The oracle derives compatible functions from public evidence without consulting that truth or the intended regime. Task obligations then distinguish the correct action under that evidence from the fields required by the hidden world. If compatible functions disagree, retaining the baseline may be warranted even when the hidden world requires a change. See the [oracle specification](../../docs/pilot-v04-amendment-03.md#a-genuinely-structured-hypothesis-class) and [implementation](reflectai_v04/oracle.py).
 
+The [worked example](../v05/README.md#a-worked-example) follows one illustrative requirement from accepted reviews to a new task and its expected output field. It uses the same H14 transfer logic as this pilot.
+
 ### Metrics and the headroom decision
 
 The registered primary metric is correct warranted diagnostic action, including the scope of every declared applied rule. *Scope probes* are evaluator contexts that check whether a rule extends beyond supported workflow, version or context boundaries. Correct fields on one task do not by themselves pass this metric. Controls, hidden-world field compliance, candidate errors, directional transfer errors and tokens are reported separately. There is no weighted overall score.

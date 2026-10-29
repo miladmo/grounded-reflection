@@ -100,17 +100,27 @@ Details:
 
 ## Why D falls short
 
-**Attribution (Milad Morad, part 1): mixed, model and specification.** The shortfall lies
-in proposing hypotheses, not in testing them. It goes back to a specification gap
-recognised after the run. There is no repair and no follow-up run in v0.5. E3 remains
-descriptively unmet.
+**Attribution (Milad Morad, part 1): mixed, model and specification.** The main observed
+problems were incomplete hypothesis enumeration and loss of workflow scope. A
+specification gap was recognised after the run. There is no repair and no follow-up
+run in v0.5. E3 remains descriptively unmet.
 
-* **Cause: D read a literal only as a test of the second listed value, never of the
-  first.**
+**Clarification (29 October 2026), D's failure attribution.** The original phrases
+“not in testing”, “Testing was sound” and “no way to add hypotheses” were too absolute.
+The run did not isolate the effectiveness of the hypothesis-testing procedure. The
+[round prompt](prompts/d_round_v1.txt) did not explicitly instruct D to add omitted
+hypotheses or rebuild an exhausted register, but the [response schema](reflectai_v05/dcontracts.py)
+and [runner](reflectai_v05/runner.py) allowed an updated hypothesis list at each round.
+This distinguishes missing guidance from a technical prohibition. It does not establish
+that additions occurred or would have improved performance. The recorded results and
+the mixed attribution remain unchanged. The original description “never of the first”
+is also narrowed below to the observed pattern in 15 of 16 registers; one used both values.
+
+* **Observed pattern: 15 of 16 registers considered only second-listed attribute values.**
   * The public class text says "Each attribute defines a predicate testing its second
     listed value". It never states that a literal may also test the first value, which
     invites this misreading.
-  * The round prompt offers no way to add hypotheses or to react to an empty register.
+  * The round prompt does not explicitly ask for omitted hypotheses to be added or an exhausted register to be rebuilt; the response contract permits additions.
 * **Literal values used.** 15 of 16 registers use only second-listed values; one uses both
   values of its two attributes.
 * **Register size.**
@@ -139,7 +149,7 @@ descriptively unmet.
     rejected every candidate, and generation kept the baseline. There D solved 15 of 30
     diagnostics and all 10 controls, which is exactly the keep pattern.
   * In 12 histories D listed none of the compatible functions.
-* **Testing was sound.**
+* **Testing of listed hypotheses showed relatively few recorded errors.**
   * 825 of 938 records cited in the final registers are binding approvals.
   * D kept an incompatible function in only 2 histories and wrongly eliminated a
     compatible one in only 1.

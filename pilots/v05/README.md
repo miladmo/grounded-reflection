@@ -52,6 +52,24 @@ The deterministic **oracle** computes which actions the public evidence warrants
 
 The oracle retains every function consistent with the binding approvals. It authorises a change only when those functions agree at the task context. Their agreement, rather than a plausible guess, licenses transfer. If they disagree, the evidence is insufficient. The restriction to H14 or H134 is part of the experimental assumptions and supplies information needed for transfer.
 
+### A worked example
+
+This simplified illustration explains v0.4 and the known-attribute settings of v0.5. **It is not an observed pilot case or model output.** Repeated approvals and distractors are omitted.
+
+Suppose an agent produces reports without a review-status footer. Authorised reviewers, within the current workflow and version, have explicitly accepted these outcomes for that field:
+
+| Audience | Content | Accepted footer state |
+| --- | --- | --- |
+| Internal | Public | Absent |
+| External | Public | Present |
+| Internal | Sensitive | Present |
+
+These observations suggest the requirement “include the footer for an external audience or sensitive content”. Checking all rules in the supplied H14 class leaves only this OR rule. The initial configuration alone would not establish any requirement.
+
+A future report is both external and sensitive, a combination absent from the observations. Within the same workflow and version, the remaining rule requires the footer. This is **transfer**. The expected output field is therefore “present”; omitting it would fail the executed-field check.
+
+The class restriction matters. XOR, meaning “external or sensitive, but not both”, also fits the three observations yet would omit the footer on the new report. H14 explicitly excludes XOR. Thus transfer follows from the evidence **and** a supplied assumption. These records do not justify applying the rule in another workflow. In v0.5's unknown-attribute settings, finding which attributes matter is an additional challenge.
+
 ### Measurement and decision rules
 
 The **registered primary metric** compares the executed output fields with the oracle's expected fields, identically for all arms. Failed or blocked outputs remain incorrect in the fixed denominator. Controls are reported separately. Declared rules, decision labels, scope, evidence coverage, hypothesis-register behaviour and token use are secondary diagnostics. Error attribution was reviewed by the author (Milad Morad). Post-run explanations are labelled as such below.
@@ -123,7 +141,7 @@ See the [report](DIFFICULTY_MAP_REPORT.md) for visible errata and the unchanged 
 
 - **Registered outcome.** D was less accurate than the better direct arm in every setting. E3 was not met. E1 was formally met, E2 was only partly consistent, and E4 was not applicable because D never reached equal accuracy. [Expectations and verdicts](DIFFICULTY_MAP_REPORT.md#prespecified-expectations).
 - **Post hoc attribution.** All three B/C failures decisive for E1 and E2 had complete binding evidence in context. One C failure missed warranted transfer, one B failure adopted an unsupported rule, and another B failure missed an omission requirement. This does not demonstrate that retrieval or selection caused the accuracy differences. Technical C failures also weaken the U-L comparison. [Reviewed cases](review/attribution-20261004/CASES.md).
-- **Post hoc attribution, mixed model and specification.** In 15 of 16 D registers, value tests covered only second-listed attribute values. For example, a register could consider “recipient is external” while omitting “recipient is internal”. This illustrates the missing alternative, not an additional observed case. The wording invited this reading and the rounds offered no way to add missing hypotheses. Ten registers eliminated every candidate and fell back to keeping the configuration. In the three histories where D retained the true function, it solved all nine diagnostics. [D analysis](DIFFICULTY_MAP_REPORT.md#why-d-falls-short).
+- **Post hoc attribution, mixed model and specification.** In 15 of 16 D registers, value tests covered only second-listed attribute values. For example, a register could consider “recipient is external” while omitting “recipient is internal”. This illustrates the missing alternative, not an additional observed case. The class wording may have contributed. The round prompt did not explicitly instruct D to add missing hypotheses or rebuild an exhausted register, although the response schema and runner allowed an updated hypothesis list. This identifies missing guidance, not a technical prohibition on additions. Ten registers eliminated every candidate and fell back to keeping the configuration. In the three histories where D retained the true function, it solved all nine diagnostics. [D analysis](DIFFICULTY_MAP_REPORT.md#why-d-falls-short).
 - **Post hoc scope diagnosis.** Finding a rule did not ensure safe application. Only one of nine adopted D rules named its workflow, compared with 20 of 22 C rules. D failed four of 16 controls. The register and final guidance did not reliably preserve the registration's scope. [D analysis](DIFFICULTY_MAP_REPORT.md#why-d-falls-short).
 - **Interpretation.** This implementation exposes a failure in proposing a complete hypothesis space and preserving scope, rather than a clean test of reflection against direct adaptation. D was cheaper in large histories but also less accurate. Its register and query mechanism cannot be assessed separately from this run. [Costs](DIFFICULTY_MAP_REPORT.md#prespecified-expectations), [limits](DIFFICULTY_MAP_REPORT.md#interpretation-limits).
 
