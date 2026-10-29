@@ -22,6 +22,14 @@ python -B -m unittest discover -s tests -p 'test_pilot_v04*.py' -v
 python -B -m unittest discover -s tests -p 'test_pilot_v05*.py' -v
 ```
 
+Equivalent commands for Bash on macOS or Linux:
+
+```bash
+export PYTHONPATH=src:pilots/v03:pilots/v04
+python3 -B -m unittest discover -s tests -p 'test_pilot_v04*.py' -v
+python3 -B -m unittest discover -s tests -p 'test_pilot_v05*.py' -v
+```
+
 The v0.5 calibration and main run used Python 3.12.14 with Pydantic 2.13.5. Its D technical checks used Python 3.11.9 with Pydantic 2.10.6. See the study records for the corresponding model configuration.
 
 ## Inspect the published results
@@ -47,6 +55,12 @@ With the **complete v0.4 original archive** present, this PowerShell command che
 ```powershell
 $env:PYTHONPATH = 'src;pilots/v03;pilots/v04'
 python -B -c "from pathlib import Path; from reflectai_v04.storage import verify_seal; r=Path('pilots/v04/runs/live-fhgenie-high-20260930'); print({str(p): verify_seal(p, p/'manifest.json')['sha256'] for p in (r, r/'preparation', r/'evaluator')})"
+```
+
+Equivalent command for Bash on macOS or Linux, also requiring the complete original archive:
+
+```bash
+PYTHONPATH=src:pilots/v03:pilots/v04 python3 -B -c "from pathlib import Path; from reflectai_v04.storage import verify_seal; r=Path('pilots/v04/runs/live-fhgenie-high-20260930'); print({str(p): verify_seal(p, p/'manifest.json')['sha256'] for p in (r, r/'preparation', r/'evaluator')})"
 ```
 
 The recorded run seal is `7afab956742071b0c5ddd8d696e854630a2a6f25945a32d34e6ece3dddbb8594`. The [oracle](../pilots/v04/reflectai_v04/oracle.py) and [evaluation code](../pilots/v04/reflectai_v04/evaluation.py) expose the scoring route, but v0.4 has no dedicated read-only evaluation replay command. Running its study runner would create a new run rather than verify the recorded one.
