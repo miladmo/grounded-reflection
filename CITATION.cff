@@ -9,3 +9,10 @@ version: 0.1.0.dev1
 license: MIT
 repository-code: "https://github.com/miladmo/grounded-reflection"
 abstract: "A Python research library for traceable work evidence, scoped requirement hypotheses and evaluation of candidate context updates, with five synthetic pilot studies."
+url: "https://github.com/miladmo/grounded-reflection"
+keywords:
+  - agent adaptation
+  - grounded reflection
+  - contextual requirements
+  - synthetic evaluation
+  - human-AI interaction
