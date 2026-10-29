@@ -1,5 +1,7 @@
 # Grounded Reflection
 
+[![Protocol tests](https://github.com/miladmo/grounded-reflection/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/miladmo/grounded-reflection/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](pyproject.toml)
+
 **When does evidence from an agent's use justify learning a new work requirement?**
 
 This research project studies how agents can infer requirements omitted from their initial configuration, test competing explanations and limit an adaptation to the contexts supported by evidence. It combines a Python library with five synthetic pilot studies.
@@ -11,6 +13,8 @@ Work evidence → Requirement hypothesis → Scoped update → Evaluation on new
 **Early development, package version `0.1.0.dev1`.** The pilots have not established a benefit of grounded reflection over strong direct methods. They identify measurement ceilings, scope errors and incomplete hypothesis enumeration. Repeated autonomous improvement and enterprise value remain research questions.
 
 Start with the [methods](docs/methods.md), the [v0.4 guide](pilots/v04/GUIDE.md) or the [v0.5 study](pilots/v05/README.md). [Reproducibility](docs/reproducibility.md) explains what can be checked from this checkout. The [glossary](docs/glossary.md) defines study terms, and [provenance](docs/provenance.md) indexes the historical records.
+
+The [documentation index](docs/README.md) covers all guides and study records. The [changelog](CHANGELOG.md) separates the research record from software and documentation changes.
 
 ## Pilot studies
 
@@ -75,3 +79,11 @@ The next study would need a complete hypothesis space, explicit guidance for rev
 See the [roadmap](docs/research-roadmap.md), [HR data card](docs/hr-example.md) and [offline verification instructions](docs/reproducibility.md). Contributions should use synthetic examples and include tests for changes to protocol behaviour.
 
 Milad Morad. Developed with AI coding assistance. Code and fictional fixtures are released under the [MIT License](LICENSE). Cite the software version using [CITATION.cff](CITATION.cff).
+
+## Status and contact
+
+This is a research prototype using synthetic data only. The author maintains it during the doctoral project. Please use [GitHub Issues](https://github.com/miladmo/grounded-reflection/issues) for questions and bug reports.
+
+## How to cite
+
+Use the software citation in [CITATION.cff](CITATION.cff). On the repository's GitHub page, select **Cite this repository** in the sidebar to copy the citation in your preferred format.
