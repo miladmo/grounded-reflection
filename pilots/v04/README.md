@@ -1,3 +1,5 @@
+Start with the [reader's guide](GUIDE.md), [methods](../../docs/methods.md) and [glossary](../../docs/glossary.md). The historical implementation log follows below.
+
 # Pilot v0.4
 
 Synthetic difficulty mapping for evidence-based adaptation. This pilot asks where a strong two-pass direct adaptation procedure loses warranted decisions. It does not evaluate a grounded-reflection arm.

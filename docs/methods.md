@@ -18,11 +18,11 @@ Twenty-four histories cross six evidence settings with four diagnostic types. Se
 
 | Arm | Procedure |
 | --- | --- |
-| A | Current task, initial configuration and public contract, without history. |
-| B | The complete history is supplied for each task. |
-| C | C1 constructs reusable guidance, C2 reviews it, and future tasks receive applicable guidance. |
+| A, no history | Current task, initial configuration and public contract, without history. |
+| B, direct use | The complete history is supplied for each task. |
+| C, two-pass preparation | C1 constructs reusable guidance, C2 reviews it, and future tasks receive applicable guidance. |
 
-C's prompts already request counterevidence, alternatives and scope. There is no additional reflection arm D. Sharing evidence does not give B and C equal computational cost. The purpose is to locate inference difficulty for a subsequent study. See the [design and setting tables](../pilots/v04/GUIDE.md#3-design-at-a-glance).
+C's prompts already request counterevidence, alternatives and scope. The hypothesis register (D) is not tested in this pilot. Sharing evidence does not give B and C equal computational cost. The purpose is to locate inference difficulty for a subsequent study. See the [design and setting tables](../pilots/v04/GUIDE.md#3-design-at-a-glance).
 
 Material checks distinguish action changes from contradictions. Counting a nonbinding record as valid must be capable of changing the expected action in ambiguous histories, or creating a contradiction in already decided histories. Additional evidence cannot reverse an already unanimous rule set without making it inconsistent. Surface audits test whether simple timestamps, comments or positions separate binding reviews. They cannot exclude every possible shortcut.
 
@@ -32,10 +32,10 @@ Sixteen histories cross two history sizes with known or unknown relevant attribu
 
 | Arm | Procedure |
 | --- | --- |
-| A | Generate without history. |
-| B | Retrieve records deterministically for each task, prioritising registration and accepted reviews of the target field, then context and recency. Selection does not validate authority or time validity. |
-| C | Process consecutive chunks into running guidance, then consolidate it before future tasks. |
-| D | Propose a hypothesis register, query records for up to six rounds, and derive guidance from the resulting register. |
+| A, no history | Generate without history. |
+| B, direct use | Retrieve records deterministically for each task, prioritising registration and accepted reviews of the target field, then context and recency. Selection does not validate authority or time validity. |
+| C, chunked preparation | Process consecutive chunks into running guidance, then consolidate it before future tasks. |
+| D, hypothesis register | Propose a hypothesis register, query records for up to six rounds, and derive guidance from the resulting register. |
 
 Each history yields an observed change, an observed retention, a hard diagnostic and an out-of-workflow control. The hard diagnostics comprise two transferred changes and two unidentifiable cases per setting. Overall there are 48 diagnostics and sixteen controls per arm. These are stress cases where simple similarity can mislead.
 

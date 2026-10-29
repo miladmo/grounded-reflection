@@ -2,7 +2,7 @@
 
 ## Summary
 
-Can direct use of work evidence still solve a task when the history is large and the relevant context attributes are unknown, and can hypothesis-guided reflection improve accuracy or cost? This pilot compares four methods across four synthetic settings with one model. Direct retrieval (B) solved 44 of 48 diagnostic tasks, chunked adaptation (C) 39, hypothesis-guided reflection (D) 29, and no adaptation (A) 24. D did not improve accuracy. Its main problems were an incomplete hypothesis register and loss of workflow scope. Post-run review identified specification ambiguity that may have contributed. These results diagnose one implementation under explicit synthetic rules. They do not establish that reflection in general is ineffective.
+Can direct use of work evidence still solve a task when the history is large and the relevant context attributes are unknown, and can a hypothesis register improve accuracy or cost? This pilot compares four methods across four synthetic settings with one model. Direct use (B) solved 44 of 48 diagnostic tasks, chunked preparation (C) 39, hypothesis register (D) 29, and no history (A) 24. D did not improve accuracy. Its main problems were an incomplete hypothesis register and loss of workflow scope. Post-run review identified specification ambiguity that may have contributed. These results diagnose one implementation under explicit synthetic rules. They do not establish that reflection in general is ineffective.
 
 This guide explains the design, results and limitations. See [Methods](../../docs/methods.md#pilot-v05) for the shared experimental logic and [Reproducibility](../../docs/reproducibility.md) for verification. The [glossary](../../docs/glossary.md) defines study terms. Original protocols and execution records are indexed under [Provenance](../../docs/provenance.md#pilot-v05).
 
@@ -33,10 +33,10 @@ A **binding approval** is an accepted review by an authorised reviewer, within t
 
 | Arm | What it does |
 | --- | --- |
-| A, no adaptation | Receives the future task, initial configuration and public task contract, but no historical evidence. |
-| B, direct retrieval | Retrieves historical records for the future task. Registrations come first, then accepted reviews that name the target field, then other records ranked by context match and recency. Retrieval does not decide whether a reviewer is authorised or an approval is valid. |
-| C, chunked adaptation | Reads the history in consecutive chunks and carries forward proposed guidance. C1 is the chunk-processing stage. C2 consolidates that guidance and cited records. Future tasks receive applicable guidance rather than the original history. |
-| D, hypothesis-guided reflection | Starts with an index of the history, proposes candidate functions in a hypothesis register, and requests records through structured queries. It updates the register through at most six rounds, with at most three queries per round. D-final turns the register into guidance for future tasks. |
+| A, no history | Receives the future task, initial configuration and public task contract, but no historical evidence. |
+| B, direct use | Retrieves historical records for the future task. Registrations come first, then accepted reviews that name the target field, then other records ranked by context match and recency. Retrieval does not decide whether a reviewer is authorised or an approval is valid. |
+| C, chunked preparation | Reads the history in consecutive chunks and carries forward proposed guidance. C1 is the chunk-processing stage. C2 consolidates that guidance and cited records. Future tasks receive applicable guidance rather than the original history. |
+| D, hypothesis register | Starts with an index of the history, proposes candidate functions in a hypothesis register, and requests records through structured queries. It updates the register through at most six rounds, with at most three queries per round. D-final turns the register into guidance for future tasks. |
 
 All arms use `deepseek-ai/DeepSeek-V4-Flash-0731` through the institutional model gateway FHGenie with reasoning `high`. Each call permits 24,000 input tokens and at most 32,768 output tokens. C and D each have a 300,000-token preparation cap per history. Generation has a separate reservation so preparation cannot consume the budget for future tasks. These are common limits, not equal actual token use.
 

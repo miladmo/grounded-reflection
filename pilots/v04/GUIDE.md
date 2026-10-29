@@ -2,7 +2,7 @@
 
 ## 1. Summary
 
-This pilot asks where a strong direct-adaptation procedure loses decisions justified by its evidence. It compares current-task-only generation, direct use of historical evidence, and two-pass preparation of reusable guidance across six synthetic settings. The registered metric gives preparation arm C 21/24 correct diagnostics and direct-use arm B 16/24. That metric also checks the scope of declared rules. An existing post hoc check of the fields actually produced gives B 23/24 and C 21/24. No setting establishes the registered difficulty threshold called *headroom*. The study therefore does not show that explicit preparation improves task decisions over direct use of evidence. See the [interpretive report](DIFFICULTY_MAP_REPORT.md) and [shared glossary](../../docs/glossary.md).
+This pilot asks where a strong direct-adaptation procedure loses decisions justified by its evidence. It compares no history (A), direct use of historical evidence (B), and two-pass preparation of reusable guidance (C) across six synthetic settings. The registered metric gives two-pass preparation arm C 21/24 correct diagnostics and direct use arm B 16/24. That metric also checks the scope of declared rules. An existing post hoc check of the fields actually produced gives B 23/24 and C 21/24. No setting establishes the registered difficulty threshold called *headroom*. The study therefore does not show that explicit preparation improves task decisions over direct use of evidence. See the [interpretive report](DIFFICULTY_MAP_REPORT.md) and [shared glossary](../../docs/glossary.md).
 
 Use the [methods](../../docs/methods.md#pilot-v04) for the study design and the [reproducibility guide](../../docs/reproducibility.md#verification-boundary) for offline checks and archive requirements.
 
@@ -16,9 +16,9 @@ A *history* is a collection of synthetic work records. Each history supplies one
 
 | Arm | What the model receives | Procedure |
 | --- | --- | --- |
-| A | Current task, initial configuration and shared execution contract | Generate without historical evidence |
-| B | A's inputs plus the complete corresponding history | Use historical evidence directly on each task |
-| C | The same history during preparation, then the current task and retained applicable guidance | C1 constructs guidance, C2 reviews it, then generation applies the retained guidance |
+| A: no history | Current task, initial configuration and shared execution contract | Generate without historical evidence |
+| B: direct use | A's inputs plus the complete corresponding history | Use historical evidence directly on each task |
+| C: two-pass preparation | The same history during preparation, then the current task and retained applicable guidance | C1 constructs guidance, C2 reviews it, then generation applies the retained guidance |
 
 C1 and C2 are two preparation calls, not separate experimental arms. The inherited prompts already ask for alternatives, counterevidence, provenance and scope. C is a strong direct-adaptation comparison. It is not called the grounded-reflection arm in this study. B and C have the same historical records, but their computation budgets are not equal. The [methods](../../docs/methods.md#pilot-v04) describe these procedures.
 
@@ -70,10 +70,10 @@ For example, S4 has 2/4 correct, meeting the accuracy condition. Its two failure
 | --- | --- | --- |
 | 29 September | Registered design | Restricted hypothesis class and fixed transfer cases specified before the evaluated run; see the [methods](../../docs/methods.md#pilot-v04) |
 | 29 September | Material review and surface repair | Earlier examples exposed timestamp/comment shortcuts. Revision r2 varied surfaces without changing the semantics of binding approvals |
-| 29 September | Original gpt-6-sol attempt | The command-line interface (CLI) attempt stopped on its first C1 call because an upstream HTTP-200 response lacked the required streaming content type. No usable response; 191 remaining calls blocked; usage unknown |
+| 29 September | Original gpt-6-sol attempt | The command-line interface (CLI) attempt stopped on its first C1 call because an upstream HTTP-200 response lacked the required streaming content type. No usable response; 191 remaining calls blocked; usage unknown. See the [incident](runs/live-amendment3-r2-20260929-INCIDENT.md) |
 | 29 September | FHGenie connection probes | Three toy probes used 173 reported tokens in total. The third returned valid JSON. These tested connectivity, not research tasks |
-| 30 September | Model change and contract tests | DeepSeek-V4-Flash-0731 via FHGenie replaced the original model. Two reasoning-high contract tests each returned 16/16 valid responses, first at a 16,384 output-token limit, then at 32,768 |
-| 30 September | Final configuration | High reasoning, a 32,768 output-token limit and tolerance of up to 19 isolated response failures were fixed before the research run |
+| 30 September | Model change and contract tests | DeepSeek-V4-Flash-0731 via FHGenie replaced the original model under [Amendment 4](../../docs/pilot-v04-amendment-04.md). Two reasoning-high contract tests each returned 16/16 valid responses, first at a [16,384 output-token limit](diagnostics/fhgenie/contract-test-high-20260930/run/REPORT.md), then at [32,768](diagnostics/fhgenie/contract-test-high-32k-20260930/run/REPORT.md) |
+| 30 September | Final configuration | High reasoning, a 32,768 output-token limit and tolerance of up to 19 isolated response failures were fixed before the research run in [Amendment 5](../../docs/pilot-v04-amendment-05.md). The [approval record](review/materials-amendment3-r2-amendment5-20260930-approvals.json) binds the final configuration |
 | 30 September to 1 October | Registered research run | Started at 21:16 UTC on 30 September. Completed 192/192 calls with no failed calls, retries or replacements. See the [machine report](runs/live-fhgenie-high-20260930/REPORT.md) |
 | 1 October | Failure review and interpretation | The author classified two polarity inversions as unresolved and confirmed one content error. The report also recorded the executed-fields interpretation. See the [failure analysis](DIFFICULTY_MAP_REPORT.md#failure-causes-and-headroom) |
 
@@ -144,4 +144,4 @@ The recorded run seal is `7afab956742071b0c5ddd8d696e854630a2a6f25945a32d34e6ece
 
 ## 9. History
 
-The [provenance index](../../docs/provenance.md#pilot-v04) links the unchanged original README, protocols, amendments, material reviews, execution incidents and run records. Pending-status statements in the historical implementation log describe preparation stages; the completed research run and 1 October attribution above are the final status. Historical offline instructions create new mock or review artifacts, not a reproduction of the completed live responses. This guide changes presentation only.
+The [provenance index](../../docs/provenance.md#pilot-v04) links the historical README, protocols, amendments, material reviews, execution incidents and run records. The README's original body is preserved beneath a one-line navigation prefix. Pending-status statements in the historical implementation log describe preparation stages; the completed research run and 1 October attribution above are the final status. Historical offline instructions create new mock or review artifacts, not a reproduction of the completed live responses. This guide changes presentation only.

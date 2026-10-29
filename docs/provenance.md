@@ -12,7 +12,7 @@ The historical records mix scientific decisions with operational permissions to 
 - [Original implementation log](../pilots/v04/README.md), [copy-verification record](../pilots/v04/preflight/fhgenie-20260929/copy-verification.json) and [final execution request](../pilots/v04/preflight/fhgenie-high-20260930/LIVE_FREIGABE.md).
 - [Publication sanitization and archive identity](../pilots/v04/PUBLICATION_SANITIZATION.md).
 
-The original README's path occurs in a historical verification record, so it remains unchanged. Pending-status passages describe earlier preparation stages, not the final study status. The completed run and subsequent attribution are summarised in the [current guide](../pilots/v04/GUIDE.md).
+A navigation line now precedes the historical v0.4 README. Its log body and the original copy-verification record are unchanged. The recorded hash describes an earlier snapshot and already differed from the README before this addition. Pending-status passages describe earlier preparation stages, not the final study status. The completed run and subsequent attribution are summarised in the [current guide](../pilots/v04/GUIDE.md).
 
 ## Pilot v0.5
 
