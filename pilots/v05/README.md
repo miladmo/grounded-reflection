@@ -4,7 +4,7 @@
 
 Can direct use of work evidence still solve a task when the history is large and the relevant context attributes are unknown, and can hypothesis-guided reflection improve accuracy or cost? This pilot compares four methods across four synthetic settings with one model. Direct retrieval (B) solved 44 of 48 diagnostic tasks, chunked adaptation (C) 39, hypothesis-guided reflection (D) 29, and no adaptation (A) 24. D did not improve accuracy. Its main problems were an incomplete hypothesis register and loss of workflow scope. Post-run review identified specification ambiguity that may have contributed. These results diagnose one implementation under explicit synthetic rules. They do not establish that reflection in general is ineffective.
 
-Read this guide before the [full report](DIFFICULTY_MAP_REPORT.md) and [approved protocol](../../docs/pilot-v05-protocol.md). The [shared glossary](../../docs/glossary.md) explains terms used across both pilots.
+This guide explains the design, results and limitations. See [Methods](../../docs/methods.md#pilot-v05) for the shared experimental logic and [Reproducibility](../../docs/reproducibility.md) for verification. The [glossary](../../docs/glossary.md) defines study terms. Original protocols and execution records are indexed under [Provenance](../../docs/provenance.md#pilot-v05).
 
 ## Why this pilot
 
@@ -89,19 +89,19 @@ These are descriptive expectations, not significance tests. Calibration headroom
 
 | Date in 2026 | Step | Outcome | Evidence |
 | --- | --- | --- | --- |
-| 1 October | Protocol and constructibility | Design approved. Separate approvals still required for live phases. | [Protocol](../../docs/pilot-v05-protocol.md) |
-| 2 October | Material reviews and revisions | First and second exports withheld approval because shortcuts remained. Revision r3 approved. | [r1](review/materials-v05-20261002/README.md), [r2](review/materials-v05-r2-20261002/README.md), [r3](review/materials-v05-r3-20261002/README.md) |
+| 1 October | Protocol and constructibility | Design and decision rules recorded before the evaluated runs. | [Methods](../../docs/methods.md#pilot-v05) |
+| 2 October | Material reviews and revisions | First and second exports exposed shortcuts. Revision r3 repaired the materials before calibration. | [Material history](../../docs/provenance.md#pilot-v05) |
 | 2 October | Calibration attempt 1 | Session time limit killed the background process after 13 valid calls. One further call had unknown usage. | [Incident](runs/live-calibration-20261002-INCIDENT.md) |
 | 2 October | Calibration attempt 2 | 18 calls, including one format failure and one timeout. Unknown usage stopped the run before generation. | [Incident](runs/live-calibration-20261002-attempt2-INCIDENT.md) |
-| 3 October | Technical correction | Call timeout increased from 420 to 1,200 seconds. New attempt explicitly approved. | [Decision](runs/live-calibration-20261002-attempt2-INCIDENT.md) |
+| 3 October | Technical correction | Call timeout increased from 420 to 1,200 seconds. | [Incident and correction](runs/live-calibration-20261002-attempt2-INCIDENT.md) |
 | 3 October | Calibration attempt 3 | Completed 127 calls and 1,861,787 tokens. Headroom found by the registered rule. No difficulty amendment. | [Report](runs/live-calibration-20261003-attempt3/REPORT.md) |
 | 3 October | First D technical check | Four calls. Found an incorrect `any` filter and missing budget for query-result wrappers. Both were contract defects. | [Incident](runs/live-dcheck-20261003-INCIDENT.md) |
-| 3 October | Second D technical check | Six calls. Query execution and response format passed after the permitted contract fixes. No scoring. | [Report](runs/live-dcheck-20261003-attempt2/REPORT.md) |
+| 3 October | Second D technical check | Six calls. Query execution and response format passed after those contract fixes. No scoring. | [Report](runs/live-dcheck-20261003-attempt2/REPORT.md) |
 | 3 October | Freeze | D and study sources frozen before the main run. | [Source record](FROZEN-SOURCES.json) |
 | 3–4 October | Main run | 358 calls, 4,954,459 tokens, no halt or unknown usage. Three isolated response failures retained. | [Machine report](runs/live-main-20261003/REPORT.md) |
 | 4 October | Attribution and final report | Decisive errors reviewed. No repair or follow-up run. | [Cases](review/attribution-20261004/CASES.md), [full report](DIFFICULTY_MAP_REPORT.md) |
 
-The two incomplete calibration attempts generated no future tasks or scores. Their preparation contents were not inspected. They are preserved incidents, not additional performance results. Each new attempt had explicit approval. The main run had no retries or replacement calls.
+The two incomplete calibration attempts generated no future tasks or scores. Their preparation contents were not inspected. They are not additional performance results. The main run had no retries or replacement calls.
 
 In the main run, two malformed C1 responses made C unavailable for two U-L histories. All eight planned C tasks in those histories count as incorrect, including six diagnostics and two controls. One B generation failed in transport and also counts as incorrect. These failures are not removed to improve the reported results.
 
@@ -151,7 +151,7 @@ This is a descriptive study with one model and two cases per hard type, setting 
 
 The tasks use synthetic placeholder workflows, explicit approval conventions and a restricted rule class. Hard tasks were constructed so nearest-neighbour similarity gives the wrong answer. They are a stress test, not an estimate of how often such situations occur in professional work. The study does not demonstrate discovery of unrestricted implicit requirements, enterprise value, generalisation to other models, or the success or failure of Grounded Reflection as a broad approach.
 
-Preparation was sealed before future tasks were generated. There is one disclosed earlier constructibility check: revision-r2 final-history seed 45061 was generated once in memory. The future-task and call-order seeds were not used, contents were not inspected or saved, and no generator change followed that check. This qualification remains part of the [protocol record](../../docs/pilot-v05-protocol.md#changes-from-the-second-material-review-material-revision-r3).
+Preparation was sealed before future tasks were generated. There is one disclosed earlier constructibility check: revision-r2 final-history seed 45061 was generated once in memory. The future-task and call-order seeds were not used, contents were not inspected or saved, and no generator change followed that check. See [separation and review](../../docs/methods.md#separation-and-review) and the original records indexed under [Provenance](../../docs/provenance.md#pilot-v05).
 
 ### Open questions
 
@@ -165,13 +165,13 @@ Preparation was sealed before future tasks were generated. There is one disclose
 | --- | --- |
 | Counts by setting, arm and task type; main-run usage | [Machine report](runs/live-main-20261003/REPORT.md) |
 | Diagnostic totals, selected arms, separate hard maxima, costs and D diagnostics | [Analysis JSON](analysis/main-analysis.json) |
-| Definitions, prospective criteria, approvals and amendments | [Protocol](../../docs/pilot-v05-protocol.md) |
+| Definitions and prespecified criteria | [Methods](../../docs/methods.md#pilot-v05), [measurement](../../docs/methods.md#measurement) |
 | Error explanations and the author's attribution | [Full report](DIFFICULTY_MAP_REPORT.md), [reviewed cases](review/attribution-20261004/CASES.md) |
 | Main-run file hashes | [Run manifest](runs/live-main-20261003/manifest.json) |
 | Frozen source and prompt hashes | [Source record](FROZEN-SOURCES.json), [prompt record](prompts/FROZEN.json) |
-| What is public and what requires the original archive | [Publication sanitization](PUBLICATION_SANITIZATION.md) |
+| What is public and what requires the original archive | [Verification boundary](../../docs/reproducibility.md#verification-boundary), [publication record](PUBLICATION_SANITIZATION.md) |
 
-From the repository root, run the offline unit tests with Python 3.11 or later and the project's dependencies installed:
+After following the [installation instructions](../../docs/reproducibility.md), run the offline pilot tests from the repository root:
 
 ```console
 python -B -m unittest discover -s tests -p 'test_pilot_v05*.py' -v
@@ -179,8 +179,8 @@ python -B -m unittest discover -s tests -p 'test_pilot_v05*.py' -v
 
 The tests use mock responses and require no API key. They check materials, arms, budgets, failure handling, seals and the runner. Passing them verifies implementation behaviour, not the reported model performance. The main run and calibration used Python 3.12.14 with Pydantic 2.13.5. The D technical checks used Python 3.11.9 with Pydantic 2.10.6.
 
-[main_analysis.py](analysis/main_analysis.py) is the offline recomputation script. It verifies the full run seal, then writes `analysis/main-analysis.json`. **Do not run it in the preserved results checkout merely to read the results.** It requires the complete original run data, which are not published, and it overwrites the existing analysis file. An authorised reanalysis should use a separate working copy of the original archive and preserve the archived result.
+[main_analysis.py](analysis/main_analysis.py) is the offline recomputation script. It verifies the full run seal, then writes `analysis/main-analysis.json`. **Do not run it in the preserved results checkout merely to read the results.** It requires the complete original run data, which are not published, and it overwrites the existing analysis file. Reanalysis requires a separate working copy of the original archive to preserve the archived result.
 
 The [seal verifier](reflectai_v05/storage.py) can check the complete original run directory, including its preparation and evaluator files. A public checkout contains selected reports and manifests, not raw prompts, responses and transport metadata. It can verify the hashes of available files but cannot reproduce a complete directory seal from missing files.
 
-The [publication record](PUBLICATION_SANITIZATION.md#change-after-publication-windows-only-test-skipped-elsewhere) also documents a later Windows-only test skip. That changed a source-bound test file, so today's source tree does not exactly match `FROZEN-SOURCES.json`. The original test remains at tag `pilot-v05-results-20261004` and in the original archive. Do not treat the current source tree as an exact recreation of the frozen experiment. This guide and the report errata change documentation only; archived runs, approvals, prompts, analysis and registered metrics remain unchanged.
+The [publication record](PUBLICATION_SANITIZATION.md#change-after-publication-windows-only-test-skipped-elsewhere) also documents a later Windows-only test skip. That changed a source-bound test file, so today's source tree does not exactly match `FROZEN-SOURCES.json`. The original test remains at tag `pilot-v05-results-20261004` and in the original archive. Do not treat the current source tree as an exact recreation of the frozen experiment. This guide and the report errata explain the archived study without changing its runs, prompts, analysis or registered metrics.
