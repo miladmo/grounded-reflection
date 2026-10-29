@@ -14,12 +14,14 @@ Work evidence → Requirement hypothesis → Context update → Paired evaluatio
 
 Pilot numbers are study stages. The package version is `0.1.0.dev1`.
 
+**How to read the pilots:** start with the [v0.4 guide](pilots/v04/GUIDE.md) or [v0.5 README](pilots/v05/README.md), then follow its report and protocol links. The [shared glossary](docs/glossary.md) defines the study terms. The original v0.4 README remains unchanged because its path occurs in a verification record.
+
 | Pilot | Question | Core result | Protocol and report |
 | --- | --- | --- | --- |
 | v0.1 | Does structured reflection improve recruiting posts over direct use and direct adaptation? | All three conditions received 10/10 model ratings on six tasks: a rating ceiling, with no observed advantage for reflection. | [protocol](pilots/hr_v01/protocol.md), [report](pilots/hr_v01/REPORT_en.md) |
 | v0.2 | Does grounded reflection recover omitted requirements better than direct adaptation, across three task families with conflicting evidence? | Reflection passed 19 of 24 task attempts, against 23 for direct adaptation and 21 for direct evidence. It carried rejected alternatives forward as unnecessary clarifications. | [protocol](docs/pilot-v02-protocol.md), [report](pilots/v02/REPORT_en.md) |
 | v0.3 | When does work evidence warrant a change, with candidate status, update decision and world compliance scored separately? | Direct evidence and direct adaptation made all 8 warranted decisions in calibration. The ceiling stopped the main comparison, so reflection was not run. | [protocol](docs/pilot-v03-protocol.md), [report](pilots/v03/CALIBRATION_R2_REPORT.md) |
-| v0.4 | Which evidence difficulties (raw artifacts, volume and noise, dependence, change over time) break direct use or preparation? | With explicit approval semantics and histories that fit into one call, direct use reached 23 of 24 executed-field diagnostics and two-pass preparation 21. No setting showed headroom. | [protocol](docs/pilot-v04-protocol.md), [report](pilots/v04/DIFFICULTY_MAP_REPORT.md) |
+| v0.4 | Which evidence difficulties (raw artifacts, volume and noise, dependence, change over time) break direct use or preparation? | Registered warranted-update scores were C 21/24 and B 16/24, including declared-rule scope; the existing post hoc executed-field comparison was C 21/24 and B 23/24. No setting established headroom. | [protocol](docs/pilot-v04-protocol.md), [report](pilots/v04/DIFFICULTY_MAP_REPORT.md) |
 | v0.5 | Is direct use still enough when histories exceed one call and the relevant attributes are unknown, and does a hypothesis register help? | Direct use 44 of 48, chunked preparation 39, hypothesis register 29, never-change floor 24. The register failed at setting up the hypothesis space, not at testing. | [protocol](docs/pilot-v05-protocol.md), [report](pilots/v05/DIFFICULTY_MAP_REPORT.md) |
 
 All pilots use synthetic data; each report states its registration, deviations and limits.
@@ -55,6 +57,10 @@ All pilots use synthetic data; each report states its registration, deviations a
 **Limits.** Synthetic data, one model, thin cells (two diagnostics per hard type, setting and arm). The hard tasks are a stress test built so that similarity misleads, not an estimate of natural error rates. The protocol was approved before any data, the runs are sealed, and changes and incidents are documented.
 
 See the [v0.5 report](pilots/v05/DIFFICULTY_MAP_REPORT.md) and [protocol](docs/pilot-v05-protocol.md).
+
+## Reading the v0.4 result
+
+The registered metric gives two-pass preparation (C) 21 of 24 correct diagnostics and direct use (B) 16 of 24. Seven of B's eight failures had correct output fields but declared rules with excessive scope. The existing **post hoc** executed-field comparison gives C 21 of 24 and B 23 of 24. These measure different things; the registered difference does not establish better task decisions by C. No setting met both headroom conditions, and S4 remains provisional because its two failures have unresolved attribution. See the [guide](pilots/v04/GUIDE.md) and [report](pilots/v04/DIFFICULTY_MAP_REPORT.md).
 
 ## A recorded example
 
