@@ -1,5 +1,7 @@
 # Pilot v0.4 difficulty map
 
+New to this pilot? Start with the [reader guide](GUIDE.md) and [shared glossary](../../docs/glossary.md). The original README is preserved as a historical record.
+
 Status: complete registered run, 1 October 2026. Synthetic data only. Results describe
 `deepseek-ai/DeepSeek-V4-Flash-0731` via FHGenie at reasoning `high` and are not
 comparable with v0.3 (Amendment 4). Failure attribution was reviewed by Milad Morad. No
@@ -25,6 +27,8 @@ This document interprets it and records the human attribution.
 Earlier attempts remain preserved and are not part of these results: the stopped
 gpt-6-sol attempt ([incident](runs/live-amendment3-r2-20260929-INCIDENT.md)), three
 FHGenie toy probes and the two contract tests.
+
+**Clarification (29 October 2026).** The gpt-6-sol attempt used the original Codex CLI transport. Its first preparation call received HTTP 200 without the required streaming content type and produced no usable model answer. The remaining 191 calls were blocked. Its zero scores are not evidence of model performance. The probes checked connectivity, and the contract tests checked response format; neither belongs to the registered result above.
 
 ## Decisions and downstream outcomes
 

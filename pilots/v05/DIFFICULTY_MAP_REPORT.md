@@ -1,5 +1,7 @@
 # Pilot v0.5 difficulty map: report on the main run
 
+New to this pilot? Start with the [README](README.md) and [shared glossary](../../docs/glossary.md). Dated errata below clarify wording; the sealed run, analysis JSON and scores are unchanged.
+
 Status: **final, 4 October 2026; attribution review parts 1 and 2 by Milad Morad incorporated.** Every number is from the sealed main run
 `pilots/v05/runs/live-main-20261003` (seal
 `dc4fc775af49df6c838c1cba29d730155319920298596791ecfffd08eb4ff4ab`), recomputed offline by
@@ -42,10 +44,12 @@ Diagnostics per setting (12 per arm: 8 observed and 4 hard), with controls separ
 | U-S | 6 | **12** | 10 | 9 | 8/8, 4/4 | 6/8, 4/4 | 6/8, 3/4 | 4, 4, 4, 3 |
 | U-L | 6 | **10** | 6 | 6 | 8/8, 2/4 | 4/8, 2/4 | 4/8, 2/4 | 4, 4, 1, 4 |
 
-**The keep floor.** An arm that never changes anything gets 6 of 12 diagnostics: the two
+**The keep floor.** An arm that never changes anything gets 6 of 12 diagnostics: the four observed
 retentions plus, in the two histories with an unidentifiable hard task, the
 unidentifiable task. A shows exactly this floor in every setting. D lies at or barely
 above it: 7, 7, 9 and 6.
+
+**Erratum (29 October 2026), keep floor.** This paragraph previously stated "the two retentions". Each setting has four observed retentions and two unidentifiable diagnostics, giving 6 of 12. The floor and all result counts remain unchanged.
 
 ## Prespecified expectations
 
@@ -60,6 +64,8 @@ column follows the attribution review by Milad Morad (parts 1 and 2, 4 October 2
 | E2 dimension uncertainty | U-L vs K-L | 10 vs 11 (hard 2 vs 4) | yes, by 1 | B's failures are substantive and fit the E2 mechanism; the arm comparison stays open because C failed technically |
 | E3 D accuracy | D minus better of B and C | K-S −5, K-L −4, U-S −3, U-L −4 | no, in all four settings | cause in proposing hypotheses; mixed, model and specification |
 | E4 D cost | applies only where D is at least as accurate | D is less accurate everywhere | not applicable | — |
+
+**Erratum (29 October 2026), E2 comparison.** The U-L versus K-L row previously presented "hard 2 vs 4" without distinguishing arm selection. The frozen `main-analysis.json` selects the best total and best hard score separately. In K-L, `arm: C` gives 11 of 12 diagnostics, while `hard_arm: B` gives 4 of 4 hard tasks. Comparing the same arms selected by total accuracy gives U-L B 10 of 12, with 2 of 4 hard tasks, versus K-L C 11 of 12, with 3 of 4 hard tasks. The row preserves the original separate-maxima comparison; it must not be read as C scoring 4 of 4. This clarification does not change the analysis or the overall E2 judgement.
 
 **Overall judgement.**
 
@@ -94,17 +100,27 @@ Details:
 
 ## Why D falls short
 
-**Attribution (Milad Morad, part 1): mixed, model and specification.** The shortfall lies
-in proposing hypotheses, not in testing them. It goes back to a specification gap
-recognised after the run. There is no repair and no follow-up run in v0.5. E3 remains
-descriptively unmet.
+**Attribution (Milad Morad, part 1): mixed, model and specification.** The main observed
+problems were incomplete hypothesis enumeration and loss of workflow scope. A
+specification gap was recognised after the run. There is no repair and no follow-up
+run in v0.5. E3 remains descriptively unmet.
 
-* **Cause: D read a literal only as a test of the second listed value, never of the
-  first.**
+**Clarification (29 October 2026), D's failure attribution.** The original phrases
+“not in testing”, “Testing was sound” and “no way to add hypotheses” were too absolute.
+The run did not isolate the effectiveness of the hypothesis-testing procedure. The
+[round prompt](prompts/d_round_v1.txt) did not explicitly instruct D to add omitted
+hypotheses or rebuild an exhausted register, but the [response schema](reflectai_v05/dcontracts.py)
+and [runner](reflectai_v05/runner.py) allowed an updated hypothesis list at each round.
+This distinguishes missing guidance from a technical prohibition. It does not establish
+that additions occurred or would have improved performance. The recorded results and
+the mixed attribution remain unchanged. The original description “never of the first”
+is also narrowed below to the observed pattern in 15 of 16 registers; one used both values.
+
+* **Observed pattern: 15 of 16 registers considered only second-listed attribute values.**
   * The public class text says "Each attribute defines a predicate testing its second
     listed value". It never states that a literal may also test the first value, which
     invites this misreading.
-  * The round prompt offers no way to add hypotheses or to react to an empty register.
+  * The round prompt does not explicitly ask for omitted hypotheses to be added or an exhausted register to be rebuilt; the response contract permits additions.
 * **Literal values used.** 15 of 16 registers use only second-listed values; one uses both
   values of its two attributes.
 * **Register size.**
@@ -133,7 +149,7 @@ descriptively unmet.
     rejected every candidate, and generation kept the baseline. There D solved 15 of 30
     diagnostics and all 10 controls, which is exactly the keep pattern.
   * In 12 histories D listed none of the compatible functions.
-* **Testing was sound.**
+* **Testing of listed hypotheses showed relatively few recorded errors.**
   * 825 of 938 records cited in the final registers are binding approvals.
   * D kept an incompatible function in only 2 histories and wrongly eliminated a
     compatible one in only 1.
@@ -225,7 +241,7 @@ value only.
 * **The other transfer tasks.** In 6 of the 8 transfer tasks the reading
   likewise leaves no function.
   * B transferred correctly in 5 of them.
-  * C transferred correctly in 4; of the other two, one is case (a) and 1
+  * C transferred correctly in 4; of the other two, one is case (a) and one
     is blocked.
   * So neither arm read the class systematically in this way.
 * **Hence:** (a) and (b2) are substantive. A contribution of the class wording cannot be
@@ -262,10 +278,12 @@ As registered:
 * the public H134 restriction, on which transfer depends;
 * one model and one retrieval choice;
 * D as one specific mechanism, not grounded reflection in general;
-* 16 diagnostics per setting and arm;
+* 12 diagnostics per setting and arm, plus four controls;
 * the public class text did not state that a literal may test either of the two values.
   D demonstrably misread it; for B and C its effect was at most limited, according to the
   data.
+
+**Erratum (29 October 2026), task denominator.** The list previously stated "16 diagnostics per setting and arm". There are 12 diagnostics and four controls, or 16 tasks in total. The same wording remains in the protected protocol's interpretation-limits section; its task specification, decision rules and result tables use the correct diagnostic denominator.
 
 Hard tasks are constructed so that similarity and naive readings mislead. Their accuracy
 is a stress test, not an estimate of natural error rates. The four expectations rest on
